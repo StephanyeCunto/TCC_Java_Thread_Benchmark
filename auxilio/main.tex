@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{article} 
+\usepackage[utf8]{inputenc} 
+\usepackage[brazil]{babel}
+\usepackage{hyperref} 
+\usepackage{geometry} 
+\usepackage{longtable} 
+\usepackage{silence} 
+\WarningFilter{tracklang}{No `datatool' support for dialect `brazil'}
+\usepackage{datatool} 
+\usepackage{xcolor} 
+\usepackage{xstring} 
+\usepackage{etoolbox} 
+
+\geometry{margin=2.5cm} 
+\date{} 
+
+\DTLnewdb{artigos} 
+\input{artigosDB.tex}
+
+\begin{document} 
+
+\tableofcontents 
+\newpage 
+
+\section*{Lista de Artigos} 
+\addcontentsline{toc}{section}{Lista de Artigos}
+
+\begin{longtable}{|p{0.8cm}|p{5cm}|p{1cm}|p{2.5cm}|p{2cm}|} 
+\hline 
+\textbf{Nº} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
+\hline
+\endhead 
+
+\DTLforeach{artigos}{\num=num,\titulo=titulo,\ano=ano,\link=link,\so=so}{%
+\num & \textbf{\titulo} & \ano & \href{\link}{Link} & \so \\ \hline
+} 
+\end{longtable} 
+
+\newpage 
+
+\section*{Resumos e Anotações} 
+\addcontentsline{toc}{section}{Resumos e Anotações}
+
+\DTLforeach{artigos}{\num=num,\titulo=titulo,\autor=autor,\ano=ano,\resumo=resumo,\notas=notas}{% 
+    \subsection*{\titulo} 
+    \textbf{Autor:} \autor \\
+    \textbf{Ano:} \ano
+    
+    \subsubsection*{Resumo}  
+    \resumo 
+
+    \subsubsection*{Minhas Anotações}
+    \begin{itemize}
+        \item \notas
+    \end{itemize}
+}
+
+\end{document}
