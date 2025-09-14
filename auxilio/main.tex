@@ -1,59 +1,100 @@
-\documentclass[12pt,a4paper]{article} 
-\usepackage[utf8]{inputenc} 
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
-\usepackage[utf8]{inputenc} 
-\usepackage{hyperref} 
-\usepackage{geometry} 
-\usepackage{longtable} 
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{longtable}
 \usepackage{silence} 
 \WarningFilter{tracklang}{No `datatool' support for dialect `brazil'}
 \usepackage{datatool} 
-\usepackage{xcolor} 
-\usepackage{xstring} 
-\usepackage{etoolbox} 
+\usepackage{xcolor}
+\usepackage{xstring}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{times}
 
-\geometry{margin=2.5cm} 
-\date{} 
+% Configurações de margens conforme ABNT NBR 14724
+\geometry{
+    top=3cm,
+    bottom=2cm,
+    left=3cm,
+    right=2cm
+}
 
+% Configurações de espaçamento
+\onehalfspacing
+\setlength{\parindent}{1.5cm}
+
+% Remove data da capa
+\date{}
+
+% Carrega base de dados
 \DTLnewdb{artigos} 
 \input{artigosDB.tex}
 
-\begin{document} 
+\begin{document}
 
-\tableofcontents 
-\newpage 
+% Configuração de links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
 
-\section*{Lista de Artigos} 
-\addcontentsline{toc}{section}{Lista de Artigos}
+% Sumário
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
 
-\begin{longtable}{|p{0.8cm}|p{5cm}|p{1cm}|p{2.5cm}|p{2cm}|} 
-\hline 
-\textbf{Nº} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
-\hline
-\endhead 
+% Lista de Artigos
+\section{Lista de Artigos}
 
-\DTLforeach{artigos}{\num=num,\titulo=titulo,\ano=ano,\link=link,\so=so}{%
-\num & \textbf{\titulo} & \ano & \href{\link}{Link} & \so \\ \hline
-} 
+\begin{longtable}{|c|p{8.5cm}|c|c|p{1.5cm}|} 
+    \hline 
+    \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
+    \hline
+    \endfirsthead
+    
+    \hline 
+    \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
+    \hline
+    \endhead 
+    
+    \hline
+    \multicolumn{5}{r}{\textit{Continua na próxima página}} \\
+    \endfoot
+    
+    \hline
+    \endlastfoot
+
+    \DTLforeach{artigos}{\num=num,\titulo=titulo,\ano=ano,\link=link,\so=so}{%
+        \num & \titulo & \ano & \href{\link}{Acesso} & \so \\ 
+        \hline
+    } 
 \end{longtable} 
 
-\newpage 
+\newpage
 
-\section*{Resumos e Anotações} 
-\addcontentsline{toc}{section}{Resumos e Anotações}
+% Resumos e Anotações
+\section{Resumos e Anotações}
 
 \DTLforeach{artigos}{\num=num,\titulo=titulo,\autor=autor,\ano=ano,\resumo=resumo,\notas=notas}{% 
-    \subsection*{\titulo} 
-    \textbf{Autor:} \autor \\
-    \textbf{Ano:} \ano
+    \subsection{\titulo}
     
-    \subsubsection*{Resumo}  
-    \resumo 
-
-    \subsubsection*{Minhas Anotações}
-    \begin{itemize}
-        \item \notas
-    \end{itemize}
+    \textbf{Autor(es):} \autor
+    
+    \textbf{Ano de publicação:} \ano
+    
+    \subsubsection{Resumo}
+    \resumo
+    
+    \subsubsection{Anotações}
+    \notas
+    
+    \vspace{0.5cm}
 }
 
 \end{document}
