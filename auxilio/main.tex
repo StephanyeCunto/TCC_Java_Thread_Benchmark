@@ -14,87 +14,58 @@
 \usepackage{setspace}
 \usepackage{times}
 
-% Configurações de margens conforme ABNT NBR 14724
-\geometry{
-    top=3cm,
-    bottom=2cm,
-    left=3cm,
-    right=2cm
-}
+\geometry{ top=3cm, bottom=2cm, left=3cm, right=2cm}
 
-% Configurações de espaçamento
 \onehalfspacing
 \setlength{\parindent}{1.5cm}
 
-% Remove data da capa
 \date{}
 
-% Carrega base de dados
 \DTLnewdb{artigos} 
 \input{artigosDB.tex}
 
 \begin{document}
 
-% Configuração de links
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    urlcolor=blue,
-    citecolor=black
-}
+    \tableofcontents
+    \thispagestyle{empty}
+    \newpage
+    \setcounter{page}{1}
 
-% Sumário
-\tableofcontents
-\thispagestyle{empty}
-\newpage
-\setcounter{page}{1}
+    \section{Lista de Artigos}
 
-% Lista de Artigos
-\section{Lista de Artigos}
-
-\begin{longtable}{|c|p{8.5cm}|c|c|p{1.5cm}|} 
-    \hline 
-    \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
-    \hline
-    \endfirsthead
-    
-    \hline 
-    \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
-    \hline
-    \endhead 
-    
-    \hline
-    \multicolumn{5}{r}{\textit{Continua na próxima página}} \\
-    \endfoot
-    
-    \hline
-    \endlastfoot
-
-    \DTLforeach{artigos}{\num=num,\titulo=titulo,\ano=ano,\link=link,\so=so}{%
-        \num & \titulo & \ano & \href{\link}{Acesso} & \so \\ 
+    \begin{longtable}{|c|p{8.5cm}|c|c|p{1.5cm}|} 
+        \hline 
+            \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
         \hline
-    } 
-\end{longtable} 
+        \endfirsthead
+        
+        \hline 
+            \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\ 
+        \hline
+        \endhead 
+        \hline
+        \endlastfoot
 
-\newpage
+        \DTLforeach{artigos}{\num=num,\titulo=titulo,\ano=ano,\link=link,\so=so}{  
+            \num & \titulo & \ano & \href{\link}{Acesso} & \so 
+            \DTLiflastrow{}{\\ \hline}
+        } 
+    \end{longtable} 
 
-% Resumos e Anotações
-\section{Resumos e Anotações}
+    \newpage
 
-\DTLforeach{artigos}{\num=num,\titulo=titulo,\autor=autor,\ano=ano,\resumo=resumo,\notas=notas}{% 
-    \subsection{\titulo}
-    
-    \textbf{Autor(es):} \autor
-    
-    \textbf{Ano de publicação:} \ano
-    
-    \subsubsection{Resumo}
-    \resumo
-    
-    \subsubsection{Anotações}
-    \notas
-    
-    \vspace{0.5cm}
-}
+    \section{Resumos e Anotações}
+
+    \DTLforeach{artigos}{\num=num,\titulo=titulo,\autor=autor,\ano=ano,\resumo=resumo,\notas=notas}{
+        \subsection{\titulo}
+        \textbf{Autor(es):} \autor
+        \textbf{Ano de publicação:} \ano
+        
+        \subsubsection{Resumo} \resumo
+        
+        \subsubsection{Anotações} \notas
+        
+        \vspace{0.5cm}
+    }
 
 \end{document}
