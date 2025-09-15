@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.11)  14 SEP 2025 01:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.11)  15 SEP 2025 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,8 +472,8 @@ Package: times 2020/03/25 PSNFSS-v9.3 (SPQR)
 \dtlcols@artigos=\count387
 
 (./artigosDB.tex)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-6.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+7.
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -488,25 +488,25 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-Package hyperref Info: Link coloring OFF on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+Package hyperref Info: Link coloring OFF on input line 27.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -559,12 +559,7 @@ Package hyperref Info: Link coloring OFF on input line 36.
 \MPnumerator=\count393
 \makeMPintoPDFobject=\count394
 \everyMPtoPDFconversion=\toks56
-)
-
-Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 44.
-
-(./main.toc
+) (./main.toc
 Overfull \hbox (6.31667pt too wide) in paragraph at lines 10--10
  [][] [][]\OT1/ptm/m/n/12 IMPLEMENTA[][]AO DO AL-GO-RITMO DE BUSCA BIN[]ARIA EM
  VERS[]OES 
@@ -599,29 +594,31 @@ Overfull \hbox (4.82057pt too wide) in paragraph at lines 52--52
 [][]ao em N[]os Re-mo-tos Usando 
  []
 
-)
+
+
+[2])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
 []|\OT1/ptm/m/n/12 IMPLEMENTA[][]AO DO AL-GO-RITMO DE
  []
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 76--76
+Underfull \hbox (badness 5064) in paragraph at lines 52--52
 \OT1/ptm/m/n/12 BUSCA BIN[]ARIA EM VERS[]OES SE-RIAL
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 76--76
+Underfull \hbox (badness 1540) in paragraph at lines 52--52
 \OT1/ptm/m/n/12 E CON-COR-RENTE NAS LIN-GUA-GENS DE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
 []|\OT1/ptm/m/n/12 An[]alise Com-pa-ra-tiva do De-sem-pe-nho de
  []
 
@@ -630,21 +627,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \end{longtable}
-                     [1]
+l.53     \end{longtable}
+                         [1]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 \newpage
-              [2]
+l.55     \newpage
+                  [2]
+Overfull \hbox (3.8309pt too wide) in paragraph at lines 69--69
+[]\OT1/ptm/b/n/12 Autor(es): \OT1/ptm/m/n/12 Ma-ria Clara Ber-toli, Ra-fael Jos
+[]e Ca-margo Bekhau-ser, Ro-drigo Curv[]ello\OT1/ptm/b/n/12 Ano
+ []
 
-[3]
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69     }
+           [3]
 
 [4]
-Overfull \hbox (21.97891pt too wide) in paragraph at lines 98--98
+Overfull \hbox (21.97891pt too wide) in paragraph at lines 69--69
 []\OT1/ptm/b/n/14.4 PROGRAMA[][]AO CON-COR-RENTE BA-SE-ADA EM ACOR-DES PARA
  []
 
@@ -653,14 +662,14 @@ Overfull \hbox (21.97891pt too wide) in paragraph at lines 98--98
 [5]
 
 [6]
-Overfull \hbox (23.77881pt too wide) in paragraph at lines 98--98
+Overfull \hbox (23.77881pt too wide) in paragraph at lines 69--69
 []\OT1/ptm/b/n/14.4 PARALELIZA[][]AO DO AL-GO-RITMO QUICK-SORT MULTI-PIVOT
  []
 
 
 
 [7]
-Overfull \hbox (36.35321pt too wide) in paragraph at lines 98--98
+Overfull \hbox (36.35321pt too wide) in paragraph at lines 69--69
 []\OT1/ptm/b/n/14.4 otimiza[][]ao do pro-ces-sa-mento de ima-gens m[]edicas uti
 -li-zando a computa[][]ao
  []
@@ -675,29 +684,34 @@ Overfull \hbox (36.35321pt too wide) in paragraph at lines 98--98
 
 [11]
 
-[12] (./main.aux)
+[12]
+
+[13]
+
+[14]
+
+[15] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1D65CFDB5E6FB1981B4544C2C9F8A267;13962.
+(rerunfilecheck)             Checksum: 7C9039DA4F94F6850C3EE02E8BBE55D2;18471.
  ) 
 Here is how much of TeX's memory you used:
- 17248 strings out of 469272
- 325135 string characters out of 5467191
- 968857 words of memory out of 5000000
- 45404 multiletter control sequences out of 15000+600000
- 641022 words of font info for 66 fonts, out of 8000000 for 9000
+ 17303 strings out of 469272
+ 326085 string characters out of 5467191
+ 1030169 words of memory out of 5000000
+ 45423 multiletter control sequences out of 15000+600000
+ 639338 words of font info for 64 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 86i,9n,93p,797b,606s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,9n,93p,797b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
-cal/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 78825 bytes).
+sr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (18 pages, 79942 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 119 named destinations out of 1000 (max. 500000)
- 497 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 643 PDF objects out of 1000 (max. 8388607)
+ 612 compressed objects within 7 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 665 words of extra memory for PDF output out of 10000 (max. 10000000)
 
