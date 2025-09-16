@@ -22,7 +22,7 @@
         \begin{itemize} 
             \item Diferentes Sistemas Operativos e diferentes versões deles 
         \end{itemize}
-        \item Processadores utilizados :
+        \item Máquinas utilizados :
         \begin{itemize}
             \item Intel® Core™ T4300 – 2,1 GHz, 2 núcleos, 1 MB, Nenhuma, 4gb de ram
             \item Intel® Core™ i5-4260U – 1,4 GHz, 2 núcleos, 3 MB, Hyper-Threading, Turbo Boost (2.8GHz), 4gb de ram
@@ -42,6 +42,31 @@
 
 \DTLnewrow{artigos}
 \DTLnewdbentry{artigos}{num}{2}
+\DTLnewdbentry{artigos}{titulo}{Uma análise comparativa entre Threads e Green Threads no Java}
+\DTLnewdbentry{artigos}{producao}{TCC/Artigo}
+\DTLnewdbentry{artigos}{autor}{Hiarly Fernandes de Souto, Thiago Emmanuel Pereira}
+\DTLnewdbentry{artigos}{ano}{2024}
+\DTLnewdbentry{artigos}{link}{https://dspace.sti.ufcg.edu.br/bitstream/riufcg/38147/1/HIARLY\%20FERNANDES\%20DE\%20SOUTO-ARTIGO-CIÊNCIA\%20DA\%20COMPUTAÇÃO-CEEI\%20(2024).pdf}
+\DTLnewdbentry{artigos}{so}{Ubuntu}
+%\DTLnewdbentry{artigos}{resumo}{Qui sint eu laboris minim ex nostrud esse in. Irure deserunt commodo aute ex non aliquip cillum elit velit enim cillum elit. Irure laboris et irure Lorem non cillum anim laboris tempor laboris sunt. Sint eiusmod commodo dolor dolor elit eiusmod minim magna. Dolor aliquip tempor laboris duis officia voluptate ad aliqua excepteur. Laboris culpa magna proident consequat.}
+\DTLnewdbentry{artigos}{notas}{
+    \begin{itemize}
+        \item Green Threads, chamada de Virtual Threads, design de threads no qual o escalonamento é feito pela própria aplicação por meio de uma biblioteca ou framework. 
+        \item Testes de Criação, Inicialização, Junção e Troca de Contexto.
+        \item Threads nativas são eficazes em termos de paralelismo real, elas também são caras em termos de recursos e podem ser difíceis de usar em algumas situações de programação.
+        \item Virtual Threads são mais leves que as threads do kernel em termos de uso de memória, e a sobrecarga de troca de contexto entre elas é muito baixa. Milhões de Virtual Threads podem ser criadas em uma única instância de JVM.
+        \item Máquina utilizado: AMD® Ryzen 7 3700u, 20GB de memória RAM, disco com capacidade de 256GB
+        \item Criou-se 100.000 threads e mediu–se o tempo de execução para a criação desses objetos
+        \item Iniciou-se um total de 10.000 threads que não realizavam operações específicas
+        \item Cada thread aguarda por 100 milissegundos, invoca o método Thread.yield() (Mudar Contexto)
+        \item Instanciar Threads, Iniciar Threads,Join Thread, Mudar Contexto a Thread Virtual é mais rápido
+        \item Ausência de diversidade nas configurações de infraestrutura
+        \item A realização dos testes do estudo em ambientes distintos poderia levar a resultados divergentes, uma vez que a JVM (Java Virtual Machine) poderia realizar otimizações específicas de acordo com o hardware da máquina utilizada
+    \end{itemize}%
+}
+
+\DTLnewrow{artigos}
+\DTLnewdbentry{artigos}{num}{3}
 \DTLnewdbentry{artigos}{titulo}{Comparison of Concurrency Technologies in Java}
 \DTLnewdbentry{artigos}{producao}{Dissertação}
 \DTLnewdbentry{artigos}{autor}{Elias Gustafsson, Oliver Nederlund Persson}
@@ -66,3 +91,21 @@
         \item Testes com taxa de requisições constante foram conduzidos para avaliar a estabilidade.
     \end{itemize}%
 }
+
+\iffalse
+\DTLnewrow{artigos}
+\DTLnewdbentry{artigos}{num}{4}
+\DTLnewdbentry{artigos}{titulo}{}
+\DTLnewdbentry{artigos}{producao}{}
+\DTLnewdbentry{artigos}{autor}{}
+\DTLnewdbentry{artigos}{ano}{}
+\DTLnewdbentry{artigos}{link}{}
+\DTLnewdbentry{artigos}{so}{}
+%\DTLnewdbentry{artigos}{resumo}{Qui sint eu laboris minim ex nostrud esse in. Irure deserunt commodo aute ex non aliquip cillum elit velit enim cillum elit. Irure laboris et irure Lorem non cillum anim laboris tempor laboris sunt. Sint eiusmod commodo dolor dolor elit eiusmod minim magna. Dolor aliquip tempor laboris duis officia voluptate ad aliqua excepteur. Laboris culpa magna proident consequat.}
+\DTLnewdbentry{artigos}{notas}{
+    \begin{itemize}
+        \item 
+        \item
+    \end{itemize}%
+}
+\fi
