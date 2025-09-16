@@ -54,16 +54,17 @@
 
     \newpage
 
-    \section{Resumos e Anotações}
+    \section{Anotações}
 
-    \DTLforeach{artigos}{\num=num,\titulo=titulo,\autor=autor,\ano=ano,\resumo=resumo,\notas=notas}{
+    \DTLforeach{artigos}{\num=num,\titulo=titulo,\autor=autor,\ano=ano,\notas=notas}{
         \subsection{\titulo}
-        \textbf{Autor(es):} \autor
-        \textbf{Ano de publicação:} \ano
+            \textbf{Autor(es):} \autor \\
+            \textbf{Ano de publicação:} \ano
         
-        \subsubsection{Resumo} \resumo
+     %   \subsubsection{Resumo} \resumo
         
         \subsubsection{Anotações} \notas
+
         
         \vspace{0.5cm}
     }
