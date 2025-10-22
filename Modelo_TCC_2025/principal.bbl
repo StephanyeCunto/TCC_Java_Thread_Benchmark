@@ -1,0 +1,44 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v<VERSION> }
+
+\bibitem[Bughunt 2023]{bughunt2023triade}
+\abntrefinfo{Bughunt}{Bughunt}{2023}
+{BUGHUNT. \emph{{A tríade CIA: Confidencialidade, Integridade e
+  Disponibilidade}}. 2023. Blog Bughunt.
+Disponível em: \url{https://blog.bughunt.com.br/triade-cia/}. Acesso em: 2
+  jul. 2025.}
+
+\bibitem[{CTIR Gov} 2025]{ctirgov2025numeros}
+\abntrefinfo{{CTIR Gov}}{{CTIR Gov}}{2025}
+{{CTIR Gov}. \emph{{CTIR Gov em números}}. 2025. Centro de Tratamento de
+  Incidentes de Segurança da Administração Pública Federal.
+Disponível em:
+  \url{https://www.gov.br/ctir/pt-br/assuntos/ctir-gov-em-numeros}. Acesso em:
+  2 jul. 2025.}
+
+\bibitem[PECB 2022]{pecb2022iso27002}
+\abntrefinfo{PECB}{PECB}{2022}
+{PECB. \emph{{ISO/IEC 27002:2022 – Information Security, Cybersecurity and
+  Privacy Protection}}.
+[S.l.], 2022. Disponível em:
+  \url{https://pecb.com/whitepaper/isoiec-270022022--information-security-cybersecurity-and-privacy-protection}.
+  Acesso em: 2 jul. 2025.}
+
+\bibitem[Silberschatz, Galvin e Gagne 2018]{silberschatz2018operating}
+\abntrefinfo{Silberschatz, Galvin e Gagne}{Silberschatz; Galvin; Gagne}{2018}
+{SILBERSCHATZ, A.; GALVIN, P.~B.; GAGNE, G. \emph{Operating System Concepts}.
+  9. ed. Hoboken, NJ: John Wiley \& Sons, 2018.
+ISBN 978-1-118-06333-0.}
+
+\bibitem[Verizon 2024]{verizon2024dbir}
+\abntrefinfo{Verizon}{Verizon}{2024}
+{VERIZON. \emph{{2024 Data Breach Investigations Report}}.
+[S.l.], 2024. Disponível em:
+  \url{https://www.verizon.com/business/resources/Ta53/reports/2024-dbir-data-breach-investigations-report.pdf}.
+  Acesso em: 2 jul. 2025.}
+
+\end{thebibliography}
