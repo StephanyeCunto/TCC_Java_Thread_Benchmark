@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  22 OCT 2025 20:47
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  23 OCT 2025 14:11
  restricted system commands enabled.
 **principal.tex
 (./principal.tex
@@ -1509,19 +1509,37 @@ Missing character: There is no – (U+2013) in font ec-lmr12!
 
 
 ]
-<imagens/Figura 1.png, id=139, 437.83575pt x 380.01974pt>
+LaTeX Font Info:    Trying to load font information for TS1+Arial(0) on input l
+ine 464.
+LaTeX Font Info:    No file TS1Arial(0).fd. on input line 464.
+
+
+LaTeX Font Warning: Font shape `TS1/Arial(0)/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textbullet' on input line 464.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Arial' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 489.
+[15]
+<imagens/Figura 1.png, id=147, 437.83575pt x 380.01974pt>
 File: imagens/Figura 1.png Graphic file (type png)
 <use imagens/Figura 1.png>
-Package luatex.def Info: imagens/Figura 1.png  used on input line 486.
+Package luatex.def Info: imagens/Figura 1.png  used on input line 504.
 (luatex.def)             Requested size: 227.5pt x 197.46063pt.
 
-Overfull \hbox (4.35811pt too wide) in paragraph at lines 529--541
+Overfull \hbox (4.35811pt too wide) in paragraph at lines 547--559
 [][] 
  []
 
 
 
-[15
+[16
 
 <./imagens/Figura 1.png>]
 Missing character: There is no – (U+2013) in font ec-lmr12!
@@ -1530,85 +1548,71 @@ Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
-LaTeX Font Info:    Trying to load font information for TS1+Arial(0) on input l
-ine 557.
-LaTeX Font Info:    No file TS1Arial(0).fd. on input line 557.
-
-LaTeX Font Warning: Font shape `TS1/Arial(0)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 557.
-
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `Arial' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Missing character: There is no — (U+2014) in font ec-lmr12!
 Missing character: There is no — (U+2014) in font ec-lmr12!
 Missing character: There is no — (U+2014) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
-
-
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 566.
-[16
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no — (U+2014) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-]
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no — (U+2014) in font ec-lmr12!
-Missing character: There is no — (U+2014) in font ec-lmr12!
-Missing character: There is no — (U+2014) in font ec-lmr12!
 
 
 [17
-
-
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no — (U+2014) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+]
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no — (U+2014) in font ec-lmr12!
-]
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no — (U+2014) in font ec-lmr12!
+Missing character: There is no — (U+2014) in font ec-lmr12!
 
 
 [18
 
 
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no — (U+2014) in font ec-lmr12!
+]
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no “ (U+201C) in font ec-lmr12!
+Missing character: There is no ” (U+201D) in font ec-lmr12!
+
+
+[19
+
+
 Missing character: There is no “ (U+201C) in font ec-lmr12!
 Missing character: There is no ” (U+201D) in font ec-lmr12!
 Missing character: There is no “ (U+201C) in font ec-lmr12!
@@ -1619,11 +1623,11 @@ Missing character: There is no “ (U+201C) in font ec-lmr12!
 Missing character: There is no ” (U+201D) in font ec-lmr12!
 ]
 
-[19
+[20
 
 ] (./principal.bbl
 
-[20
+[21
 
 ]
 bibitemlist
@@ -1633,7 +1637,7 @@ Missing character: There is no – (U+2013) in font ec-lmr12!
 Missing character: There is no – (U+2013) in font ec-lmr12!
 )
 
-[21
+[22
 
 
 Missing character: There is no – (U+2013) in font ec-lmr12!
@@ -1667,26 +1671,26 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 )
 
 Here is how much of LuaTeX's memory you used:
- 25726 strings out of 470117
+ 25732 strings out of 470117
  125061,1144653 words of node,token memory allocated
- 1502 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 2 penalty, 4 glyph, 77
- attribute, 199 glue_spec, 17 attribute_list, 2 write, 5 pdf_action nodes
-   avail lists: 1:3,2:2592,3:249,4:105,5:223,6:83,7:4754,8:103,9:556,10:27,11:61
-2
- 53443 multiletter control sequences out of 65536+600000
+ 1520 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 2 penalty, 4 glyph, 82
+ attribute, 199 glue_spec, 18 attribute_list, 2 write, 6 pdf_action nodes
+   avail lists: 1:3,2:2586,3:249,4:106,5:300,6:82,7:6723,8:103,9:556,10:27,11:88
+9
+ 53447 multiletter control sequences out of 65536+600000
  76 fonts using 13088087 bytes
- 99i,12n,105p,1005b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,105p,1005b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <</Users/stephanye/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/
 ec/tcrm1200.600pk>>{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/l
 m-ec.enc}</System/Library/Fonts/Supplemental/Arial Bold.ttf></System/Library/Fon
 ts/Supplemental/Arial.ttf></usr/local/texlive/2025basic/texmf-dist/fonts/type1/p
 ublic/lm/lmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/l
 m/lmr12.pfb>
-Output written on principal.pdf (21 pages, 234355 bytes).
+Output written on principal.pdf (22 pages, 237173 bytes).
 
-PDF statistics: 306 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 131072)
+PDF statistics: 315 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 131072)
  203 words of extra memory for PDF output out of 10000 (max. 100000000)
 
