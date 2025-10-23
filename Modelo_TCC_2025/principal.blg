@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: principal.aux
 The style file: abntex2-alf-antigo.bst
-Illegal, another \bibstyle command---line 81 of file principal.aux
+Illegal, another \bibstyle command---line 105 of file principal.aux
  : \bibstyle
  :          {abntex2-alf}
 I'm skipping whatever remains of this command
@@ -30,45 +30,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 6 entries,
+You've used 7 entries,
             6642 wiz_defined-function locations,
-            1214 strings with 10398 characters,
-and the built_in function-call counts, 4230 in all, are:
-= -- 450
-> -- 112
+            1218 strings with 10516 characters,
+and the built_in function-call counts, 4813 in all, are:
+= -- 491
+> -- 127
 < -- 1
-+ -- 88
-- -- 35
-* -- 260
-:= -- 648
-add.period$ -- 23
-call.type$ -- 6
-change.case$ -- 41
-chr.to.int$ -- 9
-cite$ -- 5
-duplicate$ -- 168
-empty$ -- 318
-format.name$ -- 162
-if$ -- 997
++ -- 93
+- -- 40
+* -- 295
+:= -- 731
+add.period$ -- 27
+call.type$ -- 7
+change.case$ -- 47
+chr.to.int$ -- 10
+cite$ -- 6
+duplicate$ -- 197
+empty$ -- 375
+format.name$ -- 185
+if$ -- 1137
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 98
-newline$ -- 33
-num.names$ -- 25
-pop$ -- 132
+missing$ -- 115
+newline$ -- 37
+num.names$ -- 30
+pop$ -- 153
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 23
 quote$ -- 0
-skip$ -- 258
+skip$ -- 294
 stack$ -- 1
-substring$ -- 150
-swap$ -- 73
+substring$ -- 169
+swap$ -- 85
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 32
+while$ -- 38
 width$ -- 0
-write$ -- 84
+write$ -- 98
 (There was 1 error message)
