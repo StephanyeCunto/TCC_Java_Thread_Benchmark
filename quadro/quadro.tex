@@ -1,0 +1,43 @@
+\documentclass[12pt, openright, oneside, a4paper, brazil]{abntex2}
+
+\usepackage{fontspec}
+\usepackage{graphicx}			
+\usepackage{xcolor}	
+\usepackage{microtype} 			
+\usepackage{setspace}
+\usepackage{indentfirst}		
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tabularx}  
+\usepackage{pdflscape}  
+\usepackage{geometry}
+
+% Margens equilibradas para paisagem
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+% Configuração do ambiente "quadro"
+\newfloat{quadro}{htbp}{loq}[section]
+\floatname{quadro}{Quadro}
+\captionsetup[quadro]{font=small, labelfont=bf, labelsep=period}
+
+\begin{document}
+
+\begin{landscape}
+    \begin{quadro}[H]
+        \centering
+        \caption{Trabalhos relacionados} 
+        \fontsize{10}{12}\selectfont
+        
+        % ---- tabela ajustada para caber na largura ----
+        \begin{tabularx}{\linewidth}{|p{7cm}|p{7cm}|p{3cm}|X|}
+            \hline
+            \textbf{Nome} & \textbf{O que foi comparado} & \textbf{Benchmark} & \textbf{Resumo}  \\ \hline
+            Comparison of Concurrency Technologies in Java &  &  &  \\ \hline
+            Avaliação dos mecanismos de concorrência na API do Java 8 &  &  &  \\ \hline
+            Uma análise comparativa entre threads e green threads no Java &  &  &  \\ \hline
+            Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads &  &  &  \\ \hline
+        \end{tabularx}
+    \end{quadro}
+\end{landscape}
+
+\end{document}
