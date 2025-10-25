@@ -30,6 +30,8 @@
 \usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{pdfpages}
+\usepackage{float}
+\usepackage{caption}
 
 \titulo{ESCREVER O TÍTULO AQUI} 
 \autor{STEPHANYE CRISTINE ANTUNES DE CUNTO} 
@@ -56,7 +58,8 @@
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
 
-\newfloat[chapter]{quadro}{loq}{\quadroname}
+%\newfloat[chapter]{quadro}{loq}{\quadroname} % ver depois erro abntex2.cls
+\newfloat{quadro}{htbp}{loq}[section]
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
 
@@ -72,8 +75,6 @@
 
 \makeindex
 
-\usepackage{float}
-\usepackage{caption}
 \DeclareCaptionLabelSeparator{barr}{\space\textendash\space}
 
 % quadro sempre com legenda acima
@@ -231,7 +232,6 @@
     \textual
     \setcounter{page}{14} 
  
-
     \chapter{Introdução}
     \markright{Introdução}
     \label{chapter:introducao}
@@ -257,6 +257,11 @@
         \end{itemize}
 
         Este trabalho se justifica pela necessidade de compreender as vantagens e limitações das threads virtuais em comparação às threads tradicionais. Os resultados podem fornecer informações relevantes para auxiliar na escolha da abordagem mais adequada em diferentes cenários de aplicações concorrentes.
+
+    \newpage
+
+    
+
     %A introdução é a primeira parte do texto e tem como objetivo apresentar, de forma clara e objetiva, o tema e o contexto da pesquisa. Ela deve despertar o interesse do leitor e situá-lo quanto à relevância do trabalho. Geralmente, a introdução contém:
 
     %    Contextualização – Apresente o tema no cenário em que ele está inserido, destacando dados, fatos ou informações que ajudem a compreender sua importância.
@@ -275,6 +280,7 @@
     % ---------------------------------------------------------------------------------------------
     % Fundamentação Teórica
     % ---------------------------------------------------------------------------------------------
+
     \setcounter{chapter}{1}
     \chapter{Fundamentação Teórica}
     \label{chapter:fundamentacaoTeorica}
@@ -423,7 +429,6 @@
     \chapter{Aplicação / Implementação / Experimento}
     Descrição passo a passo da execução do estudo.
     Apresentação de scripts, fluxogramas, diagramas ou imagens ilustrativas
-
 
     \chapter{Conclusão}
 

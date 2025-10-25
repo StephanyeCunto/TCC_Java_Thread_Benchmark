@@ -568,7 +568,6 @@
   \ifthenelse{\boolean{ABNTEXsumario-abnt-6027-2012}}{%
     \addtocontents{toc}{\vspace{\cftbeforechapterskip}}}{%
     \addtocontents{toc}{\vspace{\cftbeforepartskip}}}%
-}
 % -----
 
 % ---
@@ -1004,7 +1003,7 @@
 % Ambiente para alineas e e subalineas (incisos)
 % ABNT NBR 6024/2012 - 4.2 e 4.3
 \newlist{alineas}{enumerate}{2}
-\setlist[alineas,1]{label={\alph*)},topsep=0pt,itemsep=0pt,leftmargin=\parindent+\labelwidth-\labelsep}%
+\setlist[alineas,1]{label={\alph*},topsep=0pt,itemsep=0pt,leftmargin=\parindent+\labelwidth-\labelsep}%
 \setlist[alineas,2]{label={--},topsep=0pt,itemsep=0pt,leftmargin=*}
 \newlist{subalineas}{enumerate}{1}
 \setlist[subalineas,1]{label={--},topsep=0pt,itemsep=0pt,leftmargin=*}%
