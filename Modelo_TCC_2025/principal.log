@@ -1,6 +1,6 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  23 OCT 2025 14:11
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.9.11)  25 OCT 2025 10:34
  restricted system commands enabled.
-**principal.tex
+**principal
 (./principal.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
@@ -1146,7 +1146,7 @@ File: ppluatex.def 2025/07/23 v0.6g Pdfpages driver for LuaTeX (AM)
 \c@AM@survey=\count422
 \AM@templatesizebox=\box111
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 91.
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
 \c@quadro=\count423
 \c@loqdepth=\count424
 \cftbeforequadroskip=\skip269
@@ -1197,27 +1197,27 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = principal.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-Package hyperref Info: Link coloring ON on input line 159.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+Package hyperref Info: Link coloring ON on input line 87.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -1225,57 +1225,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 159.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 159.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 159.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 159.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 159.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 159.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 159.
-LaTeX Font Info:    Redeclaring math accent \check on input line 159.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 159.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 159.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 159.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 159.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 159.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 87.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 87.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 87.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 87.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 87.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 87.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 87.
+LaTeX Font Info:    Redeclaring math accent \check on input line 87.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 87.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 87.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 87.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 87.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 159.
-
+(Font)              `operators' in the math version `normal' on input line 87.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 159.
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 87.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 159.
+(Font)              `operators' in the math version `bold' on input line 87.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 159.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 87.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 159.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 159.
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 159.
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 159.
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 159.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 87.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 159.
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 159.
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 159.
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 87.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 159.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 87.
 \myptabbox=\box114
 \myptabboxwidth=\skip272
 
@@ -1303,13 +1302,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 159.
-Package microtype Info: Applying patch `item' on input line 159.
-Package microtype Info: Applying patch `toc' on input line 159.
-Package microtype Info: Applying patch `eqnum' on input line 159.
-Package microtype Info: Applying patch `footnote' on input line 159.
-Package microtype Info: Applying patch `verbatim' on input line 159.
-LaTeX Info: Redefining \microtypesetup on input line 159.
+LaTeX Info: Redefining \microtypecontext on input line 87.
+Package microtype Info: Applying patch `item' on input line 87.
+Package microtype Info: Applying patch `toc' on input line 87.
+Package microtype Info: Applying patch `eqnum' on input line 87.
+Package microtype Info: Applying patch `footnote' on input line 87.
+Package microtype Info: Applying patch `verbatim' on input line 87.
+LaTeX Info: Redefining \microtypesetup on input line 87.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1341,7 +1340,7 @@ Package caption Info: End \AtBeginDocument code.
 
 
 LaTeX Font Warning: Font shape `T1/Arial(0)/b/n' undefined
-(Font)              using `T1/Arial(0)/m/n' instead on input line 189.
+(Font)              using `T1/Arial(0)/m/n' instead on input line 98.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Arial' (encoding: TU).
@@ -1350,8 +1349,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 ! Undefined control sequence.
 \imprimirdata ->\thedate 
                          
-l.192 \imprimircapa
-                   
+l.101     \imprimircapa
+                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1365,9 +1364,9 @@ and I'll forget about whatever was undefined.
 {/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `T1/Arial(0)/m/it' undefined
-(Font)              using `T1/Arial(0)/m/n' instead on input line 209.
+(Font)              using `T1/Arial(0)/m/n' instead on input line 103.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 209
+LaTeX Font Info:    Trying to load font information for U+msa on input line 103
 .
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1375,7 +1374,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 209
+LaTeX Font Info:    Trying to load font information for U+msb on input line 103
 .
 
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1391,7 +1390,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 ! Undefined control sequence.
 \imprimirdata ->\thedate 
                          
-l.209 
+l.103 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1411,8 +1410,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 ! Undefined control sequence.
 \imprimirdata ->\thedate 
                          
-l.220 	\imprimirlocal, \imprimirdata
-                                    -
+l.114 ...            \imprimirlocal, \imprimirdata
+                                                  -
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1420,12 +1419,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Overfull \hbox (16.44858pt too wide) in paragraph at lines 224--229
+Overfull \hbox (16.44858pt too wide) in paragraph at lines 118--123
 []  [] 
  []
 
@@ -1435,8 +1434,8 @@ Overfull \hbox (16.44858pt too wide) in paragraph at lines 224--229
 ! Undefined control sequence.
 \imprimirdata ->\thedate 
                          
-l.300      {\normalsize\imprimirdata
-                                    }
+l.155             {\normalsize\imprimirdata
+                                           }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1457,66 +1456,77 @@ and I'll forget about whatever was undefined.
 
 
 ]
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-
 
 [6
 
-
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
-Missing character: There is no – (U+2013) in font ec-lmr12!
 ]
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+
 
 [7
 
-] (./principal.lof)
+
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+Missing character: There is no – (U+2013) in font ec-lmr12!
+]
 
 [8
 
-] (./principal.loq)
+] (./principal.lof)
 
 [9
 
-] (./principal.lot)
+] (./principal.loq)
 
 [10
 
-]
+] (./principal.lot)
 
 [11
+
+]
+
+[12
+
+
+]
+
+[13
 
 
 ] (./principal.toc)
 
-[12
+[14
 
 ]
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
 [14
 
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+Arial(0) on input l
-ine 464.
-LaTeX Font Info:    No file TS1Arial(0).fd. on input line 464.
+ine 254.
+LaTeX Font Info:    No file TS1Arial(0).fd. on input line 254.
 
 
 LaTeX Font Warning: Font shape `TS1/Arial(0)/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 464.
+(Font)              for symbol `textbullet' on input line 254.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Arial' (encoding: TS1).
@@ -1525,15 +1535,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 489.
+(babel)             Reported on input line 279.
 [15]
-<imagens/Figura 1.png, id=147, 437.83575pt x 380.01974pt>
+<imagens/Figura 1.png, id=158, 437.83575pt x 380.01974pt>
 File: imagens/Figura 1.png Graphic file (type png)
 <use imagens/Figura 1.png>
-Package luatex.def Info: imagens/Figura 1.png  used on input line 504.
+Package luatex.def Info: imagens/Figura 1.png  used on input line 294.
 (luatex.def)             Requested size: 227.5pt x 197.46063pt.
 
-Overfull \hbox (4.35811pt too wide) in paragraph at lines 547--559
+Overfull \hbox (4.35811pt too wide) in paragraph at lines 335--347
 [][] 
  []
 
@@ -1671,26 +1681,35 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 )
 
 Here is how much of LuaTeX's memory you used:
- 25732 strings out of 470117
+ 25747 strings out of 470117
  125061,1144653 words of node,token memory allocated
  1520 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 2 penalty, 4 glyph, 82
  attribute, 199 glue_spec, 18 attribute_list, 2 write, 6 pdf_action nodes
    avail lists: 1:3,2:2586,3:249,4:106,5:300,6:82,7:6723,8:103,9:556,10:27,11:88
 9
- 53447 multiletter control sequences out of 65536+600000
+ 53453 multiletter control sequences out of 65536+600000
  76 fonts using 13088087 bytes
- 99i,13n,105p,1005b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,105p,1001b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'section*.18'
+
+warning  (pdf backend): unreferenced destination with name 'section*.22'
+
+warning  (pdf backend): unreferenced destination with name 'table.caption.19'
+
+warning  (pdf backend): unreferenced destination with name 'figure.caption.16'
 <</Users/stephanye/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/
 ec/tcrm1200.600pk>>{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/lm/l
 m-ec.enc}</System/Library/Fonts/Supplemental/Arial Bold.ttf></System/Library/Fon
 ts/Supplemental/Arial.ttf></usr/local/texlive/2025basic/texmf-dist/fonts/type1/p
-ublic/lm/lmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/l
-m/lmr12.pfb>
-Output written on principal.pdf (22 pages, 237173 bytes).
+ublic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1
+/public/lm/lmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public
+/lm/lmr12.pfb>
+Output written on principal.pdf (24 pages, 243205 bytes).
 
-PDF statistics: 315 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 131072)
- 203 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 339 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 87 named destinations out of 1000 (max. 131072)
+ 219 words of extra memory for PDF output out of 10000 (max. 100000000)
 

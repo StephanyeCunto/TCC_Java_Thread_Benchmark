@@ -2,108 +2,57 @@
 % ABNT NBR 6023/2025, 14724/2024, 10520/2023 - Trabalhos academicos
 %Atualizado em agosto de 2025 (Alessandra Martins Coelho)
 
-\documentclass[
-	% -- opções da classe memoir --
-	12pt,				% tamanho da fonte
-	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	oneside,			% para impressão em verso e anverso. Oposto a oneside
-	a4paper,			% tamanho do papel. 
-	% -- opções da classe abntex2 --
-	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
-	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
-	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
-	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
-	% -- opções do pacote babel --
-	english,			% idioma adicional para hifenização
-	french,				% idioma adicional para hifenização
-	spanish,			% idioma adicional para hifenização
-	brazil,				% o último idioma é o principal do documento
-	]{abntex2}
+\documentclass[12pt, openright, oneside, a4paper, english,	french,	spanish, brazil	]{abntex2}
 
-% Fonte Arial verdadeira
 \usepackage{fontspec}
 \setmainfont{Arial}
 \setsansfont{Arial}
 \bibliographystyle{abntex2-alf-antigo}
-\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
-\renewcommand\UrlFont{\normalfont} % usa a fonte normal do documento
+\usepackage[alf]{abntex2cite}	
+\renewcommand\UrlFont{\normalfont} 
 % \usepackage{lmodern}
-\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
-\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
-\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
-\usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gráficos
-\usepackage{microtype} 			% para melhorias de justificação
-\usepackage{lipsum}				% para ger
-
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}		
+\usepackage{indentfirst}		
+\usepackage{color}				
+\usepackage{graphicx}			
+\usepackage{microtype} 			
+\usepackage{lipsum}				
 \usepackage{verbatimbox}
-\usepackage{cmap}				% Mapear caracteres especiais no PDF
-\usepackage{lastpage}			% Usado pela Ficha catalográfica
-\usepackage{xcolor}	 %This is some \textcolor{red}{red} text.
-\usepackage{underscore}         % Permite o uso do caractere _ˆ
-%\usepackage[final]{pdfpages}    % Permite a inclusão de páginas de outros documentos PDF no documento atual.
-\usepackage{multicol}           % Permite a criação de colunas no documento
+\usepackage{cmap}				
+\usepackage{lastpage}			
+\usepackage{xcolor}	
+\usepackage{underscore}         
+\usepackage{multicol}          
 \usepackage{placeins}
-
-% pacotes para formulas matematicas
 \usepackage{amsmath}
 \usepackage{amssymb}
-
 \usepackage{hyperref}
-
 \usepackage{setspace}
 \usepackage{pdfpages}
 
-% Aqui vem a redefinição final:
-% ------------------------------------------------------------------------
-% Informações de dados para CAPA e FOLHA DE ROSTO
-% ------------------------------------------------------------------------
-
-\titulo{ESCREVER O TÍTULO AQUI} %caixa alta, inclusive subtítulo
-
-\autor{STEPHANYE CRISTINE ANTUNES DE CUNTO} %nome em caixa-alta
+\titulo{ESCREVER O TÍTULO AQUI} 
+\autor{STEPHANYE CRISTINE ANTUNES DE CUNTO} 
 \local{RIO POMBA - MG}
-
-\orientador{ME. BIANCA PORTES DE CASTRO} %CAIXA ALTA
+\orientador{ME. BIANCA PORTES DE CASTRO} 
 \coorientador{DR. JOSÉ RUI CASTRO DE SOUSA}
 \tipotrabalho{Trabalho de Conclusão de Curso}
 \preambulo{Trabalho de Conclusão de curso apresentado ao \textit{Campus} Rio Pomba, do Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais, como parte das exigências do curso de Bacharelado em Ciência da Computação para a obtenção do título de Bacharel em Ciência da Computação.}
-% ---
 
-% alterando o aspecto da cor azul
 \definecolor{blue}{RGB}{41,5,195}
 
-% informações do PDF
 \makeatletter
-\hypersetup{ %TODO: Ver se preciso mudar algo aqui
-     	%pagebackref=true,
-		pdftitle={\@title}, 
-		pdfauthor={\@author},
-    	pdfsubject={\imprimirpreambulo},
-	    pdfcreator={\@author}, %procurar
-		pdfkeywords={ciência da computação}{trabalho acadêmico}{constraint programming}{programação por restrições}{examination timetabling}, 
-		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=black,          	% color of internal links
-    	citecolor=black,        		% color of links to bibliography
-    	filecolor=black,      		% color of file links
-		urlcolor=black,
-		bookmarksdepth=4
-}
+    \hypersetup{ 
+        pdftitle={\@title}, pdfauthor={\@author}, pdfsubject={\imprimirpreambulo}, pdfcreator={\@author},
+        pdfkeywords={ciência da computação}{trabalho acadêmico}{constraint programming}{programação por restrições}{examination timetabling}, 
+        colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, bookmarksdepth=4       	
+    }
 \makeatother
-% --- 
 
-% ---
-% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
-% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
 \makeatletter
-\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+    \setlength{\@fptop}{5pt}
 \makeatother
-% ---
 
-% ---
-% Possibilita criação de Quadros e Lista de quadros.
-% Ver https://github.com/abntex/abntex2/issues/176
-%
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
 
@@ -111,32 +60,18 @@
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
 
-% configurações para atender às regras da ABNT
 \setfloatadjustment{quadro}{\centering}
 \counterwithout{quadro}{chapter}
 \renewcommand{\cftquadroname}{\quadroname\space} 
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
-\setfloatlocations{quadro}{hbtp} % Ver https://github.com/abntex/abntex2/issues/176
-% ---
+\setfloatlocations{quadro}{hbtp} 
 
-% --- 
-% Espaçamentos entre linhas e parágrafos 
-% --- 
-
-% O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}  
 
-% Controle do espaçamento entre um parágrafo e outro:
-\setlength{\parskip}{0.2cm}  % tente também \onelineskip
-
-% ---
-% compila o indice
-% ---
 \makeindex
-% ---
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{float}
 \usepackage{caption}
 \DeclareCaptionLabelSeparator{barr}{\space\textendash\space}
@@ -146,551 +81,381 @@
 
 % no preâmbulo, junto ao seu setup de caption
 \captionsetup[quadro]{%
-  position=top,                 % legenda acima
-  justification=raggedright,    % alinhamento à esquerda
-  singlelinecheck=false         % sem centralizar linha única
+  position=top, justification=raggedright, singlelinecheck=false         
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% ----
-% Início do documento
-% ----
 \begin{document}
 
-\captionsetup{
-  font= small,
-  labelfont=bf,
-  textfont=small,
-  labelsep=barr,
-  justification=justified,
-  singlelinecheck=false
-}
+    \captionsetup{ font= small, labelfont=bf, textfont=small, labelsep=barr, justification=justified, singlelinecheck=false }
 
+    \selectlanguage{brazil}
 
+    \frenchspacing 
 
-% Seleciona o idioma do documento (conforme pacotes do babel)
-%\selectlanguage{english}
-\selectlanguage{brazil}
-
-% Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
-
-% ----------------------------------------------------------
-% ELEMENTOS PRÉ-TEXTUAIS
-% ----------------------------------------------------------
-% \pretextual
-
-% ---
-% Capa
-% ---
-\begin{center}
-\textbf{ 
-INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO SUDESTE DE MINAS GERAIS - CAMPUS RIO POMBA}
-\end{center}
-
-\imprimircapa
-% ---
-
-% ---
-% Folha de rosto
-% (o * indica que haverá a ficha bibliográfica)
-% ---
-\imprimirfolhaderosto*
-% ---
-% Inserir a ficha bibliografica
-% ---
-%TODO: Inserir a oficial
-% Para inserir a ficha catalográfica oficial da biblioteca, utilize:
-% \begin{fichacatalografica}
-%     \includepdf{fig_ficha_catalografica.pdf}
-% \end{fichacatalografica}
-% Para inserir a ficha catalográfica temporária, utilize:
-
-\begin{fichacatalografica}
-	\vspace*{\fill}					% Posição vertical
-	\hrule							% Linha horizontal
-	\begin{center}					% Minipage Centralizado
-	\begin{minipage}[c]{12.5cm}		% Largura
-	
-	FICHA CATALOGRÁFICA TEMPORÁRIA \\
-	\imprimirautor
-	
-	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-	\imprimirlocal, \imprimirdata-
-
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
-	
-	\hspace{0.5cm}
-	 \parbox[t]{\textwidth}{%
-  \normalsize
-  \imprimirtipotrabalho~--~Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas, Campus Rio Pomba
-}
-
-	
-	\end{minipage}
-	\end{center}
-	\hrule
-\end{fichacatalografica}
-% ---
-
-% ---
-% Inserir errata
-% ---
-%\begin{errata}
-%Elemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. %Exemplo:
-
-%\vspace{\onelineskip}
-%
-%FERRIGNO, C. R. A. \textbf{Tratamento de neoplasias ósseas apendiculares com
-%reimplantação de enxerto ósseo autólogo autoclavado associado ao plasma
-%rico em plaquetas}: estudo crítico na cirurgia de preservação de membro em
-%cães. 2011. 128 f. Tese (Livre-Docência) - Faculdade de Medicina Veterinária e
-%Zootecnia, Universidade de São Paulo, São Paulo, 2011.
-
-%\begin{table}[htb]
-%\center
-%\footnotesize
-%\begin{tabular}{|p{1.4cm}|p{1cm}|p{3cm}|p{3cm}|}
-%  \hline
-%   \textbf{Folha} & \textbf{Linha}  & \textbf{Onde se lê} % & \textbf{Leia-se}  \\
-%    \hline
-%    1 & 10 & auto-conclavo & autoconclavo\\
-%   \hline
-%\end{tabular}
-%\end{table}
-%
-%\end{errata}
-% ---
-
-% ---
-% Inserir folha de aprovação
-% ---
-%TODO: Inserir oficial
-% Se possuir a folha de aprovação emitida pela biblioteca, utilizar o comando abaixo para inserir o PDF. Senão, use o modelo temporário abaixo
-% \includepdf{folhadeaprovacao.pdf}
-
-
-\begin{folhadeaprovacao}
-
-   \begin{center}
-     {\ABNTEXchapterfont\normalsize\imprimirautor}
-
-     \vspace*{\fill}\vspace*{\fill}
-     {\ABNTEXchapterfont\bfseries\normalsize\imprimirtitulo}
-     \vspace*{\fill}
-    
-     \hspace{.45\textwidth}
-     \begin{minipage}{.5\textwidth}
-         \imprimirpreambulo
-     \end{minipage}%
-     \vspace*{\fill}
-    \end{center}
-    
-    Trabalho aprovado em XX de XXXXX de XXXX.
-
-    \assinatura{\textbf{\imprimirorientador} \\Orientador, IF Sudeste MG - Rio Pomba} 
-    \assinatura{\textbf{TÍTULO E NOME DO MEMBRO DA BANCA} \\Coorientadora, IF Sudeste MG - Rio Pomba}
-    \assinatura{\textbf{TÍTULO E NOME DO MEMBRO DA BANCA} \\ IF Sudeste MG - Rio Pomba}
-      
     \begin{center}
-     \vspace*{0.5cm}
-     {\normalsize\imprimirlocal}
-     \par
-     {\normalsize\imprimirdata}
-     \vspace*{1cm}
-   \end{center}
-  
-\end{folhadeaprovacao}
-
-% ---
-
-% ---
-% Dedicatória
-% ---
-
-\begin{dedicatoria}
-    \vspace*{\fill}
-    \begin{flushright}
-        \hspace*{4cm}
-        \parbox{11.2cm}{
-            \raggedleft 
-            \textit{
-            Dedico à memória das pessoas queridas que partiram antes de ver este momento se realizar, mas que deixaram marcas profundas e inesquecíveis na minha vida: aos meus avós Evanir Faria da Luz e Paulo José J. da Luz, e ao meu tio Paulo Sérgio Faria da Luz, que tornaram minha infância incrível com sua presença e carinho; à minha tia Denise Ribeiro Albuquerque, que me estendeu a mão nos dias mais difíceis, quando eu mais precisava; e ao meu grande amigo João Augusto Souza dos Santos, que, com sua sinceridade firme e verdadeira, me inspirou a seguir em frente e nunca duvidar do meu potencial. Vocês seguem vivos nas minhas lembranças, e é com elas que alcanço esta conquista.
-            }
+        \textbf{ 
+            INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO SUDESTE DE MINAS GERAIS - CAMPUS RIO POMBA
         }
-    \end{flushright}
-\end{dedicatoria}
-% % ---
+    \end{center}
 
-% ---}
-% Agradecimentos
-% ---
-\begin{agradecimentos}
+    \imprimircapa
+    \imprimirfolhaderosto*
 
- Aos meus pais, Juscilaine Faria da Luz e Marco Antônio Ribeiro, minha mais profunda gratidão por todo o amor, dedicação e, principalmente, pela luta diária para me manter firme e tornar tudo isto possível.
+    \begin{fichacatalografica}
+        \vspace*{\fill}					
+        \hrule							
+        \begin{center}					
+            \begin{minipage}[c]{12.5cm}		
+            
+                FICHA CATALOGRÁFICA TEMPORÁRIA \\
+                \imprimirautor
+                
+                \hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+                \imprimirlocal, \imprimirdata-
 
-À minha irmã Caroline Luz Rodrigues, agradeço pela presença, pelo companheirismo e pelo apoio incondicional ao longo de toda esta caminhada.
+                \hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+                
+                \hspace{0.5cm}
+                \parbox[t]{\textwidth}{%
+                    \normalsize
+                    \imprimirtipotrabalho~--~Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas, Campus Rio Pomba
+                }
 
-Sou também imensamente grato à minha companheira Maria Eduarda Bhering da Silva Coura, por ter enfrentado comigo todos os desafios deste percurso, mesmo diante da distância e das adversidades.
+            \end{minipage}
+        \end{center}
+        \hrule
+    \end{fichacatalografica}
 
-Aos amigos que estiveram ao meu lado, tanto os de longa data quanto aqueles que surgiram durante o curso, agradeço por cada momento compartilhado, pelas conversas, pela ajuda mútua e por tornarem esta trajetória mais leve e significativa.
+    \begin{folhadeaprovacao}
 
-Ao professor Gustavo Henrique da Rocha Reis, meu orientador, e à professora Alessandra Martins Coelho, coorientadora, deixo meu sincero agradecimento pela escuta atenta e pelas contribuições decisivas que me guiaram durante todo o processo de construção deste trabalho.
+        \begin{center}
+            {\ABNTEXchapterfont\normalsize\imprimirautor}
 
-Por fim, agradeço a todas as pessoas que, direta ou indiretamente, fizeram parte e me auxiliaram de alguma forma nesta jornada.
-\end{agradecimentos}
-% ---
+            \vspace*{\fill}\vspace*{\fill}
+            {\ABNTEXchapterfont\bfseries\normalsize\imprimirtitulo}
+            \vspace*{\fill}
+            
+            \hspace{.45\textwidth}
+            \begin{minipage}{.5\textwidth}
+                \imprimirpreambulo
+            \end{minipage}%
+            \vspace*{\fill}
+        \end{center}
+            
+        Trabalho aprovado em XX de XXXXX de XXXX.
 
-% ---
-% Epígrafe
-% ---
-% \begin{epigrafe}
-%     \vspace*{\fill}
-% 	\begin{flushright}
-%  		\textit{``Os olhos não são apenas\\
-%  		 o espelho da alma,\\
-%  		mas também do corpo.''\\
-%  		(Ignatz von Peczelly, 1989)}
-% 	\end{flushright}
-% \end{epigrafe}
-% ---
+        \assinatura{\textbf{\imprimirorientador} \\Orientador, IF Sudeste MG - Rio Pomba} 
+        \assinatura{\textbf{TÍTULO E NOME DO MEMBRO DA BANCA} \\Coorientadora, IF Sudeste MG - Rio Pomba}
+        \assinatura{\textbf{TÍTULO E NOME DO MEMBRO DA BANCA} \\ IF Sudeste MG - Rio Pomba}
+        
+        \begin{center}
+            \vspace*{0.5cm}
+            {\normalsize\imprimirlocal}
+            \par
+            {\normalsize\imprimirdata}
+            \vspace*{1cm}
+        \end{center}
+    
+    \end{folhadeaprovacao}
 
-% ---
-% RESUMOS
-% ---
+    \begin{dedicatoria}
+        \vspace*{\fill}
+        \begin{flushright}
+            \hspace*{4cm}
+            \parbox{11.2cm}{
+                \raggedleft 
+                \textit{
+                }
+            }
+        \end{flushright}
+    \end{dedicatoria}
+
+    \begin{agradecimentos}
+        Agradecimentos
+    \end{agradecimentos}
+
+    \begin{epigrafe}
+        \vspace*{\fill}
+     	\begin{flushright}
+      		\textit{
+                ``Os olhos não são apenas\\
+      		    o espelho da alma,\\
+      		    mas também do corpo.''\\
+      		    (Ignatz von Peczelly, 1989)
+            }
+     	\end{flushright}
+     \end{epigrafe}
+
+    \begin{resumo}
+        O resumo é um texto breve que apresenta, de forma clara e objetiva, os principais elementos da monografia. Ele deve permitir que o leitor compreenda rapidamente sobre o que é o trabalho, qual foi a abordagem adotada e quais foram os resultados e conclusões.
+        Na ABNT (NBR 6028), recomenda-se que o resumo seja escrito em parágrafo único, sem subdivisões e sem citações diretas, geralmente com 150 a 500 palavras. O que incluir no resumo: Tema e objetivo – Apresente o assunto principal e o objetivo geral do trabalho; 
+            Metodologia – Informe de forma resumida o método, técnicas ou procedimentos utilizados; Resultados – Destaque os resultados mais relevantes obtidos na pesquisa; 
+            Conclusão – Apresente a principal contribuição ou conclusão do estudo. Dicas importantes: Escreva no tempo passado, já que o trabalho foi realizado. Evite usar abreviações pouco conhecidas ou siglas sem explicação. Não insira informações que não estejam no corpo do trabalho. Revise para garantir clareza, coerência e objetividade.
+        Lembre-se de incluir palavras-chave logo abaixo do resumo (entre três e cinco termos que representem bem o conteúdo do trabalho, separados com ponto e vírgula). Importante: O resumo deve ser escrito após a conclusão do trabalho, quando todos os resultados já estão definidos. Assim, será fiel ao conteúdo final da monografia.
+
+        \noindent \textbf{Palavras-Chave:} 
+    \end{resumo}
 
 
-\begin{resumo}
+    \begin{resumo}[Abstract]
+        \begin{otherlanguage*}{english}
+            Tradução do resumo para a língua inglesa.
+                
+            \noindent\textbf{Key-words}: 
+        \end{otherlanguage*}
+    \end{resumo}
 
-O resumo é um texto breve que apresenta, de forma clara e objetiva, os principais elementos da monografia. Ele deve permitir que o leitor compreenda rapidamente sobre o que é o trabalho, qual foi a abordagem adotada e quais foram os resultados e conclusões.
-Na ABNT (NBR 6028), recomenda-se que o resumo seja escrito em parágrafo único, sem subdivisões e sem citações diretas, geralmente com 150 a 500 palavras. O que incluir no resumo: Tema e objetivo – Apresente o assunto principal e o objetivo geral do trabalho; 
-    Metodologia – Informe de forma resumida o método, técnicas ou procedimentos utilizados; Resultados – Destaque os resultados mais relevantes obtidos na pesquisa; 
-    Conclusão – Apresente a principal contribuição ou conclusão do estudo. Dicas importantes: Escreva no tempo passado, já que o trabalho foi realizado. Evite usar abreviações pouco conhecidas ou siglas sem explicação. Não insira informações que não estejam no corpo do trabalho. Revise para garantir clareza, coerência e objetividade.
-Lembre-se de incluir palavras-chave logo abaixo do resumo (entre três e cinco termos que representem bem o conteúdo do trabalho, separados com ponto e vírgula). Importante: O resumo deve ser escrito após a conclusão do trabalho, quando todos os resultados já estão definidos. Assim, será fiel ao conteúdo final da monografia.
+    \pdfbookmark[0]{\listfigurename}{lof}
+    \listoffigures*
+    \cleardoublepage
 
-\noindent \textbf{Palavras-Chave:} 
-\end{resumo}
+    \pdfbookmark[0]{\listofquadrosname}{loq}
+    \listofquadros*
+    \cleardoublepage
+    \pdfbookmark[0]{\listtablename}{lot}
+    \listoftables*
+    \cleardoublepage
 
+    \begin{siglas}
+        \item[XXX]     \textit{INSERIR EM ORDEM ALFABÉTICA}
+    \end{siglas}
 
-\begin{resumo}[Abstract]
+    \begin{simbolos}
+        \item[$ \Lambda $] Lambda
+    \end{simbolos}
 
- \begin{otherlanguage*}{english}
+    \pdfbookmark[0]{\contentsname}{toc}
+    \tableofcontents*
+    \cleardoublepage
+
+    \textual
+    \setcounter{page}{14} 
  
-Tradução do resumo para a língua inglesa.
-    
-\noindent\textbf{Key-words}: 
- \end{otherlanguage*}
-\end{resumo}
 
+    \chapter{Introdução}
+    \markright{Introdução}
+    \label{chapter:introducao}
 
-% ---
-% inserir lista de ilustrações
-% ---
-\pdfbookmark[0]{\listfigurename}{lof}
-\listoffigures*
-\cleardoublepage
-% ---
+        Uma thread é a menor unidade de processamento existente dentro de um processo. Ela é composta por um identificador de thread (ID), um contador de programa, um conjunto de registradores e uma pilha. As threads compartilham entre si sua seção de código, a seção de dados e outros recursos do sistema operacional, como arquivos abertos e sinais. Cada processo pode conter múltiplas threads, o que permite a execução simultânea de diferentes partes de um programa ou  de diferentes tarefas \cite{silberschatz2018operating}.
 
-% ---
-% inserir lista de quadros
-% ---
-\pdfbookmark[0]{\listofquadrosname}{loq}
-\listofquadros*
-\cleardoublepage
-% ---
+        A utilização de threads traz diversos benefícios. Em problemas que envolvem tarefas que exigem alto processamento (CPU-bound) a execução paralela em múltiplos núcleos permite reduzir o tempo total de cálculo. Em problemas que dependem de operações de entrada e saída (I/O-bound) as threads possibilitam que a CPU continue processando outras tarefas enquanto aguarda a conclusão dessas operações, evitando ociosidade. Além disso, em sistemas reativos e servidores, o uso de threads permite que sistemas que atendem múltiplos usuários simultaneamente mantenham respostas rápidas e contínuas, mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Dessa forma, a utilização adequada de threads é usada como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
 
-% ---
-% inserir lista de tabelas
-% ---
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
-\cleardoublepage
-% ---
+        O relatório State of the Octoverse 2024 \cite{github2024octoverse} demonstra que a linguagem de programação Java está entre as cinco linguagens mais utilizadas na plataforma, o que reforça sua importância como uma das principais tecnologias do desenvolvimento de software.
 
+        No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que são uma forma de implementação de Green Threads. Diferente das threads tradicionais, que são gerenciadas diretamente pelo sistema operacional (SO), as Green Threads são controladas pela linguagem ou pela biblioteca de execução. Nesse contexto, as threads virtuais são threads gerenciadas pela Java Virtual Machine (JVM). Elas podem apresentar comportamentos diferentes das threads tradicionais, enquanto o escalonamento das threads tradicionais é realizado pelo SO, determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM.
 
-\begin{siglas}
-    \item[XXX]     \textit{INSERIR EM ORDEM ALFABÉTICA}
-\end{siglas}
+        O uso de threads tradicionais pode gerar overhead e limitar a escalabilidade. As threads virtuais surgem como uma alternativa para contornar essas limitações. Este trabalho investiga como a utilização de threads virtuais pode impactar o desempenho e a escalabilidade de aplicações concorrentes.
 
-% ---
+        O objetivo deste trabalho é analisar as diferenças de desempenho entre threads tradicionais e threads virtuais, avaliando como cada abordagem impacta a execução de aplicações concorrentes.
 
-% ---
-% inserir lista de símbolos
-% ---
-% \begin{simbolos}
-%  % \item[$ \Lambda $] Lambda
-% \end{simbolos}
-% ---
+        Para alcançar o objetivo geral deste trabalho, foram definidos os seguintes objetivos específios:
 
-% ---
-% inserir o sumario
-% ---
-\pdfbookmark[0]{\contentsname}{toc}
-\tableofcontents*
-\cleardoublepage
-% ---
+        \begin{itemize}
+            \item Implementar protótipos de aplicações concorrentes utilizando ambas as threads;
+            \item Medir e comparar métricas de desempenho;
+            \item Analisar os resultados obtidos, identificando vantagens e limitações.
+        \end{itemize}
 
+        Este trabalho se justifica pela necessidade de compreender as vantagens e limitações das threads virtuais em comparação às threads tradicionais. Os resultados podem fornecer informações relevantes para auxiliar na escolha da abordagem mais adequada em diferentes cenários de aplicações concorrentes.
+    %A introdução é a primeira parte do texto e tem como objetivo apresentar, de forma clara e objetiva, o tema e o contexto da pesquisa. Ela deve despertar o interesse do leitor e situá-lo quanto à relevância do trabalho. Geralmente, a introdução contém:
 
+    %    Contextualização – Apresente o tema no cenário em que ele está inserido, destacando dados, fatos ou informações que ajudem a compreender sua importância.
 
-% ---------------------------------------------------------------------------------------------
-% ELEMENTOS TEXTUAIS
-% ---------------------------------------------------------------------------------------------
-\textual
-\setcounter{page}{14} %VERIFICAR QUANTAS PÁGINAS ANTERIORES A ESTA
-% ---------------------------------------------------------------------------------------------
-% Introdução
-% ---------------------------------------------------------------------------------------------
+    %   Problema de Pesquisa – Indique claramente a questão que motivou o estudo, explicitando qual lacuna ou necessidade será abordada.
 
-\chapter{Introdução}
-\markright{Introdução}
-\label{chapter:introducao}
+    %   Justificativa – Explique a relevância do trabalho, tanto acadêmica quanto prática, e por que ele merece ser desenvolvido.
 
-Uma thread é a menor unidade de processamento existente dentro de um processo. Ela é composta por um identificador de thread (ID), um contador de programa, um conjunto de registradores e uma pilha. As threads compartilham entre si sua seção de código, a seção de dados e outros recursos do sistema operacional, como arquivos abertos e sinais. Cada processo pode conter múltiplas threads, o que permite a execução simultânea de diferentes partes de um programa ou  de diferentes tarefas \cite{silberschatz2018operating}.
+    %   Objetivos – Informe o objetivo geral e, se necessário, os objetivos específicos, que detalham as etapas para alcançar o resultado pretendido.
 
-A utilização de threads traz diversos benefícios. Em problemas que envolvem tarefas que exigem alto processamento (CPU-bound) a execução paralela em múltiplos núcleos permite reduzir o tempo total de cálculo. Em problemas que dependem de operações de entrada e saída (I/O-bound) as threads possibilitam que a CPU continue processando outras tarefas enquanto aguarda a conclusão dessas operações, evitando ociosidade. Além disso, em sistemas reativos e servidores, o uso de threads permite que sistemas que atendem múltiplos usuários simultaneamente mantenham respostas rápidas e contínuas, mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Dessa forma, a utilização adequada de threads é usada como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
+    %   Estrutura do Trabalho – Descreva brevemente como o texto está organizado, citando os capítulos ou seções.
 
-O relatório State of the Octoverse 2024 \cite{github2024octoverse} demonstra que a linguagem de programação Java está entre as cinco linguagens mais utilizadas na plataforma, o que reforça sua importância como uma das principais tecnologias do desenvolvimento de software.
+    %   A introdução não deve apresentar resultados, conclusões ou discussões. Ela prepara o terreno para o desenvolvimento do trabalho.
+    %   Normalmente, é escrita no final da monografia, quando o autor já tem clareza total sobre todo o conteúdo.
 
-No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que são uma forma de implementação de Green Threads. Diferente das threads tradicionais, que são gerenciadas diretamente pelo sistema operacional (SO), as Green Threads são controladas pela linguagem ou pela biblioteca de execução. Nesse contexto, as threads virtuais são threads gerenciadas pela Java Virtual Machine (JVM). Elas podem apresentar comportamentos diferentes das threads tradicionais, enquanto o escalonamento das threads tradicionais é realizado pelo SO, determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM.
+    % ---------------------------------------------------------------------------------------------
+    % Fundamentação Teórica
+    % ---------------------------------------------------------------------------------------------
+    \setcounter{chapter}{1}
+    \chapter{Fundamentação Teórica}
+    \label{chapter:fundamentacaoTeorica}
 
-O uso de threads tradicionais pode gerar overhead e limitar a escalabilidade. As threads virtuais surgem como uma alternativa para contornar essas limitações. Este trabalho investiga como a utilização de threads virtuais pode impactar o desempenho e a escalabilidade de aplicações concorrentes.
+        Exemplo de citação no final do texto \cite{pecb2022iso27002}. 
 
-O objetivo deste trabalho é analisar as diferenças de desempenho entre threads tradicionais e threads virtuais, avaliando como cada abordagem impacta a execução de aplicações concorrentes.
+        Exemplo de citação dentro do texto \citeonline{pecb2022iso27002}.
 
-Para alcançar o objetivo geral deste trabalho, foram definidos os seguintes objetivos específios:
+        Exemplo de uma Figura. Use ref para chamá-la no texto. Figura \ref{fig:figura1}.
+        
+    \begin{figure}[h]
+        \centering
+        \begin{minipage}{0.5\textwidth}
+            \phantomsection
+            \fontsize{10}{12}\selectfont
+            \caption{Pilares da Segurança da Informação.}
+            \includegraphics[width=1\linewidth]{imagens/Figura 1.png}
+            \caption*{\raggedright\small \textbf{Fonte}: \citeonline{bughunt2023triade}.}
+            \label{fig:figura1}
+        \end{minipage}
+    \end{figure}
 
-\begin{itemize}
-\item Implementar protótipos de aplicações concorrentes utilizando ambas as threads;
-\item Medir e comparar métricas de desempenho;
-\item Analisar os resultados obtidos, identificando vantagens e limitações.
-\end{itemize}
+    \section{Para criar um título} 
+        Sempre inserir um texto entre os Títulos
 
-Este trabalho se justifica pela necessidade de compreender as vantagens e limitações das threads virtuais em comparação às threads tradicionais. Os resultados podem fornecer informações relevantes para auxiliar na escolha da abordagem mais adequada em diferentes cenários de aplicações concorrentes.
-%A introdução é a primeira parte do texto e tem como objetivo apresentar, de forma clara e objetiva, o tema e o contexto da pesquisa. Ela deve despertar o interesse do leitor e situá-lo quanto à relevância do trabalho. Geralmente, a introdução contém:
+    \subsection{mais um título}
 
-%    Contextualização – Apresente o tema no cenário em que ele está inserido, destacando dados, fatos ou informações que ajudem a compreender sua importância.
+    Um exemplo de Quadro (Quadro \ref{quad: quadro1}). 
 
-%   Problema de Pesquisa – Indique claramente a questão que motivou o estudo, explicitando qual lacuna ou necessidade será abordada.
-
-%   Justificativa – Explique a relevância do trabalho, tanto acadêmica quanto prática, e por que ele merece ser desenvolvido.
-
-%   Objetivos – Informe o objetivo geral e, se necessário, os objetivos específicos, que detalham as etapas para alcançar o resultado pretendido.
-
-%   Estrutura do Trabalho – Descreva brevemente como o texto está organizado, citando os capítulos ou seções.
-
-%   A introdução não deve apresentar resultados, conclusões ou discussões. Ela prepara o terreno para o desenvolvimento do trabalho.
-%   Normalmente, é escrita no final da monografia, quando o autor já tem clareza total sobre todo o conteúdo.
-
-% ---------------------------------------------------------------------------------------------
-% Fundamentação Teórica
-% ---------------------------------------------------------------------------------------------
-\setcounter{chapter}{1}
-\chapter{Fundamentação Teórica}
-\label{chapter:fundamentacaoTeorica}
-
-     Exemplo de citação no final do texto \cite{pecb2022iso27002}. 
-
-     Exemplo de citação dentro do texto \citeonline{pecb2022iso27002}.
-
-     Exemplo de uma Figura. Use ref para chamá-la no texto. Figura \ref{fig:figura1}.
-    
-\begin{figure}[h]
+    \begin{quadro}[ht]
     \centering
-    \begin{minipage}{0.5\textwidth}
-        \phantomsection
-        \fontsize{10}{12}\selectfont
-        \caption{Pilares da Segurança da Informação.}
-        \includegraphics[width=1\linewidth]{imagens/Figura 1.png}
-        \caption*{\raggedright\small \textbf{Fonte}: \citeonline{bughunt2023triade}.}
-        \label{fig:figura1}
+    \begin{minipage}{0.80\textwidth}
+    \phantomsection
+    \fontsize{10}{12}\selectfont
+    \caption{Panorama dos ataques baseados em engenharia social.} 
+    \begin{tabularx}{\textwidth}{|l|X|}\hline
+        Categoria           & Resultado                                                        \\ \hline
+        Frequência          & 3.661 incidentes, sendo (82,8\%) com vazamento confirmado de dados.    \\ \hline
+        Atores de ameaça    & (100\%) externos (\textit{breaches}).                                        \\ \hline
+        Motivações          & (95\%) financeiras, (5\%) espionagem (\textit{breaches}).                      \\\hline
+        Dados comprometidos & Credenciais (50\%), pessoais (41\%), internos (20\%), outros (14\%). \\ \hline
+    \end{tabularx}
+    \label{quad: quadro1}
+    %\vspace{0.5em}
+    \caption*{\raggedright\small \textbf{Fonte}: \citeonline{verizon2024dbir}, adaptado.}
     \end{minipage}
-\end{figure}
+    \end{quadro}
 
-   \section{Para criar um título} 
-    Sempre inserir um texto entre os Títulos
+    Um exemplo de Tabela.
 
-   \subsection{mais um título}
+    \begin{table}[ht]
+    \centering
+    \begin{minipage}{0.60\textwidth}
+    \phantomsection
+    \fontsize{10}{12}\selectfont
+    \caption{Notificações formais de incidentes e vulnerabilidades em órgãos públicos entre 2021 e 2025.}
+    \label{tab:1}
+    \begin{tabular}{cccc}
+        \toprule
+        Ano & Vulnerabilidades & Incidentes & Total de notificações \\
+        \midrule
+        2025 & 1994 & 4859 & 6853 \\
+        2024 & 5115 & 9803 & 14918 \\
+        2023 & 10225 & 4905 & 15130 \\
+        2022 & 5128 & 3402 & 8530 \\
+        2021 & 4964 & 4903 & 9867 \\ \hline
+        Total & 27426 & 27872 & 55298 \\
+        \bottomrule
+    \end{tabular}
+        \caption*{\raggedright\small \textbf{Fonte}: \citeonline{ctirgov2025numeros}.}
+        \label{quad:cronograma_otimo}
+    \end{minipage}
+    \end{table}
 
-Um exemplo de Quadro (Quadro \ref{quad: quadro1}). 
+    \subsubsection{O que escrever na Fundamentação Teórica}
 
-% Quadro 1 – Panorama dos ataques baseados em engenharia social
-\begin{quadro}[ht]
-  \centering
-   \begin{minipage}{0.80\textwidth}
-   \phantomsection
-   \fontsize{10}{12}\selectfont
-  \caption{Panorama dos ataques baseados em engenharia social.} 
-  \begin{tabularx}{\textwidth}{|l|X|}\hline
-    Categoria           & Resultado                                                        \\ \hline
-    Frequência          & 3.661 incidentes, sendo (82,8\%) com vazamento confirmado de dados.    \\ \hline
-    Atores de ameaça    & (100\%) externos (\textit{breaches}).                                        \\ \hline
-    Motivações          & (95\%) financeiras, (5\%) espionagem (\textit{breaches}).                      \\\hline
-    Dados comprometidos & Credenciais (50\%), pessoais (41\%), internos (20\%), outros (14\%). \\ \hline
-  \end{tabularx}
-  \label{quad: quadro1}
-  %\vspace{0.5em}
-  \caption*{\raggedright\small \textbf{Fonte}: \citeonline{verizon2024dbir}, adaptado.}
-\end{minipage}
-\end{quadro}
+    A Fundamentação Teórica é a base conceitual do seu trabalho. Nela, você apresenta, discute e analisa as teorias, conceitos, modelos e estudos já existentes que sustentam a sua pesquisa.
 
-Um exemplo de Tabela.
+    Incluir conceitos e definições – Explique os principais termos, conceitos e elementos que serão usados no trabalho, sempre com referência a autores da área.
 
-% Tabela 1: notificações formais de incidentes
-\begin{table}[ht]
-  \centering
-   \begin{minipage}{0.60\textwidth}
-   \phantomsection
-   \fontsize{10}{12}\selectfont
-  \caption{Notificações formais de incidentes e vulnerabilidades em órgãos públicos entre 2021 e 2025.}
-  \label{tab:1}
-  \begin{tabular}{cccc}
-    \toprule
-    Ano & Vulnerabilidades & Incidentes & Total de notificações \\
-    \midrule
-    2025 & 1994 & 4859 & 6853 \\
-    2024 & 5115 & 9803 & 14918 \\
-    2023 & 10225 & 4905 & 15130 \\
-    2022 & 5128 & 3402 & 8530 \\
-    2021 & 4964 & 4903 & 9867 \\ \hline
-    Total & 27426 & 27872 & 55298 \\
-    \bottomrule
-\end{tabular}
-    \caption*{\raggedright\small \textbf{Fonte}: \citeonline{ctirgov2025numeros}.}
-    \label{quad:cronograma_otimo}
-\end{minipage}
-\end{table}
+    Modelos, teorias e abordagens – Traga as principais correntes teóricas que embasam seu estudo.
 
-\subsubsection{O que escrever na Fundamentação Teórica}
+    Dicas importantes:
 
-A Fundamentação Teórica é a base conceitual do seu trabalho. Nela, você apresenta, discute e analisa as teorias, conceitos, modelos e estudos já existentes que sustentam a sua pesquisa.
+        \begin{itemize}
+            \item Sempre cite as fontes de onde retirou as informações (seguindo as normas da ABNT).
+            \item Organize o texto de forma lógica, por temas ou subtemas, evitando apenas listar autores.
+            \item Não copie trechos longos; prefira escrever com suas palavras e citar corretamente.
+            \item Evite incluir opiniões pessoais — mantenha o foco no que já foi publicado por outros autores.
+        \end{itemize}
 
-Incluir conceitos e definições – Explique os principais termos, conceitos e elementos que serão usados no trabalho, sempre com referência a autores da área.
+        Relacionamento com o seu trabalho – Mostre como essas teorias e estudos se aplicam ou se relacionam com a sua pesquisa.
 
-Modelos, teorias e abordagens – Traga as principais correntes teóricas que embasam seu estudo.
 
-Dicas importantes:
+    \chapter{Trabalhos Relacionados}
+
+    A seção Trabalhos Relacionados apresenta estudos, projetos ou soluções já desenvolvidos que tratam de problemas semelhantes ou próximos ao do seu trabalho. O objetivo é mostrar o que já foi feito, quais métodos foram usados e onde ainda existem lacunas que justificam sua pesquisa.
+
+    O que incluir:
+        \begin{enumerate}
+            \item Seleção dos trabalhos – Escolha pesquisas, artigos, relatórios ou projetos relevantes e recentes, de preferência de fontes acadêmicas confiáveis.
+            \item Breve descrição – Explique, de forma sucinta, o objetivo, metodologia e resultados de cada trabalho analisado.
+            \item Comparação – Mostre similaridades e diferenças entre os trabalhos existentes e o seu.
+            \item Identificação de lacunas – Destaque aspectos que não foram explorados ou limitações nas pesquisas anteriores que o seu trabalho pretende abordar.
+        \end{enumerate}
+
+    Dicas importantes:
+
+        \begin{itemize}
+            \item Organize a apresentação dos trabalhos por tema, abordagem ou cronologia, para manter a lógica do texto.
+            \item Utilize citações corretas, conforme a ABNT.
+            \item Evite apenas listar trabalhos; faça conexões entre eles e explique a relevância para a sua pesquisa.
+            \item Seja objetivo — não é necessário descrever cada detalhe técnico de outros trabalhos, apenas o suficiente para contextualizar sua comparação.
+            \item Importante: Ao final dessa seção, o leitor deve entender em que contexto seu trabalho se encaixa e por que ele é necessário, mesmo diante de outras pesquisas já realizadas.
+        \end{itemize}
+
+    \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}    
+
+    A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
+
+    \section{Metodologia}
+
+        É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
+
+        Descreve o tipo de pesquisa (exploratória, descritiva, experimental etc.), a abordagem (qualitativa, quantitativa ou mista) e a estratégia geral utilizada.
+
+        Envolve a justificativa das escolhas, por que esse método foi escolhido.
+
+    Exemplo: “Este estudo adotou uma abordagem quantitativa e experimental, utilizando simulações computacionais para avaliar o desempenho de diferentes algoritmos de roteamento.”
+
+    \section{Procedimentos Metodológicos}
+
+        É um termo mais usado nas Ciências Humanas e Sociais. Tem foco no passo a passo da pesquisa: como os dados foram coletados, quais instrumentos foram usados e como a análise foi feita. É mais descritivo e menos técnico do que “Materiais e Métodos”.
+
+    Exemplo: “Para a coleta de dados, foram aplicados questionários estruturados a 50 participantes. As respostas foram analisadas por meio de estatística descritiva e teste t de Student.”
+
+    \section{Materiais e Métodos}
+
+        É muito usado nas Ciências Exatas, Biológicas e Engenharias. Apresenta de forma técnica e detalhada os materiais, ferramentas, softwares, equipamentos ou reagentes utilizados; o passo a passo técnico para realizar o experimento ou implementação.
+
+        Permite que outro pesquisador repita o estudo. 
+        
+        Exemplo: “O experimento utilizou cinco kits LEGO Mindstorms EV3, computadores com sistema operacional Linux e o software EV3 Classroom. Os testes foram conduzidos em laboratório controlado, com turmas de no máximo dez alunos por sessão.”
+
+
+    \chapter{Aplicação / Implementação / Experimento}
+    Descrição passo a passo da execução do estudo.
+    Apresentação de scripts, fluxogramas, diagramas ou imagens ilustrativas
+
+
+    \chapter{Conclusão}
+
+
+    A conclusão tem o papel de encerrar o trabalho, retomando de forma resumida o que foi feito e destacando as contribuições obtidas. Ela deve responder à pergunta central da pesquisa e deixar claro o que foi aprendido, comprovado ou desenvolvido.
+
+    A conclusão deve fechar o trabalho com chave de ouro, respondendo à pergunta de pesquisa, destacando o que foi aprendido e mostrando como o estudo contribui para a área, além de abrir portas para novas pesquisas. 
 
     \begin{itemize}
-        \item Sempre cite as fontes de onde retirou as informações (seguindo as normas da ABNT).
-        \item Organize o texto de forma lógica, por temas ou subtemas, evitando apenas listar autores.
-        \item Não copie trechos longos; prefira escrever com suas palavras e citar corretamente.
-        \item Evite incluir opiniões pessoais — mantenha o foco no que já foi publicado por outros autores.
+        \item Relembre brevemente o objetivo geral do estudo e confirme se ele foi atingido.
+        \item Destaque os resultados mais importantes, sem repetir tabelas ou gráficos.
+        \item Foque no que é mais relevante para responder à questão de pesquisa.
+        \item Interprete brevemente o que os resultados significam no contexto do problema.
+        \item Falar das limitações do estudo é opcional, mas recomendado. Reconheça possíveis limitações que possam ter influenciado os resultados.
+        \item Sugestões para trabalhos futuros. Indique possíveis melhorias ou novas abordagens que podem ser exploradas.
     \end{itemize}
 
-    Relacionamento com o seu trabalho – Mostre como essas teorias e estudos se aplicam ou se relacionam com a sua pesquisa.
+    Não introduza informações novas que não tenham aparecido no desenvolvimento. Use tempo passado para descrever o que foi feito.
 
-
-\chapter{Trabalhos Relacionados}
-
-A seção Trabalhos Relacionados apresenta estudos, projetos ou soluções já desenvolvidos que tratam de problemas semelhantes ou próximos ao do seu trabalho. O objetivo é mostrar o que já foi feito, quais métodos foram usados e onde ainda existem lacunas que justificam sua pesquisa.
-
-O que incluir:
-    \begin{enumerate}
-        \item Seleção dos trabalhos – Escolha pesquisas, artigos, relatórios ou projetos relevantes e recentes, de preferência de fontes acadêmicas confiáveis.
-        \item Breve descrição – Explique, de forma sucinta, o objetivo, metodologia e resultados de cada trabalho analisado.
-        \item Comparação – Mostre similaridades e diferenças entre os trabalhos existentes e o seu.
-        \item Identificação de lacunas – Destaque aspectos que não foram explorados ou limitações nas pesquisas anteriores que o seu trabalho pretende abordar.
-    \end{enumerate}
-
-Dicas importantes:
-
-    \begin{itemize}
-        \item Organize a apresentação dos trabalhos por tema, abordagem ou cronologia, para manter a lógica do texto.
-        \item Utilize citações corretas, conforme a ABNT.
-        \item Evite apenas listar trabalhos; faça conexões entre eles e explique a relevância para a sua pesquisa.
-        \item Seja objetivo — não é necessário descrever cada detalhe técnico de outros trabalhos, apenas o suficiente para contextualizar sua comparação.
-        \item Importante: Ao final dessa seção, o leitor deve entender em que contexto seu trabalho se encaixa e por que ele é necessário, mesmo diante de outras pesquisas já realizadas.
-    \end{itemize}
-
-\chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}    
-
-A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
-
-\section{Metodologia}
-
-    É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
-
-    Descreve o tipo de pesquisa (exploratória, descritiva, experimental etc.), a abordagem (qualitativa, quantitativa ou mista) e a estratégia geral utilizada.
-
-    Envolve a justificativa das escolhas, por que esse método foi escolhido.
-
-   Exemplo: “Este estudo adotou uma abordagem quantitativa e experimental, utilizando simulações computacionais para avaliar o desempenho de diferentes algoritmos de roteamento.”
-
-\section{Procedimentos Metodológicos}
-
-    É um termo mais usado nas Ciências Humanas e Sociais. Tem foco no passo a passo da pesquisa: como os dados foram coletados, quais instrumentos foram usados e como a análise foi feita. É mais descritivo e menos técnico do que “Materiais e Métodos”.
-
-   Exemplo: “Para a coleta de dados, foram aplicados questionários estruturados a 50 participantes. As respostas foram analisadas por meio de estatística descritiva e teste t de Student.”
-
-\section{Materiais e Métodos}
-
-    É muito usado nas Ciências Exatas, Biológicas e Engenharias. Apresenta de forma técnica e detalhada os materiais, ferramentas, softwares, equipamentos ou reagentes utilizados; o passo a passo técnico para realizar o experimento ou implementação.
-
-    Permite que outro pesquisador repita o estudo. 
+    \bookmarksetup{startatroot}% 
     
-    Exemplo: “O experimento utilizou cinco kits LEGO Mindstorms EV3, computadores com sistema operacional Linux e o software EV3 Classroom. Os testes foram conduzidos em laboratório controlado, com turmas de no máximo dez alunos por sessão.”
+    ---------------------------------------------------------------------------------------------
+    \postextual
+    \bibliography{abntex2-modelo-references}
 
-
-\chapter{Aplicação / Implementação / Experimento}
-Descrição passo a passo da execução do estudo.
-Apresentação de scripts, fluxogramas, diagramas ou imagens ilustrativas
-
-
-\chapter{Conclusão}
-
-
-A conclusão tem o papel de encerrar o trabalho, retomando de forma resumida o que foi feito e destacando as contribuições obtidas. Ela deve responder à pergunta central da pesquisa e deixar claro o que foi aprendido, comprovado ou desenvolvido.
-
-A conclusão deve fechar o trabalho com chave de ouro, respondendo à pergunta de pesquisa, destacando o que foi aprendido e mostrando como o estudo contribui para a área, além de abrir portas para novas pesquisas. 
-
-\begin{itemize}
-    \item Relembre brevemente o objetivo geral do estudo e confirme se ele foi atingido.
-    \item Destaque os resultados mais importantes, sem repetir tabelas ou gráficos.
-    \item Foque no que é mais relevante para responder à questão de pesquisa.
-    \item Interprete brevemente o que os resultados significam no contexto do problema.
-    \item Falar das limitações do estudo é opcional, mas recomendado. Reconheça possíveis limitações que possam ter influenciado os resultados.
-    \item Sugestões para trabalhos futuros. Indique possíveis melhorias ou novas abordagens que podem ser exploradas.
-\end{itemize}
-
-Não introduza informações novas que não tenham aparecido no desenvolvimento. Use tempo passado para descrever o que foi feito.
-
-% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
-% ---
-\bookmarksetup{startatroot}% 
-% ---
----------------------------------------------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
-% ---------------------------------------------------------------------------------------------
-\postextual
-% ---------------------------------------------------------------------------------------------
-% Referências bibliográficas
-% ---------------------------------------------------------------------------------------------
-\bibliography{abntex2-modelo-references}
-
-% ---------------------------------------------------------------------------------------------
-% Glossário
-% ---------------------------------------------------------------------------------------------
-%
-% Consulte o manual da classe abntex2 para orientações sobre o glossário.
-%
-%\glossary
-
-% ---------------------------------------------------------------------------------------------
-% Apêndices
-% ---------------------------------------------------------------------------------------------
-
-% ---
-% Inicia os apêndices
-% ---
-%\begin{apendicesenv}
-%\partapendices
-
-%\chapter{Quadros de horários}
-%\label{chapter:apendice_quad_hor}
-%\end{apendicesenv}
-% ---
-
-%\end{anexosenv}
+    %\begin{anexosenv}
+        %\glossary
+        %\begin{apendicesenv}
+            %\partapendices
+            %\chapter{Quadros de horários}
+            %\label{chapter:apendice_quad_hor}
+        %\end{apendicesenv}
+    %\end{anexosenv}
 
 \end{document}
