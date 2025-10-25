@@ -1,280 +1,184 @@
-# 📚 README - Projeto LaTeX com Banco de Dados de Artigos
+# 📚 TCC - Trabalho de Conclusão de Curso
 
-## Visão Geral
-Este projeto utiliza LaTeX para criar um documento que gerencia uma base de dados de artigos acadêmicos, gerando automaticamente uma lista formatada e seções com resumos e anotações.
+Repositório contendo o desenvolvimento do Trabalho de Conclusão de Curso em LaTeX, utilizando as normas ABNT através do abntex2.
 
-## 🚀 Compilação
+## 📁 Estrutura do Projeto
 
-### Recomendação: Use LuaLaTeX
-Para melhor suporte a Unicode (acentos, emojis, caracteres especiais), prefira `lualatex`:
+```
+tcc/
+├── Modelo_TCC_2025/          # 📄 Documento principal do TCC
+│   ├── principal.tex         # Arquivo principal LaTeX
+│   ├── principal.pdf         # PDF compilado
+│   ├── imagens/              # Figuras e diagramas
+│   ├── abntex2*.{cls,sty,bst} # Classes e estilos ABNT
+│   └── abntex2-modelo-references.bib # Referências bibliográficas
+├── proposta/                 # 📝 Proposta inicial do TCC
+│   └── main.tex
+├── resumo/                   # 📌 Resumos e materiais complementares
+│   ├── resumo.tex
+│   └── resumo2.tex
+├── VM/                       # ☁️ Documentação sobre VM Azure e Java
+│   ├── Vm Java Quickstart.pdf
+│   └── especificacoes_vm_azure_detalhado.pdf
+├── .gitignore                # Arquivos ignorados pelo Git
+└── README.md                 # Este arquivo
+```
+
+## 🚀 Como Começar
+
+### Pré-requisitos
+
+Você precisa ter uma distribuição LaTeX instalada no seu sistema:
+
+- **Linux (Ubuntu/Debian):**
+  ```bash
+  sudo apt-get update
+  sudo apt-get install texlive-full latexmk biber
+  ```
+
+- **macOS:**
+  ```bash
+  brew install --cask mactex
+  ```
+
+- **Windows:**
+  - Instale o [MiKTeX](https://miktex.org/download) ou [TeX Live](https://www.tug.org/texlive/)
+  - Ou use [Overleaf](https://www.overleaf.com/) (editor online)
+
+### Compilação
+
+#### Método 1: Compilação Automática (Recomendado)
+
+Use LuaLaTeX para melhor suporte a Unicode (acentos, emojis, caracteres especiais):
 
 ```bash
-# Compilação automática (recomendado)
-latexmk -lualatex -pvc main.tex
-
-# Compilação manual
-lualatex main.tex
-lualatex main.tex
+cd Modelo_TCC_2025
+latexmk -lualatex -pvc principal.tex
 ```
 
 **Flags úteis:**
-- `-pvc`: Recompila automaticamente quando o arquivo é salvo
-- `-lualatex`: Usa o engine LuaLaTeX
+- `-pvc`: Recompila automaticamente quando salva o arquivo
+- `-lualatex`: Usa o engine LuaLaTeX (melhor para português)
 
-## Estrutura do Projeto
+#### Método 2: Compilação Manual Completa
 
-```
-projeto/
-├── main.tex          # Documento principal
-├── artigosDB.tex     # Base de dados dos artigos
-└── README.md         # Este arquivo
-```
+Para garantir que referências e citações sejam processadas corretamente:
 
-## 📦 Pacotes Utilizados
+```bash
+cd Modelo_TCC_2025
 
-### Essenciais
-```latex
-\usepackage[brazil]{babel}        % Português brasileiro
-\usepackage[utf8]{inputenc}       % UTF-8 (desnecessário no LuaLaTeX)
-\usepackage{geometry}             % Controle de margens e layout
-\usepackage{datatool}             % Manipulação de bases de dados
-\usepackage{longtable}            % Tabelas que quebram páginas
-```
+# 1ª compilação - Gera arquivos auxiliares
+lualatex principal.tex
 
-### Links e Formatação
-```latex
-\usepackage{hyperref}             % Links clicáveis
-\usepackage{xcolor}               % Cores
-\usepackage{xstring}              % Manipulação de strings
-\usepackage{etoolbox}             % Ferramentas adicionais
-\usepackage{indentfirst}          % Indentação do primeiro parágrafo
-\usepackage{setspace}             % Controle de espaçamento entre linhas
-\usepackage{times}                % Fonte Times New Roman
+# Processa referências bibliográficas
+bibtex principal
+
+# 2ª compilação - Inclui referências
+lualatex principal.tex
+
+# 3ª compilação - Ajusta referências cruzadas
+lualatex principal.tex
 ```
 
-### Utilitários e Correções
-```latex
-\usepackage{silence}              % Suprime avisos específicos
-\WarningFilter{tracklang}{No `datatool' support for dialect `brazil'}
+**💡 Dica:** O arquivo `principal.pdf` será gerado automaticamente.
+
+#### Método 3: Usando latexmk (Automático)
+
+O latexmk detecta automaticamente quando rodar BibTeX:
+
+```bash
+cd Modelo_TCC_2025
+latexmk -lualatex -bibtex principal.tex
 ```
 
-### Pacotes Adicionais Recomendados
-```latex
-\usepackage{lipsum}               % Texto fictício para testes
-\usepackage{abntex2}              % Para trabalhos acadêmicos brasileiros
-\usepackage{memoir}               % Classe avançada para documentos
-```
+## 📚 Gerenciando Referências
 
-## Configurações de Layout
+### Arquivo de Bibliografia
 
-```latex
-\geometry{ top=3cm, bottom=2cm, left=3cm, right=2cm}  % Margens
-\onehalfspacing                                        % Espaçamento 1,5
-\setlength{\parindent}{1.5cm}                         % Indentação de parágrafo
-```
+As referências ficam em `abntex2-modelo-references.bib`. Exemplo de entrada:
 
-## Estrutura da Base de Dados
+```bibtex
+@article{sobrenome2025,
+  author  = {Nome Sobrenome},
+  title   = {Título do Artigo},
+  journal = {Nome da Revista},
+  year    = {2025},
+  volume  = {1},
+  number  = {1},
+  pages   = {1--10}
+}
 
-Cada artigo na base de dados (`artigosDB.tex`) contém os seguintes campos:
+@book{autor2024,
+  author    = {Autor da Silva},
+  title     = {Título do Livro},
+  publisher = {Editora},
+  year      = {2024},
+  address   = {São Paulo}
+}
 
-- `num` - Número sequencial do artigo
-- `titulo` - Título do artigo
-- `producao` - Tipo de produção (Artigo, TCC, Dissertação, Tese)
-- `autor` - Nome do(s) autor(es)
-- `ano` - Ano de publicação
-- `link` - URL para acesso ao documento
-- `so` - Sistema operacional (campo adicional)
-- `resumo` - Resumo do artigo
-- `notas` - Anotações pessoais
-
-## Como Adicionar Novos Artigos
-
-1. Abra o arquivo `artigosDB.tex`
-2. Adicione uma nova entrada seguindo este padrão:
-
-```latex
-\DTLnewrow{artigos}
-\DTLnewdbentry{artigos}{num}{NÚMERO}
-\DTLnewdbentry{artigos}{titulo}{TÍTULO DO ARTIGO}
-\DTLnewdbentry{artigos}{producao}{TIPO}
-\DTLnewdbentry{artigos}{autor}{NOME DO AUTOR}
-\DTLnewdbentry{artigos}{ano}{ANO}
-\DTLnewdbentry{artigos}{link}{URL}
-\DTLnewdbentry{artigos}{so}{SISTEMA}
-\DTLnewdbentry{artigos}{resumo}{TEXTO DO RESUMO}
-\DTLnewdbentry{artigos}{notas}{SUAS ANOTAÇÕES}
-```
-
-## 📝 Estruturas e Códigos Úteis
-
-### Tabela Longa com DataTool
-```latex
-\begin{longtable}{|c|p{8.5cm}|c|c|p{1.5cm}|}
-    \hline
-    \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\
-    \hline
-    \endfirsthead
-    
-    \hline
-    \textbf{N\textsuperscript{o}} & \textbf{Título} & \textbf{Ano} & \textbf{Links} & \textbf{Sistema} \\
-    \hline
-    \endhead
-    
-    \hline
-    \endlastfoot
-
-    \DTLforeach{artigos}{\num=num,\titulo=titulo,\ano=ano,\link=link,\so=so}{  
-        \num & \titulo & \ano & \href{\link}{Acesso} & \so
-        \DTLiflastrow{}{\\ \hline}
-    }
-\end{longtable}
-```
-
-### Texto Fictício para Testes
-```latex
-\usepackage{lipsum}
-% No documento:
-\lipsum[1-3]  % Gera 3 parágrafos de Lorem ipsum
-```
-
-### Filtros Avançados com DataTool
-```latex
-% Filtrar por ano específico
-\DTLforeach*{artigos}{\ano=ano}{\DTLiffirstrow{ano}{2020}{\DTLbreak}}{\conteudo}
-
-% Filtrar por tipo de produção
-\DTLforeach*{artigos}{\producao=producao}{%
-    \IfStrEq{\producao}{Artigo}{\conteudo}{\DTLbreak}
+@online{site2025,
+  author = {Organização},
+  title  = {Título da Página},
+  year   = {2025},
+  url    = {https://exemplo.com},
+  urlaccessdate = {25 out. 2025}
 }
 ```
 
-## Comandos de Compilação
+### Citando no Texto
 
-### LuaLaTeX (Recomendado)
-```bash
-# Compilação automática com preview contínuo
-latexmk -lualatex -pvc main.tex
-
-# Compilação manual completa
-lualatex main.tex
-lualatex main.tex
-```
-
-### PDFLaTeX (Alternativo)
-```bash
-# Compilação completa
-pdflatex main.tex
-pdflatex main.tex
-
-# Para projetos com referências
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-**Dica**: O LuaLaTeX oferece melhor suporte para Unicode e é mais moderno.
-
-## Estrutura do Documento Final
-
-1. **Sumário** - Gerado automaticamente
-2. **Lista de Artigos** - Tabela com todos os artigos
-3. **Resumos e Anotações** - Seções detalhadas para cada artigo
-
-## Personalizações Possíveis
-
-### Adicionar Nova Coluna na Tabela
+**Citação direta (Autor faz parte da frase):**
 ```latex
-\begin{longtable}{|c|p{8cm}|c|c|p{1.5cm}|c|} % Adicione |c| no final
-    % Adicione \textbf{Nova Coluna} no cabeçalho
-    % Adicione \novocampo na linha de dados
+Segundo \citeonline{sobrenome2025}, os resultados demonstram...
 ```
+Resultado: Segundo Sobrenome (2025), os resultados demonstram...
 
-### Modificar Formatação
-- **Espaçamento**: Altere `\onehalfspacing` para `\doublespacing` ou `\singlespacing`
-- **Fonte**: Substitua `times` por outro pacote de fonte
-- **Margens**: Modifique os valores em `\geometry{}`
-
-### Adicionar Filtros
+**Citação indireta (Autor entre parênteses):**
 ```latex
-% Filtrar por ano
-\DTLforeach*{artigos}{\ano=ano}{\DTLiffirstrow{ano}{2020}{\DTLbreak}}{\conteudo}
-
-% Filtrar por tipo
-\DTLforeach*{artigos}{\producao=producao}{\IfStrEq{\producao}{Artigo}{\conteudo}{\DTLbreak}}
+Os resultados demonstram \cite{sobrenome2025}...
 ```
+Resultado: Os resultados demonstram (SOBRENOME, 2025)...
 
-## ⚠️ Problemas Comuns e Soluções
-
-### 1. Linha Extra em Tabelas
-**Problema**: Tabela com linha desnecessária no final
-
-**Solução**: Use `\DTLiflastrow{}{\\ \hline}` no loop:
+**Múltiplas citações:**
 ```latex
-\DTLforeach{artigos}{\num=num,\titulo=titulo}{  
-    \num & \titulo
-    \DTLiflastrow{}{\\ \hline}  % Evita linha extra
-}
+Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 ```
+## 🛠️ Ferramentas Recomendadas
 
-### 2. Avisos do datatool
-**Problema**: Warnings sobre suporte de dialeto
+### Editores LaTeX
 
-**Solução**: Adicione antes de `\usepackage{datatool}`:
-```latex
-\usepackage{silence} 
-\WarningFilter{tracklang}{No `datatool' support for dialect `brazil'}
-```
+- **[VS Code](https://code.visualstudio.com/)** + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+- **[TeXstudio](https://www.texstudio.org/)** - Editor dedicado para LaTeX
+- **[Overleaf](https://www.overleaf.com/)** - Editor online colaborativo
 
-### 3. Comando Terminado com Espaço
-**Problema**: Warning "Command terminated with space"
+## 🐛 Problemas Comuns
 
-**Solução**: Cuidado com `\\ ` (barra dupla + espaço). Use apenas `\\`.
+### Erro: "undefined control sequence"
+**Solução:** Verifique se todos os pacotes necessários estão instalados e se não há comandos com erros de digitação.
 
-### 4. Caracteres Especiais não Aparecem
-**Problema**: Acentos e caracteres especiais não renderizam
+### Referências não aparecem
+**Solução:** Execute a sequência completa de compilação (lualatex → bibtex → lualatex → lualatex).
 
-**Soluções**:
-- Use `lualatex` em vez de `pdflatex`
-- Certifique-se de que o arquivo está salvo em UTF-8
-- Para caracteres específicos, use comandos LaTeX: `\~a` para ã
+### Acentos aparecem incorretos
+**Solução:** Use LuaLaTeX ou XeLaTeX ao invés de pdfLaTeX, ou configure corretamente a codificação UTF-8.
 
-### 5. Tabela Não Quebra Páginas
-**Problema**: Tabela grande não continua na próxima página
+### Erro ao compilar imagens
+**Solução:** Verifique se o caminho para a imagem está correto e se o arquivo existe na pasta `imagens/`.
 
-**Solução**: Use `longtable` em vez de `table`:
-```latex
-\begin{longtable}{|c|p{8cm}|c|}
-    % conteúdo da tabela
-\end{longtable}
-```
+## 📖 Recursos Úteis
 
-### 6. Links Não Funcionam
-**Problema**: URLs não são clicáveis
-
-**Soluções**:
-- Confirme que `\usepackage{hyperref}` está carregado
-- Verifique se as URLs no banco de dados estão corretas
-- Use `\href{url}{texto}` para links
-
-### 7. Pacotes Duplicados
-**Problema**: Erro de pacote já carregado
-
-**Solução**: Evite repetir `\usepackage` do mesmo pacote no projeto.
-
-## 🔗 Links e Recursos Úteis
-
-### Documentação Oficial
-- [Documentação do datatool](https://ctan.org/pkg/datatool)
-- [Lista de pacotes CTAN](https://ctan.org/pkg)
-- [Overleaf – Learn LaTeX](https://www.overleaf.com/learn)
-
-### Guias e Tutoriais
+- [Documentação abntex2](https://www.abntex.net.br/)
+- [Overleaf Learn LaTeX](https://www.overleaf.com/learn)
 - [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)
-- [Detexify - Símbolos LaTeX](http://detexify.kirelabs.org/classify.html)
-- [Tables Generator](https://www.tablesgenerator.com/latex_tables)
+- [Detexify](http://detexify.kirelabs.org/classify.html) - Encontre símbolos LaTeX desenhando
+- [Tables Generator](https://www.tablesgenerator.com/) - Gerador de tabelas LaTeX
 
-### Ferramentas Online
-- [Overleaf](https://www.overleaf.com/) - Editor LaTeX online
-- [ShareLaTeX](https://www.sharelatex.com/) - Editor colaborativo
-- [LaTeX Live](https://latexlive.com/) - Compilador online simples
+## 🗂️ Controle de Versão
+
+Os seguintes arquivos estão no `.gitignore` e não são versionados:
+
+```
+*.aux *.bbl *.blg *.idx *.lof *.log 
+*.loq *.lot *.toc *.out *.fdb *.fls
+*.fdb_latexmk *.DS_Store
+```
