@@ -31,12 +31,12 @@
 \providecommand{\ABNTEXisarticle}{false}
 \DeclareOption{article}{
 	\renewcommand{\ABNTEXisarticle}{true}
-	\PassOptionsToClass{article}{memoir}%}
+	\PassOptionsToClass{article}{memoir}
 }
 \providecommand{\ABNTEXistwocolumn}{false}
 \DeclareOption{twocolumn}{
 	\renewcommand{\ABNTEXistwocolumn}{true}
-	\PassOptionsToClass{twocolumn}{memoir}%}
+	\PassOptionsToClass{twocolumn}{memoir}
 }
 %	
 % Opcoes chapter=TITLE, section=TITLE, subsection=TITLE e
@@ -568,7 +568,6 @@
   \ifthenelse{\boolean{ABNTEXsumario-abnt-6027-2012}}{%
     \addtocontents{toc}{\vspace{\cftbeforechapterskip}}}{%
     \addtocontents{toc}{\vspace{\cftbeforepartskip}}}%
-}
 % -----
 
 % ---
@@ -722,7 +721,7 @@
 \let\olddate\date
 \renewcommand{\date}[1]{\AtBeginDocument{\olddate{#1}}}
 \newcommand{\data}[1]{\date{#1}}
-\newcommand{\imprimirdata}{\thedate}
+\newcommand{\imprimirdata}{2025}
 
 % Comandos de dados - instituicao
 \providecommand{\imprimirinstituicao}{}
@@ -1004,7 +1003,7 @@
 % Ambiente para alineas e e subalineas (incisos)
 % ABNT NBR 6024/2012 - 4.2 e 4.3
 \newlist{alineas}{enumerate}{2}
-\setlist[alineas,1]{label={\alph*)},topsep=0pt,itemsep=0pt,leftmargin=\parindent+\labelwidth-\labelsep}%
+\setlist[alineas,1]{label={\alph*},topsep=0pt,itemsep=0pt,leftmargin=\parindent+\labelwidth-\labelsep}%
 \setlist[alineas,2]{label={--},topsep=0pt,itemsep=0pt,leftmargin=*}
 \newlist{subalineas}{enumerate}{1}
 \setlist[subalineas,1]{label={--},topsep=0pt,itemsep=0pt,leftmargin=*}%
