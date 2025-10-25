@@ -30,9 +30,9 @@
             \hline
             \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Resumo}  \\ \hline
             Comparison of Concurrency Technologies in Java &  &  &  \\ \hline
-            Avaliação dos mecanismos de concorrência na API do Java 8 & Tempo de execução e consumo de memória & Código presente no texto &  Comparou o tempo de execução e consumo de memória dos algoritmos quicksort, mergesort, pidgeonholesort e JavaSort(método do próprio java) com Single Thread, Threads, ExecutorService e Fork/Join em três computadores com os processadores: T4300, i5-4260U e i7-3610QM\\ \hline
-            Uma análise comparativa entre threads e green threads no Java & Tempo de execução & Utilizou a biblioteca \href{https://github.com/openjdk/jmh}{org.openjdk.jmh} &  \\ \hline
-            Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads &  &  &  \\ \hline
+            Avaliação dos mecanismos de concorrência na API do Java 8 & Tempo de execução e consumo de memória. & Código presente no texto &  Comparou o tempo de execução e consumo de memória dos algoritmos quicksort, mergesort, pidgeonholesort e JavaSort(método do próprio java) com Single Thread, Threads, ExecutorService e Fork/Join em três computadores com os processadores: T4300, i5-4260U e i7-3610QM.\\ \hline
+            Uma análise comparativa entre threads e green threads no Java & Tempo de execução. & Utilizou a biblioteca \href{https://github.com/openjdk/jmh}{org.openjdk.jmh} & Mediu o tempo de execução de instanciar,iniciar, realizar o join e mudar contexto(Yield) de 100.000 (cem mil) threads em uma máquina AMD® Ryzen 7 3700u, 20GB de memória RAM e executando Ubuntu 22.04.03 LTS.\\ \hline
+            Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & Taxa de transferência, latência, uso de memória e utilização da CPU &  & Analisou taxa de transferência, latência, uso de memória e utilização da CPU de threads tradicionais (Executors.newFixedThreadPool()) e virtuais (Executors.newVirtualThreadPerTaskExecutor()) em cenários CPU-bound (cálculo de números primos) e I/O-bound (simulação de bloqueio entre duas aplicações Java com requisições HTTP) em um ambiente no AWS EC2.\\ \hline
         \end{tabularx}
     \end{quadro}
 \end{landscape}
