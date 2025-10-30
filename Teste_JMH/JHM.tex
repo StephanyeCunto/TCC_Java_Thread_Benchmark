@@ -1,0 +1,182 @@
+\documentclass[a4paper,10pt]{article} % Fonte 10pt conforme ABNT
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{listings}
+
+\geometry{
+  top=3cm,
+  bottom=2cm,
+  left=3cm,
+  right=2cm
+}
+
+\definecolor{codebg}{rgb}{0.95,0.95,0.95}
+\definecolor{keyword}{rgb}{0.36,0.54,0.66}
+
+\lstset{
+  backgroundcolor=\color{codebg},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{keyword}\bfseries,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  captionpos=b
+}
+
+\title{\textbf{Java Microbenchmark Harness (JMH)}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{O que é JMH}
+\textbf{JMH (Java Microbenchmark Harness)} é uma ferramenta oficial do OpenJDK que mede o desempenho de pequenos trechos de código Java, chamados \textit{microbenchmarks}.  
+Microbenchmarks medem o tempo de execução de um trecho isolado de código, normalmente dentro de um único método ou bloco lógico.
+
+\section{Anotações Principais}
+
+\subsection{@Benchmark}
+Indica quais métodos serão medidos durante o benchmark.
+
+\begin{lstlisting}[language=Java]
+@Benchmark
+public int addOne() {
+    return x + 1;
+}
+\end{lstlisting}
+
+\subsection{@BenchmarkMode}
+Define como o desempenho será medido (\textit{tipo de métrica}).
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{9cm}|}
+\hline
+\textbf{Modo} & \textbf{Descrição} \\ \hline
+Mode.Throughput & Operações por segundo \\ \hline
+Mode.AverageTime & Tempo médio por operação \\ \hline
+Mode.SampleTime & Estatísticas: min, max, p50, p90, p99 \\ \hline
+Mode.SingleShotTime & Tempo de uma única execução \\ \hline
+Mode.All & Executa todos os modos simultaneamente \\ \hline
+\end{longtable}
+
+\subsection{@OutputTimeUnit}
+Define a unidade de tempo usada na medição dos benchmarks.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{9cm}|}
+\hline
+\textbf{Parâmetro} & \textbf{Descrição} \\ \hline
+TimeUnit.SECONDS & Mede em segundos \\ \hline
+TimeUnit.MILLISECONDS & Mede em milissegundos \\ \hline
+TimeUnit.MICROSECONDS & Mede em microssegundos \\ \hline
+TimeUnit.NANOSECONDS & Mede em nanossegundos \\ \hline
+\end{longtable}
+
+\subsection{@State}
+Mantém variáveis ou objetos durante a execução do benchmark.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{9cm}|}
+\hline
+\textbf{Escopo} & \textbf{Descrição} \\ \hline
+@State() & Mantém variáveis durante o benchmark \\ \hline
+@State(Scope.Benchmark) & Todas as threads compartilham a mesma instância \\ \hline
+@State(Scope.Thread) & Cada thread tem sua própria instância \\ \hline
+@State(Scope.Group) & Instância compartilhada somente entre threads do mesmo grupo \\ \hline
+\end{longtable}
+
+\subsection{@Group}
+Agrupa threads que compartilham um mesmo estado.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{9cm}|}
+\hline
+\textbf{Anotação} & \textbf{Descrição} \\ \hline
+@Group("NomeDoGrupo") & Define grupo de threads que compartilham o mesmo estado \\ \hline
+\end{longtable}
+
+\subsection{@Setup / @TearDown}
+Executam métodos antes e depois da execução do benchmark.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{9cm}|}
+\hline
+\textbf{Anotação} & \textbf{Descrição} \\ \hline
+@Setup & Método chamado antes da execução do benchmark \\ \hline
+@TearDown & Método chamado após a execução do benchmark \\ \hline
+@TearDown(Level.Iteration) & Método chamado após cada iteração \\ \hline
+\end{longtable}
+
+\subsection{@Fork}
+Define quantos processos separados (forks) serão criados.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5cm}|>{\raggedright\arraybackslash}p{9cm}|}
+\hline
+\textbf{Anotação} & \textbf{Descrição} \\ \hline
+@Fork(N) & N forks; cada fork cria uma JVM limpa \\ \hline
+@Fork(value=3, warmups=1) & value → quantidade de forks; warmups → rodadas de aquecimento \\ \hline
+\end{longtable}
+
+\subsection{@Warmup}
+Configura a fase de aquecimento da JVM antes da medição do benchmark.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{8cm}|}
+\hline
+\textbf{Parâmetro} & \textbf{Descrição} \\ \hline
+iterations=5 & Executa 5 vezes durante a fase de aquecimento \\ \hline
+time=100 & Cada execução dura 100 unidades de tempo \\ \hline
+timeUnit=TimeUnit.MILLISECONDS & Unidade de tempo utilizada (ms) \\ \hline
+\end{longtable}
+
+\subsection{@Measurement}
+Configura a fase de medição do benchmark.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{8cm}|}
+\hline
+\textbf{Parâmetro} & \textbf{Descrição} \\ \hline
+iterations=5 & Executa 5 vezes durante a fase de medição \\ \hline
+time=100 & Cada execução dura 100 unidades de tempo \\ \hline
+timeUnit=TimeUnit.MILLISECONDS & Unidade de tempo utilizada (ms) \\ \hline
+\end{longtable}
+
+\subsection{@AuxCounters}
+Registra contadores auxiliares durante o benchmark.
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{6cm}|>{\raggedright\arraybackslash}p{8cm}|}
+\hline
+\textbf{Tipo} & \textbf{Descrição} \\ \hline
+AuxCounters.Type.OPERATIONS & Contadores representam quantidade de operações \\ \hline
+AuxCounters.Type.EVENTS & Contadores monitoram ocorrências específicas, não apenas operações \\ \hline
+\end{longtable}
+
+\subsection{@Param}
+Define valores possíveis que o benchmark vai testar.
+
+\begin{lstlisting}[language=Java]
+@Param({"1", "31", "65", "101", "103"})
+public int arg;
+
+@Param({"0", "1", "2", "4", "8", "16", "32"})
+public int certainty;
+
+@Benchmark
+public boolean bench() {
+    return BigInteger.valueOf(arg).isProbablePrime(certainty);
+}
+\end{lstlisting}
+
+\subsection{@OperationsPerInvocation}
+Indica quantas operações são realizadas por invocação do método.
+
+\begin{lstlisting}[language=Java]
+@OperationsPerInvocation(10)
+public void doTenOps() {
+    for (int i = 0; i < 10; i++) {
+        computeSomething();
+    }
+}
+\end{lstlisting}
+
+\end{document}
