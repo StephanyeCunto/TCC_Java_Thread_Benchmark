@@ -55,6 +55,8 @@
     \setlength{\@fptop}{5pt}
 \makeatother
 
+\newcommand{\ignore}[1]{}
+
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
 
@@ -235,32 +237,52 @@
     \chapter{Introdução}
     \markright{Introdução}
     \label{chapter:introducao}
+    
+    \ignore{
+            Uma thread é a menor unidade de processamento existente dentro de um processo. Ela é composta por um identificador de thread (ID), um contador de programa, um conjunto de registradores e uma pilha. As threads compartilham entre si sua seção de código, a seção de dados e outros recursos do sistema operacional, como arquivos abertos e sinais. Cada processo pode conter múltiplas threads, o que permite a execução simultânea de diferentes partes de um programa ou  de diferentes tarefas \cite{silberschatz2018operating}.
 
-        Uma thread é a menor unidade de processamento existente dentro de um processo. Ela é composta por um identificador de thread (ID), um contador de programa, um conjunto de registradores e uma pilha. As threads compartilham entre si sua seção de código, a seção de dados e outros recursos do sistema operacional, como arquivos abertos e sinais. Cada processo pode conter múltiplas threads, o que permite a execução simultânea de diferentes partes de um programa ou  de diferentes tarefas \cite{silberschatz2018operating}.
+            A utilização de threads traz diversos benefícios. Em problemas que envolvem tarefas que exigem alto processamento (CPU-bound) a execução paralela em múltiplos núcleos permite reduzir o tempo total de cálculo. Em problemas que dependem de operações de entrada e saída (I/O-bound) as threads possibilitam que a CPU continue processando outras tarefas enquanto aguarda a conclusão dessas operações, evitando ociosidade. Além disso, em sistemas reativos e servidores, o uso de threads permite que sistemas que atendem múltiplos usuários simultaneamente mantenham respostas rápidas e contínuas, mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Dessa forma, a utilização adequada de threads é usada como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
 
-        A utilização de threads traz diversos benefícios. Em problemas que envolvem tarefas que exigem alto processamento (CPU-bound) a execução paralela em múltiplos núcleos permite reduzir o tempo total de cálculo. Em problemas que dependem de operações de entrada e saída (I/O-bound) as threads possibilitam que a CPU continue processando outras tarefas enquanto aguarda a conclusão dessas operações, evitando ociosidade. Além disso, em sistemas reativos e servidores, o uso de threads permite que sistemas que atendem múltiplos usuários simultaneamente mantenham respostas rápidas e contínuas, mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Dessa forma, a utilização adequada de threads é usada como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
+            O relatório State of the Octoverse 2024 \cite{github2024octoverse} demonstra que a linguagem de programação Java está entre as cinco linguagens mais utilizadas na plataforma, o que reforça sua importância como uma das principais tecnologias do desenvolvimento de software.
 
+            No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que são uma forma de implementação de Green Threads. Diferente das threads tradicionais, que são gerenciadas diretamente pelo sistema operacional (SO), as Green Threads são controladas pela linguagem ou pela biblioteca de execução. Nesse contexto, as threads virtuais são threads gerenciadas pela Java Virtual Machine (JVM). Elas podem apresentar comportamentos diferentes das threads tradicionais, enquanto o escalonamento das threads tradicionais é realizado pelo SO, determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM.
+
+            O uso de threads tradicionais pode gerar overhead e limitar a escalabilidade. As threads virtuais surgem como uma alternativa para contornar essas limitações. Este trabalho investiga como a utilização de threads virtuais pode impactar o desempenho e a escalabilidade de aplicações concorrentes.
+
+            O objetivo deste trabalho é analisar as diferenças de desempenho entre threads tradicionais e threads virtuais, avaliando como cada abordagem impacta a execução de aplicações concorrentes.
+
+            Para alcançar o objetivo geral deste trabalho, foram definidos os seguintes objetivos específios:
+
+            \begin{itemize}
+                \item Implementar protótipos de aplicações concorrentes utilizando ambas as threads;
+                \item Medir e comparar métricas de desempenho;
+                \item Analisar os resultados obtidos, identificando vantagens e limitações.
+            \end{itemize}
+
+            Este trabalho se justifica pela necessidade de compreender as vantagens e limitações das threads virtuais em comparação às threads tradicionais. Os resultados podem fornecer informações relevantes para auxiliar na escolha da abordagem mais adequada em diferentes cenários de aplicações concorrentes.
+
+        \newpage
+    }
+        Uma thread é a menor unidade de processamento existente dentro de um processo. Cada processo pode conter múltiplas threads, permitindo a execução simultânea de diferentes partes de um programa ou de diferentes tarefas \cite{silberschatz2018operating}.
+
+        A utilização de threads oferece diversos benefícios em problemas que envolvem tarefas de alto processamento (CPU-bound) e operações de entrada e saída (I/O-bound). Além disso, em sistemas reativos e servidores, o uso de threads permite que aplicações que atendem múltiplos usuários simultaneamente mantenham respostas rápidas e contínuas, mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Dessa forma, o emprego adequado de threads é aplicado como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
+        
         O relatório State of the Octoverse 2024 \cite{github2024octoverse} demonstra que a linguagem de programação Java está entre as cinco linguagens mais utilizadas na plataforma, o que reforça sua importância como uma das principais tecnologias do desenvolvimento de software.
 
-        No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que são uma forma de implementação de Green Threads. Diferente das threads tradicionais, que são gerenciadas diretamente pelo sistema operacional (SO), as Green Threads são controladas pela linguagem ou pela biblioteca de execução. Nesse contexto, as threads virtuais são threads gerenciadas pela Java Virtual Machine (JVM). Elas podem apresentar comportamentos diferentes das threads tradicionais, enquanto o escalonamento das threads tradicionais é realizado pelo SO, determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM.
+        No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que, diferente das threads tradicionais, são gerenciadas pela Java Virtual Machine (JVM). Enquanto o escalonamento das threads tradicionais é realizado pelo sistema operacional (SO), determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM, o que pode apresentar comportamentos distintos \cite{oracle_virtual_threads}. 
 
-        O uso de threads tradicionais pode gerar overhead e limitar a escalabilidade. As threads virtuais surgem como uma alternativa para contornar essas limitações. Este trabalho investiga como a utilização de threads virtuais pode impactar o desempenho e a escalabilidade de aplicações concorrentes.
+        O uso de threads tradicionais pode gerar overhead e limitar a escalabilidade. Nesse contexto, as threads virtuais surgem como alternativa para contornar essas limitações. Este trabalho investiga como a utilização de threads virtuais pode impactar o desempenho e a escalabilidade de aplicações concorrentes.
 
         O objetivo deste trabalho é analisar as diferenças de desempenho entre threads tradicionais e threads virtuais, avaliando como cada abordagem impacta a execução de aplicações concorrentes.
 
-        Para alcançar o objetivo geral deste trabalho, foram definidos os seguintes objetivos específios:
+        Para alcançar o objetivo geral, foram definidos os seguintes objetivos específicos:
 
         \begin{itemize}
+            \item Compreender os fundamentos teóricos da programação concorrente e das diferentes abordagens de threads;
             \item Implementar protótipos de aplicações concorrentes utilizando ambas as threads;
             \item Medir e comparar métricas de desempenho;
             \item Analisar os resultados obtidos, identificando vantagens e limitações.
         \end{itemize}
-
-        Este trabalho se justifica pela necessidade de compreender as vantagens e limitações das threads virtuais em comparação às threads tradicionais. Os resultados podem fornecer informações relevantes para auxiliar na escolha da abordagem mais adequada em diferentes cenários de aplicações concorrentes.
-
-    \newpage
-
-    
 
     %A introdução é a primeira parte do texto e tem como objetivo apresentar, de forma clara e objetiva, o tema e o contexto da pesquisa. Ela deve despertar o interesse do leitor e situá-lo quanto à relevância do trabalho. Geralmente, a introdução contém:
 
