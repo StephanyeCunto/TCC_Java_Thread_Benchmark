@@ -14,3 +14,6 @@
 *.DS_Store
 *.ilg
 *.ind
+
+**/target/
+Teste_JMH/target/
