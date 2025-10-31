@@ -18,40 +18,102 @@
 \floatname{quadro}{Quadro}
 \captionsetup[quadro]{font=small, labelfont=bf, labelsep=period}
 
+\newcommand{\ignore}[1]{}
+
 \begin{document}
+    \ignore{
+        \begin{landscape}
+            \begin{quadro}[H]
+                \centering
+                \caption{Trabalhos relacionados} 
+                \fontsize{10}{12}\selectfont
+                
+                \begin{tabularx}{\linewidth}{|p{6cm}|p{4cm}|p{3cm}|X|}
+                    \hline
+                    \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Resumo}  \\ \hline
 
-\begin{landscape}
-    \begin{quadro}[H]
-        \centering
-        \caption{Trabalhos relacionados} 
-        \fontsize{10}{12}\selectfont
-        
-        \begin{tabularx}{\linewidth}{|p{6cm}|p{4cm}|p{3cm}|X|}
-            \hline
-            \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Resumo}  \\ \hline
+                    Comparison of Concurrency Technologies in Java & 
+                    Latência, taxa de transferência, taxa de resposta, bytes de entrada/saída & 
+                    Não informado &  
+                    Avaliou diferentes técnicas de concorrência em Java (E/S, computação e testes mistos), comparando desempenho e latência de threads tradicionais.\\ \hline
 
-            Comparison of Concurrency Technologies in Java & 
-            Latência, taxa de transferência, taxa de resposta, bytes de entrada/saída & 
-            Não informado &  
-            Avaliou diferentes técnicas de concorrência em Java (E/S, computação e testes mistos), comparando desempenho e latência de threads tradicionais.\\ \hline
+                    Avaliação dos mecanismos de concorrência na API do Java 8 & 
+                    Tempo de execução, consumo de memória & 
+                    Não informado &  
+                    Comparou algoritmos de ordenação utilizando Single Thread, Threads, ExecutorService e Fork/Join em diferentes processadores, focando em eficiência de tempo e memória.\\ \hline
 
-            Avaliação dos mecanismos de concorrência na API do Java 8 & 
-            Tempo de execução, consumo de memória & 
-            Não informado &  
-            Comparou algoritmos de ordenação utilizando Single Thread, Threads, ExecutorService e Fork/Join em diferentes processadores, focando em eficiência de tempo e memória.\\ \hline
+                    Uma análise comparativa entre threads e green threads no Java & 
+                    Tempo de execução & 
+                    Biblioteca JMH & 
+                    Mediu o desempenho de threads e green threads em tarefas de inicialização, sincronização e troca de contexto, destacando diferenças de eficiência.\\ \hline
 
-            Uma análise comparativa entre threads e green threads no Java & 
-            Tempo de execução & 
-            Biblioteca JMH & 
-            Mediu o desempenho de threads e green threads em tarefas de inicialização, sincronização e troca de contexto, destacando diferenças de eficiência.\\ \hline
+                    Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
+                    Taxa de transferência, latência, uso de memória e CPU & 
+                    Não informado & 
+                    Comparou threads tradicionais e virtuais em cenários CPU-bound e I/O-bound, analisando performance e utilização de recursos.\\ \hline
+                \end{tabularx}
+            \end{quadro}
 
-            Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
-            Taxa de transferência, latência, uso de memória e CPU & 
-            Não informado & 
-            Comparou threads tradicionais e virtuais em cenários CPU-bound e I/O-bound, analisando performance e utilização de recursos.\\ \hline
-        \end{tabularx}
-    \end{quadro}
+        \end{landscape}
+    }
 
-\end{landscape}
+    \begin{landscape}
+        \begin{quadro}[H]
+            \centering
+            \caption{Trabalhos relacionados}
+            \fontsize{10}{12}\selectfont
+            
+            \begin{tabularx}{\linewidth}{|p{3cm}|p{2cm}|p{2.5cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2cm}|p{3cm}|X|}
+                \hline
+                \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Warmup} & \textbf{Exclusão} & \textbf{Resultado} & \textbf{Execuções} & \textbf{O que comparou} & \textbf{Tipo de teste} \\ \hline
+                
+                Comparison of Concurrency Technologies in Java & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                 \\ 
+                \hline
+
+                Avaliação dos mecanismos de concorrência na API do Java 8 & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                 \\ 
+                \hline
+
+                Uma análise comparativa entre threads e green threads no Java & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                 \\ 
+                \hline
+
+                Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                & 
+                 \\ 
+                \hline
+
+            \end{tabularx}
+        \end{quadro}
+
+    \end{landscape}
 
 \end{document}
