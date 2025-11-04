@@ -63,24 +63,51 @@
             \caption{Trabalhos relacionados}
             \fontsize{10}{12}\selectfont
             
-            \begin{tabularx}{\linewidth}{|p{3cm}|p{2cm}|p{2.5cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2cm}|p{3cm}|X|}
+            \begin{tabularx}{\linewidth}{|p{4.5cm}|p{2.5cm}|p{2.3cm}|p{1.5cm}|p{1.8cm}|p{2cm}|p{1.8cm}|p{3cm}|X|}
                 \hline
-                \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Warmup} & \textbf{Exclusão} & \textbf{Resultado} & \textbf{Execuções} & \textbf{O que comparou} & \textbf{Tipo de teste} \\ \hline
+                \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Warmup}  & \textbf{Execuções} & \textbf{Exclusão} & \textbf{Resultado}& \textbf{O que comparou} & \textbf{Teste} \\ \hline
                 
                 Comparison of Concurrency Technologies in Java & 
+           \ignore {    
+                    \begin{minipage}[t]{\linewidth}
+                        \textbf{Cliente:}\\
+                        Latência, taxa de transferência, taxa de amostragem, respostas do servidor e bytes de entrada/saída.\\[0.3em]
+                        \textbf{Servidor:}\\
+                        Utilização da CPU, número de threads (ativas e iniciadas) e heap (tamanho total e tamanho utilizado).
+                    \end{minipage} &
+                    Não informado & 
+                    \begin{minipage}[t]{\linewidth}
+                        \textbf{Experimento de Rampa de Carga: } \\
+                        60 segundos com 300 solicitações por segundo \\
+                        Coleta manual de lixo \\
+                        Operação em modo de espera por 20 segundos \\
+                        Repite três vezes com taxas ajustadas para o método específico.
+                        \textbf{Teste de Carga Constante: } \\
+                        3 séries de aquecimento de 60 segundos com 300 solicitações por segundo cada. \\
+                        Corrida de aquecimento de 2 minutos com a cadência pretendida. \\
+                        \textbf{Perfilamento de Pilha: } \\
+                            3 ataques de Vegeta de 60 segundos com as mesmas taxas que seriam usadas no teste real. Incluindo coleta manual de lixo.
+                    \end{minipage} & 
+                    5 & 
+                    & 
+                    & 
+                    & 
+                    \\ 
+                    \hline
+                }
+                &
+                Não informado &
+                & 
+                5 & 
                 & 
                 & 
                 & 
-                & 
-                & 
-                & 
-                & 
-                 \\ 
+                \\ 
                 \hline
 
                 Avaliação dos mecanismos de concorrência na API do Java 8 & 
-                & 
-                & 
+                Tempo de execução, consumo de memória & 
+                Não informado & 
                 & 
                 & 
                 & 
@@ -90,19 +117,27 @@
                 \hline
 
                 Uma análise comparativa entre threads e green threads no Java & 
-                & 
-                & 
-                & 
-                & 
-                & 
-                & 
-                & 
-                 \\ 
+                Tempo de execução & 
+                Biblioteca JMH & 
+                1 & 
+                30 & 
+                Não houve & 
+                Threads virtuais foram pelo menos 10 vezes mais rápidas em todos os testes & 
+                Tempo de instanciar, iniciar, realizar o join e troca de contexto em threads tradicionais e virtuais & 
+                \begin{minipage}[t]{\linewidth}
+                    CPU-bound:\\
+                        Criou 100.000 threads e mediu o tempo de execução para a criação desses objetos. Instanciou a thread dentro de um consumidor BlackHole, uma abstração que não realiza nenhuma operação, mas impede que o compilador Java exclua o código da criação da thread. \\
+                        Criou 100.000 threads e mediu o tempo de execução para a criação desses objetos. Utilizou BlackHole. \\
+                        Iniciou-se um total de 10.000 threads que não realizavam operações específicas utilizando o método .start(). Por meio de um laço invocava o método .join() de cada thread. \\
+                    I/O-bound (simulado): \\
+                        Criou 100.000 threads, cada thread aguarda por 100 milissegundos, invoca o método Thread.yield(), e aguarda por mais 100 milissegundos.
+                \end{minipage}
+                \\ 
                 \hline
 
                 Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
-                & 
-                & 
+                Taxa de transferência, latência, uso de memória e CPU & 
+                Não informado & 
                 & 
                 & 
                 & 
