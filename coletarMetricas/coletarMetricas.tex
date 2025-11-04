@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec} % Para usar fontes modernas
+\usepackage{array}    % Para melhor controle das colunas
+
+\begin{document}
+
+    \begin{center}
+        \begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|} \hline
+            \textbf{Recurso} & \textbf{Métricas típicas} & \textbf{Ferramentas Linux / Azure} \\ \hline
+            CPU & \%usr, \%nice, \%sys, \%iowait, \%irq, \%soft, \%steal, \%guest, \%gnice, \%idle & \texttt{mpstat}\\ \hline
+            Memória RAM & usada, livre, cache, swap &  \texttt{vmstat} \\ \hline
+            Disco & IOPS, throughput, tempo de resposta & \texttt{iostat}, \texttt{dstat} \\ \hline
+            Rede & tráfego, pacotes, erros & \texttt{ifstat}, \texttt{nload}, \texttt{dstat} \\ \hline
+            Processos & PID específicos, threads & \texttt{pidstat} \\ \hline
+        \end{tabular}
+    \end{center}
+
+        Mpstart: \\
+        azureuser@linux-java-vm:~\$ mpstat 1 5 \\
+
+    \begin{center}
+        \begin{tabular}{|p{1.3cm}|p{0.7cm}|p{0.7cm}|p{0.85cm}|p{0.8cm}|p{1.3cm}|p{0.8cm}|p{0.8cm}|p{1cm}|p{1.1cm}|p{1.1cm}|p{1cm}|} \hline
+            Hora & CPU & \%usr & \%nice &\%sys & \%iowait & \%irq & \%soft & \%steal &\%guest & \%gnice & \%idle \\ \hline
+            20:32:54 & all & 0.00 & 0.00 & 0.25 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.75 \\ \hline
+            20:32:55 & all & 0.25 & 0.00 & 0.25 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.50 \\ \hline
+            20:32:56 & all & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00 \\ \hline
+            20:32:57 & all & 0.25 & 0.00 & 0.50 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.25 \\ \hline
+            20:32:58 & all & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00 \\ \hline
+            \textbf{Average} & all & 0.10 & 0.00 & 0.20 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.70 \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    \begin{center}
+        \begin{tabular}{|p{3cm}|p{12cm}|} \hline
+            \textbf{Coluna} & \textbf{Significado detalhado} \\ \hline
+            \textbf{\%usr} & Percentual de CPU usado por \textbf{processos do usuário}, ou seja, aplicações normais. \\ \hline
+            \textbf{\%nice} & Percentual de CPU usado por \textbf{processos “nice”}, ou seja, com prioridade modificada (menor prioridade). \\ \hline
+            \textbf{\%sys} & Percentual de CPU usado pelo \textbf{kernel / sistema operacional}. \\ \hline
+            \textbf{\%iowait} & Percentual de tempo que a CPU ficou \textbf{esperando operações de I/O} (disco, rede) concluírem. \\ \hline
+            \textbf{\%irq} & Percentual de CPU usado para \textbf{interrupções de hardware} (ex.: teclado, rede, disco). \\ \hline
+            \textbf{\%soft} & Percentual de CPU usado para \textbf{interrupções de software} (soft IRQ). \\ \hline
+            \textbf{\%steal} & Percentual de CPU que foi \textbf{“roubado”} pela hypervisor em ambientes virtualizados (outras VMs). \\ \hline
+            \textbf{\%guest} & Percentual de CPU usado por \textbf{máquinas virtuais convidadas}. \\ \hline
+            \textbf{\%gnice} & Percentual de CPU usado por \textbf{processos “nice” dentro de VMs convidadas}. \\ \hline
+            \textbf{\%idle} & Percentual de CPU \textbf{ociosa}, ou seja, sem fazer nada. \\ \hline
+        \end{tabular}
+    \end{center}
+
+    vmstat
+\end{document}
