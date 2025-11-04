@@ -18,137 +18,114 @@
 \floatname{quadro}{Quadro}
 \captionsetup[quadro]{font=small, labelfont=bf, labelsep=period}
 
-\newcommand{\ignore}[1]{}
-
 \begin{document}
-    \ignore{
-        \begin{landscape}
-            \begin{quadro}[H]
-                \centering
-                \caption{Trabalhos relacionados} 
-                \fontsize{10}{12}\selectfont
-                
-                \begin{tabularx}{\linewidth}{|p{6cm}|p{4cm}|p{3cm}|X|}
-                    \hline
-                    \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Resumo}  \\ \hline
 
-                    Comparison of Concurrency Technologies in Java & 
-                    Latência, taxa de transferência, taxa de resposta, bytes de entrada/saída & 
-                    Não informado &  
-                    Avaliou diferentes técnicas de concorrência em Java (E/S, computação e testes mistos), comparando desempenho e latência de threads tradicionais.\\ \hline
+\begin{landscape}
 
-                    Avaliação dos mecanismos de concorrência na API do Java 8 & 
-                    Tempo de execução, consumo de memória & 
-                    Não informado &  
-                    Comparou algoritmos de ordenação utilizando Single Thread, Threads, ExecutorService e Fork/Join em diferentes processadores, focando em eficiência de tempo e memória.\\ \hline
+% ===========================
+% TABELA 1
+% ===========================
+\begin{quadro}[H]
+    \centering
+    \caption{Trabalhos relacionados (Parte 1)}
+    \fontsize{10}{12}\selectfont
+    \begin{tabularx}{\linewidth}{|p{3cm}|p{2.2cm}|p{2cm}|p{2.2cm}|p{1cm}|p{1.3cm}|p{4cm}|p{3cm}|X|}
+        \hline
+        \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Warmup}  & \textbf{Exec.} & \textbf{Excl.} & \textbf{Res.} & \textbf{O que comparou} & \textbf{Teste} \\ \hline
+        
+        Comparison of Concurrency Technologies in Java & 
+        Latência, taxa de transferência, taxa de amostragem, respostas do servidor, bytes de entrada e saída. &
+        Não Informado &
+        Três execuções de 60s, cada uma com 300 requisições/seg. Uma execução de 2min, usando a taxa real do teste.& 
+        5 & 
+        Outliers & 
+        \begin{minipage}[t]{\linewidth}
+            Computation Test (CPU-bound): \\
+            Threads tradicionais tiveram o melhor desempenho em throughput e latência. \\
+            I/O Test (I/O-bound): \\
+            O reactive Framework teve maior escalabilidade, menor uso de CPU e memória. \\
+            Mixed Test – Computation focused: \\
+            As threads virtuais tiveram alta taxa de requisições e baixa latência. \\
+            Mixed Test – I/O focused: \\
+            As threads virtuais mantiveram desempenho alto, enquanto as tradicionais tiveram alta latência e menor throughput. \\
+        \end{minipage} & 
+        Threads tradicionais, virtuais e reactive Framework em teste de I/O-Bound, CPU-Bound e testes mistos & 
+        \begin{minipage}[t]{\linewidth}
+            I/O Test – Thread.sleep(100 ms).\\
+            Computation Test – Multiplica matrizes 200×200.\\
+            Mixed Test – Multiplica matrizes 200×200 + pausa curta (25 ms).\\
+            Mixed Test – I/O focused – Multiplica matrizes 50×50 + pausa longa (100 ms).\\ 
+        \end{minipage} \\
+        \hline
+        
+        Avaliação dos mecanismos de concorrência na API do Java 8 & 
+        \begin{minipage}[t]{\linewidth}
+            Tempo de execução (μs) \\
+            Consumo de memória (MB)
+        \end{minipage} &
+        Não informado &
+        \begin{minipage}[t]{\linewidth}
+            Não informado, talvez 10 \\
+            Página 48  
+        \end{minipage} &
+        60 & 
+        Não Houve & 
+        Quicksort com ForkJoinPool em máquina com 8 processadores lógicos obteve o melhor resultado em tempo, Quicksort e ForkJoinPool apresentaram os menores tempos na maioria dos cenários. &
+        Os algoritmos Quicksort, Mergesort e Pidgeonholesort com single thread, threads, executorService e fork/Join em dual-core, i5 e i7 &
+        CPU-bound \\
+        \hline
+    \end{tabularx}
+\end{quadro}
 
-                    Uma análise comparativa entre threads e green threads no Java & 
-                    Tempo de execução & 
-                    Biblioteca JMH & 
-                    Mediu o desempenho de threads e green threads em tarefas de inicialização, sincronização e troca de contexto, destacando diferenças de eficiência.\\ \hline
+% ===========================
+% TABELA 2
+% ===========================
+\begin{quadro}[H]
+    \centering
+    \caption{Trabalhos relacionados (Parte 2)}
+    \fontsize{10}{12}\selectfont
+    \begin{tabularx}{\linewidth}{|p{3cm}|p{2.2cm}|p{2cm}|p{2.2cm}|p{1cm}|p{1.3cm}|p{4cm}|p{3cm}|X|}
+        \hline
+        \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Warmup}  & \textbf{Exec.} & \textbf{Excl.} & \textbf{Res.} & \textbf{O que comparou} & \textbf{Teste} \\ \hline
+        
+        Uma análise comparativa entre threads e green threads no Java & 
+        Tempo de execução (μs) &
+        Biblioteca JMH &
+        1 & 
+        30 & 
+        Não Houve & 
+        Threads virtuais foram pelo menos 10 vezes mais rápidas em todos os testes &
+        Tempo de instanciar, iniciar, realizar join e troca de contexto em threads tradicionais e virtuais &
+        \begin{minipage}[t]{\linewidth}
+            CPU-bound \\
+            I/O-bound (simulado): \\
+            Criou 100.000 threads, cada thread aguarda 100 ms, invoca Thread.yield() e aguarda mais 100 ms.
+        \end{minipage} \\
+        \hline
+        
+        Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
+        Taxa de transferência (req/s), latência, uso CPU (\%) e memória &
+        Não informado &
+        \begin{minipage}[t]{\linewidth}
+            CPU-bound: \\
+            Usou 10 threads por 5 min para aquecer \\
+            I/O-bound: 10 usuários concorrentes durante 60s
+        \end{minipage} &
+        3 &
+        Execuções com erros de rede descartadas &
+        \begin{minipage}[t]{\linewidth}
+            CPU-bound: Threads tradicionais mais rápidas, maior uso de memória, ambas usaram 100\% da CPU, resultados semelhantes em latência e throughput \\
+            I/O-bound: Threads virtuais mais rápidas, menor uso de memória e CPU, throughput maior, latência menor
+        \end{minipage} &
+        Threads virtuais e tradicionais em cálculo de números primos e requisições com ação bloqueante &
+        \begin{minipage}[t]{\linewidth}
+            CPU-bound: Calcular números primos em um intervalo \\
+            I/O-bound: Duas aplicações Java: uma envia requisições (GET), outra simula operação bloqueante.
+        \end{minipage} \\
+        \hline
+    \end{tabularx}
+\end{quadro}
 
-                    Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
-                    Taxa de transferência, latência, uso de memória e CPU & 
-                    Não informado & 
-                    Comparou threads tradicionais e virtuais em cenários CPU-bound e I/O-bound, analisando performance e utilização de recursos.\\ \hline
-                \end{tabularx}
-            \end{quadro}
-
-        \end{landscape}
-    }
-
-    \begin{landscape}
-        \begin{quadro}[H]
-            \centering
-            \caption{Trabalhos relacionados}
-            \fontsize{10}{12}\selectfont
-            
-            \begin{tabularx}{\linewidth}{|p{4.5cm}|p{2.5cm}|p{2.3cm}|p{1.5cm}|p{1.8cm}|p{2cm}|p{1.8cm}|p{3cm}|X|}
-                \hline
-                \textbf{Nome} & \textbf{Métricas} & \textbf{Benchmark} & \textbf{Warmup}  & \textbf{Execuções} & \textbf{Exclusão} & \textbf{Resultado}& \textbf{O que comparou} & \textbf{Teste} \\ \hline
-                
-                Comparison of Concurrency Technologies in Java & 
-           \ignore {    
-                    \begin{minipage}[t]{\linewidth}
-                        \textbf{Cliente:}\\
-                        Latência, taxa de transferência, taxa de amostragem, respostas do servidor e bytes de entrada/saída.\\[0.3em]
-                        \textbf{Servidor:}\\
-                        Utilização da CPU, número de threads (ativas e iniciadas) e heap (tamanho total e tamanho utilizado).
-                    \end{minipage} &
-                    Não informado & 
-                    \begin{minipage}[t]{\linewidth}
-                        \textbf{Experimento de Rampa de Carga: } \\
-                        60 segundos com 300 solicitações por segundo \\
-                        Coleta manual de lixo \\
-                        Operação em modo de espera por 20 segundos \\
-                        Repite três vezes com taxas ajustadas para o método específico.
-                        \textbf{Teste de Carga Constante: } \\
-                        3 séries de aquecimento de 60 segundos com 300 solicitações por segundo cada. \\
-                        Corrida de aquecimento de 2 minutos com a cadência pretendida. \\
-                        \textbf{Perfilamento de Pilha: } \\
-                            3 ataques de Vegeta de 60 segundos com as mesmas taxas que seriam usadas no teste real. Incluindo coleta manual de lixo.
-                    \end{minipage} & 
-                    5 & 
-                    & 
-                    & 
-                    & 
-                    \\ 
-                    \hline
-                }
-                &
-                Não informado &
-                & 
-                5 & 
-                & 
-                & 
-                & 
-                \\ 
-                \hline
-
-                Avaliação dos mecanismos de concorrência na API do Java 8 & 
-                Tempo de execução, consumo de memória & 
-                Não informado & 
-                & 
-                & 
-                & 
-                & 
-                & 
-                 \\ 
-                \hline
-
-                Uma análise comparativa entre threads e green threads no Java & 
-                Tempo de execução & 
-                Biblioteca JMH & 
-                1 & 
-                30 & 
-                Não houve & 
-                Threads virtuais foram pelo menos 10 vezes mais rápidas em todos os testes & 
-                Tempo de instanciar, iniciar, realizar o join e troca de contexto em threads tradicionais e virtuais & 
-                \begin{minipage}[t]{\linewidth}
-                    CPU-bound:\\
-                        Criou 100.000 threads e mediu o tempo de execução para a criação desses objetos. Instanciou a thread dentro de um consumidor BlackHole, uma abstração que não realiza nenhuma operação, mas impede que o compilador Java exclua o código da criação da thread. \\
-                        Criou 100.000 threads e mediu o tempo de execução para a criação desses objetos. Utilizou BlackHole. \\
-                        Iniciou-se um total de 10.000 threads que não realizavam operações específicas utilizando o método .start(). Por meio de um laço invocava o método .join() de cada thread. \\
-                    I/O-bound (simulado): \\
-                        Criou 100.000 threads, cada thread aguarda por 100 milissegundos, invoca o método Thread.yield(), e aguarda por mais 100 milissegundos.
-                \end{minipage}
-                \\ 
-                \hline
-
-                Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads & 
-                Taxa de transferência, latência, uso de memória e CPU & 
-                Não informado & 
-                & 
-                & 
-                & 
-                & 
-                & 
-                 \\ 
-                \hline
-
-            \end{tabularx}
-        \end{quadro}
-
-    \end{landscape}
+\end{landscape}
 
 \end{document}
