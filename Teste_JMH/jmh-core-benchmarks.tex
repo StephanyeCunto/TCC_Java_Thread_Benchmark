@@ -19,7 +19,7 @@
 \begin{document}
 
     \section{Introdução}
-    Este documento apresenta um resumo dos benchmarks realizados com a ferramenta \textit{Java Microbenchmark Harness (JMH)}, descrevendo os tipos de testes e as variáveis utilizadas.
+    Este documento apresenta um resumo dos benchmarks que podem ser realizados com a ferramenta \textit{Java Microbenchmark Harness (JMH)}, descrevendo os tipos de testes e as variáveis utilizadas.
 
     \section{Código de Execução do Benchmark}
     \small 
@@ -132,7 +132,43 @@
     Mostra a influência do inlining.
 
     \subsection{CoreStabilityBench}
+    Executa uma quantidade fixa de ciclos de CPU e mede quantas dessas execuções cabem em 1 segundo.
 
+    \subsection{CurrentTimeMillisTimerBench}
+    Mede características do método System.currentTimeMillis(), quanto tempo leva para obter ou detectar a passagem do tempo.
+
+    \subsection{EmptyBench}
+    Mede o tempo da chamada do método de benchmark.
+
+    \subsection{LevelInvocationBench}
+    Mede quanto tempo a JVM gasta apenas para executar setup/teardown em diferentes níveis de escopo. Utiliza Level.Invocation que executa antes ou depois de cada invocação do benchmark.
+    Testa: 
+    \begin{itemize}
+        \item @State(Scope.Benchmark) → estado compartilhado entre todos os threads e benchmarks.
+        \item @State(Scope.Thread) → estado exclusivo de cada thread.
+        \item @State(Scope.Group) → estado compartilhado entre threads de um mesmo grupo.
+    \end{itemize}
+    
+    \subsection{LevelIterationBench}
+    Mede quanto tempo a JVM gasta apenas para executar setup/teardown em diferentes níveis de escopo. Utiliza Level.Iteration que executa uma vez por iteração de benchmark.
+    
+    \subsection{LevelTrialBench}
+    Mede quanto tempo a JVM gasta apenas para executar setup/teardown em diferentes níveis de escopo. Utiliza Level.Trial que executa uma vez por toda a execução do benchmark (todas as iterações).
+
+    \subsection{LongStabilityBench}
+    Mede quanto trabalho a CPU consegue fazer em ciclos de CPU simulados.
+    
+    \subsection{NanoTimerBench}
+    Mede a performance e resolução do relógio do sistema.
+
+    \subsection{RoundTripLatencyBench}
+    Mede quanto tempo leva para uma mensagem percorrer de uma thread para outra e voltar.
+
+    \subsection{ThermalRundownBench}
+    Simula carga contínua de CPU para observar como o processador se comporta sob execução intensa, mede o impacto do aquecimento e da limitação automática de frequência.
+
+    \subsection{ThreadScalingBench}
+    Simula carga contínua de CPU para medir desempenho médio por operação.
 
     \section{Resumo em Tabela}
     \small 
@@ -159,9 +195,31 @@
 
         BlackholeValueBench & boolean &  Mede o custo de percorrer arrays de elementos booleanos e consumi-los. \\ \hline
 
-        BurstStabilityBench & & Mede o tempo que a CPU leva para realizar um trabalho simulado. \\ \hline
+        BurstStabilityBench &  & Mede o tempo que a CPU leva para realizar um trabalho simulado. \\ \hline
 
-        CompilerHintsBench &  & Mostra a influência do inlining.
+        CompilerHintsBench &  & Mostra a influência do inlining. \\ \hline
+
+        CoreStabilityBench &  & Executa uma quantidade fixa de ciclos de CPU e mede quantas dessas execuções cabem em 1 segundo. \\ \hline
+
+        CurrentTimeMillisTimerBench &  & Mede características do método System.currentTimeMillis(), quanto tempo leva para obter ou detectar a passagem do tempo. \\ \hline
+
+        EmptyBench &  & Mede o tempo da chamada do método de benchmark. \\ \hline
+
+        LevelInvocationBench &  & Mede quanto tempo a JVM gasta apenas para executar setup/teardown em diferentes níveis de escopo utilizando Level.Invocation \\ \hline
+
+        LevelIterationBench &  & Mede quanto tempo a JVM gasta apenas para executar setup/teardown em diferentes níveis de escopo utilizando Level.Iteration  \\ \hline
+        
+        LevelTrialBench &  & Mede quanto tempo a JVM gasta apenas para executar setup/teardown em diferentes níveis de escopo utilizando Level.Trial \\ \hline
+
+        LongStabilityBench &  & Mede quanto trabalho a CPU consegue fazer em ciclos de CPU simulados. \\ \hline
+
+        NanoTimerBench &  &  Mede a performance e resolução do relógio do sistema. \\ \hline
+
+        RoundTripLatencyBench &  & Mede quanto tempo leva para uma mensagem percorrer de uma thread para outra e voltar. \\ \hline
+
+        ThermalRundownBench &  & Simula carga contínua de CPU para observar como o processador se comporta sob execução intensa, mede o impacto do aquecimento e da limitação automática de frequência. \\ \hline
+
+        ThreadScalingBench &  & Simula carga contínua de CPU para medir desempenho médio por operação. \\ \hline
 
     \end{longtable}
     \normalsize
