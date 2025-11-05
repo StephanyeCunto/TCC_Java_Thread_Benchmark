@@ -18,8 +18,6 @@
 
 \begin{document}
 
-    \maketitle
-
     \section{Introdução}
     Este documento apresenta um resumo dos benchmarks realizados com a ferramenta \textit{Java Microbenchmark Harness (JMH)}, descrevendo os tipos de testes e as variáveis utilizadas.
 
@@ -99,11 +97,42 @@
     \end{itemize}
 
     \subsection{BlackholePipelineBench}
-    Mede o custo de processar sequências de elementos (arrays).
-
-    Variáveis: \texttt{boolean, byte, short, char, int, float, long, double, Object, Array de objetos}.
+    
+    Variáveis: \texttt{boolean, byte, short, char, int, float, long, double, Object, arrays}.
 
     Mede o custo de percorrer arrays de elementos consecutivos.
+
+    \subsection{BlackholePipelinePayloadBench}
+
+    Variáveis:  \texttt{boolean, byte, short, char, int, float, long, double, objects, arrays}.
+
+    Mede o custo de percorrer arrays de elementos consecutivos, realizar uma operação e consumi-los.
+
+    \subsection{BlackholeValueBench}
+    Variáveis: \texttt{Boolean} \\
+    Mede o custo de percorrer arrays de elementos booleanos e consumi-los.
+
+    \subsection{BurstStabilityBench}
+    Mede o tempo que a CPU leva para realizar um trabalho simulado.
+
+    \subsection{CompilerHintsBench}
+    Calcula o logaritmo de PI,com quatro metódos diferentes:
+    \begin{itemize}
+        \item do\_Plain — método normal.
+
+        \item do\_Inline — instrução ao compilador: “tente sempre fazer inline deste método”.
+
+        \item do\_DontInline — instrução: “não faça inline deste método”.
+
+        \item do\_Exclude — instrução: “ignore este método para otimizações JIT”.
+    \end{itemize}
+
+    Inline significa que o compilador pode substituir a chamada ao método pelo corpo do método, evitando overhead de chamada.
+
+    Mostra a influência do inlining.
+
+    \subsection{CoreStabilityBench}
+
 
     \section{Resumo em Tabela}
     \small 
@@ -118,11 +147,22 @@
         \end{minipage} \\ \hline
 
         BlackholeConsecutiveBench & boolean, byte, short, char, int, float, long, double, Object & Mede custo de 1, 4 ou 8 operações consecutivas, garantindo uso de valores \\ \hline
+        
         BlackholeConsumeCPUBench &  & 
         \begin{minipage}[t]{7cm}
             Executa loop vazio para simular CPU \\ Mede tempo médio de consume CPU 
         \end{minipage} \\ \hline
+        
         BlackholePipelineBench & boolean, byte, short, char, int, float, long, double, Object, Array & Mede custo de percorrer arrays de elementos consecutivos \\ \hline
+        
+        BlackholePipelinePayloadBench & boolean, byte, short, char, int, float, long, double, Object, arrays & Mede custo de percorrer arrays de elementos consecutivos, realizar operações e consumi-los. \\ \hline
+
+        BlackholeValueBench & boolean &  Mede o custo de percorrer arrays de elementos booleanos e consumi-los. \\ \hline
+
+        BurstStabilityBench & & Mede o tempo que a CPU leva para realizar um trabalho simulado. \\ \hline
+
+        CompilerHintsBench &  & Mostra a influência do inlining.
+
     \end{longtable}
     \normalsize
 
