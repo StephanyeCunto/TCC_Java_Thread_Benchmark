@@ -70,7 +70,7 @@ tcc/
 ### Clone o Repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/StephanyeCunto/tcc
 cd tcc
 ```
 
