@@ -1,81 +1,134 @@
 \documentclass[12pt,a4paper]{article}
-\usepackage{fontspec} 
-\usepackage{array}    
+\usepackage{fontspec}
+\usepackage{array}
 \usepackage{geometry}
-\usepackage{textcomp}
-\usepackage{graphicx} 
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{colortbl}
+\usepackage{float} 
+\usepackage{longtable}
+\usepackage{colortbl}
 
-\geometry{left=0cm, right=2cm, top=2cm, bottom=2cm}
+\definecolor{cinzaA}{RGB}{240,240,240}
+\definecolor{azul}{RGB}{0,92,184}
 
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\setmainfont{Latin Modern Roman}
+\setstretch{1.15}
+
+\definecolor{azul}{HTML}{1F4E79}
+\definecolor{cinza}{HTML}{F7F7F7}
+\definecolor{cinzaA}{HTML}{EDEDED}
+\definecolor{cinzaB}{HTML}{EFEFEF}
+
+\titleformat{\section}{\large\bfseries\color{azul}}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{azul}}{}{0pt}{}
 
 \begin{document}
 
     \begin{center}
-        \begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|} \hline
-            \textbf{Recurso} & \textbf{Métricas típicas} & \textbf{Ferramentas Linux } \\ \hline
-            CPU & \%usr, \%nice, \%sys, \%iowait, \%irq, \%soft, \%steal, \%guest, \%gnice, \%idle & \texttt{mpstat}\\ \hline
-            Memória RAM & r, b, swpd, free, buff, cache, si, so, bi, bo, in, cs, us, sy, id, wa, st, gu &  \texttt{vmstat} \\ \hline
-            Disco & Device,r/s,rkB/s, rrqm/s,\%rrqm,r\_await,rareq-sz,w/s,wkB/s,wrqm/s,\%wrqm, w\_await,wareq-sz,d/s,dkB/s,drqm/s,\%drqm, d\_await,dareq-sz,f/s,f\_await,aqu-sz,\%util & \texttt{iostat}\\ \hline
+        {\LARGE\bfseries Monitoramento de Recursos em Linux}\\[0.3em]
+        {\small Comparativo entre ferramentas de análise de desempenho (\texttt{mpstat}, \texttt{vmstat}, \texttt{iostat})}
+    \end{center}
+    \vspace{1em}
+
+    \section*{Resumo}
+    Este documento apresenta um panorama das principais ferramentas de monitoramento de desempenho em sistemas Linux (\texttt{mpstat}, \texttt{vmstat} e \texttt{iostat}), detalhando suas métricas e exemplos de saída.
+
+    \section*{1. Resumo das Ferramentas}
+
+    \begin{center}
+        \rowcolors{2}{white}{cinza}
+        \renewcommand{\arraystretch}{1.25}
+        \begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|}
+            \hline
+            \rowcolor{azul!15}
+            \textbf{Recurso} & \textbf{Métricas típicas} & \textbf{Ferramentas Linux} \\ \hline
+            CPU & \%usr, \%nice, \%sys, \%iowait, \%irq, \%soft, \%steal, \%guest, \%gnice, \%idle & \texttt{mpstat} \\ \hline
+            Memória RAM & r, b, swpd, free, buff, cache, si, so, bi, bo, in, cs, us, sy, id, wa, st, gu & \texttt{vmstat} \\ \hline
+            Disco & Device, r/s, rkB/s, rrqm/s, \%rrqm, r\_await, rareq-sz, w/s, wkB/s, wrqm/s, \%wrqm, w\_await, wareq-sz, d/s, dkB/s, drqm/s, \%drqm, d\_await, dareq-sz, f/s, f\_await, aqu-sz, \%util & \texttt{iostat} \\ \hline
         \end{tabular}
     \end{center}
 
-        Mpstart: \\
-            azureuser@linux-java-vm:~\$ mpstat 1 5 \\
+    \vspace{1em}
+    \section*{2. CPU --- \texttt{mpstat}}
 
+    \noindent\textbf{Comando:} \texttt{azureuser@linux-java-vm:\$ mpstat 1 5}
+
+    \vspace{0.8em}
     \begin{center}
-        \begin{tabular}{|p{1.3cm}|p{0.7cm}|p{0.7cm}|p{0.85cm}|p{0.8cm}|p{1.3cm}|p{0.8cm}|p{0.8cm}|p{1cm}|p{1.1cm}|p{1.1cm}|p{1cm}|} \hline
-            Hora & CPU & \%usr & \%nice &\%sys & \%iowait & \%irq & \%soft & \%steal &\%guest & \%gnice & \%idle \\ \hline
+        \rowcolors{2}{white}{cinzaA}
+        \begin{tabular}{|p{1.3cm}|p{0.7cm}|p{0.7cm}|p{0.85cm}|p{0.8cm}|p{1.3cm}|p{0.8cm}|p{0.8cm}|p{1cm}|p{1.1cm}|p{1.1cm}|p{1cm}|}
+            \hline
+            \rowcolor{azul!15}
+            Hora & CPU & \%usr & \%nice & \%sys & \%iowait & \%irq & \%soft & \%steal & \%guest & \%gnice & \%idle \\ \hline
             20:32:54 & all & 0.00 & 0.00 & 0.25 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.75 \\ \hline
             20:32:55 & all & 0.25 & 0.00 & 0.25 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.50 \\ \hline
             20:32:56 & all & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00 \\ \hline
             20:32:57 & all & 0.25 & 0.00 & 0.50 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.25 \\ \hline
             20:32:58 & all & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00 \\ \hline
-            \textbf{Average} & all & 0.10 & 0.00 & 0.20 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.70 \\
+            \textbf{Average} & all & 0.10 & 0.00 & 0.20 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 99.70 \\ \hline
+        \end{tabular}
+    \end{center}
+
+    \vspace{0.6em}
+    \noindent\textbf{Significado das colunas:}
+    \begin{center}
+        \rowcolors{2}{white}{cinzaA}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{|p{3cm}|p{12cm}|}
             \hline
-        \end{tabular}
-    \end{center}
-
-    \begin{center}
-        \begin{tabular}{|p{3cm}|p{12cm}|} \hline
+            \rowcolor{azul!15}
             \textbf{Coluna} & \textbf{Significado detalhado} \\ \hline
-            \textbf{\%usr} & Percentual de CPU usado por \textbf{processos do usuário}, ou seja, aplicações normais. \\ \hline
-            \textbf{\%nice} & Percentual de CPU usado por \textbf{processos “nice”}, ou seja, com prioridade modificada (menor prioridade). \\ \hline
-            \textbf{\%sys} & Percentual de CPU usado pelo \textbf{kernel / sistema operacional}. \\ \hline
-            \textbf{\%iowait} & Percentual de tempo que a CPU ficou \textbf{esperando operações de I/O} (disco, rede) concluírem. \\ \hline
-            \textbf{\%irq} & Percentual de CPU usado para \textbf{interrupções de hardware} (ex.: teclado, rede, disco). \\ \hline
-            \textbf{\%soft} & Percentual de CPU usado para \textbf{interrupções de software} (soft IRQ). \\ \hline
-            \textbf{\%steal} & Percentual de CPU que foi \textbf{“roubado”} pela hypervisor em ambientes virtualizados (outras VMs). \\ \hline
-            \textbf{\%guest} & Percentual de CPU usado por \textbf{máquinas virtuais convidadas}. \\ \hline
-            \textbf{\%gnice} & Percentual de CPU usado por \textbf{processos “nice” dentro de VMs convidadas}. \\ \hline
-            \textbf{\%idle} & Percentual de CPU \textbf{ociosa}, ou seja, sem fazer nada. \\ \hline
+            \%usr & Percentual de CPU usado por processos do usuário (aplicações). \\ \hline
+            \%nice & Percentual de CPU usado por processos com prioridade ajustada (“nice”). \\ \hline
+            \%sys & Percentual de CPU usado pelo kernel. \\ \hline
+            \%iowait & Percentual de tempo aguardando I/O. \\ \hline
+            \%irq & Percentual usado por interrupções de hardware. \\ \hline
+            \%soft & Percentual usado por interrupções de software. \\ \hline
+            \%steal & Percentual de CPU “roubado” pelo hypervisor (virtualização). \\ \hline
+            \%guest & Percentual usado por VMs convidadas. \\ \hline
+            \%gnice & Percentual usado por processos “nice” dentro de VMs convidadas. \\ \hline
+            \%idle & Percentual de CPU ociosa. \\ \hline
         \end{tabular}
     \end{center}
 
-    Vmstat: \\
-        azureuser@linux-java-vm:~\$ vmstat 1 5 \\
+    \vspace{1em}
+    \section*{3. Memória --- \texttt{vmstat}}
+
+    \noindent\textbf{Comando:} \texttt{azureuser@linux-java-vm:\$ vmstat 1 5}
+
+    \vspace{0.6em}
     \begin{center}
-        \begin{tabular}{|p{0.2cm}|p{0.2cm}|p{0.8cm}|p{1.5cm}|p{0.9cm}|p{1.1cm}|p{0.2cm}|p{0.2cm}|p{0.4cm}|p{0.4cm}|p{0.4cm}|p{0.5cm}|p{0.2cm}|p{0.2cm}|p{0.4cm}|p{0.3cm}|p{0.3cm}|p{0.3cm}|}
-        \hline
-        \multicolumn{2}{|c|}{\textbf{procs}} &
-        \multicolumn{4}{c|}{\textbf{memory}} &
-        \multicolumn{2}{c|}{\textbf{swap}} &
-        \multicolumn{2}{c|}{\textbf{io}} &
-        \multicolumn{2}{c|}{\textbf{system}} &
-        \multicolumn{6}{c|}{\textbf{cpu}} \\ \hline
-
-        \textbf{r} & \textbf{b} & \textbf{swpd} & \textbf{free} & \textbf{buff} & \textbf{cache} &
-        \textbf{si} & \textbf{so} & \textbf{bi} & \textbf{bo} & \textbf{in} & \textbf{cs} &
-        \textbf{us} & \textbf{sy} & \textbf{id} & \textbf{wa} & \textbf{st} & \textbf{gu} \\ \hline
-
-        1 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 114 & 472 & 139 & 0 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
-        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 302 & 145 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
-        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 230 & 131 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
-        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 161 & 109 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
-        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 4 & 630 & 1087 & 0 & 1 & 99 & 0 & 0 & 0 \\ \hline
+        \scriptsize
+        \rowcolors{2}{white}{cinzaA}
+        \begin{tabular}{|p{0.25cm}|p{0.25cm}|p{0.9cm}|p{1.6cm}|p{0.9cm}|p{1.15cm}|p{0.25cm}|p{0.25cm}|p{0.45cm}|p{0.45cm}|p{0.45cm}|p{0.55cm}|p{0.25cm}|p{0.25cm}|p{0.45cm}|p{0.35cm}|p{0.35cm}|p{0.35cm}|}
+            \hline
+            \rowcolor{azul!15}
+            \multicolumn{2}{|c|}{\textbf{procs}} &
+            \multicolumn{4}{c|}{\textbf{memory}} &
+            \multicolumn{2}{c|}{\textbf{swap}} &
+            \multicolumn{2}{c|}{\textbf{io}} &
+            \multicolumn{2}{c|}{\textbf{system}} &
+            \multicolumn{6}{c|}{\textbf{cpu}} \\ \hline
+            r & b & swpd & free & buff & cache & si & so & bi & bo & in & cs & us & sy & id & wa & st & gu \\ \hline
+            1 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 114 & 472 & 139 & 0 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+            0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 302 & 145 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+            0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 230 & 131 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+            0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 161 & 109 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+            0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 4 & 630 & 1087 & 0 & 1 & 99 & 0 & 0 & 0 \\ \hline
         \end{tabular}
     \end{center}
 
-    \begin{center}
+      \vspace{0.6em}
+      \begin{center}
+        \rowcolors{2}{white}{cinzaA}
+        \renewcommand{\arraystretch}{1.2}
         \begin{tabular}{|c|c|p{9cm}|}
             \hline
             \textbf{Categoria} & \textbf{Campo} & \textbf{Descrição} \\ \hline
@@ -113,53 +166,40 @@
         \end{tabular}
     \end{center}
 
-    Iostat: \\
-        \$ iostat -x 1 1
-
-    \begin{tabular}{|p{2.5cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
-        \hline
-        \textbf{avg-cpu:} & \%user & \%nice & \%system & \%iowait & \%steal & \%idle \\ \hline
-            & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00 \\ \hline
-    \end{tabular}
-
     \vspace{1em}
+    \section*{4. Disco --- \texttt{iostat}}
 
-    \begin{table}[h!]
-    \centering
-    \setlength{\tabcolsep}{2pt} 
-    \renewcommand{\arraystretch}{1.1} 
+    \noindent\textbf{Comando:} \texttt{\$ iostat -x 1 1}
 
-    \resizebox{\textwidth}{!}{%
+ \vspace{0.6em}
+    \begin{center}
+    \footnotesize
+    \rowcolors{2}{white}{cinzaB}
+    \resizebox{\linewidth}{!}{%
         \begin{tabular}{|p{1.2cm}|p{0.6cm}|p{0.9cm}|p{1cm}|p{0.8cm}|p{0.9cm}|p{0.9cm}|
         p{0.7cm}|p{1cm}|p{0.9cm}|p{0.8cm}|p{0.8cm}|p{0.9cm}|
-        p{0.8cm}|p{1cm}|p{0.9cm}|p{0.8cm}|p{0.9cm}|p{1cm}|p{0.8cm}|p{0.9cm}|p{0.8cm}|p{0.8cm}|} \hline
+        p{0.8cm}|p{1cm}|p{0.9cm}|p{0.8cm}|p{0.9cm}|p{1cm}|p{0.8cm}|p{0.9cm}|p{0.8cm}|p{0.8cm}|}
+            \hline
+            \rowcolor{azul!15}
             Device & r/s & rkB/s & rrqm/s & \%rrqm & r\_await & rareq-sz &
             w/s & wkB/s & wrqm/s & \%wrqm & w\_await & wareq-sz &
             d/s & dkB/s & drqm/s & \%drqm & d\_await & dareq-sz &
             f/s & f\_await & aqu-sz & \%util \\ \hline
-
-            loop0 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 \\ \hline
-
-            sda &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 \\ \hline
-
-            sdb &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
-            0.00 & 0.00 & 0.00 & 0.00 \\ \hline
+            loop0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ \hline
+            sda & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ \hline
+            sdb & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ \hline
         \end{tabular}%
     }
-    \end{table}
+    \end{center}
 
+    \vspace{0.6em}
+    \noindent\textbf{Significados :}
     \begin{center}
+        \rowcolors{2}{white}{cinzaA}
+        \renewcommand{\arraystretch}{1.2}
         \begin{tabular}{|c|c|p{9cm}|}
             \hline
             \textbf{Categoria} & \textbf{Campo} & \textbf{Descrição} \\ \hline
@@ -169,39 +209,90 @@
 
             \textbf{Leitura (Read)} 
             & r/s & Número de operações de leitura por segundo. \\ \cline{2-3}
-            & rkB/s & Quantidade de dados lidos por segundo (em kilobytes). \\ \cline{2-3}
+            & rkB/s & Quantidade de KB lidos por segundo. \\ \cline{2-3}
             & rrqm/s & Requisições de leitura combinadas por segundo. \\ \cline{2-3}
-            & \%rrqm & Percentual de requisições de leitura que foram combinadas. \\ \cline{2-3}
-            & r\_await & Tempo médio (em ms) para completar uma requisição de leitura (espera + serviço). \\ \cline{2-3}
-            & rareq-sz & Tamanho médio das requisições de leitura (em kilobytes). \\ \hline
+            & \%rrqm & Percentual de requisições de leitura combinadas. \\ \cline{2-3}
+            & r\_await & Tempo médio (ms) de requisições de leitura. \\ \cline{2-3}
+            & rareq-sz & Tamanho médio (KB) das requisições de leitura. \\ \hline
 
             \textbf{Escrita (Write)} 
-            & w/s & Número de operações de escrita por segundo. \\ \cline{2-3}
-            & wkB/s & Quantidade de dados escritos por segundo (em kilobytes). \\ \cline{2-3}
+            & w/s & Operações de escrita por segundo. \\ \cline{2-3}
+            & wkB/s & Quantidade de KB escritos por segundo. \\ \cline{2-3}
             & wrqm/s & Requisições de escrita combinadas por segundo. \\ \cline{2-3}
-            & \%wrqm & Percentual de requisições de escrita que foram combinadas. \\ \cline{2-3}
-            & w\_await & Tempo médio (em ms) para completar uma requisição de escrita. \\ \cline{2-3}
-            & wareq-sz & Tamanho médio das requisições de escrita (em kilobytes). \\ \hline
+            & \%wrqm & Percentual de requisições de escrita combinadas. \\ \cline{2-3}
+            & w\_await & Tempo médio (ms) de escrita. \\ \cline{2-3}
+            & wareq-sz & Tamanho médio (KB) das escritas. \\ \hline
 
             \textbf{Descarte (Discard)} 
-            & d/s & Operações de descarte (TRIM) por segundo. \\ \cline{2-3}
-            & dkB/s & Quantidade de dados descartados por segundo. \\ \cline{2-3}
-            & drqm/s & Requisições de descarte combinadas por segundo. \\ \cline{2-3}
-            & \%drqm & Percentual de requisições de descarte que foram combinadas. \\ \cline{2-3}
-            & d\_await & Tempo médio (em ms) de uma operação de descarte. \\ \cline{2-3}
-            & dareq-sz & Tamanho médio das requisições de descarte (em kilobytes). \\ \hline
+            & d/s & Operações de descarte por segundo (TRIM). \\ \cline{2-3}
+            & dkB/s & KB descartados por segundo. \\ \cline{2-3}
+            & drqm/s & Requisições de descarte combinadas. \\ \cline{2-3}
+            & \%drqm & Percentual de descarte combinado. \\ \cline{2-3}
+            & d\_await & Tempo médio (ms) de descarte. \\ \cline{2-3}
+            & dareq-sz & Tamanho médio (KB) das requisições de descarte. \\ \hline
 
             \textbf{Flush} 
-            & f/s & Operações de flush por segundo (esvaziamento de buffers para o disco). \\ \cline{2-3}
-            & f\_await & Tempo médio (em ms) para completar uma operação de flush. \\ \hline
+            & f/s & Operações de flush por segundo. \\ \cline{2-3}
+            & f\_await & Tempo médio (ms) para flush. \\ \hline
 
             \textbf{Fila e Utilização} 
             & aqu-sz & Tamanho médio da fila de requisições pendentes. \\ \cline{2-3}
-            & \%util & Percentual de tempo em que o dispositivo esteve ocupado (100\% indica saturação do disco). \\ \hline
+            & \%util & Percentual de tempo em que o dispositivo esteve ocupado (100\% indica saturação). \\ \hline
 
         \end{tabular}
     \end{center}
 
+    \vspace{1em}
+    \section*{5. Comparativo Geral de Métricas}
 
-    
+    \rowcolors{2}{white}{cinzaA}
+    \renewcommand{\arraystretch}{1.3}
+
+    \begin{longtable}{|p{4cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+        \hline
+        \rowcolor{azul!15}
+        \textbf{Métrica / Conceito} & \textbf{mpstat} & \textbf{vmstat} & \textbf{iostat} \\ \hline
+        \endfirsthead
+
+        \hline
+        \rowcolor{azul!15}
+        \textbf{Métrica / Conceito} & \textbf{mpstat} & \textbf{vmstat} & \textbf{iostat} \\ \hline
+        \endhead
+
+        Uso de CPU em modo usuário & \%usr & us & \%user \\ \hline
+        Uso de CPU em modo sistema (kernel) & \%sys & sy & \%system \\ \hline
+        Tempo ocioso da CPU & \%idle & id & \%idle \\ \hline
+        Tempo de espera por I/O & \%iowait & wa & \%iowait \\ \hline
+        Tempo gasto com interrupções de hardware & \%irq & -- & -- \\ \hline
+        Tempo gasto com interrupções de software & \%soft & -- & -- \\ \hline
+        Tempo roubado pelo hypervisor (virtualização) & \%st & st & -- \\ \hline
+        Tempo de CPU em máquinas virtuais convidadas & \%guest & gu & -- \\ \hline
+
+        Processos em execução & -- & r & -- \\ \hline
+        Processos bloqueados (I/O) & -- & b & -- \\ \hline
+
+        Memória livre & -- & free & -- \\ \hline
+        Memória em buffers & -- & buff & -- \\ \hline
+        Memória em cache & -- & cache & -- \\ \hline
+        Memória de swap utilizada & -- & swpd & -- \\ \hline
+        Leitura do swap (swap in) & -- & si & -- \\ \hline
+        Escrita no swap (swap out) & -- & so & -- \\ \hline
+
+        Blocos lidos do disco & -- & bi & r/s \\ \hline
+        Blocos gravados no disco & -- & bo & w/s \\ \hline
+        KB lidos por segundo & -- & -- & rkB/s \\ \hline
+        KB escritos por segundo & -- & -- & wkB/s \\ \hline
+        Requisições de leitura combinadas & -- & -- & rrqm/s \\ \hline
+        Requisições de escrita combinadas & -- & -- & wrqm/s \\ \hline
+        Tempo médio de leitura (ms) & -- & -- & r\_await \\ \hline
+        Tempo médio de escrita (ms) & -- & -- & w\_await \\ \hline
+        Tamanho médio da fila de requisições & -- & -- & aqu-sz \\ \hline
+        Percentual de utilização do dispositivo & -- & -- & \%util \\ \hline
+
+        Interrupções por segundo & -- & in & -- \\ \hline
+        Trocas de contexto por segundo & -- & cs & -- \\ \hline
+
+    \end{longtable}
+
+
 \end{document}
