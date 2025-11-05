@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.sample</groupId>
-  <artifactId>test</artifactId>
-  <name>JMH benchmark sample (Java 23)</name>
+  <artifactId>jmh-sample</artifactId>
+  <name>JMH Benchmark Sample</name>
   <version>1.0</version>
   <build>
     <plugins>
@@ -11,16 +11,12 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
-          <source>${javac.target}</source>
-          <target>${javac.target}</target>
-          <release>${javac.target}</release>
-          <annotationProcessorPaths>
-            <path>
-              <groupId>org.openjdk.jmh</groupId>
-              <artifactId>jmh-generator-annprocess</artifactId>
-              <version>${jmh.version}</version>
-            </path>
-          </annotationProcessorPaths>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+          <release>${maven.compiler.target}</release>
+          <annotationProcessors>
+            <annotationProcessor>org.openjdk.jmh.generators.BenchmarkProcessor</annotationProcessor>
+          </annotationProcessors>
         </configuration>
       </plugin>
       <plugin>
@@ -36,7 +32,7 @@
               <finalName>${uberjar.name}</finalName>
               <transformers>
                 <transformer>
-                  <mainClass>org.openjdk.jmh.Main</mainClass>
+                  <mainClass>org.sample.Main</mainClass>
                 </transformer>
                 <transformer />
               </transformers>
@@ -67,7 +63,8 @@
   <properties>
     <jmh.version>1.37</jmh.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <javac.target>23</javac.target>
+    <maven.compiler.target>23</maven.compiler.target>
     <uberjar.name>benchmarks</uberjar.name>
+    <maven.compiler.source>23</maven.compiler.source>
   </properties>
 </project>
