@@ -1,0 +1,73 @@
+\documentclass[10pt,openright,oneside,a4paper,brazil]{abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\geometry{margin=3cm}
+\captionsetup[table]{skip=10pt}
+
+\title{Resumo de Benchmarks JMH}
+
+\begin{document}
+
+    \section{Introdução}
+    Este documento apresenta um resumo dos benchmarks que podem ser realizados com a ferramenta \textit{Java Microbenchmark Harness (JMH)}, descrevendo os tipos de testes e as variáveis utilizadas.
+
+    \section{Resumo de Benchmarks}
+
+    \begin{longtable}{|>{\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}p{10cm}|}\hline
+        \textbf{Classe} & \textbf{Descrição} \\ \hline
+        \endfirsthead
+\hline
+        \textbf{Classe} & \textbf{Descrição} \\ \hline
+        \endhead
+
+        JMHSample\_01\_HelloWorld & Exemplo "Hello World" do JMH, mede apenas o overhead do JMH. \\ \hline
+        JMHSample\_02\_BenchmarkModes & Mostra como medir throughput, averageTime, sampleTime, singleShotTime e all. \\ \hline
+        JMHSample\_03\_States & Mostra como usar estados no JMH para benchmarks concorrentes. \\ \hline
+        JMHSample\_04\_DefaultState & Mostra uma forma mais simples de usar estado no JMH. \\ \hline
+        JMHSample\_05\_StateFixtures & Mostra o uso de fixtures no JMH (@Setup e @TearDown). \\ \hline
+        JMHSample\_06\_FixtureLevel & Demonstra os diferentes níveis de fixtures: Trial, Iteration e Invocation. \\ \hline
+        JMHSample\_07\_FixtureLevelInvocation & Mostra o uso de fixtures no nível de invocação e seus custos de performance. \\ \hline
+        JMHSample\_08\_DeadCode & Demonstra como evitar eliminação de código morto usando retorno de valores e Blackhole. \\ \hline
+        JMHSample\_09\_Blackholes & Explica o uso de Blackhole para consumir valores e evitar otimizações indesejadas. \\ \hline
+        JMHSample\_10\_ConstantFold & Mostra como evitar constant folding (dobramento de constantes) pelo compilador. \\ \hline
+        JMHSample\_11\_Loops & Demonstra por que fazer loops dentro de métodos de benchmark é uma má prática. \\ \hline
+        JMHSample\_12\_Forking & Explica a importância do forking para isolar execuções de benchmark. \\ \hline
+        JMHSample\_13\_RunToRun & Demonstra variações entre execuções (run-to-run variance). \\ \hline
+        JMHSample\_14\_FalseSharing & Mostra o problema de false sharing em benchmarks concorrentes. \\ \hline
+        JMHSample\_15\_Asymmetric & Demonstra benchmarks assimétricos com diferentes números de threads para operações diferentes. \\ \hline
+        JMHSample\_16\_CompilerControl & Mostra como controlar o comportamento do compilador (inline, dont\_inline, etc). \\ \hline
+        JMHSample\_17\_SyncIterations & Demonstra sincronização de iterações em benchmarks multi-threaded. \\ \hline
+        JMHSample\_18\_Control & Mostra como usar Control para interromper benchmarks dinamicamente. \\ \hline
+        JMHSample\_19\_Inline & Demonstra os efeitos de inlining em benchmarks. \\ \hline
+        JMHSample\_20\_Annotations & Mostra como usar anotações JMH de forma efetiva. \\ \hline
+        JMHSample\_21\_ConsumeCPU & Demonstra como consumir ciclos de CPU de forma controlada. \\ \hline
+        JMHSample\_22\_FalseSharing & Outro exemplo sobre false sharing com diferentes técnicas de mitigação. \\ \hline
+        JMHSample\_23\_AuxCounters & Mostra como usar contadores auxiliares para coletar métricas adicionais. \\ \hline
+        JMHSample\_24\_Inheritance & Demonstra como herança funciona com benchmarks JMH. \\ \hline
+        JMHSample\_25\_API\_GA & Mostra como usar a API do JMH programaticamente para algoritmos genéticos. \\ \hline
+        JMHSample\_26\_BatchSize & Demonstra o uso de batchSize para benchmarks com custo variável. \\ \hline
+        JMHSample\_27\_Params & Mostra como parametrizar benchmarks com diferentes valores de entrada. \\ \hline
+        JMHSample\_28\_BlackholeHelpers & Demonstra helpers adicionais do Blackhole para consumir valores. \\ \hline
+        JMHSample\_29\_StatesDAG & Mostra como criar grafos direcionados acíclicos (DAG) de estados. \\ \hline
+        JMHSample\_30\_Interrupts & Demonstra como lidar com interrupções durante benchmarks. \\ \hline
+        JMHSample\_31\_InfraParams & Mostra como injetar parâmetros de infraestrutura do JMH. \\ \hline
+        JMHSample\_32\_BulkWarmup & Demonstra warmup em lote para múltiplos benchmarks. \\ \hline
+        JMHSample\_33\_SecurityManager & Mostra como benchmarks interagem com SecurityManager. \\ \hline
+        JMHSample\_34\_SafeLooping & Demonstra técnicas seguras para fazer loops em benchmarks. \\ \hline
+        JMHSample\_35\_Profilers & Mostra como usar profilers integrados (stack, gc, perfasm, etc). \\ \hline
+        JMHSample\_36\_BranchPrediction & Demonstra efeitos de predição de branch em performance. \\ \hline
+        JMHSample\_37\_CacheAccess & Mostra padrões de acesso a cache e seus impactos. \\ \hline
+        JMHSample\_38\_PerInvokeSetup & Demonstra setup por invocação e suas implicações de performance. \\ \hline
+
+    \end{longtable}
+
+\end{document}
