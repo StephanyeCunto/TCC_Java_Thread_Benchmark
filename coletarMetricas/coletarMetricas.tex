@@ -2,8 +2,10 @@
 \usepackage{fontspec} 
 \usepackage{array}    
 \usepackage{geometry}
+\usepackage{textcomp}
+\usepackage{graphicx} 
 
-\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+\geometry{left=0cm, right=2cm, top=2cm, bottom=2cm}
 
 
 \begin{document}
@@ -13,9 +15,7 @@
             \textbf{Recurso} & \textbf{Métricas típicas} & \textbf{Ferramentas Linux } \\ \hline
             CPU & \%usr, \%nice, \%sys, \%iowait, \%irq, \%soft, \%steal, \%guest, \%gnice, \%idle & \texttt{mpstat}\\ \hline
             Memória RAM & r, b, swpd, free, buff, cache, si, so, bi, bo, in, cs, us, sy, id, wa, st, gu &  \texttt{vmstat} \\ \hline
-            Disco & IOPS, throughput, tempo de resposta & \texttt{iostat}, \texttt{dstat} \\ \hline
-            Rede & tráfego, pacotes, erros & \texttt{ifstat}, \texttt{nload}, \texttt{dstat} \\ \hline
-            Processos & PID específicos, threads & \texttt{pidstat} \\ \hline
+            Disco & Device,r/s,rkB/s, rrqm/s,\%rrqm,r\_await,rareq-sz,w/s,wkB/s,wrqm/s,\%wrqm, w\_await,wareq-sz,d/s,dkB/s,drqm/s,\%drqm, d\_await,dareq-sz,f/s,f\_await,aqu-sz,\%util & \texttt{iostat}\\ \hline
         \end{tabular}
     \end{center}
 
@@ -115,6 +115,93 @@
 
     Iostat: \\
         \$ iostat -x 1 1
+
+    \begin{tabular}{|p{2.5cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
+        \hline
+        \textbf{avg-cpu:} & \%user & \%nice & \%system & \%iowait & \%steal & \%idle \\ \hline
+            & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00 \\ \hline
+    \end{tabular}
+
+    \vspace{1em}
+
+    \begin{table}[h!]
+    \centering
+    \setlength{\tabcolsep}{2pt} 
+    \renewcommand{\arraystretch}{1.1} 
+
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|p{1.2cm}|p{0.6cm}|p{0.9cm}|p{1cm}|p{0.8cm}|p{0.9cm}|p{0.9cm}|
+        p{0.7cm}|p{1cm}|p{0.9cm}|p{0.8cm}|p{0.8cm}|p{0.9cm}|
+        p{0.8cm}|p{1cm}|p{0.9cm}|p{0.8cm}|p{0.9cm}|p{1cm}|p{0.8cm}|p{0.9cm}|p{0.8cm}|p{0.8cm}|} \hline
+            Device & r/s & rkB/s & rrqm/s & \%rrqm & r\_await & rareq-sz &
+            w/s & wkB/s & wrqm/s & \%wrqm & w\_await & wareq-sz &
+            d/s & dkB/s & drqm/s & \%drqm & d\_await & dareq-sz &
+            f/s & f\_await & aqu-sz & \%util \\ \hline
+
+            loop0 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 \\ \hline
+
+            sda &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 \\ \hline
+
+            sdb &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 &
+            0.00 & 0.00 & 0.00 & 0.00 \\ \hline
+        \end{tabular}%
+    }
+    \end{table}
+
+    \begin{center}
+        \begin{tabular}{|c|c|p{9cm}|}
+            \hline
+            \textbf{Categoria} & \textbf{Campo} & \textbf{Descrição} \\ \hline
+
+            \textbf{Dispositivo} 
+            & Device & Nome do dispositivo de armazenamento (ex: \texttt{sda}, \texttt{nvme0n1}). \\ \hline
+
+            \textbf{Leitura (Read)} 
+            & r/s & Número de operações de leitura por segundo. \\ \cline{2-3}
+            & rkB/s & Quantidade de dados lidos por segundo (em kilobytes). \\ \cline{2-3}
+            & rrqm/s & Requisições de leitura combinadas por segundo. \\ \cline{2-3}
+            & \%rrqm & Percentual de requisições de leitura que foram combinadas. \\ \cline{2-3}
+            & r\_await & Tempo médio (em ms) para completar uma requisição de leitura (espera + serviço). \\ \cline{2-3}
+            & rareq-sz & Tamanho médio das requisições de leitura (em kilobytes). \\ \hline
+
+            \textbf{Escrita (Write)} 
+            & w/s & Número de operações de escrita por segundo. \\ \cline{2-3}
+            & wkB/s & Quantidade de dados escritos por segundo (em kilobytes). \\ \cline{2-3}
+            & wrqm/s & Requisições de escrita combinadas por segundo. \\ \cline{2-3}
+            & \%wrqm & Percentual de requisições de escrita que foram combinadas. \\ \cline{2-3}
+            & w\_await & Tempo médio (em ms) para completar uma requisição de escrita. \\ \cline{2-3}
+            & wareq-sz & Tamanho médio das requisições de escrita (em kilobytes). \\ \hline
+
+            \textbf{Descarte (Discard)} 
+            & d/s & Operações de descarte (TRIM) por segundo. \\ \cline{2-3}
+            & dkB/s & Quantidade de dados descartados por segundo. \\ \cline{2-3}
+            & drqm/s & Requisições de descarte combinadas por segundo. \\ \cline{2-3}
+            & \%drqm & Percentual de requisições de descarte que foram combinadas. \\ \cline{2-3}
+            & d\_await & Tempo médio (em ms) de uma operação de descarte. \\ \cline{2-3}
+            & dareq-sz & Tamanho médio das requisições de descarte (em kilobytes). \\ \hline
+
+            \textbf{Flush} 
+            & f/s & Operações de flush por segundo (esvaziamento de buffers para o disco). \\ \cline{2-3}
+            & f\_await & Tempo médio (em ms) para completar uma operação de flush. \\ \hline
+
+            \textbf{Fila e Utilização} 
+            & aqu-sz & Tamanho médio da fila de requisições pendentes. \\ \cline{2-3}
+            & \%util & Percentual de tempo em que o dispositivo esteve ocupado (100\% indica saturação do disco). \\ \hline
+
+        \end{tabular}
+    \end{center}
+
 
     
 \end{document}
