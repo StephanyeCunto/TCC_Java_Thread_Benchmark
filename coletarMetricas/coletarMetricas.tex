@@ -1,14 +1,18 @@
 \documentclass[12pt,a4paper]{article}
-\usepackage{fontspec} % Para usar fontes modernas
-\usepackage{array}    % Para melhor controle das colunas
+\usepackage{fontspec} 
+\usepackage{array}    
+\usepackage{geometry}
+
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
 
 \begin{document}
 
     \begin{center}
         \begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|} \hline
-            \textbf{Recurso} & \textbf{Métricas típicas} & \textbf{Ferramentas Linux / Azure} \\ \hline
+            \textbf{Recurso} & \textbf{Métricas típicas} & \textbf{Ferramentas Linux } \\ \hline
             CPU & \%usr, \%nice, \%sys, \%iowait, \%irq, \%soft, \%steal, \%guest, \%gnice, \%idle & \texttt{mpstat}\\ \hline
-            Memória RAM & usada, livre, cache, swap &  \texttt{vmstat} \\ \hline
+            Memória RAM & r, b, swpd, free, buff, cache, si, so, bi, bo, in, cs, us, sy, id, wa, st, gu &  \texttt{vmstat} \\ \hline
             Disco & IOPS, throughput, tempo de resposta & \texttt{iostat}, \texttt{dstat} \\ \hline
             Rede & tráfego, pacotes, erros & \texttt{ifstat}, \texttt{nload}, \texttt{dstat} \\ \hline
             Processos & PID específicos, threads & \texttt{pidstat} \\ \hline
@@ -16,7 +20,7 @@
     \end{center}
 
         Mpstart: \\
-        azureuser@linux-java-vm:~\$ mpstat 1 5 \\
+            azureuser@linux-java-vm:~\$ mpstat 1 5 \\
 
     \begin{center}
         \begin{tabular}{|p{1.3cm}|p{0.7cm}|p{0.7cm}|p{0.85cm}|p{0.8cm}|p{1.3cm}|p{0.8cm}|p{0.8cm}|p{1cm}|p{1.1cm}|p{1.1cm}|p{1cm}|} \hline
@@ -47,5 +51,70 @@
         \end{tabular}
     \end{center}
 
-    vmstat
+    Vmstat: \\
+        azureuser@linux-java-vm:~\$ vmstat 1 5 \\
+    \begin{center}
+        \begin{tabular}{|p{0.2cm}|p{0.2cm}|p{0.8cm}|p{1.5cm}|p{0.9cm}|p{1.1cm}|p{0.2cm}|p{0.2cm}|p{0.4cm}|p{0.4cm}|p{0.4cm}|p{0.5cm}|p{0.2cm}|p{0.2cm}|p{0.4cm}|p{0.3cm}|p{0.3cm}|p{0.3cm}|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{procs}} &
+        \multicolumn{4}{c|}{\textbf{memory}} &
+        \multicolumn{2}{c|}{\textbf{swap}} &
+        \multicolumn{2}{c|}{\textbf{io}} &
+        \multicolumn{2}{c|}{\textbf{system}} &
+        \multicolumn{6}{c|}{\textbf{cpu}} \\ \hline
+
+        \textbf{r} & \textbf{b} & \textbf{swpd} & \textbf{free} & \textbf{buff} & \textbf{cache} &
+        \textbf{si} & \textbf{so} & \textbf{bi} & \textbf{bo} & \textbf{in} & \textbf{cs} &
+        \textbf{us} & \textbf{sy} & \textbf{id} & \textbf{wa} & \textbf{st} & \textbf{gu} \\ \hline
+
+        1 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 114 & 472 & 139 & 0 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 302 & 145 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 230 & 131 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 0 & 161 & 109 & 0 & 0 & 100 & 0 & 0 & 0 \\ \hline
+        0 & 0 & 0 & 32112212 & 22060 & 341996 & 0 & 0 & 0 & 4 & 630 & 1087 & 0 & 1 & 99 & 0 & 0 & 0 \\ \hline
+        \end{tabular}
+    \end{center}
+
+    \begin{center}
+        \begin{tabular}{|c|c|p{9cm}|}
+            \hline
+            \textbf{Categoria} & \textbf{Campo} & \textbf{Descrição} \\ \hline
+
+            {\textbf{procs}} 
+            & r & Número de processos prontos para execução (na fila de CPU). Valores altos indicam sobrecarga. \\ \cline{2-3}
+            & b & Processos bloqueados aguardando operações de entrada/saída (I/O). \\ \hline
+
+            {\textbf{memory}} 
+            & swpd & Quantidade de memória virtual (swap) utilizada, em KB. \\ \cline{2-3}
+            & free & Quantidade de memória RAM livre. \\ \cline{2-3}
+            & buff & Memória usada para buffers de sistema de arquivos. \\ \cline{2-3}
+            & cache & Memória usada como cache de páginas de dados frequentemente acessados. \\ \hline
+
+            {\textbf{swap}} 
+            & si & Quantidade de dados lidos do swap para a memória (swap in), em KB/s. \\ \cline{2-3}
+            & so & Quantidade de dados gravados da memória para o swap (swap out), em KB/s. \\ \hline
+
+            {\textbf{io}} 
+            & bi & Blocos lidos do disco por segundo. \\ \cline{2-3}
+            & bo & Blocos gravados no disco por segundo. \\ \hline
+
+            {\textbf{system}} 
+            & in & Número de interrupções de hardware por segundo. \\ \cline{2-3}
+            & cs & Número de trocas de contexto entre processos por segundo. \\ \hline
+
+            {\textbf{cpu}} 
+            & us & Percentual de tempo gasto executando processos de usuário. \\ \cline{2-3}
+            & sy & Percentual de tempo gasto em processos do sistema (kernel). \\ \cline{2-3}
+            & id & Percentual de tempo ocioso da CPU. \\ \cline{2-3}
+            & wa & Percentual de tempo aguardando operações de I/O. \\ \cline{2-3}
+            & st & Tempo de CPU “roubado” pelo hypervisor (em ambientes virtualizados). \\ \cline{2-3}
+            & gu & Tempo gasto executando máquinas virtuais convidadas (guest). \\ \hline
+
+        \end{tabular}
+    \end{center}
+
+    Iostat: \\
+        \$ iostat -x 1 1
+
+    
 \end{document}
