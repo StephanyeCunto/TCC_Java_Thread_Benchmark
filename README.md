@@ -1,55 +1,114 @@
 # 📚 TCC - Trabalho de Conclusão de Curso
 
-Repositório contendo o desenvolvimento do Trabalho de Conclusão de Curso em LaTeX, utilizando as normas ABNT através do abntex2.
+> **Análise de Desempenho em Java: Threads Tradicionais vs. Threads Virtuais**  
+> **Autora:** Stephanye Cristine Antunes De Cunto  
+> **Orientadora:** Me. Bianca Portes de Castro  
+> **Coorientador:** Dr. José Rui Castro de Sousa  
+> **Ano:** 2025
 
-## 📁 Estrutura do Projeto
+[![Java](https://img.shields.io/badge/Java-19+-orange.svg)](https://www.oracle.com/java/)
+[![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-blue.svg)](https://www.abntex.net.br/)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+
+---
+
+## 📋 Sobre o Projeto
+
+Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (TCC), que investiga as diferenças de desempenho entre **threads tradicionais** (gerenciadas pelo sistema operacional) e **threads virtuais** (gerenciadas pela JVM, introduzidas no Java 19).
+
+### 📊 Status Atual
+
+- ✅ Revisão bibliográfica em andamento
+- ✅ Ambiente de desenvolvimento configurado (VM Azure)
+- 🔄 Definição da metodologia em andamento
+- ⏳ Implementação dos benchmarks (pendente)
+- ⏳ Coleta de dados (pendente)
+- ⏳ Análise de resultados (pendente)
+
+---
+
+## 📁 Estrutura do Repositório
 
 ```
 tcc/
-├── Modelo_TCC_2025/          # 📄 Documento principal do TCC
-│   ├── principal.tex         # Arquivo principal LaTeX
-│   ├── principal.pdf         # PDF compilado
-│   ├── imagens/              # Figuras e diagramas
-│   ├── abntex2*.{cls,sty,bst} # Classes e estilos ABNT
-│   └── abntex2-modelo-references.bib # Referências bibliográficas
-├── proposta/                 # 📝 Proposta inicial do TCC
-│   └── main.tex
-├── resumo/                   # 📌 Resumos e materiais complementares
-│   ├── resumo.tex
-│   └── resumo2.tex
-├── VM/                       # ☁️ Documentação sobre VM Azure e Java
+├── Modelo_TCC_2025/              # 📄 Documento principal (LaTeX)
+│   ├── principal.tex             # Arquivo principal do TCC
+│   ├── principal.pdf             # PDF compilado
+│   ├── imagens/                  # Figuras e diagramas
+│   ├── abntex2*.{cls,sty,bst}    # Classes e estilos ABNT
+│   └── abntex2-modelo-references.bib  # Referências bibliográficas
+│
+├── Teste_JMH/                    # 🔬 Testes e experimentos com JMH
+│   ├── JHM.tex                   # Documentação sobre JMH
+│   └── test/                     # Projeto Maven de exemplo
+│
+├── coletarMetricas/              # 📈 Guias de monitoramento
+│   └── coletarMetricasLinux.tex  # Documentação: mpstat, vmstat, iostat
+│
+├── VM/                           # ☁️ Documentação do ambiente
 │   ├── Vm Java Quickstart.pdf
 │   └── especificacoes_vm_azure_detalhado.pdf
-├── .gitignore                # Arquivos ignorados pelo Git
-└── README.md                 # Este arquivo
+│
+├── quadro/                       # 📊 Trabalhos relacionados
+│   └── quadro.tex                # Comparativo de estudos similares
+│
+├── proposta/                     # 📝 Materiais da proposta
+│   └── main.tex
+│
+├── resumo/                       # 📌 Resumos e materiais complementares
+│   ├── resumo.tex
+│   └── resumo2.tex
+│
+├── .gitignore
+└── README.md
 ```
+
+---
 
 ## 🚀 Como Começar
 
-### Pré-requisitos
+### Clone o Repositório
 
-Você precisa ter uma distribuição LaTeX instalada no seu sistema:
+```bash
+git clone <url-do-repositorio>
+cd tcc
+```
 
-- **Linux (Ubuntu/Debian):**
-  ```bash
-  sudo apt-get update
-  sudo apt-get install texlive-full latexmk biber
-  ```
+### Compilação Rápida
 
-- **macOS:**
-  ```bash
-  brew install --cask mactex
-  ```
+```bash
+cd Modelo_TCC_2025
+latexmk -lualatex -pvc principal.tex
+```
 
-- **Windows:**
-  - Instale o [MiKTeX](https://miktex.org/download) ou [TeX Live](https://www.tug.org/texlive/)
-  - Ou use [Overleaf](https://www.overleaf.com/) (editor online)
+O PDF será gerado e atualizado automaticamente a cada salvamento.
 
-### Compilação
+---
 
-#### Método 1: Compilação Automática (Recomendado)
+## 📦 Pré-requisitos
 
-Use LuaLaTeX para melhor suporte a Unicode (acentos, emojis, caracteres especiais):
+### Para LaTeX
+
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt-get update
+sudo apt-get install texlive-full latexmk biber
+```
+
+**macOS:**
+```bash
+brew install --cask mactex
+```
+
+**Windows:**
+- [MiKTeX](https://miktex.org/download) ou [TeX Live](https://www.tug.org/texlive/)
+- Ou use [Overleaf](https://www.overleaf.com/) (editor online)
+
+---
+
+## 📝 Compilando o Documento
+
+### Método 1: Compilação Automática (Recomendado)
 
 ```bash
 cd Modelo_TCC_2025
@@ -57,10 +116,10 @@ latexmk -lualatex -pvc principal.tex
 ```
 
 **Flags úteis:**
-- `-pvc`: Recompila automaticamente quando salva o arquivo
-- `-lualatex`: Usa o engine LuaLaTeX (melhor para português)
+- `-pvc`: Recompila automaticamente ao salvar
+- `-lualatex`: Usa LuaLaTeX (melhor suporte a UTF-8 e português)
 
-#### Método 2: Compilação Manual Completa
+### Método 2: Compilação Manual Completa
 
 Para garantir que referências e citações sejam processadas corretamente:
 
@@ -80,23 +139,36 @@ lualatex principal.tex
 lualatex principal.tex
 ```
 
-**💡 Dica:** O arquivo `principal.pdf` será gerado automaticamente.
-
-#### Método 3: Usando latexmk (Automático)
-
-O latexmk detecta automaticamente quando rodar BibTeX:
+### Método 3: Usando latexmk Simplificado
 
 ```bash
 cd Modelo_TCC_2025
 latexmk -lualatex -bibtex principal.tex
 ```
 
+💡 O arquivo `principal.pdf` será gerado automaticamente.
+
+### Limpeza de Arquivos Temporários
+
+```bash
+# Remove arquivos auxiliares (mantém PDF)
+latexmk -c
+
+# Remove TODOS os arquivos gerados (inclusive PDF)
+latexmk -C
+```
+
+---
+
 ## 📚 Gerenciando Referências
 
 ### Arquivo de Bibliografia
 
-As referências ficam em `abntex2-modelo-references.bib`. Exemplo de entrada:
+As referências ficam em `abntex2-modelo-references.bib`. 
 
+**Exemplos de diferentes tipos de entrada:**
+
+**Artigo:**
 ```bibtex
 @article{sobrenome2025,
   author  = {Nome Sobrenome},
@@ -107,7 +179,10 @@ As referências ficam em `abntex2-modelo-references.bib`. Exemplo de entrada:
   number  = {1},
   pages   = {1--10}
 }
+```
 
+**Livro:**
+```bibtex
 @book{autor2024,
   author    = {Autor da Silva},
   title     = {Título do Livro},
@@ -115,13 +190,16 @@ As referências ficam em `abntex2-modelo-references.bib`. Exemplo de entrada:
   year      = {2024},
   address   = {São Paulo}
 }
+```
 
+**Site:**
+```bibtex
 @online{site2025,
   author = {Organização},
   title  = {Título da Página},
   year   = {2025},
   url    = {https://exemplo.com},
-  urlaccessdate = {25 out. 2025}
+  urlaccessdate = {05 nov. 2025}
 }
 ```
 
@@ -131,54 +209,167 @@ As referências ficam em `abntex2-modelo-references.bib`. Exemplo de entrada:
 ```latex
 Segundo \citeonline{sobrenome2025}, os resultados demonstram...
 ```
-Resultado: Segundo Sobrenome (2025), os resultados demonstram...
+→ *Segundo Sobrenome (2025), os resultados demonstram...*
 
 **Citação indireta (Autor entre parênteses):**
 ```latex
 Os resultados demonstram \cite{sobrenome2025}...
 ```
-Resultado: Os resultados demonstram (SOBRENOME, 2025)...
+→ *Os resultados demonstram (SOBRENOME, 2025)...*
 
 **Múltiplas citações:**
 ```latex
 Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 ```
+
+---
+
 ## 🛠️ Ferramentas Recomendadas
 
 ### Editores LaTeX
 
-- **[VS Code](https://code.visualstudio.com/)** + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
-- **[TeXstudio](https://www.texstudio.org/)** - Editor dedicado para LaTeX
-- **[Overleaf](https://www.overleaf.com/)** - Editor online colaborativo
+| Editor | Vantagens |
+|--------|-----------|
+| **[VS Code](https://code.visualstudio.com/)** + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) | Leve, moderno, Git integrado |
+| **[TeXstudio](https://www.texstudio.org/)** | Específico para LaTeX, muitos recursos |
+| **[Overleaf](https://www.overleaf.com/)** | Online, colaborativo, sem instalação |
+
+### Gerenciadores de Referências
+
+- **[JabRef](https://www.jabref.org/)** - Interface gráfica para arquivos .bib
+- **[Zotero](https://www.zotero.org/)** - Organiza e exporta para BibTeX
+- **[Mendeley](https://www.mendeley.com/)** - Gerenciador de referências da Elsevier
+
+---
+
+## 📖 Materiais de Referência no Repositório
+
+### Documentação Incluída
+
+| Arquivo | Descrição |
+|---------|-----------|
+| **`JHM.pdf`** | Guia sobre Java Microbenchmark Harness (JMH) |
+| **`coletarMetricasLinux.pdf`** | Ferramentas de monitoramento: mpstat, vmstat, iostat |
+| **`quadro.pdf`** | Comparativo de trabalhos relacionados |
+| **`especificacoes_vm_azure_detalhado.pdf`** | Especificações da VM Azure (4 vCPUs, 31 GB RAM) |
+
+---
 
 ## 🐛 Problemas Comuns
 
-### Erro: "undefined control sequence"
-**Solução:** Verifique se todos os pacotes necessários estão instalados e se não há comandos com erros de digitação.
+| Problema | Solução |
+|----------|---------|
+| **Referências não aparecem** | Execute: `lualatex → bibtex → lualatex → lualatex` |
+| **Acentos incorretos** | Use LuaLaTeX ao invés de pdfLaTeX |
+| **Erro em imagens** | Verifique o caminho e se o arquivo existe em `imagens/` |
+| **Undefined control sequence** | Verifique se todos os pacotes necessários estão instalados |
+| **Compilação muito lenta** | Use `latexmk -c` para limpar arquivos temporários |
 
-### Referências não aparecem
-**Solução:** Execute a sequência completa de compilação (lualatex → bibtex → lualatex → lualatex).
+---
 
-### Acentos aparecem incorretos
-**Solução:** Use LuaLaTeX ou XeLaTeX ao invés de pdfLaTeX, ou configure corretamente a codificação UTF-8.
+## 📚 Recursos Úteis
 
-### Erro ao compilar imagens
-**Solução:** Verifique se o caminho para a imagem está correto e se o arquivo existe na pasta `imagens/`.
+### LaTeX e ABNT
+- [Documentação abntex2](https://www.abntex.net.br/) - Guia oficial
+- [Overleaf Learn LaTeX](https://www.overleaf.com/learn) - Tutoriais
+- [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX) - Referência completa
+- [Detexify](http://detexify.kirelabs.org/) - Encontre símbolos desenhando
+- [Tables Generator](https://www.tablesgenerator.com/) - Gerador de tabelas
 
-## 📖 Recursos Úteis
+### Java e Concorrência
+- [JEP 444: Virtual Threads](https://openjdk.org/jeps/444) - Especificação oficial
+- [JMH Samples](https://hg.openjdk.org/code-tools/jmh/file/tip/jmh-samples/) - Exemplos de benchmarks
+- [Java Concurrency in Practice](https://jcip.net/) - Livro referência
 
-- [Documentação abntex2](https://www.abntex.net.br/)
-- [Overleaf Learn LaTeX](https://www.overleaf.com/learn)
-- [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)
-- [Detexify](http://detexify.kirelabs.org/classify.html) - Encontre símbolos LaTeX desenhando
-- [Tables Generator](https://www.tablesgenerator.com/) - Gerador de tabelas LaTeX
+### Comunidades
+- [Stack Overflow - LaTeX](https://tex.stackexchange.com/)
+- [Stack Overflow - Java](https://stackoverflow.com/questions/tagged/java)
+- [Reddit - r/LaTeX](https://www.reddit.com/r/LaTeX/)
+
+---
 
 ## 🗂️ Controle de Versão
 
-Os seguintes arquivos estão no `.gitignore` e não são versionados:
+### Arquivos Ignorados (.gitignore)
 
+```gitignore
+# LaTeX - Arquivos auxiliares
+*.aux *.bbl *.blg *.idx *.lof *.log
+*.loq *.lot *.toc *.out *.fdb_latexmk
+*.fls *.ilg *.ind *.synctex.gz
+
+# Java - Build
+target/
+*.class
+*.jar
+
+# IDEs e Sistema
+.idea/
+.vscode/
+.DS_Store
+*~
 ```
-*.aux *.bbl *.blg *.idx *.lof *.log 
-*.loq *.lot *.toc *.out *.fdb *.fls
-*.fdb_latexmk *.DS_Store
+
+### Comandos Git Úteis
+
+```bash
+# Ver status
+git status
+
+# Adicionar alterações
+git add .
+
+# Fazer commit
+git commit -m "Descrição da alteração"
+
+# Enviar para repositório
+git push
+
+# Ver histórico
+git log --oneline
 ```
+
+---
+
+## 📋 Checklist de Progresso
+
+### Documentação
+- [x] README configurado
+- [x] Estrutura organizada
+- [x] Materiais de referência
+- [ ] Metodologia definida
+
+### Ambiente
+- [x] VM Azure configurada
+- [ ] Ferramentas documentadas
+- [ ] Ambiente Java configurado
+
+### Implementação
+- [ ] Benchmarks implementados
+- [ ] Scripts de coleta
+- [ ] Testes realizados
+
+### Escrita
+- [ ] Introdução
+- [ ] Revisão bibliográfica
+- [ ] Metodologia
+- [ ] Resultados
+- [ ] Conclusão
+
+---
+
+## 📧 Contato
+
+**Stephanye Cristine Antunes De Cunto**
+
+---
+
+## 📄 Licença
+
+Este trabalho é de natureza acadêmica e está disponível para fins educacionais.
+
+⚠️ **Nota sobre Plágio:** Este material é protegido por direitos autorais. Citações e referências devem seguir as normas ABNT.
+
+---
+
+**📌 Última atualização:** Novembro de 2025
