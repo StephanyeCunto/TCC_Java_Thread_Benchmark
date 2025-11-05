@@ -1,0 +1,129 @@
+\documentclass[10pt,openright,oneside,a4paper,brazil]{abntex2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\geometry{margin=3cm}
+\captionsetup[table]{skip=10pt}
+
+\title{Resumo de Benchmarks JMH}
+
+\begin{document}
+
+    \maketitle
+
+    \section{Introdução}
+    Este documento apresenta um resumo dos benchmarks realizados com a ferramenta \textit{Java Microbenchmark Harness (JMH)}, descrevendo os tipos de testes e as variáveis utilizadas.
+
+    \section{Código de Execução do Benchmark}
+    \small 
+    \begin{verbatim}
+        package org.sample;
+
+        import org.openjdk.jmh.runner.Runner;
+        import org.openjdk.jmh.runner.options.Options;
+        import org.openjdk.jmh.runner.options.OptionsBuilder;
+
+        public class Main {
+            public static void main(String[] args) throws Exception {
+            Options opt = new OptionsBuilder()
+            .include("BlackholeBench")
+            .forks(1)
+            .build();
+
+            ```
+                new Runner(opt).run();
+            }
+            ```
+        }
+    \end{verbatim}
+    \normalsize 
+
+    \section{Tipos de Benchmarks}
+
+    \subsection{BlackholeBench}
+    Declara variáveis: \texttt{byte, boolean, char, short, int, long, float, double, Object}.
+
+    Possui dois tipos de benchmark:
+    \begin{itemize}
+        \item \textbf{Implicit:} mede o tempo de acessar e retornar a variável. A JVM pode otimizar e eliminar o retorno se ele não for utilizado.
+        \item \textbf{Explicit:} garante que o valor seja utilizado de forma que a JVM não possa otimizar, medindo o custo real de acesso.
+    \end{itemize}
+
+    \subsection{BlackholeConsecutiveBench}
+    Mede o tempo médio da JVM para executar operações simples.
+
+    Variáveis: \texttt{boolean, byte, short, char, int, float, long, double, Object}.
+
+    Cada variável possui três métodos:
+    \begin{itemize}
+        \item 1: consome uma operação;
+        \item 4: consome quatro operações consecutivas;
+        \item 8: consome oito operações consecutivas.
+    \end{itemize}
+
+    \textit{Observação:} garante que o valor seja usado de forma que a JVM não possa otimizar. Os métodos 4 e 8 medem o custo de múltiplas operações consecutivas.
+
+    \subsection{BlackholeConsumeCPUBench}
+    \small
+    \begin{verbatim}
+        public class BlackholeConsumeCPUBench {
+
+        ```
+            @Param("0")
+            private int delay;
+
+            @Benchmark
+            public void consume() {
+                Blackhole.consumeCPU(delay);
+            }
+        ```
+
+    }
+    \end{verbatim}
+    \normalsize
+
+    Descrição:
+    \begin{itemize}
+        \item Executa um loop vazio com \texttt{delay} iterações;
+        \item Gasta CPU para simular trabalho;
+        \item Mede o tempo médio gasto por chamada de \texttt{consumeCPU}.
+    \end{itemize}
+
+    \subsection{BlackholePipelineBench}
+    Mede o custo de processar sequências de elementos (arrays).
+
+    Variáveis: \texttt{boolean, byte, short, char, int, float, long, double, Object, Array de objetos}.
+
+    Mede o custo de percorrer arrays de elementos consecutivos.
+
+    \section{Resumo em Tabela}
+    \small 
+    \begin{longtable}
+        {|>{\raggedright}p{4cm}|>{\raggedright}p{4cm}|>{\raggedright\arraybackslash}p{7cm}|} \hline
+        \textbf{Benchmark} & \textbf{Tipo de Variáveis} & \textbf{Descrição} \\ \hline
+
+        BlackholeBench & byte, boolean, char, short, int, long, float, double, Object & 
+        \begin{minipage}[t]{7cm}
+            Implicit: acesso otimizado; \\
+            Explicit: acesso real sem otimização
+        \end{minipage} \\ \hline
+
+        BlackholeConsecutiveBench & boolean, byte, short, char, int, float, long, double, Object & Mede custo de 1, 4 ou 8 operações consecutivas, garantindo uso de valores \\ \hline
+        BlackholeConsumeCPUBench &  & 
+        \begin{minipage}[t]{7cm}
+            Executa loop vazio para simular CPU \\ Mede tempo médio de consume CPU 
+        \end{minipage} \\ \hline
+        BlackholePipelineBench & boolean, byte, short, char, int, float, long, double, Object, Array & Mede custo de percorrer arrays de elementos consecutivos \\ \hline
+    \end{longtable}
+    \normalsize
+
+\end{document}
