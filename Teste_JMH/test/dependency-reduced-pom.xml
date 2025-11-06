@@ -32,7 +32,7 @@
               <finalName>${uberjar.name}</finalName>
               <transformers>
                 <transformer>
-                  <mainClass>org.sample.Main</mainClass>
+                  <mainClass>org.openjdk.jmh.Main</mainClass>
                 </transformer>
                 <transformer />
               </transformers>
