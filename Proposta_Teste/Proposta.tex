@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{array}
+
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+\begin{document}
+
+\section{Metodologia}
+
+\subsection{Configuração do Experimento}
+\begin{itemize}
+    \item Linguagem: Java (JDK 21 ou 25)
+    \item Tipo de tarefas: CPU-bound e I/O-bound
+    \item Execuções: 30 repetições por cenário
+    \item \textit{Warm-up}: a definir (seguir abordagem similar à utilizada em \textit{“Avaliação dos mecanismos de concorrência na API do Java 8”})
+    \item Outliers: resultados extremos serão removidos da análise
+\end{itemize}
+
+\subsection{Tarefas}
+CPU-bound:
+\begin{itemize}
+    \item Cálculo de números primos em um intervalo.
+    \item Operações matemáticas com matrizes (multiplicação, soma e transposição).
+\end{itemize}
+I/O-bound:
+\begin{itemize}
+    \item Simular com atraso com Thread.sleep
+    \item Leitura de um arquivo
+\end{itemize} 
+
+\subsection{Métricas de Desempenho}
+
+\begin{table}[h!]
+    \centering
+    \caption{Métricas utilizadas na avaliação de desempenho}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|p{4cm}|p{10cm}|}
+        \hline
+        \textbf{Métrica} & \textbf{Descrição e Justificativa} \\ \hline
+        Tempo de execução (\textmu s) &  Verifica se o modelo de execução influencia o tempo total de execução em tarefas puramente CPU-bound. \\ \hline
+        Consumo de memória (MB) & Threads virtuais utilizam menos memória de pilha, permitindo maior escalabilidade. Essa métrica evidencia a eficiência no uso de recursos entre os dois modelos. \\ \hline
+        Uso de CPU (\%) & Indica se há paralelismo efetivo ou contenção de recursos. Ajuda a avaliar o aproveitamento dos núcleos disponíveis e o impacto do agendamento de threads. \\ \hline
+    \end{tabular}
+\end{table}
+
+
+\end{document}
