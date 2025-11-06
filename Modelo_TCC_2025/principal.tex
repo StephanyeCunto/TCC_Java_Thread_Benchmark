@@ -399,30 +399,61 @@
 
     \chapter{Trabalhos Relacionados}
 
-    A seção Trabalhos Relacionados apresenta estudos, projetos ou soluções já desenvolvidos que tratam de problemas semelhantes ou próximos ao do seu trabalho. O objetivo é mostrar o que já foi feito, quais métodos foram usados e onde ainda existem lacunas que justificam sua pesquisa.
+    Esta seção apresenta uma revisão de trabalhos relevantes que servem de base para a pesquisa sobre de threads e threads virtuais no java.
 
-    O que incluir:
-        \begin{enumerate}
-            \item Seleção dos trabalhos – Escolha pesquisas, artigos, relatórios ou projetos relevantes e recentes, de preferência de fontes acadêmicas confiáveis.
-            \item Breve descrição – Explique, de forma sucinta, o objetivo, metodologia e resultados de cada trabalho analisado.
-            \item Comparação – Mostre similaridades e diferenças entre os trabalhos existentes e o seu.
-            \item Identificação de lacunas – Destaque aspectos que não foram explorados ou limitações nas pesquisas anteriores que o seu trabalho pretende abordar.
-        \end{enumerate}
+    \section{Uma análise comparativa entre threads e green threads no Java}
+        \citeonline{Souto2024} realizou uma pesquisa comparando o desempenho de threads tradicionais e threads virtuais, analisando o tempo necessário para instanciá-las, iniciá-las, finalizá-las e realizar a troca de contexto em ambas.
 
-    Dicas importantes:
+        O autor utilizou a biblioteca JMH do JDK para coletar os tempos e realizar os testes. Para o teste de instanciamento, foram criadas 100.000 threads por meio da chamada new Thread(). Para o teste de inicialização, também foram criadas 100.000 threads, iniciadas com thread.start(). No teste de finalização, 10.000 threads foram armazenadas em uma lista, iniciadas e sincronizadas com thread.join(). Para medir a troca de contexto, foram criadas 100.000 threads, cada uma executando uma pausa de 100 ms e cedendo voluntariamente o controle da CPU por meio de Thread.yield(), simulando operações bloqueantes.
 
-        \begin{itemize}
-            \item Organize a apresentação dos trabalhos por tema, abordagem ou cronologia, para manter a lógica do texto.
-            \item Utilize citações corretas, conforme a ABNT.
-            \item Evite apenas listar trabalhos; faça conexões entre eles e explique a relevância para a sua pesquisa.
-            \item Seja objetivo — não é necessário descrever cada detalhe técnico de outros trabalhos, apenas o suficiente para contextualizar sua comparação.
-            \item Importante: Ao final dessa seção, o leitor deve entender em que contexto seu trabalho se encaixa e por que ele é necessário, mesmo diante de outras pesquisas já realizadas.
-        \end{itemize}
+        O estudo demonstrou que, nos cenários testados, as threads virtuais podem ser mais de 100 vezes mais rápidas que as threads tradicionais, evidenciando sua eficiência em operações de criação, inicialização, finalização e mudança de contexto.
+    \section{Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads}
+        \citeonline{Pandita2024} apresentou como as threads virtuais funcionam em comparação às threads tradicionais, considerando escalabilidade, utilização de recursos e latência em cargas de trabalho de alto rendimento. O estudo identificou os cenários em que cada modelo se destaca e forneceu dados para auxiliar na tomada de decisões sobre a adoção de Virtual Threads em aplicações Java.
 
-    \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}    
+        Foram realizados dois benchmarks: CPU-bound e I/O-bound. No teste CPU-bound, calculou-se a lista de números primos de um limite inferior a um limite superior. No teste I/O-bound, simularam-se operações de bloqueio com duas aplicações Java: uma realiza requisições GET e recebe os resultados da outra aplicação, que introduz um tempo específico de bloqueio antes de produzir a resposta. Todos os benchmarks foram executados em um ambiente controlado na AWS EC2.
 
-    A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
+        Os resultados mostraram que, para cargas de trabalho com uso limitado de CPU, threads virtuais e threads tradicionais apresentam desempenho semelhante. Já em tarefas com uso intensivo de CPU, surgem gargalos devido aos recursos computacionais, tornando o aumento da simultaneidade pouco relevante. Para cargas de trabalho vinculadas a I/O, as threads virtuais superaram as threads tradicionais em termos de taxa de transferência e latência, permitindo maior simultaneidade, redução do consumo de memória e melhor utilização da CPU.
 
+    \section{Comparison of Concurrency Technologies in Java}
+        Em seu trabalho, \citeonline{GustafssonPersson2024} realizou quatro benchmarks com o objetivo de comparar o desempenho entre threads tradicionais, threads virtuais e Reactive Framework em testes de I/O-bound (simulado), CPU-bound e testes mistos.
+
+        Para o teste I/O-bound, foi utilizado o mecanismo Thread.sleep(100 ms) para simular tempos de espera. No teste CPU-bound, realizou-se a multiplicação de matrizes 200x200. Houve ainda dois testes mistos: um focado em I/O-bound, que multiplica matrizes 50x50 e realiza uma pausa de 100 ms, e outro focado em CPU-bound, que multiplica matrizes 200x200 e realiza uma pausa de 50 ms.
+
+        Os resultados mostraram que, no teste CPU-bound, as threads tradicionais apresentaram melhor desempenho em termos de throughput e latência. No teste I/O-bound, o Reactive Framework apresentou maior escalabilidade, menor uso de CPU e memória. Nos testes mistos, a abordagem de threads virtuais obteve alta taxa de requisições e baixa latência no cenário focado em CPU-bound, e manteve desempenho elevado no cenário focado em I/O-bound, enquanto as threads tradicionais apresentaram maior latência e menor throughput.
+
+
+    \section{Avaliação dos mecanismos de concorrência na API do Java 8}
+        Uma análise comparativa do desempenho de single thread, threads, ExecutorService e Fork/Join em algoritmos de ordenação foi realizada por \citeonline{Aguas2015} , utilizando os algoritmos Quicksort, Merge-sort e Pigeonhole Sort.
+
+        Os algoritmos foram testados em três máquinas com processadores diferentes (Dual-Core, i5 e i7). Em todos os casos, cada algoritmo foi executado 60 vezes para cada abordagem de concorrência: single thread, threads, ExecutorService e Fork/Join.
+
+        O Quicksort executado com ForkJoin-Pool em uma máquina com 8 processadores lógicos apresentou o melhor desempenho em termos de tempo. De forma geral, Quicksort combinado com ForkJoin-Pool registrou os menores tempos na maioria dos cenários testados. O estudo demonstrou que a máquina com maior número de processadores lógicos obteve os melhores resultados, comprovando que a execução paralela se beneficia diretamente da disponibilidade de mais núcleos para distribuir as tarefas simultaneamente.
+  
+    \ignore{
+        A seção Trabalhos Relacionados apresenta estudos, projetos ou soluções já desenvolvidos que tratam de problemas semelhantes ou próximos ao do seu trabalho. O objetivo é mostrar o que já foi feito, quais métodos foram usados e onde ainda existem lacunas que justificam sua pesquisa.
+
+        O que incluir:
+            \begin{enumerate}
+                \item Seleção dos trabalhos – Escolha pesquisas, artigos, relatórios ou projetos relevantes e recentes, de preferência de fontes acadêmicas confiáveis.
+                \item Breve descrição – Explique, de forma sucinta, o objetivo, metodologia e resultados de cada trabalho analisado.
+                \item Comparação – Mostre similaridades e diferenças entre os trabalhos existentes e o seu.
+                \item Identificação de lacunas – Destaque aspectos que não foram explorados ou limitações nas pesquisas anteriores que o seu trabalho pretende abordar.
+            \end{enumerate}
+
+        Dicas importantes:
+
+            \begin{itemize}
+                \item Organize a apresentação dos trabalhos por tema, abordagem ou cronologia, para manter a lógica do texto.
+                \item Utilize citações corretas, conforme a ABNT.
+                \item Evite apenas listar trabalhos; faça conexões entre eles e explique a relevância para a sua pesquisa.
+                \item Seja objetivo — não é necessário descrever cada detalhe técnico de outros trabalhos, apenas o suficiente para contextualizar sua comparação.
+                \item Importante: Ao final dessa seção, o leitor deve entender em que contexto seu trabalho se encaixa e por que ele é necessário, mesmo diante de outras pesquisas já realizadas.
+            \end{itemize}
+
+        \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}    
+
+        A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
+    }
     \section{Metodologia}
 
         É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
