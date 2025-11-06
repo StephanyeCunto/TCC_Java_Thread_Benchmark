@@ -1,0 +1,91 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{colortbl}
+\usepackage{float} 
+\usepackage{longtable}
+\usepackage{colortbl}
+
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+
+\begin{document}
+
+    \section{Métricas de Desempenho: Tempo e Vazão}
+
+    \subsection{Tempo de Execução}
+
+    As medições de tempo são utilizadas para avaliar a eficiência de execução das tarefas em diferentes modos de medição. O JMH fornece diversas métricas para mensurar o tempo gasto em cada operação.
+
+    \begin{itemize}
+    \item \textbf{Métrica:} \texttt{AverageTime}, \texttt{SampleTime}, \texttt{SingleShotTime}
+    \item \textbf{Unidade:} nanossegundos (ns), microssegundos (\textmu s) ou milissegundos (ms)
+    \end{itemize}
+
+    \textbf{Exemplo de saída:}
+    \begin{verbatim}
+        Benchmark                 Mode  Cnt  Score   Error  Units
+        TesteThreadsTradicionais  avgt   30  1.234 ± 0.012  ms/op
+    \end{verbatim}
+
+    \noindent\textbf{Interpretação:}
+    \begin{itemize}
+    \item \textbf{Mode:} Tipo de métrica usada (neste caso, AverageTime)
+    \item \textbf{Cnt:} Número de medições válidas (30 repetições)
+    \item \textbf{Score:} Tempo médio por operação
+    \item \textbf{Error:} Desvio padrão do resultado
+    \item \textbf{Units:} Unidade de tempo utilizada
+    \end{itemize}
+
+
+    \vspace{1em}
+    \noindent\textbf{Resumo:}
+    \begin{center}
+    \begin{tabular}{|p{4cm}|p{10cm}|}
+    \hline
+    \textbf{Métrica} & \textbf{Descrição} \\ \hline
+    \texttt{AverageTime} & Tempo médio por operação \\ \hline
+    \texttt{SampleTime} & Distribuição estatística dos tempos individuais \\ \hline
+    \texttt{SingleShotTime} & Tempo total de uma única execução \\ \hline
+    \end{tabular}
+    \end{center}
+
+    \subsection{Vazão (Throughput)}
+
+    A métrica \texttt{Throughput} mede o número de operações executadas por segundo, indicando a capacidade do sistema de processar tarefas em determinado intervalo de tempo.
+
+    \begin{itemize}
+    \item \textbf{Métrica:} \texttt{Throughput}
+    \item \textbf{Unidade:} \texttt{ops/s} (operações por segundo)
+    \end{itemize}
+
+    \textbf{Exemplo de saída:}
+    \begin{verbatim}
+        Benchmark                 Mode  Cnt   Score   Error  Units
+        TesteThreadsVirtuais      thrpt 30  8123.45 ± 23.8  ops/s
+    \end{verbatim}
+
+    \subsection{CPU e Memória}
+
+    Para analisar o uso de CPU e memória durante a execução dos benchmarks, o JMH permite o uso de \textit{profilers}, ferramentas que coletam informações detalhadas sobre o comportamento da JVM e do sistema.
+
+    \vspace{0.5em}
+    \begin{itemize}
+        \item \texttt{-prof jfr}: utiliza o \textit{Java Flight Recorder} (JFR) para gerar um arquivo detalhado com métricas de CPU, heap, threads e eventos da JVM.
+    \end{itemize}
+
+    \vspace{0.5em}
+    \noindent\textbf{Exemplo de uso:}
+    \begin{verbatim}
+    java -jar target/benchmarks.jar org.sample.TesteProfiler -prof jfr
+    \end{verbatim}
+
+
+\end{document}
