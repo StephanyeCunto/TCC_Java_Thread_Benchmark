@@ -72,4 +72,23 @@
         TesteThreadsVirtuais      thrpt 30  8123.45 ± 23.8  ops/s
     \end{verbatim}
 
+<<<<<<< HEAD
+=======
+    \subsection{CPU e Memória}
+
+    Para analisar o uso de CPU e memória durante a execução dos benchmarks, o JMH permite o uso de \textit{profilers}, ferramentas que coletam informações detalhadas sobre o comportamento da JVM e do sistema.
+
+    \vspace{0.5em}
+    \begin{itemize}
+        \item \texttt{-prof jfr}: utiliza o \textit{Java Flight Recorder} (JFR) para gerar um arquivo detalhado com métricas de CPU, heap, threads e eventos da JVM.
+    \end{itemize}
+
+    \vspace{0.5em}
+    \noindent\textbf{Exemplo de uso:}
+    \begin{verbatim}
+    java -jar target/benchmarks.jar org.sample.TesteProfiler -prof jfr
+    \end{verbatim}
+
+
+>>>>>>> ea651507dacc4ca1dd733f72ea8ae25cd6d99ad1
 \end{document}
