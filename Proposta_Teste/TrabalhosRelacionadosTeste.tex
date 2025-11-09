@@ -82,15 +82,14 @@
         \textbf{Configuração de Carga} & 
         \begin{minipage}[t]{\linewidth}
             Ramp-up de 60 segundos: o JMeter começou com poucos usuários e foi aumentando gradualmente até chegar a 100 usuários simultâneos.\\
-            Após o ramp-up, iniciou-se o período de 10 minutos de requisições constantes.\\
-            Cada usuário fazia requisições GET para o endpoint bloqueante, mantendo o servidor sob rajadas contínuas.\\
+            Após o ramp-up, iniciou-se o período de 10 minutos de requisições constantes por execução.\\
+            Cada usuário fazia requisições GET para o endpoint bloqueante, mantendo o servidor sob rajadas contínuas e simulando operações I/O-bound.\\
         \end{minipage}
         & 
         \begin{minipage}[t]{\linewidth}
-            Foram realizados dois tipos de experimentos:\\
-            (1) Aumento gradual de carga (*load ramping*) para detectar o ponto de saturação.\\
-            (2) Carga constante para medir estabilidade sob uso intenso.\\
-            Cada execução foi repetida 5 vezes, descartando outliers e observando CPU, heap e latência.\\
+            O teste foi dividido em duas fases principais, ambas com duração unitária de 10 minutos cada:\\
+            (1) Fase de aumento gradual de carga (load ramping) — crescimento progressivo da taxa de requisições até o ponto de saturação.\\
+            (2) Fase de carga constante — manutenção da taxa de requisições estável para medir desempenho sob uso sustentado.\\
         \end{minipage} \\ \hline
 
         \textbf{Comportamento Observado} & 
