@@ -1,0 +1,120 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{setspace}
+
+\geometry{margin=2cm}
+\setstretch{1.2}
+
+\begin{document}
+
+    \begin{center}
+        \Large\textbf{Comparação dos Ambientes de Benchmarking}
+    \end{center}
+
+    O trabalho \textit{Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads} criou um ambiente controlado em \textbf{AWS EC2 (t3.xlarge)}, enquanto o trabalho \textit{Comparison of Concurrency Technologies in Java} utilizou \textbf{dois MacBooks Pro}, porém ambos realizam testes \textbf{I/O-bound} semelhantes de acordo com a tabela.
+
+    \vspace{1em}
+
+    \begin{table}
+        \centering
+        \caption{Comparação dos Testes I/O-Bound}
+        \renewcommand{\arraystretch}{1.6}
+        \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{3.3cm}|X|X|}
+        \hline
+        \textbf{Aspecto} & \textbf{Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads} & \textbf{Comparison of Concurrency Technologies in Java} \\ \hline
+
+        \textbf{Ambiente de Execução} & 
+        \begin{minipage}[t]{\linewidth}
+            Instância AWS EC2 (t3.xlarge).\\
+            Sistema operacional Linux baseado em Ubuntu.\\
+            Ambiente virtualizado e compartilhado.\\
+            Configuração: 4 vCPUs, 16 GB RAM.\\
+            Possibilidade de variação de desempenho devido à natureza da nuvem.\\
+        \end{minipage}
+        & 
+        \begin{minipage}[t]{\linewidth}
+            Duas máquinas físicas (MacBook Pro 2019).\\
+            Processador Intel Core i7 2,6 GHz (6 núcleos).\\
+            16 GB DDR4 de memória.\\
+            macOS 14.2.1 (64 bits).\\
+            Conexão Ethernet direta entre as máquinas para eliminar variação de rede.\\
+        \end{minipage} \\ \hline
+
+        \textbf{Framework e Linguagem} & 
+        \begin{minipage}[t]{\linewidth}
+            Spring Boot 3.2 e Java 21.
+        \end{minipage}
+        & 
+        \begin{minipage}[t]{\linewidth}
+            Spring Boot 3.2 e Java 21.
+        \end{minipage} \\ \hline
+
+        \textbf{Ferramentas Utilizadas} & 
+        \begin{minipage}[t]{\linewidth}
+           Apache JMeter gerou 100 usuários simultâneos.\\
+           VisualVM monitorou CPU, memória e threads.\\
+        \end{minipage}
+        & 
+        \begin{minipage}[t]{\linewidth}
+           Vegeta responsável por enviar ataques HTTP controlados e medir throughput e latência.\\
+           VisualVM e coleta da JVM monitoraram CPU, heap, threads vivas, sincronização e pontos de coleta do Garbage Collector.\\
+        \end{minipage} \\ \hline
+
+        \textbf{Arquitetura do Teste} & 
+        \begin{minipage}[t]{\linewidth}
+           Duas aplicações: \\
+           Uma que recebe a requisição e dorme 100 ms (simulação de bloqueio I/O).\\
+           Outra que faz requisições simultâneas para a primeira, sendo testada com threads tradicionais e virtuais.\\
+        \end{minipage}
+        & 
+        \begin{minipage}[t]{\linewidth}
+           Duas máquinas físicas interligadas por conexão Ethernet direta.\\
+           Uma máquina atuou como cliente (gerando carga via Vegeta) e a outra como servidor (executando a aplicação Java).\\
+           Foram testadas três tecnologias de concorrência: Platform Threads, Virtual Threads e Reactive Streams.\\
+        \end{minipage} \\ \hline
+
+        \textbf{Configuração de Carga} & 
+        \begin{minipage}[t]{\linewidth}
+            Ramp-up de 60 segundos: o JMeter começou com poucos usuários e foi aumentando gradualmente até chegar a 100 usuários simultâneos.\\
+            Após o ramp-up, iniciou-se o período de 10 minutos de requisições constantes.\\
+            Cada usuário fazia requisições GET para o endpoint bloqueante, mantendo o servidor sob rajadas contínuas.\\
+        \end{minipage}
+        & 
+        \begin{minipage}[t]{\linewidth}
+            Foram realizados dois tipos de experimentos:\\
+            (1) Aumento gradual de carga (*load ramping*) para detectar o ponto de saturação.\\
+            (2) Carga constante para medir estabilidade sob uso intenso.\\
+            Cada execução foi repetida 5 vezes, descartando outliers e observando CPU, heap e latência.\\
+        \end{minipage} \\ \hline
+
+        \textbf{Comportamento Observado} & 
+        \begin{minipage}[t]{\linewidth}
+           Platform Threads: alta ocupação de memória e context-switching frequente, resultando em tempo ocioso e menor throughput.\\
+           Virtual Threads: mantiveram uso de CPU mais estável e melhor latência.\\
+        \end{minipage}
+        & 
+        \begin{minipage}[t]{\linewidth}
+            Platform Threads apresentaram maior consumo de memória e limitação de escalabilidade.\\
+            Virtual Threads demonstraram melhor aproveitamento da CPU e estabilidade sob carga sustentada.\\
+            Reactive Streams tiveram boa eficiência, mas exigiram maior complexidade de implementação.\\
+        \end{minipage} \\ \hline
+
+        \textbf{Execuções} &
+        \begin{minipage}[t]{\linewidth}
+        3 execuções.\\
+        \end{minipage}
+        &
+        \begin{minipage}[t]{\linewidth}
+        5 execuções.\\
+        \end{minipage} \\ \hline
+
+        \end{tabularx}
+    \end{table}
+
+\end{document}
