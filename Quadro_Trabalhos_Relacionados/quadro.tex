@@ -48,7 +48,7 @@
         \end{minipage} & 
         Threads tradicionais, virtuais e reactive Framework em teste de I/O-Bound, CPU-Bound e testes mistos & 
         \begin{minipage}[t]{\linewidth}
-            I/O Test – Thread.sleep(100 ms).\\
+            I/O Test – Duas aplicações Java: uma envia requisições (GET), outra simula operação bloqueante.\\
             Computation Test – Multiplica matrizes 200×200.\\
             Mixed Test – Multiplica matrizes 200×200 + pausa curta (25 ms).\\
             Mixed Test – I/O focused – Multiplica matrizes 50×50 + pausa longa (100 ms).\\ 
@@ -61,10 +61,7 @@
             Consumo de memória (MB)
         \end{minipage} &
         Não informado &
-        \begin{minipage}[t]{\linewidth}
-            Não informado, talvez 10 \\
-            Página 48  
-        \end{minipage} &
+        Não &
         60 & 
         Não Houve & 
         Quicksort com ForkJoinPool em máquina com 8 processadores lógicos obteve o melhor resultado em tempo, Quicksort e ForkJoinPool apresentaram os menores tempos na maioria dos cenários. &
