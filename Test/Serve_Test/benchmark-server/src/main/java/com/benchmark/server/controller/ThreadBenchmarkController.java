@@ -2,18 +2,19 @@ package com.benchmark.server.controller;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ThreadBenchmarkController {
-    private static final long SLEEP_DURATION_MS = 1000;
+    private static final long SLEEP_DURATION_MS = 10000;
     private final AtomicInteger threadCounter = new AtomicInteger(0);
 
     @GetMapping("/virtualThread")
     public String startVirtualThread() {
-        Thread.ofVirtual().start(() -> simulateWork());
+        Thread t = Thread.ofVirtual().start(this::simulateWork);
+    
+        join(t);
+
         threadCounter.incrementAndGet();
 
         return "Thread virtual iniciada! Veja o console do servidor.";
@@ -21,15 +22,12 @@ public class ThreadBenchmarkController {
 
     @GetMapping("/traditionalThread")
     public String startTraditionalThread() {
-        Thread t = new Thread(() -> simulateWork());
+        Thread t = new Thread(this::simulateWork);
 
         t.start();
 
-        try{
-            t.join();
-        }catch(InterruptedException e){
-            System.out.println(e);
-        }
+        join(t);
+
         threadCounter.incrementAndGet();
 
         return "Thread iniciada! Veja o console do servidor.";
@@ -38,6 +36,14 @@ public class ThreadBenchmarkController {
     private void simulateWork(){
         try{
             Thread.sleep(SLEEP_DURATION_MS);
+        }catch(InterruptedException e){
+            System.out.println(e);
+        }
+    }
+
+    private void join(Thread t){
+        try{
+            t.join();
         }catch(InterruptedException e){
             System.out.println(e);
         }
