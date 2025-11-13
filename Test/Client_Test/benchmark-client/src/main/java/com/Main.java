@@ -9,17 +9,16 @@ import java.util.concurrent.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Options opt = new OptionsBuilder().include(Main.class.getSimpleName()).warmupIterations(0).measurementIterations(3).build();
+        Options opt = new OptionsBuilder().include(Main.class.getSimpleName()).warmupIterations(0).measurementIterations(30).build();
 
         new Runner(opt).run();
     }
 
     @Benchmark
-    @BenchmarkMode({Mode.SingleShotTime,Mode.AverageTime,Mode.Throughput,Mode.SampleTime})
+    @BenchmarkMode({Mode.SingleShotTime})
     @OutputTimeUnit(TimeUnit.MILLISECONDS)
     @Fork(1)
     public void makeRequests(MakeRequestsState state, Blackhole blackhole) {
-        state.getTest().makeRequests(state.getEndPoint());
-       // System.out.println(state.getTest().handleRequest());
+        state.getTest().runProgressiveLoad(state.getEndPoint());
     }
 }
