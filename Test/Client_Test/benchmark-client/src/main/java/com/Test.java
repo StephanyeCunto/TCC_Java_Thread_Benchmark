@@ -2,6 +2,7 @@ package com;
 
 import java.net.URI;
 import java.net.http.*;
+
 import java.io.IOException; 
 
 
@@ -10,15 +11,15 @@ public class Test {
     static final int REQUEST_COUNT = 30;
     static final HttpClient client = HttpClient.newHttpClient();
 
-
     public void makeRequests(String endPoint){
         Thread[] threads = new Thread[REQUEST_COUNT];
 
         for(int i = 0; i < REQUEST_COUNT; i++) {
-            threads[i] = Thread.ofVirtual().start(() -> {
+            threads[i] = new Thread(() -> {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(SERVER_URL + endPoint)).GET().build();
-                System.out.println( response(request) );
+                response(request);
             });
+            threads[i].start();
         }
 
         for(int i = 0; i < REQUEST_COUNT; i++) join(threads[i]);
@@ -45,6 +46,5 @@ public class Test {
     public int handleRequest(){
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(SERVER_URL + "/resetCounter")).DELETE().build();
         return Integer.parseInt(response(request));
-        
     };
 } 
