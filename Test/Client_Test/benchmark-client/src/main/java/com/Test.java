@@ -2,7 +2,6 @@ package com;
 
 import java.net.URI;
 import java.net.http.*;
-
 import java.io.IOException; 
 
 
@@ -11,10 +10,22 @@ public class Test {
     static final int REQUEST_COUNT = 30;
     static final HttpClient client = HttpClient.newHttpClient();
 
-    public void makeRequests(String endPoint){
-        Thread[] threads = new Thread[REQUEST_COUNT];
+    public void runProgressiveLoad(String endPoint) {
+        int[] threadLevels = {1000};
 
-        for(int i = 0; i < REQUEST_COUNT; i++) {
+        for (int threadCount : threadLevels) {
+            makeRequests(endPoint, threadCount);
+            try{
+                Thread.sleep(2000);
+            }catch(InterruptedException e){
+                System.out.println(e);
+            }
+        }
+    }
+
+    public void makeRequests(String endPoint, int requestCount){
+        Thread[] threads = new Thread[requestCount];
+        for(int i = 0; i < requestCount; i++) {
             threads[i] = new Thread(() -> {
                 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(SERVER_URL + endPoint)).GET().build();
                 response(request);
