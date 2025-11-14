@@ -139,6 +139,7 @@ else
     echo "[$TIMESTAMP] ❌ Sync failed" >> "$LOG_FILE"
     exit 1
 fi
+
 echo ""
 
 EOF
