@@ -41,39 +41,36 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 
 ### Ambiente de Execução
 
+```mermaid
+flowchart TB
+
+    %% BLOCO SUPERIOR
+    subgraph LOCAL["Maquina Local"]
+        JM[JMeter - Gerador de Carga]
+        VM[VisualVM - Monitoramento]
+    end
+
+    JM <--> VM
+
+    JM -->|HTTP Requests|AZURE
+    VM -->|JMX| AZURE
+
+    %% BLOCO INFERIOR
+    subgraph AZURE["VM Azure - 4 vCPUs - 31GB RAM"]
+        APP[Spring Boot Application]
+
+        subgraph CTRL["ThreadBenchmarkController"]
+            C1[/virtualThread/]
+            C2[/traditionalThread/]
+            C3[/getCounter/]
+            C4[/resetCounter/]
+        end
+    end
+
+    APP --> CTRL
+
 ```
-┌────────────────────────────────────────────────────────┐
-│                    Máquina Local                       │
-│  ┌──────────────────┐         ┌──────────────────-┐    │
-│  │     JMeter       │         │    VisualVM       │    │
-│  │  (Gerador de     │◄───────►│  (Monitoramento)  │    │
-│  │     Carga)       │         │                   │    │
-│  └────────┬─────────┘         └─────────┬─────────┘    │
-│           │                             │              │
-│           │ HTTP Requests               │ JMX          │
-└───────────┼─────────────────────────────┼──────────────┘
-            │                             │
-            ▼                             ▼
-┌────────────────────────────────────────────────────────┐
-│                      VM Azure                          │
-│              (4 vCPUs, 31 GB RAM)                      │
-│  ┌──────────────────────────────────────────────────┐  │
-│  │       Spring Boot Application                    │  │
-│  │  ┌────────────────────────────────────────────┐  │  │
-│  │  │   ThreadBenchmarkController                │  │  │
-│  │  │  • /virtualThread                          │  │  │
-│  │  │  • /traditionalThread                      │  │  │
-│  │  │  • /getCounter                             │  │  │
-│  │  │  • /resetCounter                           │  │  │
-│  │  └────────────────────────────────────────────┘  │  │
-│  │                                                  │  │
-│  │  Métricas do Sistema:                            │  │
-│  │  • mpstat (CPU)                                  │  │
-│  │  • vmstat (Memória)                              │  │
-│  │  • iostat (I/O)                                  │  │
-│  └──────────────────────────────────────────────────┘  │
-└────────────────────────────────────────────────────────┘
-```
+
 
 ---
 
