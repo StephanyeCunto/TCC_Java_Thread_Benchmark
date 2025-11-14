@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ThreadBenchmarkController {
-    private static final long SLEEP_DURATION_MS = 10;
+    private static final long SLEEP_DURATION_MS = 1000;
     private final AtomicInteger threadCounter = new AtomicInteger(0);
 
     @GetMapping("/virtualThread")
