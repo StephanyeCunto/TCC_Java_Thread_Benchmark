@@ -14,6 +14,41 @@
 
 ---
 
+## 📑 Sumário
+
+- [📋 Sobre o Projeto](#-sobre-o-projeto)
+- [☁️ Sincronização Automática com Google Drive](#️-sincronização-automática-com-google-drive)
+  - [🎯 Como Funciona](#-como-funciona)
+  - [🚀 Configuração Inicial](#-configuração-inicial)
+  - [🧪 Testando a Configuração](#-testando-a-configuração)
+  - [📊 Comandos Úteis do Rclone](#-comandos-úteis-do-rclone)
+  - [⚙️ Opções Avançadas](#️-opções-avançadas)
+  - [🔧 Solução de Problemas](#-solução-de-problemas)
+  - [📱 Sincronização em Múltiplas Máquinas](#-sincronização-em-múltiplas-máquinas)
+  - [🎓 Dicas de Uso](#-dicas-de-uso)
+  - [🚀 Workflow Completo](#-workflow-completo)
+- [🏗️ Arquitetura do Projeto](#️-arquitetura-do-projeto)
+- [📁 Estrutura do Repositório](#-estrutura-do-repositório)
+- [🚀 Como Começar](#-como-começar)
+- [🔧 Configuração das Ferramentas](#-configuração-das-ferramentas)
+  - [JMeter - Testes de Carga](#jmeter---testes-de-carga)
+  - [VisualVM - Monitoramento em Tempo Real](#visualvm---monitoramento-em-tempo-real)
+- [📊 API de Benchmark](#-api-de-benchmark)
+- [📦 Pré-requisitos](#-pré-requisitos)
+- [📝 Compilando o Documento](#-compilando-o-documento)
+- [📚 Gerenciando Referências](#-gerenciando-referências)
+- [🛠️ Ferramentas Recomendadas](#️-ferramentas-recomendadas)
+- [🧪 Metodologia de Testes](#-metodologia-de-testes)
+- [📖 Materiais de Referência no Repositório](#-materiais-de-referência-no-repositório)
+- [🐛 Problemas Comuns](#-problemas-comuns)
+- [📚 Recursos Úteis](#-recursos-úteis)
+- [📋 Checklist de Progresso](#-checklist-de-progresso)
+- [🎯 Próximos Passos](#-próximos-passos)
+- [📧 Contato](#-contato)
+- [📄 Licença](#-licença)
+
+---
+
 ## 📋 Sobre o Projeto
 
 Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (TCC), que investiga as diferenças de desempenho entre **threads tradicionais** (gerenciadas pelo sistema operacional) e **threads virtuais** (gerenciadas pela JVM, introduzidas no Java 19).
@@ -35,6 +70,357 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 - ⏳ Implementação dos benchmarks (em andamento)
 - ⏳ Coleta de dados (pendente)
 - ⏳ Análise de resultados (pendente)
+
+---
+
+## ☁️ Sincronização Automática com Google Drive
+
+Este repositório está configurado para sincronizar automaticamente com o Google Drive usando **Rclone** após cada commit, mantendo um backup sempre atualizado do seu TCC.
+
+### 🎯 Como Funciona
+
+```mermaid
+flowchart LR
+    A[📝 Fazer Commit] --> B[🪝 Hook post-commit]
+    B --> C[🔄 Rclone Sync]
+    C --> D[☁️ Google Drive]
+    
+    style A fill:#4CAF50
+    style D fill:#4285F4
+```
+
+Sempre que você executar `git commit`, o Rclone sincroniza automaticamente a pasta do projeto com o Google Drive, excluindo arquivos temporários e desnecessários.
+
+---
+
+### 🚀 Configuração Inicial
+
+#### 1️⃣ Instalar o Rclone
+
+**Linux/macOS:**
+```bash
+curl https://rclone.org/install.sh | sudo bash
+```
+
+**Windows:**
+```powershell
+# Via Chocolatey
+choco install rclone
+
+# Ou baixe em: https://rclone.org/downloads/
+```
+
+#### 2️⃣ Configurar Google Drive
+
+```bash
+# Iniciar configuração
+rclone config
+
+# Siga os passos:
+# n) New remote
+# name> drive
+# Storage> drive (Google Drive)
+# client_id> (deixe em branco e pressione Enter)
+# client_secret> (deixe em branco e pressione Enter)
+# scope> 1 (Full access)
+# Configure a auto config? y
+# (Uma janela do navegador abrirá para autorização)
+```
+
+#### 3️⃣ Criar o Hook Git
+
+```bash
+cd tcc/.git/hooks
+
+# Criar arquivo post-commit
+cat > post-commit << 'EOF'
+#!/bin/bash
+
+# 🎨 Cores para output
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+echo -e "${BLUE}🔄 Sincronizando com Google Drive...${NC}"
+
+# Sincronizar com Drive
+rclone sync ../ drive:/tcc \
+  --filter-from ../filters.txt \
+  --progress \
+  --log-level INFO
+
+if [ $? -eq 0 ]; then
+    echo -e "${GREEN}✅ Sincronização concluída com sucesso!${NC}"
+else
+    echo -e "⚠️  Erro na sincronização. Verifique a configuração do Rclone."
+fi
+EOF
+
+# Tornar executável
+chmod +x post-commit
+```
+
+#### 4️⃣ Criar Arquivo de Filtros
+
+Crie o arquivo `filters.txt` na raiz do projeto:
+
+```bash
+cd tcc
+cat > filters.txt << 'EOF'
+# ═══════════════════════════════════════════════════════
+# 🚫 ARQUIVOS EXCLUÍDOS DA SINCRONIZAÇÃO
+# ═══════════════════════════════════════════════════════
+
+# ─── LaTeX Temporários ───
+- *.aux
+- *.bbl
+- *.blg
+- *.idx
+- *.lof
+- *.log
+- *.loq
+- *.lot
+- *.toc
+- *.out
+- *.fdb_latexmk
+- *.fls
+- *.synctex.gz
+- *.ilg
+- *.ind
+
+# ─── Sistema ───
+- .DS_Store
+- Thumbs.db
+- desktop.ini
+
+# ─── Build/Target ───
+- target/
+- */target/
+- build/
+- */build/
+
+# ─── Git ───
+- .git/
+- .github/
+- .gitignore
+
+# ─── IDEs ───
+- .idea/
+- .vscode/
+- *.iml
+
+# ─── Logs ───
+- *.log
+- logs/
+
+# ═══════════════════════════════════════════════════════
+# ✅ INCLUIR EXPLICITAMENTE (opcional)
+# ═══════════════════════════════════════════════════════
+# + Modelo_TCC_2025/principal.pdf
+# + Test/Serve_Test/benchmark-server/
+EOF
+```
+
+---
+
+### 🧪 Testando a Configuração
+
+#### Teste Simples
+
+```bash
+# Fazer commit vazio para testar
+git commit --allow-empty -m "🧪 Teste sincronização Rclone"
+
+# Você verá:
+# 🔄 Sincronizando com Google Drive...
+# Transferred:   	    1.234 MiB / 1.234 MiB, 100%, 2.456 MiB/s, ETA 0s
+# ✅ Sincronização concluída com sucesso!
+```
+
+#### Verificar no Google Drive
+
+```bash
+# Listar arquivos no Drive
+rclone ls drive:/tcc
+
+# Ver estrutura de pastas
+rclone tree drive:/tcc
+```
+
+---
+
+### 📊 Comandos Úteis do Rclone
+
+| Comando | Descrição |
+|---------|-----------|
+| `rclone sync` | Sincroniza origem → destino (exclui arquivos no destino que não existem na origem) |
+| `rclone copy` | Copia arquivos sem excluir do destino |
+| `rclone ls drive:/tcc` | Lista todos os arquivos |
+| `rclone tree drive:/tcc` | Mostra estrutura de diretórios |
+| `rclone size drive:/tcc` | Mostra espaço usado |
+| `rclone check ./ drive:/tcc` | Verifica diferenças entre local e remoto |
+
+#### Sincronização Manual (quando necessário)
+
+```bash
+# Sincronizar manualmente
+rclone sync ./ drive:/tcc --filter-from ./filters.txt --progress
+
+# Fazer backup completo (sem excluir nada no destino)
+rclone copy ./ drive:/tcc-backup --progress
+
+# Sincronização bidirecional (cuidado!)
+rclone bisync ./ drive:/tcc --resync --filter-from ./filters.txt
+```
+
+---
+
+### ⚙️ Opções Avançadas
+
+#### Hook Mais Completo (com notificações e logs)
+
+```bash
+#!/bin/bash
+
+# ═══════════════════════════════════════════════════════
+# 🎯 HOOK POST-COMMIT - SYNC COM GOOGLE DRIVE
+# ═══════════════════════════════════════════════════════
+
+# Cores
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+# Configurações
+DRIVE_PATH="drive:/tcc"
+LOG_FILE="../.rclone-sync.log"
+FILTER_FILE="../filters.txt"
+
+# Timestamp
+TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+
+echo -e "${BLUE}╔════════════════════════════════════════╗${NC}"
+echo -e "${BLUE}║  🔄 Sincronizando com Google Drive    ║${NC}"
+echo -e "${BLUE}╚════════════════════════════════════════╝${NC}"
+
+# Sincronizar
+rclone sync ../ "$DRIVE_PATH" \
+  --filter-from "$FILTER_FILE" \
+  --log-file "$LOG_FILE" \
+  --log-level INFO \
+  --stats 1s \
+  --stats-one-line
+
+# Verificar resultado
+if [ $? -eq 0 ]; then
+    echo -e "${GREEN}✅ Sincronização concluída!${NC}"
+    echo "[$TIMESTAMP] ✅ Sync successful" >> "$LOG_FILE"
+    
+    # Estatísticas
+    SIZE=$(rclone size "$DRIVE_PATH" --json | jq -r '.bytes' | numfmt --to=iec)
+    echo -e "${YELLOW}📊 Tamanho total no Drive: $SIZE${NC}"
+else
+    echo -e "${RED}⚠️  Erro na sincronização!${NC}"
+    echo "[$TIMESTAMP] ❌ Sync failed" >> "$LOG_FILE"
+    exit 1
+fi
+
+echo ""
+```
+
+#### Adicionar ao `.gitignore`
+
+```bash
+# Adicionar ao .gitignore do projeto
+echo ".rclone-sync.log" >> .gitignore
+echo "filters.txt" >> .gitignore
+```
+
+---
+
+### 🔧 Solução de Problemas
+
+| Problema | Solução |
+|----------|---------|
+| **Hook não executa** | Verifique permissões: `chmod +x .git/hooks/post-commit` |
+| **Rclone não encontrado** | Use caminho completo: `/usr/local/bin/rclone` |
+| **Erro de autenticação** | Reconfigure: `rclone config reconnect drive:` |
+| **Sync muito lento** | Adicione `--transfers 8` para paralelismo |
+| **Muitos arquivos ignorados** | Revise `filters.txt` |
+
+#### Logs Detalhados
+
+```bash
+# Ver últimos syncs
+tail -50 .rclone-sync.log
+
+# Monitorar em tempo real
+tail -f .rclone-sync.log
+
+# Sync manual com debug
+rclone sync ./ drive:/tcc --filter-from ./filters.txt -vv
+```
+
+---
+
+### 📱 Sincronização em Múltiplas Máquinas
+
+Se você trabalha em várias máquinas, configure o hook em todas:
+
+```bash
+# Máquina 1
+git clone <seu-repo>
+cd tcc
+# Configure rclone e hook (passos acima)
+
+# Máquina 2
+git clone <seu-repo>
+cd tcc
+# Configure rclone (pode usar o mesmo remote "drive")
+# Configure hook (mesmos passos)
+```
+
+**⚠️ Importante:** O `rclone sync` é unidirecional (local → Drive). Se quiser sincronização bidirecional, use:
+
+```bash
+rclone bisync ./ drive:/tcc --resync --filter-from ./filters.txt
+```
+
+---
+
+### 🎓 Dicas de Uso
+
+✅ **Faça commits frequentes** - A sincronização automática só ocorre após commits  
+✅ **Revise filters.txt** - Evite enviar arquivos temporários desnecessários  
+✅ **Verifique espaço no Drive** - Use `rclone size drive:/tcc`  
+✅ **Mantenha backups** - O Drive não é versionado; use Git + Drive juntos  
+✅ **Teste antes de defender** - Verifique se o PDF está atualizado no Drive
+
+---
+
+### 🚀 Workflow Completo
+
+```bash
+# 1. Trabalhar no documento
+cd Modelo_TCC_2025
+# ... editar principal.tex ...
+
+# 2. Compilar
+latexmk -lualatex principal.tex
+
+# 3. Commitar
+git add .
+git commit -m "📝 Atualizar seção de metodologia"
+# 🔄 Sincronização automática com Drive acontece aqui!
+
+# 4. Push para GitHub
+git push origin main
+
+# 5. Verificar no Drive (opcional)
+rclone ls drive:/tcc/Modelo_TCC_2025/principal.pdf
+```
 
 ---
 
@@ -125,6 +511,8 @@ tcc/
 │   ├── resumo.tex
 │   └── resumo2.tex
 │
+├── filters.txt                   # 🚫 Regras de exclusão Rclone
+├── .rclone-sync.log             # 📝 Log de sincronizações
 ├── .gitignore
 └── README.md
 ```
@@ -665,32 +1053,66 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 
 ---
 
-## 📚 Recursos Úteis
+# 📚 Recursos Úteis
 
-### LaTeX e ABNT
-- [Documentação abntex2](https://www.abntex.net.br/) - Guia oficial
-- [Overleaf Learn LaTeX](https://www.overleaf.com/learn) - Tutoriais
-- [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX) - Referência completa
-- [Detexify](http://detexify.kirelabs.org/) - Encontre símbolos desenhando
-- [Tables Generator](https://www.tablesgenerator.com/) - Gerador de tabelas
+## LaTeX e ABNT
+- [📘 Documentação abntex2](https://www.abntex.net.br/) - Guia oficial do padrão ABNT para LaTeX
+- [📖 Overleaf Learn LaTeX](https://www.overleaf.com/learn) - Tutoriais interativos e exemplos práticos
+- [📚 LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX) - Referência completa da linguagem
 
-### Java e Concorrência
-- [JEP 444: Virtual Threads](https://openjdk.org/jeps/444) - Especificação oficial
-- [JMH Samples](https://hg.openjdk.org/code-tools/jmh/file/tip/jmh-samples/) - Exemplos de benchmarks
-- [Java Concurrency in Practice](https://jcip.net/) - Livro referência
-- [Project Loom](https://openjdk.org/projects/loom/) - Projeto que introduziu Virtual Threads
+---
 
-### Ferramentas de Teste
-- [JMeter User Manual](https://jmeter.apache.org/usermanual/index.html)
-- [VisualVM Documentation](https://visualvm.github.io/documentation.html)
-- [Spring Boot Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/)
+## Java e Concorrência
+- [📄 JEP 444: Virtual Threads](https://openjdk.org/jeps/444) - Especificação oficial das Virtual Threads
+- [🔬 JMH Samples](https://hg.openjdk.org/code-tools/jmh/file/tip/jmh-samples/) - Exemplos práticos de benchmarks
+- [📕 Java Concurrency in Practice](https://jcip.net/) - Livro referência sobre concorrência
+- [🧵 Project Loom](https://openjdk.org/projects/loom/) - Projeto que introduziu Virtual Threads
+- [📚 Java Documentation](https://docs.oracle.com/en/java/) - Documentação oficial da Oracle
+- [🎓 Baeldung Java](https://www.baeldung.com/) - Tutoriais e guias sobre Java
 
-### Comunidades
-- [Stack Overflow - LaTeX](https://tex.stackexchange.com/)
-- [Stack Overflow - Java](https://stackoverflow.com/questions/tagged/java)
-- [Reddit - r/LaTeX](https://www.reddit.com/r/LaTeX/)
-- [Reddit - r/java](https://www.reddit.com/r/java/)
+---
 
+## Ferramentas de Teste e Monitoramento
+- [⚡ JMeter User Manual](https://jmeter.apache.org/usermanual/index.html) - Documentação completa do JMeter
+- [📊 VisualVM Documentation](https://visualvm.github.io/documentation.html) - Guia de monitoramento e profiling
+- [🌱 Spring Boot Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/) - Documentação do Spring Boot
+- [🔧 Maven Documentation](https://maven.apache.org/guides/) - Guias de build e gerenciamento de dependências
+
+---
+
+## Sincronização e Backup
+- [📘 Rclone Documentation](https://rclone.org/docs/) - Documentação oficial do Rclone
+- [☁️ Google Drive with Rclone](https://rclone.org/drive/) - Guia específico para Google Drive
+- [🎯 Rclone Filtering](https://rclone.org/filtering/) - Como filtrar arquivos na sincronização
+- [🔄 Rclone Commands](https://rclone.org/commands/) - Referência completa de comandos
+
+---
+
+## Controle de Versão
+- [🐙 Git Documentation](https://git-scm.com/doc) - Documentação oficial do Git
+- [🪝 Git Hooks Documentation](https://git-scm.com/docs/githooks) - Guia sobre hooks do Git
+- [📖 Pro Git Book](https://git-scm.com/book/en/v2) - Livro gratuito sobre Git
+- [🎓 GitHub Guides](https://guides.github.com/) - Tutoriais do GitHub
+
+---
+
+## Comunidades e Fóruns
+- [💬 Stack Overflow - LaTeX](https://tex.stackexchange.com/) - Perguntas e respostas sobre LaTeX
+- [💬 Stack Overflow - Java](https://stackoverflow.com/questions/tagged/java) - Comunidade Java
+- [🤖 Reddit - r/LaTeX](https://www.reddit.com/r/LaTeX/) - Discussões sobre LaTeX
+- [☕ Reddit - r/java](https://www.reddit.com/r/java/) - Comunidade Java no Reddit
+- [🌐 Dev.to - Java](https://dev.to/t/java) - Artigos e tutoriais sobre Java
+
+---
+
+## Azure e Cloud
+- [☁️ Azure Documentation](https://docs.microsoft.com/azure/) - Documentação completa do Azure
+- [🖥️ Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/) - Guia de VMs no Azure
+- [🔐 Azure Security](https://docs.microsoft.com/azure/security/) - Boas práticas de segurança
+
+---
+
+**📌 Última atualização:** Novembro de 2025
 ---
 
 ## 📋 Checklist de Progresso
