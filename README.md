@@ -106,6 +106,7 @@ cat > .git/hooks/post-commit << 'EOF'
 
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
 
@@ -130,12 +131,17 @@ rclone sync "$REPO_DIR" "$DRIVE_PATH" \
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✅ Sincronização concluída!${NC}"
     echo "[$TIMESTAMP] ✅ Sync successful" >> "$LOG_FILE"
+    BYTES=$(rclone size "$DRIVE_PATH" --json | jq -r '.bytes')
+    SIZE=$(awk -v b="$BYTES" 'function human(x){s="B KB MB GB TB";split(s,a);for(i=1;x>=1024&&i<length(a);i++)x/=1024;return sprintf("%.2f %s",x,a[i])}END{print human(b)}')
+    echo -e "${YELLOW}📊 Tamanho total no Drive: $SIZE${NC}"
 else
     echo -e "${RED}⚠️  Erro na sincronização!${NC}"
     echo "[$TIMESTAMP] ❌ Sync failed" >> "$LOG_FILE"
     exit 1
 fi
+
 echo ""
+
 EOF
 
 chmod +x .git/hooks/post-commit
