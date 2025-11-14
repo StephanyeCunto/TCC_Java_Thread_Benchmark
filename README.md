@@ -6,9 +6,12 @@
 > **Coorientador:** Dr. José Rui Castro de Sousa  
 > **Ano:** 2025
 
-[![Java](https://img.shields.io/badge/Java-19+-orange.svg)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-green.svg)](https://spring.io/projects/spring-boot)
-[![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-blue.svg)](https://www.abntex.net.br/)
+[![Java](https://img.shields.io/badge/Java-21-ED8B00.svg?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F.svg?logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36.svg?logo=apache-maven&logoColor=white)](https://maven.apache.org/)
+[![Azure](https://img.shields.io/badge/Azure-VM-0078D4.svg?logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
+[![JMeter](https://img.shields.io/badge/JMeter-5.6-D22128.svg?logo=apache-jmeter&logoColor=white)](https://jmeter.apache.org/)
+[![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-008080.svg?logo=latex&logoColor=white)](https://www.abntex.net.br/)
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
 
@@ -17,6 +20,7 @@
 ## 📑 Sumário
 
 - [📋 Sobre o Projeto](#-sobre-o-projeto)
+- [🛠️ Stack Tecnológica](#️-stack-tecnológica)
 - [☁️ Sincronização Automática com Google Drive](#️-sincronização-automática-com-google-drive)
 - [🏗️ Arquitetura do Projeto](#️-arquitetura-do-projeto)
 - [📁 Estrutura do Repositório](#-estrutura-do-repositório)
@@ -64,6 +68,34 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 
 ---
 
+## 🛠️ Stack Tecnológica
+
+**Backend & Runtime:**  
+[![Java](https://img.shields.io/badge/Java-21-ED8B00.svg?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F.svg?logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36.svg?logo=apache-maven&logoColor=white)](https://maven.apache.org/)
+
+**Infraestrutura:**  
+[![Azure](https://img.shields.io/badge/Azure-4vCPU%20%7C%2031GB-0078D4.svg?logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420.svg?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+
+**Ferramentas de Teste:**  
+[![JMeter](https://img.shields.io/badge/JMeter-5.6-D22128.svg?logo=apache-jmeter&logoColor=white)](https://jmeter.apache.org/)
+[![VisualVM](https://img.shields.io/badge/VisualVM-2.1-FF6600.svg?logo=java&logoColor=white)](https://visualvm.github.io/)
+
+**Documentação:**  
+[![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-008080.svg?logo=latex&logoColor=white)](https://www.abntex.net.br/)
+
+**DevOps:**  
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717.svg?logo=github&logoColor=white)](https://github.com/StephanyeCunto/tcc)
+[![Rclone](https://img.shields.io/badge/Rclone-Auto%20Sync-0088CC.svg)](https://rclone.org/)
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Backup-4285F4.svg?logo=googledrive&logoColor=white)](https://drive.google.com/)
+
+**Status:**  
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+[![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
+[![Last Commit](https://img.shields.io/github/last-commit/StephanyeCunto/tcc.svg?logo=github)](https://github.com/StephanyeCunto/tcc)
+
 ## ☁️ Sincronização Automática com Google Drive
 
 Este repositório sincroniza automaticamente com o Google Drive após cada commit usando **Rclone** e **Git Hooks**, mantendo um backup sempre atualizado do projeto.
@@ -72,13 +104,38 @@ Este repositório sincroniza automaticamente com o Google Drive após cada commi
 
 A sincronização ocorre através de um **hook post-commit** que executa o Rclone após cada commit. O processo filtra arquivos temporários (`.aux`, `.log`, `.git/`, etc.) definidos em `filters.txt` e envia apenas os arquivos relevantes para o Drive.
 
+
 ```mermaid
-flowchart LR
-    A[📝 git commit] --> B[🪝 Hook post-commit]
-    B --> C[🔄 Rclone Sync]
-    C --> D[☁️ Google Drive]
-    style A fill:#4CAF50
-    style D fill:#4285F4
+flowchart TB
+    subgraph LOCAL["💻 Máquina Local"]
+        JM[JMeterCarga HTTP]
+        VM[VisualVMProfiling JMX]
+    end
+
+    subgraph AZURE["☁️ VM Azure - Standard_D4s_v3"]
+        subgraph APP["Spring Boot :8080"]
+            CTR[ThreadBenchmarkController]
+            VT[Virtual Thread Pool]
+            TT[Traditional Thread Pool]
+        end
+        JMX[JMX Server :9090]
+
+    end
+
+    subgraph STORAGE["📦 Armazenamento"]
+        DRIVE[Google DriveBackup Auto]
+        GIT[GitHubControle Versão]
+    end
+
+    JM -->|HTTP Load| CTR
+    VM -->|JMX| JMX
+    CTR --> VT
+    CTR --> TT
+    
+    GIT -->|Rclone Hook| DRIVE
+
+    style AZURE fill:#0078D4
+    style STORAGE fill:#4285F4
 ```
 
 ### Configuração Rápida
@@ -228,7 +285,7 @@ flowchart TB
     VM -->|JMX| AZURE
 
     %% BLOCO INFERIOR
-    subgraph AZURE["VM Azure - 4 vCPUs - 31GB RAM"]
+    subgraph AZURE["VM Azure"]
         APP[Spring Boot Application]
 
         subgraph CTRL["ThreadBenchmarkController"]
@@ -241,6 +298,30 @@ flowchart TB
 
     APP --> CTRL
 
+   style AZURE fill:#0078D4
+
+```
+
+```mermaid
+sequenceDiagram
+    participant J as JMeter
+    participant S as Spring Server
+    participant M as MetricsCollector
+    participant V as VisualVM
+    
+    J->>S: GET /virtualThread (100 concurrent)
+    activate S
+    S->>S: Create virtual threads
+    S-->>J: Response time logged
+    deactivate S
+    
+    M->>S: GET /metrics (every 5s)
+    S-->>M: CPU, Memory, GC data
+    
+    V->>S: JMX connection
+    S-->>V: Real-time profiling data
+    
+    Note over J,V: Repeat for 100, 500, 1000, 5000 threads
 ```
 
 
