@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 @RestController
 @RequestMapping("/threads")
 public class ThreadBenchmarkController {
-    private static final long SLEEP_DURATION_MS = 1000;
+    private static final long SLEEP_DURATION_MS = 100;
     private final AtomicInteger threadCounter = new AtomicInteger(0);
 
     @GetMapping("/virtual")
