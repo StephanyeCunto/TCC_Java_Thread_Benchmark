@@ -1,0 +1,131 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{fontspec} % XeLaTeX ou LuaLaTeX
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage[table,xcdraw]{xcolor} % Para cores nas tabelas
+\usepackage{booktabs} % Para tabelas mais elegantes
+\usepackage{caption}
+
+\geometry{margin=2.5cm}
+\setstretch{1.3}
+
+% Fonte principal
+
+% Cores para títulos
+\definecolor{sectioncolor}{RGB}{0, 102, 204}
+\definecolor{subsectioncolor}{RGB}{0, 51, 102}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{subsectioncolor}}{\thesubsection}{1em}{}
+
+\title{\textbf{Descrição do Experimento: Teste de I/O com Atraso Fixo de 100 ms}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introdução}
+
+Este experimento utiliza um atraso fixo de 100 ms para simular operações de I/O.
+As especificidades do aquecimento foram projetadas para executar cada método mais de
+10.000 vezes, garantindo uma margem de segurança adequada para estabilização do ambiente.
+
+\section{Fase de Aquecimento}
+
+\begin{enumerate}
+    \item Executar 60 segundos com 300 solicitações por segundo.
+    \item Realizar coleta manual de lixo.
+    \item Manter o sistema em modo de espera por 20 segundos.
+    \item Repetir três vezes com taxas ajustadas para cada método.
+\end{enumerate}
+
+As três taxas subsequentes de aquecimento são definidas como 70\% da taxa máxima suportada por cada método.
+
+\subsection{Resumo da Fase de Aquecimento}
+
+\begin{table}[h!]
+\centering
+\caption{Parâmetros do aquecimento}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\rowcolor[HTML]{D9EAF7} 
+Etapa & Duração & Taxa & Observações \\ \midrule
+1 & 60 s & 300 req/s & Aquecimento inicial \\
+2 & - & - & Coleta manual de lixo \\
+3 & 20 s & - & Espera entre etapas \\
+4 & - & 70\% taxa máxima & Repetir 3x por método \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Experimentos com Carga Constante}
+
+\textbf{Procedimento para cada ataque:}
+
+\begin{enumerate}
+    \item Enviar solicitações HTTP com taxa \texttt{RATE} durante 10 segundos e salvar os resultados.
+    \item Operar em modo de repouso por 60 segundos.
+    \item Executar coleta manual de lixo.
+    \item Aguardar 20 segundos.
+    \item Aumentar a taxa \texttt{RATE} em 25/50 e repetir o processo.
+\end{enumerate}
+
+\subsection{Resumo dos Experimentos}
+
+\begin{table}[h!]
+\centering
+\caption{Etapas dos Experimentos com Carga Constante}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\rowcolor[HTML]{D9EAF7} 
+Etapa & Duração & Taxa & Observações \\ \midrule
+1 & 10 s & RATE & Coleta de métricas HTTP \\
+2 & 60 s & - & Modo repouso \\
+3 & - & - & Coleta manual de lixo \\
+4 & 20 s & - & Pausa antes da próxima carga \\
+5 & - & RATE+25/50 & Repetição ajustando taxa \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Métricas Coletadas}
+
+\subsection{Cliente}
+
+A máquina cliente, utilizando o \textbf{Vegeta}, coleta as seguintes métricas:
+
+\begin{table}[h!]
+\centering
+\caption{Métricas coletadas pelo cliente}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\rowcolor[HTML]{D9EAF7} 
+Métrica & Descrição \\ \midrule
+Latência & mínima, máxima, média, percentis 50, 90, 95, 99 \\
+Taxa de transferência & Volume de dados processados por segundo \\
+Taxa de amostragem & Frequência de coleta de amostras \\
+Respostas do servidor & Taxa de sucesso (\%) \\
+Bytes de entrada/saída & Quantidade de dados transmitidos \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Servidor}
+
+O servidor coleta as seguintes métricas:
+
+\begin{table}[h!]
+\centering
+\caption{Métricas coletadas pelo servidor}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\rowcolor[HTML]{D9EAF7} 
+Métrica & Descrição \\ \midrule
+CPU & Utilização da CPU (\%) \\
+Threads & Número de threads ativas e iniciadas \\
+Heap & Heap total e heap utilizado \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
