@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage:
-# bash ./benchmark_threads.sh "threads/virtual" "http://20.195.171.67:8080" "S" "output" "final" "10s"
+# bash ./benchmark_threads.sh "threads/virtual" "http:/localhost:8080" "S" "output" "final" "10s"
 
 ENDPOINT="$1"
 BASE_URL="$2"
@@ -26,12 +26,12 @@ ulimit -v unlimited
 #############################################
 # WARM-UP
 #############################################
-#echo "=== Warm-up ==="
-#echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
-#    | tee results/warmup.bin \
-#    | vegeta report
+echo "=== Warm-up ==="
+echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
+    | tee results/warmup.bin \
+    | vegeta report
 
-#sleep 20
+sleep 20
 
 #############################################
 # PRÉ-CARGA 1000 req/s

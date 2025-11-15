@@ -30,7 +30,7 @@ public class ThreadBenchmarkController {
 
         if (!join(t)) return ResponseEntity.status(500).body("Erro ao aguardar thread");
 
-        if (!workResult.get()) return ResponseEntity.status(500).body("Erro ao executar trabalho");
+        if (!workResult.get()) return ResponseEntity.status(501).body("Erro ao executar trabalho");
         
         threadCounter.incrementAndGet();
 
@@ -40,11 +40,11 @@ public class ThreadBenchmarkController {
     private boolean simulateWork(){
         try{
             Thread.sleep(SLEEP_DURATION_MS);
+            return true;
         }catch(InterruptedException e){
             Thread.currentThread().interrupt();
             return false;
         }
-        return true;
     }
 
     private boolean join(Thread t){
