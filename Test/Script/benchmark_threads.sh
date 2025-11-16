@@ -75,8 +75,8 @@ done
 #############################################
 # LOOP PRINCIPAL
 #############################################
-for i in {1..150}; do
-    RATE=$((50 * i))
+for i in {1..10}; do
+    RATE=$((200 * i))
     JFR_NAME="run_${RATE}.jfr"
 
 
@@ -95,9 +95,6 @@ for i in {1..150}; do
     LAT_P95=$(jq '.latencies.p95' "results/run_${RATE}.json")
     THROUGHPUT=$(jq '.throughput' "results/run_${RATE}.json")
     echo "$RATE,$REQUESTS,$SUCCESS,$LAT_MEAN,$LAT_P95,$THROUGHPUT" >> "$CSV"
-
- 
-
     echo "=== Cooldown ==="
     sleep 60
 done
