@@ -109,4 +109,3 @@ stop_jfr
 download_jfr "teste.jfr"
 
 echo "=== TESTE COMPLETO! Resultados em ./results ==="
-
