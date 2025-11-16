@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualização Benchmark</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { padding: 8px 12px; border: 1px solid #ccc; text-align: center; }
+    th { background: #333; color: white; }
+  </style>
+</head>
+<body>
+
+    <h2>Resultados do Benchmark</h2>
+
+    <table id="tbl">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Requests</th>
+        <th>Success</th>
+        <th>Latência Média</th>
+        <th>P95</th>
+        <th>Throughput</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+
+    <script>
+    async function loadData() {
+        const response = await fetch("all.json");
+        const data = await response.json();
+
+        const tbody = document.querySelector("#tbl tbody");
+
+        data.forEach(r => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${r.name}</td>
+            <td>${r.requests}</td>
+            <td>${(r.success * 100).toFixed(2)}%</td>
+            <td>${r.lat_mean}</td>
+            <td>${r.lat_p95 ?? "-"}</td>
+            <td>${r.throughput.toFixed(2)}</td>
+        `;
+
+        tbody.appendChild(row);
+        });
+    }
+
+    loadData();
+    </script>
+
+</body>
+</html>
