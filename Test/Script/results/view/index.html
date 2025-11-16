@@ -33,6 +33,9 @@
         const response = await fetch("all.json");
         const data = await response.json();
 
+        // 🔥 Ordenar por lat_mean (ordem crescente)
+        data.sort((a, b) => a.requests - b.requests);
+
         const tbody = document.querySelector("#tbl tbody");
 
         data.forEach(r => {
