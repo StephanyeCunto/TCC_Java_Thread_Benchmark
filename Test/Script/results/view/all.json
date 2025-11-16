@@ -1,0 +1,1351 @@
+[
+{
+  "name": "run_100",
+  "requests": 1000,
+  "success": 1,
+  "lat_mean": 120708675,
+  "lat_p95": null,
+  "throughput": 98.92333979645083
+}
+,
+{
+  "name": "run_1000",
+  "requests": 10000,
+  "success": 1,
+  "lat_mean": 574171769,
+  "lat_p95": null,
+  "throughput": 416.7840919724511
+}
+,
+{
+  "name": "run_1050",
+  "requests": 10500,
+  "success": 0.99,
+  "lat_mean": 21727606933,
+  "lat_p95": null,
+  "throughput": 107.1610918507497
+}
+,
+{
+  "name": "run_1100",
+  "requests": 11000,
+  "success": 0.9730909090909091,
+  "lat_mean": 32081638938,
+  "lat_p95": null,
+  "throughput": 87.96079614841216
+}
+,
+{
+  "name": "run_1150",
+  "requests": 11500,
+  "success": 0.9840869565217392,
+  "lat_mean": 41874072808,
+  "lat_p95": null,
+  "throughput": 90.4469652440047
+}
+,
+{
+  "name": "run_1200",
+  "requests": 12000,
+  "success": 0.9871666666666666,
+  "lat_mean": 25474218926,
+  "lat_p95": null,
+  "throughput": 98.01539868468582
+}
+,
+{
+  "name": "run_1250",
+  "requests": 12500,
+  "success": 1,
+  "lat_mean": 129571251,
+  "lat_p95": null,
+  "throughput": 1235.3690151636974
+}
+,
+{
+  "name": "run_1300",
+  "requests": 13000,
+  "success": 0.5805384615384616,
+  "lat_mean": 29669494626,
+  "lat_p95": null,
+  "throughput": 62.52203800615237
+}
+,
+{
+  "name": "run_1350",
+  "requests": 13494,
+  "success": 0.9789536090114125,
+  "lat_mean": 31484256130,
+  "lat_p95": null,
+  "throughput": 102.3771115049936
+}
+,
+{
+  "name": "run_1400",
+  "requests": 14000,
+  "success": 0.9987857142857143,
+  "lat_mean": 10089717512,
+  "lat_p95": null,
+  "throughput": 126.33487981741385
+}
+,
+{
+  "name": "run_1450",
+  "requests": 14500,
+  "success": 0.9908275862068966,
+  "lat_mean": 47413554443,
+  "lat_p95": null,
+  "throughput": 118.87276400709439
+}
+,
+{
+  "name": "run_150",
+  "requests": 1500,
+  "success": 1,
+  "lat_mean": 122058390,
+  "lat_p95": null,
+  "throughput": 148.32120603532337
+}
+,
+{
+  "name": "run_1500",
+  "requests": 15000,
+  "success": 0.9986,
+  "lat_mean": 34001522696,
+  "lat_p95": null,
+  "throughput": 123.96116252083019
+}
+,
+{
+  "name": "run_1550",
+  "requests": 15500,
+  "success": 0.9936129032258064,
+  "lat_mean": 40593610634,
+  "lat_p95": null,
+  "throughput": 126.37328714055039
+}
+,
+{
+  "name": "run_1600",
+  "requests": 15999,
+  "success": 0.9954372148259266,
+  "lat_mean": 14393425174,
+  "lat_p95": null,
+  "throughput": 194.55212495188567
+}
+,
+{
+  "name": "run_1650",
+  "requests": 16500,
+  "success": 0.989030303030303,
+  "lat_mean": 57606730331,
+  "lat_p95": null,
+  "throughput": 128.47474052703774
+}
+,
+{
+  "name": "run_1700",
+  "requests": 17000,
+  "success": 0.9847058823529412,
+  "lat_mean": 40564408692,
+  "lat_p95": null,
+  "throughput": 135.48491041865807
+}
+,
+{
+  "name": "run_1750",
+  "requests": 17500,
+  "success": 0.9846857142857143,
+  "lat_mean": 39540774699,
+  "lat_p95": null,
+  "throughput": 142.48277985760475
+}
+,
+{
+  "name": "run_1800",
+  "requests": 18000,
+  "success": 0.9899444444444444,
+  "lat_mean": 42213754998,
+  "lat_p95": null,
+  "throughput": 138.23702275579745
+}
+,
+{
+  "name": "run_1850",
+  "requests": 18500,
+  "success": 0.9962702702702703,
+  "lat_mean": 25953264994,
+  "lat_p95": null,
+  "throughput": 149.9727465466248
+}
+,
+{
+  "name": "run_1900",
+  "requests": 19000,
+  "success": 0.9916842105263158,
+  "lat_mean": 38106044992,
+  "lat_p95": null,
+  "throughput": 146.04868507091288
+}
+,
+{
+  "name": "run_1950",
+  "requests": 19500,
+  "success": 0.9989230769230769,
+  "lat_mean": 17984025294,
+  "lat_p95": null,
+  "throughput": 214.8093733774587
+}
+,
+{
+  "name": "run_200",
+  "requests": 2000,
+  "success": 1,
+  "lat_mean": 120613151,
+  "lat_p95": null,
+  "throughput": 197.75871559808616
+}
+,
+{
+  "name": "run_2000",
+  "requests": 20000,
+  "success": 0.9845,
+  "lat_mean": 47236939544,
+  "lat_p95": null,
+  "throughput": 155.4637168112295
+}
+,
+{
+  "name": "run_2050",
+  "requests": 20500,
+  "success": 0.9615609756097561,
+  "lat_mean": 41477010204,
+  "lat_p95": null,
+  "throughput": 172.78905097303618
+}
+,
+{
+  "name": "run_2100",
+  "requests": 21000,
+  "success": 0.11323809523809523,
+  "lat_mean": 65933463521,
+  "lat_p95": null,
+  "throughput": 18.359397290363535
+}
+,
+{
+  "name": "run_2150",
+  "requests": 21500,
+  "success": 0.5613953488372093,
+  "lat_mean": 39811375474,
+  "lat_p95": null,
+  "throughput": 93.88430978322084
+}
+,
+{
+  "name": "run_2200",
+  "requests": 22000,
+  "success": 0.9065909090909091,
+  "lat_mean": 14436212766,
+  "lat_p95": null,
+  "throughput": 158.46680218617288
+}
+,
+{
+  "name": "run_2250",
+  "requests": 22500,
+  "success": 0.10875555555555555,
+  "lat_mean": 14725779485,
+  "lat_p95": null,
+  "throughput": 19.87720527456426
+}
+,
+{
+  "name": "run_2300",
+  "requests": 23000,
+  "success": 0.848,
+  "lat_mean": 34623974767,
+  "lat_p95": null,
+  "throughput": 155.09061120859826
+}
+,
+{
+  "name": "run_2350",
+  "requests": 23500,
+  "success": 0.024851063829787235,
+  "lat_mean": 62754961761,
+  "lat_p95": null,
+  "throughput": 4.753309661915192
+}
+,
+{
+  "name": "run_2400",
+  "requests": 24000,
+  "success": 0.8220833333333334,
+  "lat_mean": 40072367713,
+  "lat_p95": null,
+  "throughput": 156.75216277084863
+}
+,
+{
+  "name": "run_2450",
+  "requests": 24500,
+  "success": 0.7990204081632654,
+  "lat_mean": 35618626675,
+  "lat_p95": null,
+  "throughput": 162.65554273003187
+}
+,
+{
+  "name": "run_250",
+  "requests": 2500,
+  "success": 1,
+  "lat_mean": 120947898,
+  "lat_p95": null,
+  "throughput": 247.14430829048882
+}
+,
+{
+  "name": "run_2500",
+  "requests": 25000,
+  "success": 0.79696,
+  "lat_mean": 23883837205,
+  "lat_p95": null,
+  "throughput": 161.19102612366487
+}
+,
+{
+  "name": "run_2550",
+  "requests": 25500,
+  "success": 0.35615686274509806,
+  "lat_mean": 57561573231,
+  "lat_p95": null,
+  "throughput": 71.30933163858656
+}
+,
+{
+  "name": "run_2600",
+  "requests": 26000,
+  "success": 0.47073076923076923,
+  "lat_mean": 52356157549,
+  "lat_p95": null,
+  "throughput": 95.96924762288575
+}
+,
+{
+  "name": "run_2650",
+  "requests": 26500,
+  "success": 0.7530188679245283,
+  "lat_mean": 11215373022,
+  "lat_p95": null,
+  "throughput": 166.2870670389056
+}
+,
+{
+  "name": "run_2700",
+  "requests": 27000,
+  "success": 0.012296296296296296,
+  "lat_mean": 14738755726,
+  "lat_p95": null,
+  "throughput": 2.7615640002248627
+}
+,
+{
+  "name": "run_2750",
+  "requests": 27500,
+  "success": 0.7194909090909091,
+  "lat_mean": 28855632443,
+  "lat_p95": null,
+  "throughput": 158.49251827009817
+}
+,
+{
+  "name": "run_2800",
+  "requests": 28000,
+  "success": 0.6993214285714285,
+  "lat_mean": 32302192164,
+  "lat_p95": null,
+  "throughput": 155.74518467140638
+}
+,
+{
+  "name": "run_2850",
+  "requests": 28500,
+  "success": 0.6993684210526315,
+  "lat_mean": 14514500415,
+  "lat_p95": null,
+  "throughput": 162.69453272400926
+}
+,
+{
+  "name": "run_2900",
+  "requests": 29000,
+  "success": 0.6865517241379311,
+  "lat_mean": 12682688235,
+  "lat_p95": null,
+  "throughput": 164.73866912267434
+}
+,
+{
+  "name": "run_2950",
+  "requests": 29500,
+  "success": 0.6567118644067796,
+  "lat_mean": 24382575253,
+  "lat_p95": null,
+  "throughput": 155.4371919518959
+}
+,
+{
+  "name": "run_300",
+  "requests": 3000,
+  "success": 1,
+  "lat_mean": 122307500,
+  "lat_p95": null,
+  "throughput": 296.5242050345766
+}
+,
+{
+  "name": "run_3000",
+  "requests": 30000,
+  "success": 0.6493333333333333,
+  "lat_mean": 25763526790,
+  "lat_p95": null,
+  "throughput": 158.8566178051537
+}
+,
+{
+  "name": "run_3050",
+  "requests": 30500,
+  "success": 0.637016393442623,
+  "lat_mean": 30189111563,
+  "lat_p95": null,
+  "throughput": 155.4860797688905
+}
+,
+{
+  "name": "run_3100",
+  "requests": 31000,
+  "success": 0.632774193548387,
+  "lat_mean": 11866846888,
+  "lat_p95": null,
+  "throughput": 155.1378891841797
+}
+,
+{
+  "name": "run_3150",
+  "requests": 31500,
+  "success": 0.1976190476190476,
+  "lat_mean": 11654248229,
+  "lat_p95": null,
+  "throughput": 51.7324522693186
+}
+,
+{
+  "name": "run_3200",
+  "requests": 32000,
+  "success": 0.609375,
+  "lat_mean": 27415741055,
+  "lat_p95": null,
+  "throughput": 157.36451679943542
+}
+,
+{
+  "name": "run_3250",
+  "requests": 32500,
+  "success": 0.6128,
+  "lat_mean": 30060002894,
+  "lat_p95": null,
+  "throughput": 165.84445358496404
+}
+,
+{
+  "name": "run_3300",
+  "requests": 33000,
+  "success": 0.6021515151515151,
+  "lat_mean": 9940740699,
+  "lat_p95": null,
+  "throughput": 167.80022691852096
+}
+,
+{
+  "name": "run_3350",
+  "requests": 33500,
+  "success": 0.5916417910447761,
+  "lat_mean": 31259133089,
+  "lat_p95": null,
+  "throughput": 159.99088439424264
+}
+,
+{
+  "name": "run_3400",
+  "requests": 34000,
+  "success": 0.5878235294117647,
+  "lat_mean": 11996157632,
+  "lat_p95": null,
+  "throughput": 223.29584714223267
+}
+,
+{
+  "name": "run_3450",
+  "requests": 34500,
+  "success": 0.5646086956521739,
+  "lat_mean": 25767963947,
+  "lat_p95": null,
+  "throughput": 161.41127314491345
+}
+,
+{
+  "name": "run_350",
+  "requests": 3500,
+  "success": 1,
+  "lat_mean": 122447319,
+  "lat_p95": null,
+  "throughput": 345.9807231865862
+}
+,
+{
+  "name": "run_3500",
+  "requests": 35000,
+  "success": 0.5661142857142857,
+  "lat_mean": 22805109777,
+  "lat_p95": null,
+  "throughput": 164.0708046712943
+}
+,
+{
+  "name": "run_3550",
+  "requests": 35500,
+  "success": 0.5607605633802817,
+  "lat_mean": 9834739407,
+  "lat_p95": null,
+  "throughput": 163.69748361528787
+}
+,
+{
+  "name": "run_3600",
+  "requests": 36000,
+  "success": 0.5414444444444444,
+  "lat_mean": 18877000681,
+  "lat_p95": null,
+  "throughput": 162.16531629604708
+}
+,
+{
+  "name": "run_3650",
+  "requests": 36500,
+  "success": 0.5324657534246575,
+  "lat_mean": 20330577232,
+  "lat_p95": null,
+  "throughput": 160.0460152392002
+}
+,
+{
+  "name": "run_3700",
+  "requests": 37000,
+  "success": 0.5261081081081082,
+  "lat_mean": 21578379145,
+  "lat_p95": null,
+  "throughput": 160.51994625513314
+}
+,
+{
+  "name": "run_3750",
+  "requests": 37500,
+  "success": 0.5296533333333333,
+  "lat_mean": 16808360511,
+  "lat_p95": null,
+  "throughput": 163.50179453962122
+}
+,
+{
+  "name": "run_3800",
+  "requests": 38000,
+  "success": 0.5246052631578947,
+  "lat_mean": 15442740752,
+  "lat_p95": null,
+  "throughput": 165.94273029031632
+}
+,
+{
+  "name": "run_3850",
+  "requests": 38500,
+  "success": 0.5112727272727273,
+  "lat_mean": 33298203352,
+  "lat_p95": null,
+  "throughput": 157.25095170818
+}
+,
+{
+  "name": "run_3900",
+  "requests": 39000,
+  "success": 0.5103846153846154,
+  "lat_mean": 8865091637,
+  "lat_p95": null,
+  "throughput": 194.23788650131388
+}
+,
+{
+  "name": "run_3950",
+  "requests": 39500,
+  "success": 0.5027848101265823,
+  "lat_mean": 15786222751,
+  "lat_p95": null,
+  "throughput": 158.9743565267524
+}
+,
+{
+  "name": "run_400",
+  "requests": 4000,
+  "success": 1,
+  "lat_mean": 129209960,
+  "lat_p95": null,
+  "throughput": 395.33485433272597
+}
+,
+{
+  "name": "run_4000",
+  "requests": 39964,
+  "success": 0.499174256831148,
+  "lat_mean": 17437959965,
+  "lat_p95": null,
+  "throughput": 164.8751098527973
+}
+,
+{
+  "name": "run_4050",
+  "requests": 40500,
+  "success": 0.48975308641975307,
+  "lat_mean": 10411161975,
+  "lat_p95": null,
+  "throughput": 202.52584211174945
+}
+,
+{
+  "name": "run_4100",
+  "requests": 41000,
+  "success": 0.4845121951219512,
+  "lat_mean": 12672818274,
+  "lat_p95": null,
+  "throughput": 160.90845872817687
+}
+,
+{
+  "name": "run_4150",
+  "requests": 41500,
+  "success": 0.4786506024096386,
+  "lat_mean": 14927187741,
+  "lat_p95": null,
+  "throughput": 187.89117534753194
+}
+,
+{
+  "name": "run_4200",
+  "requests": 42000,
+  "success": 0.4649761904761905,
+  "lat_mean": 18464256203,
+  "lat_p95": null,
+  "throughput": 162.09440154543083
+}
+,
+{
+  "name": "run_4250",
+  "requests": 42500,
+  "success": 0.23463529411764705,
+  "lat_mean": 24090794206,
+  "lat_p95": null,
+  "throughput": 81.40363789976156
+}
+,
+{
+  "name": "run_4300",
+  "requests": 43000,
+  "success": 0.4616046511627907,
+  "lat_mean": 7470354497,
+  "lat_p95": null,
+  "throughput": 448.75001479864466
+}
+,
+{
+  "name": "run_4350",
+  "requests": 43500,
+  "success": 0.4094942528735632,
+  "lat_mean": 22079060110,
+  "lat_p95": null,
+  "throughput": 147.9221915114039
+}
+,
+{
+  "name": "run_4400",
+  "requests": 44000,
+  "success": 0.4516363636363636,
+  "lat_mean": 7529414767,
+  "lat_p95": null,
+  "throughput": 435.90471639509866
+}
+,
+{
+  "name": "run_4450",
+  "requests": 44500,
+  "success": 0.4248539325842697,
+  "lat_mean": 18116505952,
+  "lat_p95": null,
+  "throughput": 151.88661517159295
+}
+,
+{
+  "name": "run_450",
+  "requests": 4500,
+  "success": 1,
+  "lat_mean": 123929254,
+  "lat_p95": null,
+  "throughput": 437.57918359976554
+}
+,
+{
+  "name": "run_4500",
+  "requests": 45000,
+  "success": 0.44095555555555555,
+  "lat_mean": 6449189773,
+  "lat_p95": null,
+  "throughput": 186.83939405570953
+}
+,
+{
+  "name": "run_4550",
+  "requests": 45500,
+  "success": 0.42514285714285716,
+  "lat_mean": 23188427095,
+  "lat_p95": null,
+  "throughput": 158.10940073732058
+}
+,
+{
+  "name": "run_4600",
+  "requests": 46000,
+  "success": 0.43380434782608696,
+  "lat_mean": 7368502978,
+  "lat_p95": null,
+  "throughput": 166.1379273580825
+}
+,
+{
+  "name": "run_4650",
+  "requests": 46500,
+  "success": 0.41421505376344087,
+  "lat_mean": 20281321434,
+  "lat_p95": null,
+  "throughput": 159.602413190032
+}
+,
+{
+  "name": "run_4700",
+  "requests": 47000,
+  "success": 0.4185531914893617,
+  "lat_mean": 17510273430,
+  "lat_p95": null,
+  "throughput": 160.35332710134082
+}
+,
+{
+  "name": "run_4750",
+  "requests": 47500,
+  "success": 0.41922105263157894,
+  "lat_mean": 7193209062,
+  "lat_p95": null,
+  "throughput": 270.83668600556774
+}
+,
+{
+  "name": "run_4800",
+  "requests": 48000,
+  "success": 0.3318125,
+  "lat_mean": 18066360256,
+  "lat_p95": null,
+  "throughput": 128.9845696134736
+}
+,
+{
+  "name": "run_4850",
+  "requests": 48500,
+  "success": 0.40950515463917525,
+  "lat_mean": 6199560487,
+  "lat_p95": null,
+  "throughput": 323.32224039546975
+}
+,
+{
+  "name": "run_4900",
+  "requests": 49000,
+  "success": 0.394,
+  "lat_mean": 14594794908,
+  "lat_p95": null,
+  "throughput": 157.22167726366558
+}
+,
+{
+  "name": "run_4950",
+  "requests": 49500,
+  "success": 0.3936969696969697,
+  "lat_mean": 16642786120,
+  "lat_p95": null,
+  "throughput": 162.22417473685803
+}
+,
+{
+  "name": "run_50",
+  "requests": 500,
+  "success": 1,
+  "lat_mean": 120958099,
+  "lat_p95": null,
+  "throughput": 49.517461621027145
+}
+,
+{
+  "name": "run_500",
+  "requests": 5000,
+  "success": 1,
+  "lat_mean": 125312607,
+  "lat_p95": null,
+  "throughput": 488.6403318334133
+}
+,
+{
+  "name": "run_5000",
+  "requests": 50000,
+  "success": 0.3854,
+  "lat_mean": 14505083458,
+  "lat_p95": null,
+  "throughput": 158.97831880745767
+}
+,
+{
+  "name": "run_5050",
+  "requests": 50500,
+  "success": 0.379009900990099,
+  "lat_mean": 18620389291,
+  "lat_p95": null,
+  "throughput": 183.6911799674071
+}
+,
+{
+  "name": "run_5100",
+  "requests": 51000,
+  "success": 0.3892745098039216,
+  "lat_mean": 8377136109,
+  "lat_p95": null,
+  "throughput": 201.82498093072226
+}
+,
+{
+  "name": "run_5150",
+  "requests": 51500,
+  "success": 0.3871844660194175,
+  "lat_mean": 8173972177,
+  "lat_p95": null,
+  "throughput": 196.57672324563035
+}
+,
+{
+  "name": "run_5200",
+  "requests": 52000,
+  "success": 0.3717115384615385,
+  "lat_mean": 17030531072,
+  "lat_p95": null,
+  "throughput": 159.23013346702493
+}
+,
+{
+  "name": "run_5250",
+  "requests": 52500,
+  "success": 0.37664761904761906,
+  "lat_mean": 12914489291,
+  "lat_p95": null,
+  "throughput": 162.55517927442577
+}
+,
+{
+  "name": "run_5300",
+  "requests": 53000,
+  "success": 0.3447547169811321,
+  "lat_mean": 10450370066,
+  "lat_p95": null,
+  "throughput": 147.84247914280775
+}
+,
+{
+  "name": "run_5350",
+  "requests": 53500,
+  "success": 0.3715140186915888,
+  "lat_mean": 8606325135,
+  "lat_p95": null,
+  "throughput": 198.42609881359303
+}
+,
+{
+  "name": "run_5400",
+  "requests": 54000,
+  "success": 0.364462962962963,
+  "lat_mean": 14979193406,
+  "lat_p95": null,
+  "throughput": 162.57319435597037
+}
+,
+{
+  "name": "run_5450",
+  "requests": 54500,
+  "success": 0.35577981651376145,
+  "lat_mean": 13550929267,
+  "lat_p95": null,
+  "throughput": 191.16949409495155
+}
+,
+{
+  "name": "run_550",
+  "requests": 5500,
+  "success": 0.9972727272727273,
+  "lat_mean": 467926656,
+  "lat_p95": null,
+  "throughput": 42.403871684686244
+}
+,
+{
+  "name": "run_5500",
+  "requests": 55000,
+  "success": 0.3612181818181818,
+  "lat_mean": 7578205731,
+  "lat_p95": null,
+  "throughput": 184.23523881772772
+}
+,
+{
+  "name": "run_5550",
+  "requests": 55500,
+  "success": 0.355045045045045,
+  "lat_mean": 10880027322,
+  "lat_p95": null,
+  "throughput": 205.9088148550261
+}
+,
+{
+  "name": "run_5600",
+  "requests": 56000,
+  "success": 0.34519642857142857,
+  "lat_mean": 12399269187,
+  "lat_p95": null,
+  "throughput": 158.26143489370196
+}
+,
+{
+  "name": "run_5650",
+  "requests": 56500,
+  "success": 0.3381238938053097,
+  "lat_mean": 14281891071,
+  "lat_p95": null,
+  "throughput": 159.16124932099225
+}
+,
+{
+  "name": "run_5700",
+  "requests": 57000,
+  "success": 0.34796491228070175,
+  "lat_mean": 7730098075,
+  "lat_p95": null,
+  "throughput": 209.528954053889
+}
+,
+{
+  "name": "run_5750",
+  "requests": 57500,
+  "success": 0.3400521739130435,
+  "lat_mean": 12349125992,
+  "lat_p95": null,
+  "throughput": 162.42659197856736
+}
+,
+{
+  "name": "run_5800",
+  "requests": 58000,
+  "success": 0.3423793103448276,
+  "lat_mean": 7149749909,
+  "lat_p95": null,
+  "throughput": 161.2555995348168
+}
+,
+{
+  "name": "run_5850",
+  "requests": 58500,
+  "success": 0.3324957264957265,
+  "lat_mean": 14898312470,
+  "lat_p95": null,
+  "throughput": 176.80476829307213
+}
+,
+{
+  "name": "run_5900",
+  "requests": 59000,
+  "success": 0.1963728813559322,
+  "lat_mean": 16023492995,
+  "lat_p95": null,
+  "throughput": 89.17407374641208
+}
+,
+{
+  "name": "run_5950",
+  "requests": 59500,
+  "success": 0.33510924369747896,
+  "lat_mean": 5951558699,
+  "lat_p95": null,
+  "throughput": 215.6180090732212
+}
+,
+{
+  "name": "run_600",
+  "requests": 6000,
+  "success": 1,
+  "lat_mean": 135156195,
+  "lat_p95": null,
+  "throughput": 587.2439984405489
+}
+,
+{
+  "name": "run_6000",
+  "requests": 60000,
+  "success": 0.3215,
+  "lat_mean": 12692802106,
+  "lat_p95": null,
+  "throughput": 158.08817374241875
+}
+,
+{
+  "name": "run_6050",
+  "requests": 60500,
+  "success": 0.31866115702479336,
+  "lat_mean": 14691955862,
+  "lat_p95": null,
+  "throughput": 157.1157292236582
+}
+,
+{
+  "name": "run_6100",
+  "requests": 61000,
+  "success": 0.2997377049180328,
+  "lat_mean": 9700409630,
+  "lat_p95": null,
+  "throughput": 148.38088900622586
+}
+,
+{
+  "name": "run_6150",
+  "requests": 61500,
+  "success": 0.3244878048780488,
+  "lat_mean": 5028049763,
+  "lat_p95": null,
+  "throughput": 270.41165764222865
+}
+,
+{
+  "name": "run_6200",
+  "requests": 62000,
+  "success": 0.3205806451612903,
+  "lat_mean": 10423008441,
+  "lat_p95": null,
+  "throughput": 163.52143228834157
+}
+,
+{
+  "name": "run_6250",
+  "requests": 62500,
+  "success": 0.319104,
+  "lat_mean": 5326398685,
+  "lat_p95": null,
+  "throughput": 255.53049327934917
+}
+,
+{
+  "name": "run_6300",
+  "requests": 63000,
+  "success": 0.016396825396825396,
+  "lat_mean": 23135270777,
+  "lat_p95": null,
+  "throughput": 8.277692158213283
+}
+,
+{
+  "name": "run_6350",
+  "requests": 63500,
+  "success": 0.3072755905511811,
+  "lat_mean": 12889212738,
+  "lat_p95": null,
+  "throughput": 159.9203088382283
+}
+,
+{
+  "name": "run_6400",
+  "requests": 64000,
+  "success": 0.281296875,
+  "lat_mean": 11432415954,
+  "lat_p95": null,
+  "throughput": 146.25992931393276
+}
+,
+{
+  "name": "run_6450",
+  "requests": 64501,
+  "success": 0.2842281515015271,
+  "lat_mean": 11936381202,
+  "lat_p95": null,
+  "throughput": 149.4075737668077
+}
+,
+{
+  "name": "run_650",
+  "requests": 6500,
+  "success": 1,
+  "lat_mean": 134578490,
+  "lat_p95": null,
+  "throughput": 641.5654117083787
+}
+,
+{
+  "name": "run_6500",
+  "requests": 65000,
+  "success": 0.29646153846153844,
+  "lat_mean": 12223688648,
+  "lat_p95": null,
+  "throughput": 157.91130587424374
+}
+,
+{
+  "name": "run_6550",
+  "requests": 65501,
+  "success": 0.2960412818124914,
+  "lat_mean": 12826227624,
+  "lat_p95": null,
+  "throughput": 158.10123103967078
+}
+,
+{
+  "name": "run_6600",
+  "requests": 66000,
+  "success": 0.290030303030303,
+  "lat_mean": 12531116583,
+  "lat_p95": null,
+  "throughput": 186.1626201494303
+}
+,
+{
+  "name": "run_6650",
+  "requests": 66501,
+  "success": 0.2878753702951835,
+  "lat_mean": 10545968445,
+  "lat_p95": null,
+  "throughput": 159.35711048643776
+}
+,
+{
+  "name": "run_6700",
+  "requests": 67001,
+  "success": 0.2860703571588484,
+  "lat_mean": 10698738655,
+  "lat_p95": null,
+  "throughput": 159.69969414217343
+}
+,
+{
+  "name": "run_6750",
+  "requests": 67500,
+  "success": 0.29404444444444444,
+  "lat_mean": 6794977929,
+  "lat_p95": null,
+  "throughput": 163.08747950918504
+}
+,
+{
+  "name": "run_6800",
+  "requests": 68001,
+  "success": 0.2838193555977118,
+  "lat_mean": 12645217695,
+  "lat_p95": null,
+  "throughput": 160.63929835240543
+}
+,
+{
+  "name": "run_6850",
+  "requests": 68500,
+  "success": 0.0771970802919708,
+  "lat_mean": 17169328579,
+  "lat_p95": null,
+  "throughput": 40.73655655182502
+}
+,
+{
+  "name": "run_6900",
+  "requests": 69000,
+  "success": 0.21485507246376812,
+  "lat_mean": 9628363524,
+  "lat_p95": null,
+  "throughput": 120.6884237840116
+}
+,
+{
+  "name": "run_6950",
+  "requests": 69501,
+  "success": 0.2789168501172645,
+  "lat_mean": 10510139941,
+  "lat_p95": null,
+  "throughput": 159.25197767352103
+}
+,
+{
+  "name": "run_700",
+  "requests": 7000,
+  "success": 1,
+  "lat_mean": 529498544,
+  "lat_p95": null,
+  "throughput": 567.294263973225
+}
+,
+{
+  "name": "run_7000",
+  "requests": 70000,
+  "success": 0.28218571428571426,
+  "lat_mean": 10368627083,
+  "lat_p95": null,
+  "throughput": 163.027719140157
+}
+,
+{
+  "name": "run_7050",
+  "requests": 70491,
+  "success": 0.27570895575321674,
+  "lat_mean": 9493374486,
+  "lat_p95": null,
+  "throughput": 160.9450163563478
+}
+,
+{
+  "name": "run_7100",
+  "requests": 71000,
+  "success": 0.27138028169014083,
+  "lat_mean": 14060143945,
+  "lat_p95": null,
+  "throughput": 159.39961568432173
+}
+,
+{
+  "name": "run_7150",
+  "requests": 71500,
+  "success": 0.27674125874125877,
+  "lat_mean": 10527845987,
+  "lat_p95": null,
+  "throughput": 181.65407372009702
+}
+,
+{
+  "name": "run_7200",
+  "requests": 72001,
+  "success": 0.2694407022124693,
+  "lat_mean": 12546010201,
+  "lat_p95": null,
+  "throughput": 160.63351645392692
+}
+,
+{
+  "name": "run_7250",
+  "requests": 72500,
+  "success": 0.2713241379310345,
+  "lat_mean": 10531654701,
+  "lat_p95": null,
+  "throughput": 163.6117588114567
+}
+,
+{
+  "name": "run_7300",
+  "requests": 73000,
+  "success": 0.27265753424657535,
+  "lat_mean": 9097619161,
+  "lat_p95": null,
+  "throughput": 164.06131944395202
+}
+,
+{
+  "name": "run_7350",
+  "requests": 73500,
+  "success": 0.2656598639455782,
+  "lat_mean": 9384858371,
+  "lat_p95": null,
+  "throughput": 196.03420130179973
+}
+,
+{
+  "name": "run_7400",
+  "requests": 74000,
+  "success": 0.24352702702702703,
+  "lat_mean": 11451293257,
+  "lat_p95": null,
+  "throughput": 140.08531995484455
+}
+,
+{
+  "name": "run_7450",
+  "requests": 74500,
+  "success": 0.17142281879194632,
+  "lat_mean": 6894327482,
+  "lat_p95": null,
+  "throughput": 128.7415511734668
+}
+,
+{
+  "name": "run_750",
+  "requests": 7500,
+  "success": 1,
+  "lat_mean": 131643944,
+  "lat_p95": null,
+  "throughput": 741.17556981751
+}
+,
+{
+  "name": "run_7500",
+  "requests": 75000,
+  "success": 0.2580266666666667,
+  "lat_mean": 9362579946,
+  "lat_p95": null,
+  "throughput": 159.09599123556416
+}
+,
+{
+  "name": "run_800",
+  "requests": 8000,
+  "success": 1,
+  "lat_mean": 138187307,
+  "lat_p95": null,
+  "throughput": 789.886913315379
+}
+,
+{
+  "name": "run_850",
+  "requests": 8500,
+  "success": 0.9357647058823529,
+  "lat_mean": 21195944240,
+  "lat_p95": null,
+  "throughput": 63.05608154582788
+}
+,
+{
+  "name": "run_900",
+  "requests": 9000,
+  "success": 0.9955555555555555,
+  "lat_mean": 19070803346,
+  "lat_p95": null,
+  "throughput": 69.51029962202212
+}
+,
+{
+  "name": "run_950",
+  "requests": 9500,
+  "success": 0.9925263157894737,
+  "lat_mean": 21187569680,
+  "lat_p95": null,
+  "throughput": 76.93644883903963
+}
+]
