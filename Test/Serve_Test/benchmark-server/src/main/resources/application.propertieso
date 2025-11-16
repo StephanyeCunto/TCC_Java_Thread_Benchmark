@@ -1,0 +1,5 @@
+spring.application.name=BenchmarkServer
+server.tomcat.threads.max=500
+server.tomcat.accept-count=200
+
+
