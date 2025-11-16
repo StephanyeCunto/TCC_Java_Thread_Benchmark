@@ -29,8 +29,16 @@ ulimit -v unlimited
 #############################################
 start_jfr() {
     NAME="$1"
-    ssh -i "$KEY_PATH" "$SERVER" "mkdir -p $JFR_PATH; java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,settings=profile,dumponexit=true -XX:+FlightRecorder -jar $JAVA_JAR_PATH & echo \$! > $JFR_PATH/server.pid"
-    echo "JFR $NAME iniciado..."
+    ssh -i "$KEY_PATH" "$SERVER" "
+        mkdir -p $JFR_PATH;
+        nohup java \
+            -XX:+FlightRecorder \
+            -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,settings=profile,dumponexit=true \
+            -jar $JAVA_JAR_PATH \
+            > $JFR_PATH/server.log 2>&1 &
+        echo \$! > $JFR_PATH/server.pid
+    "
+    echo 'JFR iniciado'
     sleep 5
 }
 
@@ -101,3 +109,4 @@ stop_jfr
 download_jfr "teste.jfr"
 
 echo "=== TESTE COMPLETO! Resultados em ./results ==="
+
