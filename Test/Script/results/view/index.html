@@ -5,57 +5,63 @@
   <title>Visualização Benchmark</title>
   <style>
     body { font-family: Arial; background: #f4f4f4; padding: 20px; }
-    table { width: 100%; border-collapse: collapse; background: white; }
+    table { width: 100%; border-collapse: collapse; background: white; margin-top: 10px; }
     th, td { padding: 8px 12px; border: 1px solid #ccc; text-align: center; }
     th { background: #333; color: white; }
   </style>
 </head>
 <body>
 
-    <h2>Resultados do Benchmark</h2>
+  <h2>Resultados do Benchmark</h2>
 
-    <table id="tbl">
+  <table id="tbl">
     <thead>
-        <tr>
+      <tr>
         <th>Name</th>
         <th>Requests</th>
         <th>Success</th>
         <th>Latência Média</th>
         <th>P95</th>
         <th>Throughput</th>
-        </tr>
+      </tr>
     </thead>
     <tbody></tbody>
-    </table>
+  </table>
 
-    <script>
-    async function loadData() {
-        const response = await fetch("all.json");
-        const data = await response.json();
+  <script>
+    const tbody = document.querySelector("#tbl tbody");
 
-        // 🔥 Ordenar por lat_mean (ordem crescente)
-        data.sort((a, b) => a.requests - b.requests);
+    // Substitua pelo caminho correto do seu JSON
+    fetch('./all.json')
+      .then(res => res.json())
+      .then(data => {
+        tbody.innerHTML = '';
 
-        const tbody = document.querySelector("#tbl tbody");
+        // Se os dados estiverem dentro de uma chave, como data.results, ajuste aqui
+        // Exemplo: const benchmarks = data.results;
+        const benchmarks = data; 
 
-        data.forEach(r => {
-        const row = document.createElement("tr");
+        // Ordena por número de requests (se existir)
+        benchmarks.sort((a, b) => (a.requests ?? 0) - (b.requests ?? 0));
 
-        row.innerHTML = `
-            <td>${r.name}</td>
-            <td>${r.requests}</td>
-            <td>${(r.success * 100).toFixed(2)}%</td>
-            <td>${r.lat_mean}</td>
+        benchmarks.forEach(r => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${r.name ?? "-"}</td>
+            <td>${r.requests ?? 0}</td>
+            <td>${(r.success != null ? (r.success * 100).toFixed(2) : "-")}%</td>
+            <td>${r.lat_mean ?? "-"}</td>
             <td>${r.lat_p95 ?? "-"}</td>
-            <td>${r.throughput.toFixed(2)}</td>
-        `;
-
-        tbody.appendChild(row);
+            <td>${r.throughput != null ? r.throughput.toFixed(2) : "-"}</td>
+          `;
+          tbody.appendChild(row);
         });
-    }
-
-    loadData();
-    </script>
+      })
+      .catch(err => {
+        console.error("Erro ao carregar JSON:", err);
+        tbody.innerHTML = `<tr><td colspan="6">Erro ao carregar dados</td></tr>`;
+      });
+  </script>
 
 </body>
 </html>
