@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Arquivo de saída
-OUTPUT="merged.json"
+OUTPUT="all.json"
 
 # Começa o array
 echo "[" > $OUTPUT
