@@ -32,7 +32,7 @@ start_jfr() {
     NAME="$1"
     ssh -i "$KEY_PATH" "$SERVER" "
         mkdir -p $JFR_PATH;
-        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=60s -jar $JAVA_JAR_PATH
+        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME -jar $JAVA_JAR_PATH
         echo \$! > $JFR_PATH/server.pid
     "
     echo 'JFR iniciado'
@@ -54,28 +54,29 @@ download_jfr() {
 # WARM-UP
 #############################################
 start_jfr "testeAgrTemQueIr.jfr"
-
 echo "=== Warm-up ==="
 echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
     | tee results/warmup.bin \
     | vegeta report
 sleep 20
 
-#############################################
+
+# ############################################
 # PRÉ-CARGA 1000 req/s
-#############################################
+# ############################################
 for i in 1 2; do
     echo "=== Pré-carga 1000 req/s - $i ==="
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=1000 \
         | tee "results/preload${i}.bin" \
         | vegeta report    
     sleep 20
-done
 
-#############################################
+# done
+
+# ############################################
 # LOOP PRINCIPAL
-#############################################
-for i in {1..10}; do
+# ############################################
+for i in {1..5}; do
     RATE=$((200 * i))
     JFR_NAME="run_${RATE}.jfr"
 
