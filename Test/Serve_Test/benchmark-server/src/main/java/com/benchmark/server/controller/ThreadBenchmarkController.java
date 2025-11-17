@@ -57,15 +57,9 @@ public class ThreadBenchmarkController {
         return true;
     }
 
-    @GetMapping("/counter")
-    public ResponseEntity<Integer> getCounter() {
-        return ResponseEntity.ok(threadCounter.get());
-    }
-
-    @DeleteMapping("/counter")
-    public ResponseEntity<Integer> resetCounter() {
-        int oldValue = threadCounter.getAndSet(0);
-        return ResponseEntity.ok(oldValue);
+    @GetMapping("/gc")
+    public void gc(){
+        System.gc();
     }
 }
 
