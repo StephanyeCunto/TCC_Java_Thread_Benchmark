@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ./benchmark_threads.sh "http://20.195.171.67:8080/threads" 
+# ./benchmark_threads.sh "http://20.195.171.67:8080" 
 
 BASE_URL="$1"
 
@@ -18,39 +18,33 @@ ulimit -v unlimited
 #############################################
 # Função para iniciar JFR remoto
 #############################################
-close_port() {
-    process=$(ssh -i ${KEY_PATH} ${SERVER} lsof -t -i :8080)   
 
-    if [ -n "$process" ]; then    
-        ssh -i ${KEY_PATH} ${SERVER} kill -9 "$process"
-        echo "Processo na porta 8080 encerrado: $process"
+close_port() {
+    result=$(ssh -i "$KEY_PATH" "$SERVER" "lsof -t -i :8080")
+
+    if [[ -n "$result" ]]; then
+        ssh -i "$KEY_PATH" "$SERVER" "kill -9 $result"
+        echo "Port closed (killed PID $result)"
     else
-        echo "Nenhum processo usando a porta 8080."
+        echo "Port not used"
     fi
-    sleep 5
+
+    sleep 10
 }
 
-# start_jfr() {
-#     close_port
-#     NAME="$1"
-#     ssh -i "$KEY_PATH" "$SERVER" " mkdir -p $JFR_PATH;
-#         nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s -jar $JAVA_JAR_PATH
-#     "
-#     echo 'JFR iniciado'
-#     sleep 5
-# }
-
 start_jfr() {
-    close_port
     NAME="$1"
+
+    close_port
+
     ssh -i "$KEY_PATH" "$SERVER" "
-        mkdir -p $JFR_PATH;
-        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s -jar $JAVA_JAR_PATH >/dev/null 2>&1 &
-    "
+        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s \
+            -jar $JAVA_JAR_PATH > $JFR_PATH/java.log 2>&1 &
+        echo \$! > $JFR_PATH/server.pid" 
+
     echo 'JFR iniciado'
     sleep 5
 }
-
 
 # Função para parar JFR remoto
 stop_jfr() {
@@ -63,57 +57,57 @@ download_jfr() {
     scp -i "$KEY_PATH" "$SERVER:$JFR_PATH/$NAME" "results/$NAME"
 }
 
-for j in {2..10}; do
+for j in {1..1}; do
     if [ $(($j % 2)) -eq 0 ]; then
-        ENDPOINT="virtual"
+        ENDPOINT="threads/virtual"
     else
-        ENDPOINT="traditional"
+        ENDPOINT="threads/traditional"
     fi
     #############################################
     # WARM-UP
     #############################################
-    start_jfr "teste${ENDPOINT}${j}.jfr"
+    start_jfr "${ENDPOINT}${j}.jfr"
     echo "=== Warm-up ==="
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
-        | tee "results/threads/${ENDPOINT}/${j}/warmup.bin" \
-        | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup.json"
+        | tee "results/${ENDPOINT}/${j}/warmup.bin" \
+        | vegeta report --type=json > "results/${ENDPOINT}/${j}/warmup.json"
     curl -s "Get $BASE_URL/gc"
     sleep 20
 
-    # ############################################
-    # PRÉ-CARGA 1000 req/s
-    # ############################################
+    # # ############################################
+    # # PRÉ-CARGA 1000 req/s
+    # # ############################################
     for i in 1 2; do
-        echo "=== Pré-carga 500 req/s - $i ==="
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=500 \
-            | tee "results/threads/${ENDPOINT}/${j}/preload_${i}.bin" \
-            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/preload_${i}.json"
+        echo "=== Pré-carga 1000 req/s - $i ==="
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=1000 \
+            | tee "results/${ENDPOINT}/${j}/preload_${i}.bin" \
+            | vegeta report --type=json > "results/${ENDPOINT}/${j}/preload_${i}.json"
         curl -s "Get $BASE_URL/gc"
         sleep 20
     done
 
-    # ############################################
-    # LOOP PRINCIPAL
-    # ############################################
-    for i in {1..150}; do
-        RATE=$((50 * i))
-        JFR_NAME="run_${RATE}.jfr"
+    # # ############################################
+    # # LOOP PRINCIPAL
+    # # ############################################
+    # for i in {1..150}; do
+    #     RATE=$((50 * i))
+    #     JFR_NAME="run_${RATE}.jfr"
 
 
-        echo "=== Teste $RATE req/s ==="
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
-            -duration="10s" \
-            -rate="$RATE" \
-            -timeout=0s \
-            -max-workers=100000 \
-            | tee "results/threads/${ENDPOINT}/${j}/run_${RATE}.bin" \
-            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/run_${RATE}.json"
-        sleep 60
-        curl -s "Get $BASE_URL/gc"
-        sleep 20
-    done
+    #     echo "=== Teste $RATE req/s ==="
+    #     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
+    #         -duration="10s" \
+    #         -rate="$RATE" \
+    #         -timeout=0s \
+    #         -max-workers=100000 \
+    #         | tee "results/${ENDPOINT}/${j}/run_${RATE}.bin" \
+    #         | vegeta report --type=json > "results/${ENDPOINT}/${j}/run_${RATE}.json"
+    #     sleep 60
+    #     curl -s "Get $BASE_URL/gc"
+    #     sleep 20
+    # done
     stop_jfr   
-    download_jfr "teste${ENDPOINT}${j}.jfr"
+    download_jfr "${ENDPOINT}${j}.jfr"
 
     echo "=== TESTE ${ENDPOINT} ${j} COMPLETO! Resultados em ./results ==="
 done
