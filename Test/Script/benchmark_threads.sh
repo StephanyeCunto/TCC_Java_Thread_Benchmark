@@ -18,15 +18,39 @@ ulimit -v unlimited
 #############################################
 # Função para iniciar JFR remoto
 #############################################
+close_port() {
+    process=$(ssh -i ${KEY_PATH} ${SERVER} lsof -t -i :8080)   
+
+    if [ -n "$process" ]; then    
+        ssh -i ${KEY_PATH} ${SERVER} kill -9 "$process"
+        echo "Processo na porta 8080 encerrado: $process"
+    else
+        echo "Nenhum processo usando a porta 8080."
+    fi
+    sleep 5
+}
+
+# start_jfr() {
+#     close_port
+#     NAME="$1"
+#     ssh -i "$KEY_PATH" "$SERVER" " mkdir -p $JFR_PATH;
+#         nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s -jar $JAVA_JAR_PATH
+#     "
+#     echo 'JFR iniciado'
+#     sleep 5
+# }
+
 start_jfr() {
+    close_port
     NAME="$1"
     ssh -i "$KEY_PATH" "$SERVER" "
         mkdir -p $JFR_PATH;
-        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s -jar $JAVA_JAR_PATH
+        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s -jar $JAVA_JAR_PATH >/dev/null 2>&1 &
     "
     echo 'JFR iniciado'
     sleep 5
 }
+
 
 # Função para parar JFR remoto
 stop_jfr() {
@@ -39,7 +63,7 @@ download_jfr() {
     scp -i "$KEY_PATH" "$SERVER:$JFR_PATH/$NAME" "results/$NAME"
 }
 
-for j in {1..10}; do
+for j in {2..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
