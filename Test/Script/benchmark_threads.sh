@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# ./benchmark_threads.sh "threads/virtual" "http://20.195.171.67:8080" 
+# ./benchmark_threads.sh "http://20.195.171.67:8080/threads" 
 
-ENDPOINT="$1"
-BASE_URL="$2"
+BASE_URL="$1"
 
 # Usuário e IP da VM + chave privada
 SERVER="azureuser@20.195.171.67"
@@ -42,9 +41,9 @@ download_jfr() {
 
 for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
-        ENDPOINT="threads/virtual"
+        ENDPOINT="virtual"
     else
-        ENDPOINT="threads/traditional"
+        ENDPOINT="traditional"
     fi
     #############################################
     # WARM-UP
@@ -52,8 +51,8 @@ for j in {1..10}; do
     start_jfr "teste${ENDPOINT}${j}.jfr"
     echo "=== Warm-up ==="
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
-        | tee "results/${ENDPOINT}/${j}/warmup.bin" \
-        | vegeta report --type=json > "results/${ENDPOINT}/${j}/warmup.json"
+        | tee "results/threads/${ENDPOINT}/${j}/warmup.bin" \
+        | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup.json"
     curl -s "Get $BASE_URL/gc"
     sleep 20
 
@@ -61,10 +60,10 @@ for j in {1..10}; do
     # PRÉ-CARGA 1000 req/s
     # ############################################
     for i in 1 2; do
-        echo "=== Pré-carga 1000 req/s - $i ==="
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=1000 \
-            | tee "results/${ENDPOINT}/${j}/preload_${i}.bin" \
-            | vegeta report --type=json > "results/${ENDPOINT}/${j}/preload_${i}.json"
+        echo "=== Pré-carga 500 req/s - $i ==="
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=500 \
+            | tee "results/threads/${ENDPOINT}/${j}/preload_${i}.bin" \
+            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/preload_${i}.json"
         curl -s "Get $BASE_URL/gc"
         sleep 20
     done
@@ -83,8 +82,8 @@ for j in {1..10}; do
             -rate="$RATE" \
             -timeout=0s \
             -max-workers=100000 \
-            | tee "results/${ENDPOINT}/${j}/run_${RATE}.bin" \
-            | vegeta report --type=json > "results/${ENDPOINT}/${j}/run_${RATE}.json"
+            | tee "results/threads/${ENDPOINT}/${j}/run_${RATE}.bin" \
+            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/run_${RATE}.json"
         sleep 60
         curl -s "Get $BASE_URL/gc"
         sleep 20
