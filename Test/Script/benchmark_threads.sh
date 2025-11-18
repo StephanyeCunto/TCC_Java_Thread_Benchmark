@@ -50,7 +50,7 @@ warmup(){
     ENDPOINT="$1"
     j="$2"
     echo "=== Warm-up ==="
-    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=1s -rate=300 \
+    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
         | tee "results/threads/${ENDPOINT}/${j}/warmup.bin" \
         | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup.json"
 
@@ -104,10 +104,9 @@ loop(){
 
 saveGet(){
     ADRRES="$1"
-    sleep 20
-    echo $ADRRES
-        echo "GET $BASE_URL/get"| vegeta attack -duration=1s -rate=1 \
-        | vegeta report --type=json > $ADRRES
+   # sleep 20
+    echo "GET $BASE_URL/get"| vegeta attack -duration=1s -rate=1 \
+        |vegeta report --type=json > $ADRRES
 }
 
 for j in {1..10}; do
