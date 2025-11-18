@@ -65,14 +65,14 @@ preLoad(){
     j="$2"
     for i in 1 2; do
         echo "=== Pré-carga 500 req/s - $i ==="
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=500 \
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=1s -rate=500 \
             | tee "results/threads/${ENDPOINT}/${j}/preload_${i}.bin" \
             | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/preload_${i}.json"
 
-        saveGet "results/threads/${ENDPOINT}/${j}/preload_${i}Get.json"
+        saveGet "results/threads/${ENDPOINT}/${j}/preload_Get${i}.json"
         
         curl -s "Get $BASE_URL/gc"
-        sleep 20
+        sleep 60
     done
 }
 
@@ -82,7 +82,6 @@ loop(){
     for i in {1..20}; do
         RATE=$((50 * i))
         JFR_NAME="run_${RATE}.jfr"
-
 
         echo "=== Teste $RATE req/s ==="
         echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
@@ -94,7 +93,7 @@ loop(){
             | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/run_${RATE}.json"
         sleep 60
 
-        saveGet "results/threads/${ENDPOINT}/${j}/run_${RATE}Get.json"
+        saveGet "results/threads/${ENDPOINT}/${j}/run_Get${RATE}.json"
 
         curl -s "Get $BASE_URL/gc"
         sleep 20
@@ -103,10 +102,12 @@ loop(){
 }
 
 saveGet(){
-    ADRRES="$1"
-   # sleep 20
-    echo "GET $BASE_URL/get"| vegeta attack -duration=1s -rate=1 \
-        |vegeta report --type=json > $ADRRES
+    ADDRESS="$1"
+    sleep 40 
+    {   echo "{"
+        curl -s "$BASE_URL/get"
+        echo "}"
+    } > "$ADDRESS"
 }
 
 for j in {1..10}; do

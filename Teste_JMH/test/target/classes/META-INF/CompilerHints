@@ -1,0 +1,17 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,org/sample/BlackholePipelineBench.prepare
+inline,org/sample/BlackholePipelineBench.test_Array
+inline,org/sample/BlackholePipelineBench.test_Object
+inline,org/sample/BlackholePipelineBench.test_boolean
+inline,org/sample/BlackholePipelineBench.test_byte
+inline,org/sample/BlackholePipelineBench.test_char
+inline,org/sample/BlackholePipelineBench.test_double
+inline,org/sample/BlackholePipelineBench.test_float
+inline,org/sample/BlackholePipelineBench.test_int
+inline,org/sample/BlackholePipelineBench.test_long
+inline,org/sample/BlackholePipelineBench.test_short
+inline,org/sample/TesteProfiler.test
