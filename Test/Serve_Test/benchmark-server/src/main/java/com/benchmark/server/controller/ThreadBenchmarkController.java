@@ -13,11 +13,19 @@ public class ThreadBenchmarkController {
 
     @GetMapping("/virtual")
     public ResponseEntity<String> startVirtualThread() {
-        return createAndRunThread(Thread.ofVirtual()::unstarted, "Thread virtual criada com sucesso");
+       	 threadCounter.incrementAndGet();
+	 return createAndRunThread(Thread.ofVirtual()::unstarted, "Thread virtual criada com sucesso");
+    }
+
+    @GetMapping("/get")
+    public ResponseEntity<String> getThreadCounter(){
+	int old = threadCounter.getAndSet(0);
+	return ResponseEntity.status(201).body("Threads contadas: "+old);
     }
 
     @GetMapping("/traditional")
     public ResponseEntity<String> startTraditionalThread() {
+	threadCounter.incrementAndGet();
         return createAndRunThread(Thread::new, "Thread tradicional criada com sucesso");
     }
 
