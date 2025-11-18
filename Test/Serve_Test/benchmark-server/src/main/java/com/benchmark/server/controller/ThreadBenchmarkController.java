@@ -13,7 +13,7 @@ public class ThreadBenchmarkController {
 
     @GetMapping("/virtual")
     public ResponseEntity<String> startVirtualThread() {
-        return createAndRunThread(Thread.ofVirtual()::unstarted, "Thread virtual criada com sucesso");
+	 return createAndRunThread(Thread.ofVirtual()::unstarted, "Thread virtual criada com sucesso");
     }
 
     @GetMapping("/traditional")
