@@ -2,7 +2,7 @@
 
 # ./benchmark_threads.sh "http://20.195.171.67:8080" 
 
-BASE_URL="$1"
+BASE_URL="$1/threads"
 
 SERVER="azureuser@20.195.171.67"
 KEY_PATH="$HOME/.ssh/linux-java-vm_key.pem"
@@ -43,7 +43,7 @@ stop_jfr() {
 
 download_jfr() {
     NAME="$1"
-    scp -i "$KEY_PATH" "$SERVER:$JFR_PATH/$NAME" "results/$NAME"
+    scp -i "$KEY_PATH" "$SERVER:$JFR_PATH/$NAME" "results/threads/$NAME"
 }
 
 warmup(){
@@ -51,25 +51,25 @@ warmup(){
     j="$2"
     echo "=== Warm-up ==="
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=1s -rate=300 \
-        | tee "results/${ENDPOINT}/${j}/warmup.bin" \
-        | vegeta report --type=json > "results/${ENDPOINT}/${j}/warmup.json"
+        | tee "results/threads/${ENDPOINT}/${j}/warmup.bin" \
+        | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup.json"
 
-    saveGet "results/${ENDPOINT}/${j}/warmupGet.json"
+    saveGet "results/threads/${ENDPOINT}/${j}/warmupGet.json"
 
     curl -s "Get $BASE_URL/gc"
     sleep 20
 }
 
-load(){
+preLoad(){
     ENDPOINT="$1"
     j="$2"
     for i in 1 2; do
-        echo "=== Pré-carga 1000 req/s - $i ==="
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=1000 \
-            | tee "results/${ENDPOINT}/${j}/preload_${i}.bin" \
-            | vegeta report --type=json > "results/${ENDPOINT}/${j}/preload_${i}.json"
+        echo "=== Pré-carga 500 req/s - $i ==="
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=500 \
+            | tee "results/threads/${ENDPOINT}/${j}/preload_${i}.bin" \
+            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/preload_${i}.json"
 
-        saveGet "results/${ENDPOINT}/${j}/preload_${i}Get.json"
+        saveGet "results/threads/${ENDPOINT}/${j}/preload_${i}Get.json"
         
         curl -s "Get $BASE_URL/gc"
         sleep 20
@@ -90,11 +90,11 @@ loop(){
             -rate="$RATE" \
             -timeout=0s \
             -max-workers=100000 \
-            | tee "results/${ENDPOINT}/${j}/run_${RATE}.bin" \
-            | vegeta report --type=json > "results/${ENDPOINT}/${j}/run_${RATE}.json"
+            | tee "results/threads/${ENDPOINT}/${j}/run_${RATE}.bin" \
+            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/run_${RATE}.json"
         sleep 60
 
-        saveGet "results/${ENDPOINT}/${j}/run_${RATE}Get.json"
+        saveGet "results/threads/${ENDPOINT}/${j}/run_${RATE}Get.json"
 
         curl -s "Get $BASE_URL/gc"
         sleep 20
@@ -112,16 +112,16 @@ saveGet(){
 
 for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
-        ENDPOINT="threads/virtual"
+        ENDPOINT="virtual"
     else
-        ENDPOINT="threads/traditional"
+        ENDPOINT="traditional"
     fi
     
     start_jfr "${ENDPOINT}${j}.jfr"
 
     warmup ${ENDPOINT} ${j}
 
-    load ${ENDPOINT} ${j}
+    preLoad ${ENDPOINT} ${j}
 
     loop ${ENDPOINT} ${j}
 
