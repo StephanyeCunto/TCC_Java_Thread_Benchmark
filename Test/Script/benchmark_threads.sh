@@ -57,7 +57,7 @@ download_jfr() {
     scp -i "$KEY_PATH" "$SERVER:$JFR_PATH/$NAME" "results/$NAME"
 }
 
-for j in {1..1}; do
+for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="threads/virtual"
     else
@@ -89,23 +89,23 @@ for j in {1..1}; do
     # # ############################################
     # # LOOP PRINCIPAL
     # # ############################################
-    # for i in {1..150}; do
-    #     RATE=$((50 * i))
-    #     JFR_NAME="run_${RATE}.jfr"
+    for i in {1..20}; do
+        RATE=$((50 * i))
+        JFR_NAME="run_${RATE}.jfr"
 
 
-    #     echo "=== Teste $RATE req/s ==="
-    #     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
-    #         -duration="10s" \
-    #         -rate="$RATE" \
-    #         -timeout=0s \
-    #         -max-workers=100000 \
-    #         | tee "results/${ENDPOINT}/${j}/run_${RATE}.bin" \
-    #         | vegeta report --type=json > "results/${ENDPOINT}/${j}/run_${RATE}.json"
-    #     sleep 60
-    #     curl -s "Get $BASE_URL/gc"
-    #     sleep 20
-    # done
+        echo "=== Teste $RATE req/s ==="
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
+            -duration="10s" \
+            -rate="$RATE" \
+            -timeout=70s \
+            -max-workers=100000 \
+            | tee "results/${ENDPOINT}/${j}/run_${RATE}.bin" \
+            | vegeta report --type=json > "results/${ENDPOINT}/${j}/run_${RATE}.json"
+        sleep 60
+        curl -s "Get $BASE_URL/gc"
+        sleep 20
+    done
     stop_jfr   
     download_jfr "${ENDPOINT}${j}.jfr"
 
