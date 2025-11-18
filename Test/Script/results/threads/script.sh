@@ -14,8 +14,8 @@ load(){
         
         echo "[" > $OUTPUT
         for j in {1..20}; do
-            RATE=$((50 * i))
-            FILES=${ENDPOINT}/${i}/$2_${RATE}.json
+            RATE=$((50 * j))
+            FILES=${ENDPOINT}/${i}/$2${RATE}.json
             TOTAL=${#FILES[@]}
 
             for FILE in "${FILES[@]}"; do
@@ -33,9 +33,12 @@ load(){
 }
 
 loadExecucao(){
-    load "Execucao" "run"
+    load "Execucao" "run_"
 }
 
 loadGet(){
     load "GET" "run_GET"
 }
+
+loadExecucao
+loadGet
