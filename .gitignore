@@ -15,8 +15,6 @@
 *.ilg
 *.ind
 
-*/target/
-Teste_JMH/test/target/*
-Test/Serve_Test/benchmark-server/target/*
+**/target 
 
 filters.txt
