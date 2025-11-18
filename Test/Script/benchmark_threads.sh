@@ -29,7 +29,7 @@ start_jfr() {
     close_port
 
     ssh -i "$KEY_PATH" "$SERVER" "
-        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=1500s \
+        nohup java -XX:StartFlightRecording=filename=$JFR_PATH/$NAME,duration=5000s \
             -jar $JAVA_JAR_PATH > $JFR_PATH/java.log 2>&1 &
         echo \$! > $JFR_PATH/server.pid" 
 
@@ -65,7 +65,7 @@ preLoad(){
     j="$2"
     for i in 1 2; do
         echo "=== Pré-carga 500 req/s - $i ==="
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=1s -rate=500 \
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=500 \
             | tee "results/threads/${ENDPOINT}/${j}/preload_${i}.bin" \
             | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/preload_${i}.json"
 
@@ -103,10 +103,10 @@ loop(){
 
 saveGet(){
     ADDRESS="$1"
-    sleep 40 
-    {   echo "{"
-        curl -s "$BASE_URL/get"
-        echo "}"
+    sleep 20 
+    {   echo "{ Threads :"
+     curl -s "$BASE_URL/get" 
+    echo "}"
     } > "$ADDRESS"
 }
 
