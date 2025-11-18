@@ -58,9 +58,9 @@ public class ThreadBenchmarkController {
     }
 
     @GetMapping("/get")
-    public ResponseEntity<String> getThreadCounter(){
-        int old = threadCounter.getAndSet(0);
-        return ResponseEntity.status(old).body("Threads contadas: "+old);
+    public ResponseEntity<Integer> getThreadCounter(){
+        Integer old = threadCounter.getAndSet(0);
+        return ResponseEntity.status(201).body(old);
     }
 
     @GetMapping("/gc")
