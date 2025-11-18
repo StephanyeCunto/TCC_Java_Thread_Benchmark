@@ -46,18 +46,21 @@ download_jfr() {
     scp -i "$KEY_PATH" "$SERVER:$JFR_PATH/$NAME" "results/threads/$NAME"
 }
 
+## utilizado no teste sem o warm-up
 warmup(){
     ENDPOINT="$1"
     j="$2"
-    echo "=== Warm-up ==="
-    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
-        | tee "results/threads/${ENDPOINT}/${j}/warmup.bin" \
-        | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup.json"
+    for i in {1..3}; do
+        echo "=== Warm-up === $i"
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
+            | tee "results/threads/${ENDPOINT}/${j}/warmup$i.bin" \
+            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup$i.json"
 
-    saveGet "results/threads/${ENDPOINT}/${j}/warmupGet.json"
+        saveGet "results/threads/${ENDPOINT}/${j}/warmupGet$i.json"
 
-    curl -s "Get $BASE_URL/gc"
-    sleep 20
+        curl -s "Get $BASE_URL/gc"
+        sleep 20
+    done
 }
 
 preLoad(){
@@ -104,7 +107,7 @@ loop(){
 saveGet(){
     ADDRESS="$1"
     sleep 20 
-    {   echo "{ Threads :"
+    {   echo "{ "Threads":"
      curl -s "$BASE_URL/get" 
     echo "}"
     } > "$ADDRESS"
