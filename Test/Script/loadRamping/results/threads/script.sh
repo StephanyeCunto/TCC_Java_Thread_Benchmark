@@ -4,7 +4,7 @@
 # $2 = nome dos jsons existentes
 
 load(){
-    for i in {1..1}; do
+    for i in {1..10}; do
         if [ $(($i % 2)) -eq 0 ]; then
             ENDPOINT="virtual"
         else
