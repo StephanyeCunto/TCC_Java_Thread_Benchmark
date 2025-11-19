@@ -50,17 +50,27 @@ download_jfr() {
 warmup(){
     ENDPOINT="$1"
     j="$2"
-    for i in {1..3}; do
-        echo "=== Warm-up === $i"
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
-            | tee "results/threads/${ENDPOINT}/${j}/warmup$i.bin" \
-            | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup$i.json"
+    # for i in {1..3}; do
+    #     echo "=== Warm-up === $i"
+    #     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
+    #         | tee "results/threads/${ENDPOINT}/${j}/warmup$i.bin" \
+    #         | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup$i.json"
 
-        saveGet "results/threads/${ENDPOINT}/${j}/warmupGet$i.json"
+    #     saveGet "results/threads/${ENDPOINT}/${j}/warmupGet$i.json"
 
-        curl -s "Get $BASE_URL/gc"
-        sleep 20
-    done
+    #     curl -s "Get $BASE_URL/gc"
+    #     sleep 20
+    # done
+
+    echo "=== Warm-up ==="
+    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
+        | tee "results/threads/${ENDPOINT}/${j}/warmup.bin" \
+        | vegeta report --type=json > "results/threads/${ENDPOINT}/${j}/warmup.json"
+
+    saveGet "results/threads/${ENDPOINT}/${j}/warmupGet.json"
+
+    curl -s "Get $BASE_URL/gc"
+    sleep 20
 }
 
 preLoad(){
