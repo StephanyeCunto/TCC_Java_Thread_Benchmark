@@ -116,7 +116,7 @@ loop(){
 
 saveGet(){
     ADDRESS="$1"
-    sleep 20 
+    sleep 5
     {   echo "{ "Threads":"
      curl -s "$BASE_URL/get" 
     echo "}"
