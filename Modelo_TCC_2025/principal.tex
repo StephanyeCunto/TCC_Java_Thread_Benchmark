@@ -161,21 +161,21 @@
     
     \end{folhadeaprovacao}
 
-    \begin{dedicatoria}
-        \vspace*{\fill}
-        \begin{flushright}
-            \hspace*{4cm}
-            \parbox{11.2cm}{
-                \raggedleft 
-                \textit{
-                }
-            }
-        \end{flushright}
-    \end{dedicatoria}
+    % \begin{dedicatoria}
+    %     \vspace*{\fill}
+    %     \begin{flushright}
+    %         \hspace*{4cm}
+    %         \parbox{11.2cm}{
+    %             \raggedleft 
+    %             \textit{
+    %             }
+    %         }
+    %     \end{flushright}
+    % \end{dedicatoria}
 
-    \begin{agradecimentos}
-        Agradecimentos
-    \end{agradecimentos}
+    % \begin{agradecimentos}
+    %     Agradecimentos
+    % \end{agradecimentos}
 
     \begin{epigrafe}
         \vspace*{\fill}
@@ -208,21 +208,21 @@
         \end{otherlanguage*}
     \end{resumo}
 
-    \pdfbookmark[0]{\listfigurename}{lof}
-    \listoffigures*
-    \cleardoublepage
+    % \pdfbookmark[0]{\listfigurename}{lof}
+    % \listoffigures*
+    % \cleardoublepage
 
-    \pdfbookmark[0]{\listofquadrosname}{loq}
-    \listofquadros*
-    \cleardoublepage
-    \pdfbookmark[0]{\listtablename}{lot}
-    \listoftables*
-    \cleardoublepage
+    % \pdfbookmark[0]{\listofquadrosname}{loq}
+    % \listofquadros*
+    % \cleardoublepage
+    % \pdfbookmark[0]{\listtablename}{lot}
+    % \listoftables*
+    % \cleardoublepage
 
     \begin{siglas}
         \item[CPU]     Unidade Central de Processamento
         \item[I/O]     Entrada/Saída
-        \item[JVM]     Java Virtual Machine
+        \item[JVM]     Java Virtual Machine (Máquina Virtual Java)
         \item[SO]      Sistema Operacional
         \item[SPD]     Sistemas Paralelos E Distribuídos
 
@@ -231,16 +231,16 @@
 
     \end{siglas}
 
-    \begin{simbolos}
-        \item[$ \Lambda $] Lambda
-    \end{simbolos}
+    % \begin{simbolos}
+    %     \item[$ \Lambda $] Lambda
+    % \end{simbolos}
 
     \pdfbookmark[0]{\contentsname}{toc}
     \tableofcontents*
     \cleardoublepage
 
     \textual
-    \setcounter{page}{14} 
+    % \setcounter{page}{14} 
  
     \chapter{Introdução}
     \markright{Introdução}
@@ -308,208 +308,217 @@
     % Fundamentação Teórica
     % ---------------------------------------------------------------------------------------------
 
-    \setcounter{chapter}{1}
-    \chapter{Fundamentação Teórica}
-    \label{chapter:fundamentacaoTeorica}
+    % \setcounter{chapter}{1}
+    % \chapter{Fundamentação Teórica}
+    % \label{chapter:fundamentacaoTeorica}
 
-        Exemplo de citação no final do texto \cite{pecb2022iso27002}. 
+    %     Exemplo de citação no final do texto \cite{pecb2022iso27002}. 
 
-        Exemplo de citação dentro do texto \citeonline{pecb2022iso27002}.
+    %     Exemplo de citação dentro do texto \citeonline{pecb2022iso27002}.
 
-        Exemplo de uma Figura. Use ref para chamá-la no texto. Figura \ref{fig:figura1}.
+    %     Exemplo de uma Figura. Use ref para chamá-la no texto. Figura \ref{fig:figura1}.
         
-    \begin{figure}[h]
-        \centering
-        \begin{minipage}{0.5\textwidth}
-            \phantomsection
-            \fontsize{10}{12}\selectfont
-            \caption{Pilares da Segurança da Informação.}
-            \includegraphics[width=1\linewidth]{imagens/Figura 1.png}
-            \caption*{\raggedright\small \textbf{Fonte}: \citeonline{bughunt2023triade}.}
-            \label{fig:figura1}
-        \end{minipage}
-    \end{figure}
+    % \begin{figure}[h]
+    %     \centering
+    %     \begin{minipage}{0.5\textwidth}
+    %         \phantomsection
+    %         \fontsize{10}{12}\selectfont
+    %         \caption{Pilares da Segurança da Informação.}
+    %         \includegraphics[width=1\linewidth]{imagens/Figura 1.png}
+    %         \caption*{\raggedright\small \textbf{Fonte}: \citeonline{bughunt2023triade}.}
+    %         \label{fig:figura1}
+    %     \end{minipage}
+    % \end{figure}
 
-    \section{Para criar um título} 
-        Sempre inserir um texto entre os Títulos
+    % \section{Para criar um título} 
+    %     Sempre inserir um texto entre os Títulos
 
-    \subsection{mais um título}
+    % \subsection{mais um título}
 
-    Um exemplo de Quadro (Quadro \ref{quad: quadro1}). 
+    % Um exemplo de Quadro (Quadro \ref{quad: quadro1}). 
 
-    \begin{quadro}[ht]
-    \centering
-    \begin{minipage}{0.80\textwidth}
-    \phantomsection
-    \fontsize{10}{12}\selectfont
-    \caption{Panorama dos ataques baseados em engenharia social.} 
-    \begin{tabularx}{\textwidth}{|l|X|}\hline
-        Categoria           & Resultado                                                        \\ \hline
-        Frequência          & 3.661 incidentes, sendo (82,8\%) com vazamento confirmado de dados.    \\ \hline
-        Atores de ameaça    & (100\%) externos (\textit{breaches}).                                        \\ \hline
-        Motivações          & (95\%) financeiras, (5\%) espionagem (\textit{breaches}).                      \\\hline
-        Dados comprometidos & Credenciais (50\%), pessoais (41\%), internos (20\%), outros (14\%). \\ \hline
-    \end{tabularx}
-    \label{quad: quadro1}
-    %\vspace{0.5em}
-    \caption*{\raggedright\small \textbf{Fonte}: \citeonline{verizon2024dbir}, adaptado.}
-    \end{minipage}
-    \end{quadro}
+    % \begin{quadro}[ht]
+    % \centering
+    % \begin{minipage}{0.80\textwidth}
+    % \phantomsection
+    % \fontsize{10}{12}\selectfont
+    % \caption{Panorama dos ataques baseados em engenharia social.} 
+    % \begin{tabularx}{\textwidth}{|l|X|}\hline
+    %     Categoria           & Resultado                                                        \\ \hline
+    %     Frequência          & 3.661 incidentes, sendo (82,8\%) com vazamento confirmado de dados.    \\ \hline
+    %     Atores de ameaça    & (100\%) externos (\textit{breaches}).                                        \\ \hline
+    %     Motivações          & (95\%) financeiras, (5\%) espionagem (\textit{breaches}).                      \\\hline
+    %     Dados comprometidos & Credenciais (50\%), pessoais (41\%), internos (20\%), outros (14\%). \\ \hline
+    % \end{tabularx}
+    % \label{quad: quadro1}
+    % %\vspace{0.5em}
+    % \caption*{\raggedright\small \textbf{Fonte}: \citeonline{verizon2024dbir}, adaptado.}
+    % \end{minipage}
+    % \end{quadro}
 
-    Um exemplo de Tabela.
+    % Um exemplo de Tabela.
 
-    \begin{table}[ht]
-    \centering
-    \begin{minipage}{0.60\textwidth}
-    \phantomsection
-    \fontsize{10}{12}\selectfont
-    \caption{Notificações formais de incidentes e vulnerabilidades em órgãos públicos entre 2021 e 2025.}
-    \label{tab:1}
-    \begin{tabular}{cccc}
-        \toprule
-        Ano & Vulnerabilidades & Incidentes & Total de notificações \\
-        \midrule
-        2025 & 1994 & 4859 & 6853 \\
-        2024 & 5115 & 9803 & 14918 \\
-        2023 & 10225 & 4905 & 15130 \\
-        2022 & 5128 & 3402 & 8530 \\
-        2021 & 4964 & 4903 & 9867 \\ \hline
-        Total & 27426 & 27872 & 55298 \\
-        \bottomrule
-    \end{tabular}
-        \caption*{\raggedright\small \textbf{Fonte}: \citeonline{ctirgov2025numeros}.}
-        \label{quad:cronograma_otimo}
-    \end{minipage}
-    \end{table}
+    % \begin{table}[ht]
+    % \centering
+    % \begin{minipage}{0.60\textwidth}
+    % \phantomsection
+    % \fontsize{10}{12}\selectfont
+    % \caption{Notificações formais de incidentes e vulnerabilidades em órgãos públicos entre 2021 e 2025.}
+    % \label{tab:1}
+    % \begin{tabular}{cccc}
+    %     \toprule
+    %     Ano & Vulnerabilidades & Incidentes & Total de notificações \\
+    %     \midrule
+    %     2025 & 1994 & 4859 & 6853 \\
+    %     2024 & 5115 & 9803 & 14918 \\
+    %     2023 & 10225 & 4905 & 15130 \\
+    %     2022 & 5128 & 3402 & 8530 \\
+    %     2021 & 4964 & 4903 & 9867 \\ \hline
+    %     Total & 27426 & 27872 & 55298 \\
+    %     \bottomrule
+    % \end{tabular}
+    %     \caption*{\raggedright\small \textbf{Fonte}: \citeonline{ctirgov2025numeros}.}
+    %     \label{quad:cronograma_otimo}
+    % \end{minipage}
+    % \end{table}
 
-    \subsubsection{O que escrever na Fundamentação Teórica}
+    % \subsubsection{O que escrever na Fundamentação Teórica}
 
-    A Fundamentação Teórica é a base conceitual do seu trabalho. Nela, você apresenta, discute e analisa as teorias, conceitos, modelos e estudos já existentes que sustentam a sua pesquisa.
+    % A Fundamentação Teórica é a base conceitual do seu trabalho. Nela, você apresenta, discute e analisa as teorias, conceitos, modelos e estudos já existentes que sustentam a sua pesquisa.
 
-    Incluir conceitos e definições – Explique os principais termos, conceitos e elementos que serão usados no trabalho, sempre com referência a autores da área.
+    % Incluir conceitos e definições – Explique os principais termos, conceitos e elementos que serão usados no trabalho, sempre com referência a autores da área.
 
-    Modelos, teorias e abordagens – Traga as principais correntes teóricas que embasam seu estudo.
+    % Modelos, teorias e abordagens – Traga as principais correntes teóricas que embasam seu estudo.
 
-    Dicas importantes:
+    % Dicas importantes:
 
-        \begin{itemize}
-            \item Sempre cite as fontes de onde retirou as informações (seguindo as normas da ABNT).
-            \item Organize o texto de forma lógica, por temas ou subtemas, evitando apenas listar autores.
-            \item Não copie trechos longos; prefira escrever com suas palavras e citar corretamente.
-            \item Evite incluir opiniões pessoais — mantenha o foco no que já foi publicado por outros autores.
-        \end{itemize}
+    %     \begin{itemize}
+    %         \item Sempre cite as fontes de onde retirou as informações (seguindo as normas da ABNT).
+    %         \item Organize o texto de forma lógica, por temas ou subtemas, evitando apenas listar autores.
+    %         \item Não copie trechos longos; prefira escrever com suas palavras e citar corretamente.
+    %         \item Evite incluir opiniões pessoais — mantenha o foco no que já foi publicado por outros autores.
+    %     \end{itemize}
 
-        Relacionamento com o seu trabalho – Mostre como essas teorias e estudos se aplicam ou se relacionam com a sua pesquisa.
+    %     Relacionamento com o seu trabalho – Mostre como essas teorias e estudos se aplicam ou se relacionam com a sua pesquisa.
 
 
     \chapter{Trabalhos Relacionados}
     \label{chapter:trabalhos}
 
-    Esta seção apresenta uma revisão de trabalhos relevantes que servem de base para a pesquisa sobre de threads e threads virtuais no java.
+    Esta seção apresenta trabalhos que servem de base para a pesquisa sobre threads tradicionais e threads virtuais em Java. São discutidos estudos anteriores que investigaram o desempenho dessas threads. Com a revisão realizada, é possível compreender as abordagens utilizadas, os resultados obtidos e as lacunas existentes, fornecendo um referencial teórico sólido para os testes conduzidos neste trabalho.
 
     \section{Uma análise comparativa entre threads e green threads no Java}
-        \citeonline{Souto2024} realizou uma pesquisa comparando o desempenho de threads tradicionais e threads virtuais, analisando o tempo necessário para instanciá-las, iniciá-las, finalizá-las e realizar a troca de contexto em ambas.
+        \citeonline{Souto2024} realizou uma pesquisa comparando o desempenho de threads tradicionais e threads virtuais. O estudo analisou operações fundamentais de gerenciamento
+        de threads, o tempo necessário para instanciá-las, iniciá-las, finalizá-las e realizar a troca de contexto em ambas. Para isso, foram utilizados testes com diferentes quantidades de threads e a biblioteca JMH do JDK para coleta precisa de tempos de execução.
 
-        O autor utilizou a biblioteca JMH do JDK para coletar os tempos e realizar os testes. Para o teste de instanciamento, foram criadas 100.000 threads por meio da chamada new Thread(). Para o teste de inicialização, também foram criadas 100.000 threads, iniciadas com thread.start(). No teste de finalização, 10.000 threads foram armazenadas em uma lista, iniciadas e sincronizadas com thread.join(). Para medir a troca de contexto, foram criadas 100.000 threads, cada uma executando uma pausa de 100 ms e cedendo voluntariamente o controle da CPU por meio de Thread.yield(), simulando operações bloqueantes.
+        O estudo demonstrou que, nos cenários testados, as threads virtuais podem ser mais de 100 vezes mais rápidas que as threads tradicionais, evidenciando sua eficiência em operações de criação, inicialização, finalização e mudança de contexto.  Apesar do alto desempenho observado, o estudo se concentrou em cenários específicos, abrindo espaço para pesquisas adicionais que explorem diferentes cargas de trabalho e padrões de uso de threads, como os apresentados neste trabalho.
 
-        O estudo demonstrou que, nos cenários testados, as threads virtuais podem ser mais de 100 vezes mais rápidas que as threads tradicionais, evidenciando sua eficiência em operações de criação, inicialização, finalização e mudança de contexto.
     \section{Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads}
-        \citeonline{Pandita2024} apresentou como as threads virtuais funcionam em comparação às threads tradicionais, considerando escalabilidade, utilização de recursos e latência em cargas de trabalho de alto rendimento. O estudo identificou os cenários em que cada modelo se destaca e forneceu dados para auxiliar na tomada de decisões sobre a adoção de Virtual Threads em aplicações Java.
+        \citeonline{Pandita2024} apresentou uma comparação entre threads virtuais e threads tradicionais, considerando escalabilidade, utilização de recursos e latência em cargas de trabalho de alto rendimento. Foram realizados dois benchmarks: CPU-bound, envolvendo cálculos de números primos, e I/O-bound, simulando operações de bloqueio entre duas aplicações Java em ambiente AWS EC2.
 
-        Foram realizados dois benchmarks: CPU-bound e I/O-bound. No teste CPU-bound, calculou-se a lista de números primos de um limite inferior a um limite superior. No teste I/O-bound, simularam-se operações de bloqueio com duas aplicações Java: uma realiza requisições GET e recebe os resultados da outra aplicação, que introduz um tempo específico de bloqueio antes de produzir a resposta. Todos os benchmarks foram executados em um ambiente controlado na AWS EC2.
-
-        Os resultados mostraram que, para cargas de trabalho com uso limitado de CPU, threads virtuais e threads tradicionais apresentam desempenho semelhante. Já em tarefas com uso intensivo de CPU, surgem gargalos devido aos recursos computacionais, tornando o aumento da simultaneidade pouco relevante. Para cargas de trabalho vinculadas a I/O, as threads virtuais superaram as threads tradicionais em termos de taxa de transferência e latência, permitindo maior simultaneidade, redução do consumo de memória e melhor utilização da CPU.
+        Os resultados mostraram que, em tarefas com baixo uso de CPU, ambos os modelos apresentam desempenho semelhante. Em cenários intensivos de CPU, a limitação dos recursos computacionais restringe o aumento da simultaneidade. Por outro lado, em operações I/O-bound, threads virtuais se destacaram, oferecendo maior simultaneidade, redução do consumo de memória e melhor aproveitamento da CPU. Esses dados reforçam a eficiência das threads virtuais em operações de I/O e fornecem um referencial relevante para estudos comparativos, como o presente trabalho.
 
     \section{Comparison of Concurrency Technologies in Java}
         Em seu trabalho, \citeonline{GustafssonPersson2024} realizou quatro benchmarks com o objetivo de comparar o desempenho entre threads tradicionais, threads virtuais e Reactive Framework em testes de I/O-bound (simulado), CPU-bound e testes mistos.
 
-        Para o teste I/O-bound, foi utilizado o mecanismo Thread.sleep(100 ms) para simular tempos de espera. No teste CPU-bound, realizou-se a multiplicação de matrizes 200x200. Houve ainda dois testes mistos: um focado em I/O-bound, que multiplica matrizes 50x50 e realiza uma pausa de 100 ms, e outro focado em CPU-bound, que multiplica matrizes 200x200 e realiza uma pausa de 50 ms.
+        No teste I/O-bound, utilizou-se o mecanismo Thread.sleep(100 ms) para simular tempos de espera. No teste CPU-bound, realizou-se a multiplicação de matrizes 200x200. Os dois testes mistos combinaram cálculos de matrizes e pausas: um focado em I/O-bound multiplicando matrizes 50x50 com pausa de 100 ms, e outro focado em CPU-bound multiplicando matrizes 200x200 com pausa de 50 ms.
 
-        Os resultados mostraram que, no teste CPU-bound, as threads tradicionais apresentaram melhor desempenho em termos de throughput e latência. No teste I/O-bound, o Reactive Framework apresentou maior escalabilidade, menor uso de CPU e memória. Nos testes mistos, a abordagem de threads virtuais obteve alta taxa de requisições e baixa latência no cenário focado em CPU-bound, e manteve desempenho elevado no cenário focado em I/O-bound, enquanto as threads tradicionais apresentaram maior latência e menor throughput.
-
+        Os resultados indicaram que, no teste CPU-bound, threads tradicionais apresentaram melhor desempenho em termos de throughput e latência. No teste I/O-bound, o Reactive Framework se destacou, mostrando maior escalabilidade e menor uso de CPU e memória. Nos testes mistos, threads virtuais obtiveram alta taxa de requisições e baixa latência no cenário CPU-bound, mantendo desempenho elevado no cenário I/O-bound, enquanto threads tradicionais apresentaram maior latência e menor throughput. O que torna nótorio que a eficácia das threads virtuais em cenários mistos, evidenciando seu potencial em aplicações que demandam simultaneidade e eficiência de recursos. 
 
     \section{Avaliação dos mecanismos de concorrência na API do Java 8}
-        Uma análise comparativa do desempenho de single thread, threads, ExecutorService e Fork/Join em algoritmos de ordenação foi realizada por \citeonline{Aguas2015} , utilizando os algoritmos Quicksort, Merge-sort e Pigeonhole Sort.
-
-        Os algoritmos foram testados em três máquinas com processadores diferentes (Dual-Core, i5 e i7). Em todos os casos, cada algoritmo foi executado 60 vezes para cada abordagem de concorrência: single thread, threads, ExecutorService e Fork/Join.
+        Uma análise comparativa do desempenho de single thread, threads, ExecutorService e Fork/Join em algoritmos de ordenação foi realizada por \citeonline{Aguas2015} , utilizando os algoritmos Quicksort, Merge-sort e Pigeonhole Sort. Os testes foram conduzidos em três máquinas com processadores diferentes (Dual-Core, i5 e i7), e cada algoritmo foi executado 60 vezes para cada abordagem de concorrência.
 
         O Quicksort executado com ForkJoin-Pool em uma máquina com 8 processadores lógicos apresentou o melhor desempenho em termos de tempo. De forma geral, Quicksort combinado com ForkJoin-Pool registrou os menores tempos na maioria dos cenários testados. O estudo demonstrou que a máquina com maior número de processadores lógicos obteve os melhores resultados, comprovando que a execução paralela se beneficia diretamente da disponibilidade de mais núcleos para distribuir as tarefas simultaneamente.
+
+        Esse trabalho evidencia a importância da escolha adequada de técnicas de concorrência e da arquitetura de hardware para otimização do desempenho em algoritmos paralelos.
+    
+    \section{Síntese dos Trabalhos Relacionados}
+
+    Observa-se na literatura um crescente enfoque em threads virtuais e tradicionais em Java.
+
+    Em seu texto \citeonline{Souto2024} concentrou-se na análise das operações de criação, inicialização, finalização e troca de contexto, onde se nota que threads virtuais podem ser mais de 100 vezes mais rápidas que threads tradicionais em cenários específicos. Por sua vez \citeonline{Pandita2024} aprofunda essa análise ao avaliar o desempenho em cargas CPU-bound e I/O-bound, onde nota-se que, em tarefas com baixo uso de CPU, o desempenho é semelhante, porém threads virtuais se destacam em operações I/O, oferecendo maior simultaneidade, redução do consumo de memória e melhor aproveitamento da CPU.
+
+    \citeonline{GustafssonPersson2024} expandiu a análise incluindo o Reactive Framework e cenários mistos, mostrando que threads virtuais apresentam alta taxa de requisições e baixa latência em cenários combinados de CPU e I/O, enquanto threads tradicionais apresentam limitações de throughput e latência. Enquanto \citeonline{Aguas2015} avaliou abordagens de concorrência na execução de algoritmos de ordenação, deixando claro que a execução paralela se beneficia diretamente do aumento do número de núcleos, principalmente quando combinada com ForkJoin-Pool, o que demonstra a importância do alinhamento entre técnicas de concorrência e arquitetura de hardware.
+
+    A comparação desses estudos permite identificar padrões: threads virtuais oferecem vantagens em simultaneidade e eficiência de recursos, especialmente em operações de I/O ou cenários mistos, enquanto threads tradicionais ainda podem apresentar desempenho competitivo em tarefas CPU-bound simples.
+
+    O presente trabalho se apoia nesses estudos como referencial para analisar o desempenho de threads tradicionais e virtuais em Java, destacando diferenças de comportamento em operações básicas de criação, execução e finalização de threads. Dessa forma, busca-se fornecer uma compreensão prática sobre a eficiência e o uso de recursos dessas duas abordagens de concorrência em cenários controlados.
   
-    \ignore{
-        A seção Trabalhos Relacionados apresenta estudos, projetos ou soluções já desenvolvidos que tratam de problemas semelhantes ou próximos ao do seu trabalho. O objetivo é mostrar o que já foi feito, quais métodos foram usados e onde ainda existem lacunas que justificam sua pesquisa.
+    % \ignore{
+    %     A seção Trabalhos Relacionados apresenta estudos, projetos ou soluções já desenvolvidos que tratam de problemas semelhantes ou próximos ao do seu trabalho. O objetivo é mostrar o que já foi feito, quais métodos foram usados e onde ainda existem lacunas que justificam sua pesquisa.
 
-        O que incluir:
-            \begin{enumerate}
-                \item Seleção dos trabalhos – Escolha pesquisas, artigos, relatórios ou projetos relevantes e recentes, de preferência de fontes acadêmicas confiáveis.
-                \item Breve descrição – Explique, de forma sucinta, o objetivo, metodologia e resultados de cada trabalho analisado.
-                \item Comparação – Mostre similaridades e diferenças entre os trabalhos existentes e o seu.
-                \item Identificação de lacunas – Destaque aspectos que não foram explorados ou limitações nas pesquisas anteriores que o seu trabalho pretende abordar.
-            \end{enumerate}
+    %     O que incluir:
+    %         \begin{enumerate}
+    %             \item Seleção dos trabalhos – Escolha pesquisas, artigos, relatórios ou projetos relevantes e recentes, de preferência de fontes acadêmicas confiáveis.
+    %             \item Breve descrição – Explique, de forma sucinta, o objetivo, metodologia e resultados de cada trabalho analisado.
+    %             \item Comparação – Mostre similaridades e diferenças entre os trabalhos existentes e o seu.
+    %             \item Identificação de lacunas – Destaque aspectos que não foram explorados ou limitações nas pesquisas anteriores que o seu trabalho pretende abordar.
+    %         \end{enumerate}
 
-        Dicas importantes:
+    %     Dicas importantes:
 
-            \begin{itemize}
-                \item Organize a apresentação dos trabalhos por tema, abordagem ou cronologia, para manter a lógica do texto.
-                \item Utilize citações corretas, conforme a ABNT.
-                \item Evite apenas listar trabalhos; faça conexões entre eles e explique a relevância para a sua pesquisa.
-                \item Seja objetivo — não é necessário descrever cada detalhe técnico de outros trabalhos, apenas o suficiente para contextualizar sua comparação.
-                \item Importante: Ao final dessa seção, o leitor deve entender em que contexto seu trabalho se encaixa e por que ele é necessário, mesmo diante de outras pesquisas já realizadas.
-            \end{itemize}
-    }
+    %         \begin{itemize}
+    %             \item Organize a apresentação dos trabalhos por tema, abordagem ou cronologia, para manter a lógica do texto.
+    %             \item Utilize citações corretas, conforme a ABNT.
+    %             \item Evite apenas listar trabalhos; faça conexões entre eles e explique a relevância para a sua pesquisa.
+    %             \item Seja objetivo — não é necessário descrever cada detalhe técnico de outros trabalhos, apenas o suficiente para contextualizar sua comparação.
+    %             \item Importante: Ao final dessa seção, o leitor deve entender em que contexto seu trabalho se encaixa e por que ele é necessário, mesmo diante de outras pesquisas já realizadas.
+    %         \end{itemize}
+    % }
 
-    \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}  
-    \label{chapter:metodologia}
+    % \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}  
+    % \label{chapter:metodologia}
   
 
-        A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
-    \section{Metodologia}
+    %     A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
+    % \section{Metodologia}
 
-        É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
+    %     É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
 
-        Descreve o tipo de pesquisa (exploratória, descritiva, experimental etc.), a abordagem (qualitativa, quantitativa ou mista) e a estratégia geral utilizada.
+    %     Descreve o tipo de pesquisa (exploratória, descritiva, experimental etc.), a abordagem (qualitativa, quantitativa ou mista) e a estratégia geral utilizada.
 
-        Envolve a justificativa das escolhas, por que esse método foi escolhido.
+    %     Envolve a justificativa das escolhas, por que esse método foi escolhido.
 
-    Exemplo: “Este estudo adotou uma abordagem quantitativa e experimental, utilizando simulações computacionais para avaliar o desempenho de diferentes algoritmos de roteamento.”
+    % Exemplo: “Este estudo adotou uma abordagem quantitativa e experimental, utilizando simulações computacionais para avaliar o desempenho de diferentes algoritmos de roteamento.”
 
-    \section{Procedimentos Metodológicos}
+    % \section{Procedimentos Metodológicos}
 
-        É um termo mais usado nas Ciências Humanas e Sociais. Tem foco no passo a passo da pesquisa: como os dados foram coletados, quais instrumentos foram usados e como a análise foi feita. É mais descritivo e menos técnico do que “Materiais e Métodos”.
+    %     É um termo mais usado nas Ciências Humanas e Sociais. Tem foco no passo a passo da pesquisa: como os dados foram coletados, quais instrumentos foram usados e como a análise foi feita. É mais descritivo e menos técnico do que “Materiais e Métodos”.
 
-    Exemplo: “Para a coleta de dados, foram aplicados questionários estruturados a 50 participantes. As respostas foram analisadas por meio de estatística descritiva e teste t de Student.”
+    % Exemplo: “Para a coleta de dados, foram aplicados questionários estruturados a 50 participantes. As respostas foram analisadas por meio de estatística descritiva e teste t de Student.”
 
-    \section{Materiais e Métodos}
+    % \section{Materiais e Métodos}
 
-        É muito usado nas Ciências Exatas, Biológicas e Engenharias. Apresenta de forma técnica e detalhada os materiais, ferramentas, softwares, equipamentos ou reagentes utilizados; o passo a passo técnico para realizar o experimento ou implementação.
+    %     É muito usado nas Ciências Exatas, Biológicas e Engenharias. Apresenta de forma técnica e detalhada os materiais, ferramentas, softwares, equipamentos ou reagentes utilizados; o passo a passo técnico para realizar o experimento ou implementação.
 
-        Permite que outro pesquisador repita o estudo. 
+    %     Permite que outro pesquisador repita o estudo. 
         
-        Exemplo: “O experimento utilizou cinco kits LEGO Mindstorms EV3, computadores com sistema operacional Linux e o software EV3 Classroom. Os testes foram conduzidos em laboratório controlado, com turmas de no máximo dez alunos por sessão.”
+    %     Exemplo: “O experimento utilizou cinco kits LEGO Mindstorms EV3, computadores com sistema operacional Linux e o software EV3 Classroom. Os testes foram conduzidos em laboratório controlado, com turmas de no máximo dez alunos por sessão.”
 
 
-    \chapter{Aplicação / Implementação / Experimento}
-    \label{chapter:resultados}
+    % \chapter{Aplicação / Implementação / Experimento}
+    % \label{chapter:resultados}
 
-    Descrição passo a passo da execução do estudo.
-    Apresentação de scripts, fluxogramas, diagramas ou imagens ilustrativas
+    % Descrição passo a passo da execução do estudo.
+    % Apresentação de scripts, fluxogramas, diagramas ou imagens ilustrativas
 
-    \chapter{Conclusão}
-    \label{chapter:conclusao}
+    % \chapter{Conclusão}
+    % \label{chapter:conclusao}
 
-    A conclusão tem o papel de encerrar o trabalho, retomando de forma resumida o que foi feito e destacando as contribuições obtidas. Ela deve responder à pergunta central da pesquisa e deixar claro o que foi aprendido, comprovado ou desenvolvido.
+    % A conclusão tem o papel de encerrar o trabalho, retomando de forma resumida o que foi feito e destacando as contribuições obtidas. Ela deve responder à pergunta central da pesquisa e deixar claro o que foi aprendido, comprovado ou desenvolvido.
 
-    A conclusão deve fechar o trabalho com chave de ouro, respondendo à pergunta de pesquisa, destacando o que foi aprendido e mostrando como o estudo contribui para a área, além de abrir portas para novas pesquisas. 
+    % A conclusão deve fechar o trabalho com chave de ouro, respondendo à pergunta de pesquisa, destacando o que foi aprendido e mostrando como o estudo contribui para a área, além de abrir portas para novas pesquisas. 
 
-    \begin{itemize}
-        \item Relembre brevemente o objetivo geral do estudo e confirme se ele foi atingido.
-        \item Destaque os resultados mais importantes, sem repetir tabelas ou gráficos.
-        \item Foque no que é mais relevante para responder à questão de pesquisa.
-        \item Interprete brevemente o que os resultados significam no contexto do problema.
-        \item Falar das limitações do estudo é opcional, mas recomendado. Reconheça possíveis limitações que possam ter influenciado os resultados.
-        \item Sugestões para trabalhos futuros. Indique possíveis melhorias ou novas abordagens que podem ser exploradas.
-    \end{itemize}
+    % \begin{itemize}
+    %     \item Relembre brevemente o objetivo geral do estudo e confirme se ele foi atingido.
+    %     \item Destaque os resultados mais importantes, sem repetir tabelas ou gráficos.
+    %     \item Foque no que é mais relevante para responder à questão de pesquisa.
+    %     \item Interprete brevemente o que os resultados significam no contexto do problema.
+    %     \item Falar das limitações do estudo é opcional, mas recomendado. Reconheça possíveis limitações que possam ter influenciado os resultados.
+    %     \item Sugestões para trabalhos futuros. Indique possíveis melhorias ou novas abordagens que podem ser exploradas.
+    % \end{itemize}
 
-    Não introduza informações novas que não tenham aparecido no desenvolvimento. Use tempo passado para descrever o que foi feito.
+    % Não introduza informações novas que não tenham aparecido no desenvolvimento. Use tempo passado para descrever o que foi feito.
 
     \bookmarksetup{startatroot}% 
     
