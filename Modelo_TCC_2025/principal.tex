@@ -10,7 +10,7 @@
 \bibliographystyle{abntex2-alf-antigo}
 \usepackage[alf]{abntex2cite}	
 \renewcommand\UrlFont{\normalfont} 
-% \usepackage{lmodern}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}		
 \usepackage[utf8]{inputenc}		
 \usepackage{indentfirst}		
@@ -267,7 +267,27 @@
             \item Analisar os resultados obtidos, identificando vantagens e limitações.
         \end{itemize}
 
-        A escolha deste tema parte do interesse gerado durante a disciplina de Sistemas Paralelos e Distribuídos (SPD), na qual foram estudados os conceitos fundamentais de concorrência, paralelismo e gerenciamento de threads. Além disso, o apreço pessoal pela linguagem Java contribuiu para a definição do tema, considerando que a plataforma tem investido em melhorias relacionadas à programação concorrente. Dessa forma, esse trabalho se justifica pelo interesse acadêmico adquirido ao longo da disciplina e pela pertinência de investigar uma inovação recente da linguagem Java, contribuindo para a compreensão de como esse novo modelo de threads pode aprimorar o desempenho de aplicações concorrentes.        
+        A escolha deste tema parte do interesse gerado durante a disciplina de Sistemas Paralelos e Distribuídos (SPD), na qual foram estudados os conceitos fundamentais de concorrência, paralelismo e gerenciamento de threads. Além disso, o apreço pessoal pela linguagem Java contribuiu para a definição do tema, considerando que a plataforma tem investido em melhorias relacionadas à programação concorrente. Dessa forma, esse trabalho se justifica pelo interesse acadêmico adquirido ao longo da disciplina e pela pertinência de investigar uma inovação recente da linguagem Java, contribuindo para a compreensão de como esse novo modelo de threads pode aprimorar o desempenho de aplicações concorrentes.  
+        
+        Este trabalho está organizado da seguinte forma:
+
+        \begin{itemize}
+            \item \hyperref[chapter:introducao]{\textbf{Seção 1 - Introdução:} Apresenta o tema, os objetivos e a justificativa.}
+            
+            \item \hyperref[chapter:fundamentacaoTeorica]{\textbf{Seção 2 - Fundamentação teórica:} Expõe os conceitos de concorrência e paralelismo e descreve o funcionamento de processos, threads tradicionais e threads virtuais.}
+            
+            \item \hyperref[chapter:trabalhos]{\textbf{Seção 3 - Trabalhos Relacionados:} Revisa estudos anteriores sobre o desempenho de threads tradicionais e threads virtuais.}
+            
+            \item \hyperref[chapter:metodologia]{\textbf{Seção 4 - Metodologia:} Detalha como os testes foram conduzidos e como os dados foram coletados.}
+            
+            \item \hyperref[chapter:resultados]{\textbf{Seção 5 - Resultados e Discussão:} Apresenta e analisa os dados obtidos durante os testes.}
+           
+            \item \hyperref[chapter:conclusao]{\textbf{Seção 6 - Conclusão:} Expõe as considerações finais do estudo.}
+        \end{itemize}
+
+
+        Por fim, são listadas as referências bibliográficas utilizadas no trabalho, seguidas pelos apêndices e anexos que complementam o estudo.
+
 
     %A introdução é a primeira parte do texto e tem como objetivo apresentar, de forma clara e objetiva, o tema e o contexto da pesquisa. Ela deve despertar o interesse do leitor e situá-lo quanto à relevância do trabalho. Geralmente, a introdução contém:
 
@@ -383,6 +403,7 @@
 
 
     \chapter{Trabalhos Relacionados}
+    \label{chapter:trabalhos}
 
     Esta seção apresenta uma revisão de trabalhos relevantes que servem de base para a pesquisa sobre de threads e threads virtuais no java.
 
@@ -436,7 +457,9 @@
             \end{itemize}
     }
 
-        \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}    
+    \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}  
+    \label{chapter:metodologia}
+  
 
         A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
     \section{Metodologia}
@@ -465,11 +488,13 @@
 
 
     \chapter{Aplicação / Implementação / Experimento}
+    \label{chapter:resultados}
+
     Descrição passo a passo da execução do estudo.
     Apresentação de scripts, fluxogramas, diagramas ou imagens ilustrativas
 
     \chapter{Conclusão}
-
+    \label{chapter:conclusao}
 
     A conclusão tem o papel de encerrar o trabalho, retomando de forma resumida o que foi feito e destacando as contribuições obtidas. Ela deve responder à pergunta central da pesquisa e deixar claro o que foi aprendido, comprovado ou desenvolvido.
 
