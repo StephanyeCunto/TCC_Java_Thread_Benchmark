@@ -68,7 +68,7 @@ ab [opções] [URL]
 
 Exemplo:
 \begin{lstlisting}[style=abstyle]
-ab -n 100 -c 10 http://localhost:8080/teste
+ab -n 100 -c 10 http://localhost:8080/threads/virtual
 \end{lstlisting}
 
 Onde:
@@ -129,7 +129,7 @@ Onde:
 
 \subsection{Teste GET simples}
 \begin{lstlisting}[style=abstyle]
-ab -n 500 -c 50 http://localhost:8080/teste
+ab -n 500 -c 50 http://localhost:8080/threads/virtual
 \end{lstlisting}
 
 \subsection{Teste POST com JSON}
@@ -139,13 +139,53 @@ ab -n 200 -c 20 -p dados.json -T application/json http://localhost:8080/api
 
 \subsection{Teste com Keep-Alive e headers personalizados}
 \begin{lstlisting}[style=abstyle]
-ab -n 1000 -c 100 -k -H "Authorization: Bearer TOKEN" http://localhost:8080/teste
+ab -n 1000 -c 100 -k -H "Authorization: Bearer TOKEN" http://localhost:8080/threads/virtual
 \end{lstlisting}
 
 \subsection{Salvar resultados em CSV}
 \begin{lstlisting}[style=abstyle]
-ab -n 1000 -c 100 -e resultados.csv http://localhost:8080/teste
+ab -n 1000 -c 100 -e resultados.csv http://localhost:8080/threads/virtual
 \end{lstlisting}
 
+\subsection{Salvar headers e status de cada requisição}
+\begin{lstlisting}[style=abstyle]
+ab -n 1000 -c 100 -v 2 http://localhost:8080/threads/virtual/ > log.txt
+\end{lstlisting}
+
+\subsection{Definir timeout e limite de duração do teste}
+-s define o timeout em segundos para cada requisição
+-t define o tempo máximo do teste em segundos
+\begin{lstlisting}[style=abstyle]
+ab -c 100 -t 10 -s 5 http://localhost:8080/threads/virtual/
+\end{lstlisting}
+
+\section*{Limite de Simultaneidade de Portas}
+
+Verificar o intervalo de portas efêmeras utilizadas pelo sistema operacional para conexões TCP de saídas:
+
+\begin{verbatim}
+sysctl net.inet.ip.portrange.first
+sysctl net.inet.ip.portrange.last
+\end{verbatim}
+
+\begin{itemize}
+    \item \textbf{first}: porta inicial do intervalo de portas efêmeras.
+    \item \textbf{last}: porta final do intervalo de portas efêmeras.
+\end{itemize}
+
+\begin{verbatim}
+net.inet.ip.portrange.first: 49152
+net.inet.ip.portrange.last: 65535
+\end{verbatim}
+
+\subsection*{Cálculo da Capacidade Máxima Teórica}
+
+O número total de portas disponíveis é dado por:
+
+\[
+65535 - 49152 + 1 = 16384
+\]
+
+Há aproximadamente \textbf{16384 portas disponíveis para conexões TCP simultâneas de saída}. 
 
 \end{document}
