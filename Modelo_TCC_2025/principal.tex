@@ -407,16 +407,16 @@
 
     Esta seção apresenta trabalhos que servem de base para a pesquisa sobre threads tradicionais e threads virtuais em Java. São discutidos estudos anteriores que investigaram o desempenho dessas threads. Com a revisão realizada, é possível compreender as abordagens utilizadas, os resultados obtidos e as lacunas existentes, fornecendo um referencial teórico sólido para os testes conduzidos neste trabalho.
 
+    \section{Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads}
+        \citeonline{Pandita2024} apresentou uma comparação entre threads virtuais e threads tradicionais, considerando escalabilidade, utilização de recursos e latência em cargas de trabalho de alto rendimento. Foram realizados dois benchmarks: CPU-bound, envolvendo cálculos de números primos, e I/O-bound, simulando operações de bloqueio entre duas aplicações Java em ambiente AWS EC2.
+
+        Os resultados mostraram que, em tarefas com baixo uso de CPU, ambos os modelos apresentam desempenho semelhante. Em cenários intensivos de CPU, a limitação dos recursos computacionais restringe o aumento da simultaneidade. Por outro lado, em operações I/O-bound, threads virtuais se destacaram, oferecendo maior simultaneidade, redução do consumo de memória e melhor aproveitamento da CPU. Esses dados reforçam a eficiência das threads virtuais em operações de I/O e fornecem um referencial relevante para estudos comparativos, como o presente trabalho.
+
     \section{Uma análise comparativa entre threads e green threads no Java}
         \citeonline{Souto2024} realizou uma pesquisa comparando o desempenho de threads tradicionais e threads virtuais. O estudo analisou operações fundamentais de gerenciamento
         de threads, o tempo necessário para instanciá-las, iniciá-las, finalizá-las e realizar a troca de contexto em ambas. Para isso, foram utilizados testes com diferentes quantidades de threads e a biblioteca JMH do JDK para coleta precisa de tempos de execução.
 
         O estudo demonstrou que, nos cenários testados, as threads virtuais podem ser mais de 100 vezes mais rápidas que as threads tradicionais, evidenciando sua eficiência em operações de criação, inicialização, finalização e mudança de contexto.  Apesar do alto desempenho observado, o estudo se concentrou em cenários específicos, abrindo espaço para pesquisas adicionais que explorem diferentes cargas de trabalho e padrões de uso de threads, como os apresentados neste trabalho.
-
-    \section{Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads}
-        \citeonline{Pandita2024} apresentou uma comparação entre threads virtuais e threads tradicionais, considerando escalabilidade, utilização de recursos e latência em cargas de trabalho de alto rendimento. Foram realizados dois benchmarks: CPU-bound, envolvendo cálculos de números primos, e I/O-bound, simulando operações de bloqueio entre duas aplicações Java em ambiente AWS EC2.
-
-        Os resultados mostraram que, em tarefas com baixo uso de CPU, ambos os modelos apresentam desempenho semelhante. Em cenários intensivos de CPU, a limitação dos recursos computacionais restringe o aumento da simultaneidade. Por outro lado, em operações I/O-bound, threads virtuais se destacaram, oferecendo maior simultaneidade, redução do consumo de memória e melhor aproveitamento da CPU. Esses dados reforçam a eficiência das threads virtuais em operações de I/O e fornecem um referencial relevante para estudos comparativos, como o presente trabalho.
 
     \section{Comparison of Concurrency Technologies in Java}
         Em seu trabalho, \citeonline{GustafssonPersson2024} realizou quatro benchmarks com o objetivo de comparar o desempenho entre threads tradicionais, threads virtuais e Reactive Framework em testes de I/O-bound (simulado), CPU-bound e testes mistos.
