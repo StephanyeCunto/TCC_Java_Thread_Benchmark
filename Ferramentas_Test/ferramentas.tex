@@ -1,0 +1,151 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\geometry{margin=2cm}
+
+\definecolor{codegray}{rgb}{0.95,0.95,0.95}
+\definecolor{keyword}{rgb}{0.36,0.54,0.66}
+\definecolor{comment}{rgb}{0.5,0.5,0.5}
+
+\lstdefinestyle{myCodeStyle}{
+    backgroundcolor=\color{codegray},
+    commentstyle=\color{comment}\itshape,
+    keywordstyle=\color{keyword}\bfseries,
+    basicstyle=\ttfamily,
+    breaklines=true,
+    frame=single,
+    language=bash
+}
+
+% Ab style igual ao myCodeStyle para padronização
+\lstdefinestyle{abstyle}{
+    backgroundcolor=\color{codegray},
+    commentstyle=\color{comment}\itshape,
+    keywordstyle=\color{keyword}\bfseries,
+    basicstyle=\ttfamily,
+    breaklines=true,
+    frame=single,
+    language=bash
+}
+
+\begin{document}
+
+\section{Vegeta}
+\begin{itemize}
+    \item \textbf{Como usar:}
+    \begin{lstlisting}[style=myCodeStyle]
+echo "GET http://localhost:8080/threads/virtual" | vegeta attack -duration=1s -rate=19000 | vegeta report
+    \end{lstlisting}
+    \item Limite aproximado: 19000 requisições por segundo
+\end{itemize}
+
+\section{JMeter}
+\begin{itemize}
+    \item Criar arquivo \texttt{.jmx}
+    \item Limite: número de threads depende da capacidade do PC
+    \item Em minha máquina: aproximadamente 1500 a 2300 requisições por segundo
+\end{itemize}
+
+\section{Gatling}
+\begin{itemize}
+    \item Não consegui instalar
+\end{itemize}
+
+\section{k6}
+\begin{itemize}
+    \item Criar arquivo \texttt{.js}
+    \item Limite aproximado: 5000 requisições por segundo
+\end{itemize}
+
+\section{ApacheBench (ab)}
+
+\begin{lstlisting}[style=abstyle]
+ab [opções] [URL]
+\end{lstlisting}
+
+Exemplo:
+\begin{lstlisting}[style=abstyle]
+ab -n 100 -c 10 http://localhost:8080/teste
+\end{lstlisting}
+
+Onde:
+\begin{itemize}
+    \item \texttt{-n 100} → número total de requisições
+    \item \texttt{-c 10} → número de requisições concorrentes
+\end{itemize}
+
+\section{Principais opções do ab}
+
+\subsection{Requisições e concorrência}
+\begin{lstlisting}[style=abstyle]
+-n <numero>  # Total de requisições
+-c <numero>  # Conexões simultâneas
+\end{lstlisting}
+
+\subsection{Cabeçalhos HTTP}
+\begin{lstlisting}[style=abstyle]
+-H "Header: valor"     # Adiciona cabeçalho customizado
+-A usuario:senha       # Autenticação básica HTTP
+\end{lstlisting}
+
+\subsection{Tipo de requisição}
+\begin{lstlisting}[style=abstyle]
+-p arquivo       # Envia dados POST a partir de arquivo
+-T tipo          # Tipo de conteúdo (ex: application/json)
+-u arquivo       # Envia dados PUT a partir de arquivo
+\end{lstlisting}
+
+\subsection{Cookies}
+\begin{lstlisting}[style=abstyle]
+-C "nome=valor"  # Envia cookie na requisição
+\end{lstlisting}
+
+\subsection{TLS / HTTPS}
+\begin{lstlisting}[style=abstyle]
+-s segundos     # Timeout para cada requisição
+-Z cipherlist   # Cipher SSL customizado
+-X host:porta   # Proxy HTTP
+-v nivel        # Verbosidade (0 a 4)
+\end{lstlisting}
+
+\subsection{Logs e relatórios}
+\begin{lstlisting}[style=abstyle]
+-e arquivo.csv   # Salva resultados detalhados em CSV
+-g arquivo.dat   # Salva dados para plot no gnuplot
+-r               # Não aborta em erro HTTP
+\end{lstlisting}
+
+\subsection{Testes avançados}
+\begin{lstlisting}[style=abstyle]
+-k           # Habilita Keep-Alive
+-v nivel     # Mostra detalhes de cabeçalhos e respostas
+-q           # Suprime saída de progresso
+\end{lstlisting}
+
+\section{Exemplos completos}
+
+\subsection{Teste GET simples}
+\begin{lstlisting}[style=abstyle]
+ab -n 500 -c 50 http://localhost:8080/teste
+\end{lstlisting}
+
+\subsection{Teste POST com JSON}
+\begin{lstlisting}[style=abstyle]
+ab -n 200 -c 20 -p dados.json -T application/json http://localhost:8080/api
+\end{lstlisting}
+
+\subsection{Teste com Keep-Alive e headers personalizados}
+\begin{lstlisting}[style=abstyle]
+ab -n 1000 -c 100 -k -H "Authorization: Bearer TOKEN" http://localhost:8080/teste
+\end{lstlisting}
+
+\subsection{Salvar resultados em CSV}
+\begin{lstlisting}[style=abstyle]
+ab -n 1000 -c 100 -e resultados.csv http://localhost:8080/teste
+\end{lstlisting}
+
+
+\end{document}
