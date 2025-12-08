@@ -9,39 +9,36 @@
 [![Java](https://img.shields.io/badge/Java-21-ED8B00.svg?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F.svg?logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36.svg?logo=apache-maven&logoColor=white)](https://maven.apache.org/)
-[![Azure](https://img.shields.io/badge/Azure-VM-0078D4.svg?logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
-[![JMeter](https://img.shields.io/badge/JMeter-5.6-D22128.svg?logo=apache-jmeter&logoColor=white)](https://jmeter.apache.org/)
+[![macOS](https://img.shields.io/badge/macOS-Host-000000.svg?logo=apple&logoColor=white)]()
+[![Vegeta](https://img.shields.io/badge/Vegeta-12.8-00A98F.svg?logo=gnu&logoColor=white)](https://github.com/tsenart/vegeta)
 [![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-008080.svg?logo=latex&logoColor=white)](https://www.abntex.net.br/)
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
+[![License](https://img.shields.io/badge/license-Academic-blue.svg)](LICENSE)
 
 ---
 
 ## 📑 Sumário
 
 - [📋 Sobre o Projeto](#-sobre-o-projeto)
+- [⚙️ Requisitos](#️-requisitos-mínimos)
 - [🛠️ Stack Tecnológica](#️-stack-tecnológica)
-- [☁️ Sincronização Automática com Google Drive](#️-sincronização-automática-com-google-drive)
-- [🏗️ Arquitetura do Projeto](#️-arquitetura-do-projeto)
+- [☁️ Sincronização com Google Drive](#️-sincronização-automática-com-google-drive)
+- [🏗️ Arquitetura](#️-arquitetura-do-projeto)
 - [📁 Estrutura do Repositório](#-estrutura-do-repositório)
-- [🚀 Como Começar](#-como-começar)
-- [🔧 Configuração das Ferramentas](#-configuração-das-ferramentas)
-  - [JMeter - Testes de Carga](#jmeter---testes-de-carga)
-  - [VisualVM - Monitoramento em Tempo Real](#visualvm---monitoramento-em-tempo-real)
+- [🚀 Início Rápido](#-como-começar)
 - [📊 API de Benchmark](#-api-de-benchmark)
-- [📦 Pré-requisitos](#-pré-requisitos)
-- [📝 Compilando o Documento](#-compilando-o-documento)
-- [📚 Gerenciando Referências](#-gerenciando-referências)
+- [📦 Instalação de Dependências](#-pré-requisitos)
+- [📝 Trabalhando com LaTeX](#-compilando-o-documento)
+- [📚 Gerenciamento de Referências](#-gerenciando-referências)
 - [🛠️ Ferramentas Recomendadas](#️-ferramentas-recomendadas)
-- [🧪 Metodologia de Testes](#-metodologia-de-testes)
-- [📖 Materiais de Referência no Repositório](#-materiais-de-referência-no-repositório)
-- [🐛 Problemas Comuns](#-problemas-comuns)
-- [📚 Recursos Úteis](#-recursos-úteis)
+- [🧪 Metodologia](#-metodologia-de-testes)
+- [🐛 Solução de Problemas](#-problemas-comuns)
+- [📚 Recursos e Links Úteis](#-recursos-úteis)
 - [📋 Checklist de Progresso](#-checklist-de-progresso)
-- [🎯 Próximos Passos](#-próximos-passos)
+- [🎯 Próximos Passos](#-próximos-passos-2-semanas)
 - [📧 Contato](#-contato)
 - [📄 Licença](#-licença)
-
 ---
 
 ## 📋 Sobre o Projeto
@@ -60,11 +57,25 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 - ✅ Revisão bibliográfica em andamento
 - ✅ Ambiente de desenvolvimento configurado (VM Azure)
 - ✅ Servidor de benchmark implementado (Spring Boot)
-- 🔄 Definição da metodologia em andamento
-- 🔄 Configuração de ferramentas de teste (JMeter, VisualVM)
-- ⏳ Implementação dos benchmarks (em andamento)
-- ⏳ Coleta de dados (pendente)
+- ✅ Definição da metodologia em andamento
+- ✅ Configuração de ferramentas de teste (JMeter, VisualVM)
+- 🔄 Implementação dos benchmarks (em andamento)
+- 🔄 Coleta de dados (pendente)
 - ⏳ Análise de resultados (pendente)
+
+## ⚙️ Requisitos Mínimos
+
+| Componente | Versão Mínima | Recomendado |
+|------------|---------------|-------------|
+| **Java** | 19+ (Virtual Threads) | 21 LTS |
+| **Maven** | 3.8+ | 3.9+ |
+| **Spring Boot** | 3.0+ | 3.2+ |
+| **LaTeX** | TeX Live 2022+ | TeX Live 2024+ |
+| **Sistema** | Ubuntu 20.04+ / macOS 12+ | Ubuntu 22.04 / macOS 14+ |
+| **RAM** | 4 GB | 8 GB+ |
+| **CPU** | 2 cores | 4+ cores |
+
+> **⚠️ Importante:** Java 19+ é obrigatório para Virtual Threads (JEP 444).
 
 ---
 
@@ -76,11 +87,11 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 [![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36.svg?logo=apache-maven&logoColor=white)](https://maven.apache.org/)
 
 **Infraestrutura:**  
-[![Azure](https://img.shields.io/badge/Azure-4vCPU%20%7C%2031GB-0078D4.svg?logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
+[![macOS](https://img.shields.io/badge/macOS-Host-000000.svg?logo=apple&logoColor=white)]()
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420.svg?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
 **Ferramentas de Teste:**  
-[![JMeter](https://img.shields.io/badge/JMeter-5.6-D22128.svg?logo=apache-jmeter&logoColor=white)](https://jmeter.apache.org/)
+[![Vegeta](https://img.shields.io/badge/Vegeta-12.8-00A98F.svg?logo=gnu&logoColor=white)](https://github.com/tsenart/vegeta)
 [![VisualVM](https://img.shields.io/badge/VisualVM-2.1-FF6600.svg?logo=java&logoColor=white)](https://visualvm.github.io/)
 
 **Documentação:**  
@@ -107,34 +118,14 @@ A sincronização ocorre através de um **hook post-commit** que executa o Rclon
 
 ```mermaid
 flowchart TB
-    subgraph LOCAL["💻 Máquina Local"]
-        JM[JMeterCarga HTTP]
-        VM[VisualVMProfiling JMX]
-    end
-
-    subgraph AZURE["☁️ VM Azure - Standard_D4s_v3"]
-        subgraph APP["Spring Boot :8080"]
-            CTR[ThreadBenchmarkController]
-            VT[Virtual Thread Pool]
-            TT[Traditional Thread Pool]
-        end
-        JMX[JMX Server :9090]
-
-    end
 
     subgraph STORAGE["📦 Armazenamento"]
         DRIVE[Google DriveBackup Auto]
         GIT[GitHubControle Versão]
     end
-
-    JM -->|HTTP Load| CTR
-    VM -->|JMX| JMX
-    CTR --> VT
-    CTR --> TT
     
     GIT -->|Rclone Hook| DRIVE
 
-    style AZURE fill:#0078D4
     style STORAGE fill:#4285F4
 ```
 
@@ -270,59 +261,51 @@ tail -f .rclone-sync.log
 
 ### Ambiente de Execução
 
-```mermaid
-flowchart TB
-
-    %% BLOCO SUPERIOR
-    subgraph LOCAL["Maquina Local"]
-        JM[JMeter - Gerador de Carga]
-        VM[VisualVM - Monitoramento]
-    end
-
-    JM <--> VM
-
-    JM -->|HTTP Requests|AZURE
-    VM -->|JMX| AZURE
-
-    %% BLOCO INFERIOR
-    subgraph AZURE["VM Azure"]
-        APP[Spring Boot Application]
-
-        subgraph CTRL["ThreadBenchmarkController"]
-            C1[/virtualThread/]
-            C2[/traditionalThread/]
-            C3[/getCounter/]
-            C4[/resetCounter/]
-        end
-    end
-
-    APP --> CTRL
-
-   style AZURE fill:#0078D4
-
-```
+## Carga constante
 
 ```mermaid
 sequenceDiagram
-    participant J as JMeter
-    participant S as Spring Server
-    participant M as MetricsCollector
-    participant V as VisualVM
-    
-    J->>S: GET /virtualThread (100 concurrent)
-    activate S
-    S->>S: Create virtual threads
-    S-->>J: Response time logged
-    deactivate S
-    
-    M->>S: GET /metrics (every 5s)
-    S-->>M: CPU, Memory, GC data
-    
-    V->>S: JMX connection
-    S-->>V: Real-time profiling data
-    
-    Note over J,V: Repeat for 100, 500, 1000, 5000 threads
+    participant L as Linux Vegeta
+    participant M as macOS Servidor
+    participant S as Scripts start_all / server / metrics
+    participant MET as Coletor de Métricas
+
+    %% ======= INICIALIZAÇÃO =======
+    L->>M: Executa start_all.sh remotamente
+    M->>S: Inicia scripts
+    S->>M: Inicia servidor HTTP start_server.sh
+
+    %% ======= WARMUPS (LOOP) =======
+    loop 3 vezes
+        Note over L: Warmup<br/>300 RPS · 60s
+        L->>M: Requisições de warmup
+        M->>L: Respostas
+    end
+
+    %% ======= CORRIDA DE AQUECIMENTO =======
+    Note over L: Corrida de Aquecimento<br/>Cadência real · 2 minutos
+    L->>M: RPS variável conforme carga alvo
+    M->>L: Respostas
+
+    %% ======= GC =======
+    Note over M: Coleta de Lixo GC<br/>Limpeza de buffers e sockets
+
+    %% ======= ESPERA =======
+    Note over L,M: Espera 60 segundos<br/>Estabilização da rede e memória
+
+    %% ======= MÉTRICAS =======
+    S->>MET: Iniciar coleta de métricas<br/>CPU, RAM, Rede, TCP e Portas Efêmeras
+    MET->>MET: Salva métricas em JSON continuamente
+
+    %% ======= TESTE PRINCIPAL =======
+    Note over L: Teste Principal<br/>Duração: 10 minutos
+    L->>M: Envia carga total RPS real
+    M->>L: Respostas do servidor
+
+    MET->>MET: Continua salvando métricas durante o teste
 ```
+
+
 
 
 ---
@@ -331,56 +314,80 @@ sequenceDiagram
 
 ```
 tcc/
-├── Modelo_TCC_2025/              # 📄 Documento principal (LaTeX)
-│   ├── principal.tex             # Arquivo principal do TCC
-│   ├── principal.pdf             # PDF compilado
-│   ├── imagens/                  # Figuras e diagramas
+├── Modelo_TCC_2025/                     # 📄 Documento principal (LaTeX)
+│   ├── principal.tex                    # Arquivo principal do TCC
+│   ├── principal.pdf                    # PDF compilado
+│   ├── teste.tex                        # Documento auxiliar
+│   ├── imagens/                         # Figuras e diagramas
 │   │   └── Figura 1.png
-│   ├── abntex2*.{cls,sty,bst}    # Classes e estilos ABNT
-│   └── abntex2-modelo-references.bib  # Referências bibliográficas
+│   ├── abntex2*.{cls,sty,bst,bib}       # Classes, estilos e templates ABNT
 │
-├── Test/Serve_Test/              # 🚀 Aplicação de Benchmark
-│   └── benchmark-server/         # Servidor Spring Boot
-│       ├── pom.xml               # Dependências Maven
-│       └── src/
-│           └── main/java/com/benchmark/server/
-│               ├── BenchmarkServerApplication.java
-│               └── controller/
-│                   └── ThreadBenchmarkController.java
+├── Proposta/                            # 📝 Versão da proposta
+│   ├── Proposta_TCC/                    # Proposta oficial
+│   │   ├── main.tex
+│   │   ├── main.pdf
+│   │   └── Resumo_Bianca_Primeira_Reunião.pdf
+│   └── Proposta_Teste/                  # Proposta do teste a ser realizado
+│       ├── TrabalhosRelacionadosTeste.tex
+│       ├── Descrição_Teste.tex
+│       ├── Tabela_comparativa.tex
+│       └── *.pdf
 │
-├── Teste_JMH/                    # 🔬 Testes e experimentos com JMH
-│   ├── jmh-*.tex                 # Documentação sobre JMH
-│   └── test/                     # Projeto Maven de exemplo
-│       ├── pom.xml
-│       └── src/main/java/org/sample/
-│           ├── BlackholePipelineBench.java
-│           └── TesteProfiler.java
+├── Teste/                               # 🧪 Scripts de teste de carga
+│   ├── Script/
+│   │   ├── loadConstant/                # Carga constante
+│   │   │   ├── benchmark_threads.sh
+│   │   │   ├── benchmark_threads_local.sh
+│   │   │   └── results/
+│   │   │       └── threads/
+│   │   │           ├── traditional/{1,3,5,7,9}
+│   │   │           └── virtual/{2,4,6,8,10}
+│   │   └── loadRamping/                 # Carga crescente
+│   │       ├── benchmark_threads.sh
+│   │       ├── benchmark_threads_local.sh
+│   │       └── results/
+│   │           ├── threads/
+│   │           │   ├── traditional/{1,3,5,7,9}
+│   │           │   └── virtual/{2,4,6,8,10}
+│   │           └── view/                # Interface HTML dos resultados
+│   │               ├── all.json
+│   │               └── index.html
+│   │
+│   └── Serve_Test/                      # 🚀 Servidor Spring Boot para benchmarks
+│       ├── benchmark-server/            # Projeto Maven
+│       │   ├── pom.xml
+│       │   └── src/
+│       │       ├── main/java/com/benchmark/server/
+│       │       │   ├── BenchmarkServerApplication.java
+│       │       │   └── controller/ThreadBenchmarkController.java
+│       │       └── resources/
+│       │           ├── application.properties
+│       │           ├── static/
+│       │           └── templates/
+│       └── benchmark-server.zip         # Arquivo compactado
 │
-├── Coletar_Metricas/             # 📈 Guias de monitoramento
-│   ├── coletarMetricasLinux.tex  # mpstat, vmstat, iostat
-│   └── MetricasJMH.tex           # Métricas do JMH
+├── Testando_maquina/                    # 🖥️ Scripts de monitoramento
+│   ├── monitor.sh                       # CPU/RAM/IO
+│   ├── tcp_monitor.sh                   # Portas efêmeras e TCP
+│   └── teste.sh                         # Scripts gerais de teste
 │
-├── VM/                           # ☁️ Documentação do ambiente
-│   ├── Vm Java Quickstart.pdf
-│   └── especificacoes_vm_azure_detalhado.pdf
+├── Trabalhos_Relacionados/              # 📚 Base teórica
+│   ├── Quadro_Trabalhos_Relacionados/   # Tabela comparativa
+│   │   ├── quadro.tex
+│   │   └── quadro.pdf
+│   ├── Resumo_Trabalhos_Relacionados/   # Resumos individuais
+│   │   ├── Resumo_Trabalho_Do_HIARLY.tex
+│   │   └── Resumo_Trabalho_Do_Vishesh.tex
+│   └── Trabalhos_Relacionados/          # PDFs originais
+│       ├── Avaliação_mecanismos_concorrência_Java8.pdf
+│       ├── Benchmarking_Virtual_Threads.pdf
+│       ├── Comparison_Concurrency_Java.pdf
+│       ├── Tradução_Comparison_Concurrency_Java.pdf
+│       └── Analise_Comparativa_Threads_GreenThreads.pdf
 │
-├── Quadro_Trabalhos_Relacionados/  # 📊 Trabalhos relacionados
-│   └── quadro.tex                # Comparativo de estudos similares
-│
-├── Proposta_TCC/                 # 📝 Proposta inicial
-│   └── main.tex
-│
-├── Proposta_Teste/               # 🧪 Testes de proposta
-│   └── TrabalhosRelacionadosTeste.tex
-│
-├── Resumo_Trabalhos_Relaionados/ # 📌 Resumos
-│   ├── resumo.tex
-│   └── resumo2.tex
-│
-├── filters.txt                   # 🚫 Regras de exclusão Rclone
-├── .rclone-sync.log             # 📝 Log de sincronizações
-├── .gitignore
-└── README.md
+├── README.md                            # 📘 Documento raiz
+└── filters.txt                           # 🚫 Regras de exclusão (Rclone)
+
 ```
 
 ---
@@ -410,19 +417,6 @@ java -jar target/benchmark-server-0.0.1-SNAPSHOT.jar
 
 O servidor estará disponível em: `http://<IP_DA_VM>:8080`
 
-#### Ferramentas de Teste (Máquina Local)
-
-**JMeter:**
-```bash
-# Download
-wget https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
-tar -xzf apache-jmeter-5.6.3.tgz
-cd apache-jmeter-5.6.3/bin
-
-# Executar interface gráfica
-./jmeter
-```
-
 **VisualVM:**
 ```bash
 # Linux/macOS
@@ -438,206 +432,35 @@ brew install visualvm  # ou baixe de https://visualvm.github.io/
 cd Modelo_TCC_2025
 latexmk -lualatex -pvc principal.tex
 ```
-
----
-
-## 🔧 Configuração das Ferramentas
-
-### JMeter - Testes de Carga
-
-#### Criando um Plano de Teste
-
-1. **Thread Group:**
-   - Number of Threads: 100, 500, 1000, 5000
-   - Ramp-Up Period: 60 segundos
-   - Loop Count: 10
-
-2. **HTTP Request Sampler:**
-   ```
-   Server: <IP_DA_VM>
-   Port: 8080
-   Path: /virtualThread  ou  /traditionalThread
-   Method: GET
-   ```
-
-3. **Listeners para Coleta:**
-   - View Results Tree
-   - Summary Report
-   - Aggregate Report
-   - Response Time Graph
-
-#### Cenários de Teste
-
-| Cenário | Threads | Ramp-Up | Duração | Objetivo |
-|---------|---------|---------|---------|----------|
-| Carga Baixa | 100 | 10s | 5min | Baseline |
-| Carga Média | 500 | 30s | 10min | Operação normal |
-| Carga Alta | 1000 | 60s | 15min | Estresse |
-| Carga Extrema | 5000 | 120s | 20min | Limite |
-
-#### Exemplo de Script CLI
-
-```bash
-# Executar teste via linha de comando
-jmeter -n -t plano_teste.jmx \
-       -l resultados.jtl \
-       -e -o relatorio_html/
-```
-
----
-
-### VisualVM - Monitoramento em Tempo Real
-
-#### Configurando a Conexão JMX
-
-**No servidor (VM Azure):**
-
-```bash
-# Adicionar ao script de execução
-java -Dcom.sun.management.jmxremote \
-     -Dcom.sun.management.jmxremote.port=9090 \
-     -Dcom.sun.management.jmxremote.authenticate=false \
-     -Dcom.sun.management.jmxremote.ssl=false \
-     -Djava.rmi.server.hostname=<IP_DA_VM> \
-     -jar benchmark-server.jar
-```
-
-**No VisualVM (máquina local):**
-
-1. File → Add JMX Connection
-2. Connection: `<IP_DA_VM>:9090`
-3. Desmarcar "Require SSL connection"
-4. OK
-
-#### Métricas Monitoradas
-
-| Métrica | Descrição | Relevância |
-|---------|-----------|------------|
-| **CPU Usage** | % de uso da CPU | Threads virtuais devem usar menos CPU |
-| **Heap Memory** | Memória heap usada/total | Threads virtuais consomem menos memória |
-| **Threads** | Número de threads ativas | Threads virtuais escaláveis |
-| **GC Activity** | Atividade do Garbage Collector | Impacto na latência |
-
-#### Plugins Recomendados
-
-- **Visual GC:** Monitoramento detalhado do GC
-- **Tracer:** Rastreamento de métodos
-- **Threads:** Análise de deadlocks e contenção
-
 ---
 
 ## 📊 API de Benchmark
 
-### Endpoints Disponíveis
+| Endpoint | Método | Descrição | Exemplo de Uso |
+|----------|--------|-----------|----------------|
+| `/threads/virtual` | GET | Cria thread virtual (sleep 100ms) | `curl http://localhost:8080/threads/virtual` |
+| `/threads/traditional` | GET | Cria thread tradicional (sleep 100ms) | `curl http://localhost:8080/threads/traditional` |
+| `/threads/get` | GET | Retorna e reseta contador | `curl http://localhost:8080/threads/get` |
+| `/threads/gc` | GET | Força Garbage Collection | `curl http://localhost:8080/threads/gc` |
 
-#### 1. Thread Virtual
-
-```http
-GET /virtualThread
-```
-
-**Resposta:**
+**Resposta padrão:**
 ```json
-"Thread virtual iniciada! Veja o console do servidor."
+{
+  "message": "Thread virtual iniciada! Veja o console do servidor.",
+  "counter": 42
+}
 ```
 
-**Comportamento:**
-- Cria uma thread virtual usando `Thread.ofVirtual()`
-- Executa tarefa que dorme por 1 segundo
-- Incrementa contador
+**Comportamento Interno:**
+- Cria thread usando `Thread.ofVirtual()` ou `new Thread()`
+- Executa `Thread.sleep(100)` para simular I/O
+- Incrementa contador atômico
 - Aguarda conclusão com `join()`
-
----
-
-#### 2. Thread Tradicional
-
-```http
-GET /traditionalThread
-```
-
-**Resposta:**
-```json
-"Thread iniciada! Veja o console do servidor."
-```
-
-**Comportamento:**
-- Cria uma thread tradicional usando `new Thread()`
-- Executa mesma tarefa (sleep 1s)
-- Incrementa contador
-- Aguarda conclusão com `join()`
-
----
-
-#### 3. Obter Contador
-
-```http
-GET /getCounter
-```
-
-**Resposta:**
-```json
-42
-```
-
-Retorna o número total de threads executadas desde o último reset.
-
----
-
-#### 4. Resetar Contador
-
-```http
-DELETE /resetCounter
-```
-
-**Resposta:**
-```json
-42
-```
-
-Reseta o contador para 0 e retorna o valor anterior.
-
----
-
-### Exemplos de Uso
-
-#### cURL
-
-```bash
-# Testar thread virtual
-curl http://localhost:8080/virtualThread
-
-# Testar thread tradicional
-curl http://localhost:8080/traditionalThread
-
-# Ver contador
-curl http://localhost:8080/getCounter
-
-# Resetar contador
-curl -X DELETE http://localhost:8080/resetCounter
-```
-
-#### Python
-
-```python
-import requests
-
-BASE_URL = "http://localhost:8080"
-
-# Executar 100 requisições virtuais
-for i in range(100):
-    response = requests.get(f"{BASE_URL}/virtualThread")
-    print(f"Requisição {i+1}: {response.status_code}")
-
-# Obter total
-counter = requests.get(f"{BASE_URL}/getCounter").json()
-print(f"Total de threads executadas: {counter}")
-```
-
 ---
 
 ## 📦 Pré-requisitos
 
-### Para o Servidor (VM Azure)
+### Para o Servidor
 
 - **Java:** 19+ (com suporte a Virtual Threads)
 - **Maven:** 3.8+
@@ -662,31 +485,34 @@ sudo apt install sysstat  # mpstat, iostat, vmstat
 
 ### Para Cliente de Testes (Máquina Local)
 
-**JMeter:**
-- Java 8+ (para executar o JMeter)
-- Download: https://jmeter.apache.org/download_jmeter.cgi
 
-**VisualVM:**
-- Java 8+ (JDK recomendado para JMX)
-- Download: https://visualvm.github.io/
 
 **Linux (Ubuntu/Debian):**
 ```bash
-sudo apt install openjdk-21-jdk
+sudo apt update
+sudo apt install default-jdk
 sudo apt install visualvm
+
+curl -L https://github.com/tsenart/vegeta/releases/download/v12.8.4/vegeta-12.8.4-linux-amd64.tar.gz -o vegeta.tar.gz
+tar -xzf vegeta.tar.gz
+sudo mv vegeta /usr/local/bin/
 ```
 
 **macOS:**
 ```bash
-brew install openjdk@21
-brew install visualvm
-brew install jmeter
+# Instalar Java
+brew install openjdk
+
+# Instalar VisualVM
+brew install --cask visualvm
+
+# Instalar Vegeta
+brew install vegeta
 ```
 
 **Windows:**
-- Java: https://www.oracle.com/java/technologies/downloads/
-- VisualVM: https://visualvm.github.io/
-- JMeter: https://jmeter.apache.org/
+- VisualVM: https://visualvm.github.io/  
+- Vegeta: https://github.com/tsenart/vegeta/releases
 
 ---
 
@@ -841,57 +667,88 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 ## 🧪 Metodologia de Testes
 
 ### Fluxo de Experimentos
-
 ```
-1. Preparação
-   ├─ Configurar VM Azure
-   ├─ Deploy do servidor
-   └─ Validar conectividade
+1. Preparação do Ambiente
+   ├─ Configurar servidor (Linux/macOS) com limites ajustados
+   │    ├─ Aumentar portas efêmeras
+   │    ├─ Ajustar fs.file-max e somaxconn
+   │    └─ Aumentar ulimit (files/threads)
+   ├─ Ajustar rede
+   │    ├─ Verificar gargalos de WiFi vs cabo
+   │    └─ Testar throughput máximo real com curl/speedtest
+   └─ Preparar aplicação
+        ├─ Habilitar GC logs
+        ├─ Configurar pool de threads
+        └─ Iniciar servidor em modo de produção
 
-2. Baseline
-   ├─ Coletar métricas sem carga
-   └─ Verificar estado inicial
+2. Baseline (Sem Carga)
+   ├─ Verificar uso de CPU, RAM e GC
+   ├─ Verificar número de portas efêmeras em uso
+   ├─ Validar latência local (curl)
+   └─ Registrar estado do sistema com script JSON contínuo
 
-3. Testes de Carga (JMeter)
-   ├─ Cenário 1: 100 threads (5min)
-   ├─ Cenário 2: 500 threads (10min)
-   ├─ Cenário 3: 1000 threads (15min)
-   └─ Cenário 4: 5000 threads (20min)
+3. Testes de Carga (Vegeta)
+   ├─ Cenário 1: Baixa carga
+   │    └─ 100 req/s por 30s para validar estabilidade
+   ├─ Cenário 2: Carga média
+   │    └─ 500 req/s por 1 min (latência + portas efêmeras)
+   ├─ Cenário 3: Alto volume
+   │    └─ 1500 req/s por 2 min (testa fila TCP e GC)
+   ├─ Cenário 4: Limite do servidor
+   │    └─ Aumentar req/s progressivamente até saturar CPU ou portas
+   └─ Registrar:
+         ├─ mean, p90, p95, p99, max
+         ├─ status codes
+         └─ throughput real recebido
 
 4. Monitoramento (VisualVM + Scripts)
-   ├─ Coleta em tempo real
-   └─ Logs do sistema
+   ├─ Monitorar:
+   │    ├─ CPU por thread
+   │    ├─ Heap/Non-Heap
+   │    ├─ Frequência e duração de GC
+   │    ├─ Threads vivas
+   │    ├─ Deadlocks
+   │    └─ File descriptors
+   ├─ Coleta contínua em JSON:
+   │    ├─ /proc/sys/net/... (portas, conexões)
+   │    ├─ uso de memória
+   │    ├─ load average
+   │    └─ conexões ESTABLISHED / TIME_WAIT / CLOSE_WAIT
+   └─ Detectar:
+         ├─ Gargalo de rede
+         ├─ Exaustão de portas efêmeras
+         └─ Saturação de threads
 
-5. Análise
-   ├─ Processar dados
-   ├─ Gerar gráficos
-   └─ Análise estatística
+5. Análise Final
+   ├─ Identificar quando o servidor saturou
+   │    ├─ CPU 100%
+   │    ├─ limitação de WiFi/cabo
+   │    ├─ fila TCP cheia (somaxconn)
+   │    └─ erro por falta de portas
+   ├─ Comparar conexões WiFi vs cabo
+   ├─ Comparar latências reais com GC ativo
+   ├─ Criar gráficos:
+   │    ├─ Latência (p50, p90, p99)
+   │    ├─ Throughput
+   │    ├─ GC pauses
+   │    ├─ Threads vivas
+   │    └─ Portas efêmeras em uso
+   └─ Gerar conclusão sobre:
+         ├─ Capacidade máxima segura do servidor
+         ├─ Pontos de gargalo
+         └─ Recomendações de otimização
 ```
 
 ### Variáveis Mensuradas
 
 | Variável | Ferramenta | Unidade |
 |----------|-----------|---------|
-| **Throughput** | JMeter | req/s |
-| **Latência** | JMeter | ms |
+| **Throughput** |Vegeta | req/s |
+| **Latência** | Vegeta | ms |
 | **CPU** | VisualVM | % |
 | **Memória Heap** | VisualVM | MB |
 | **Threads Ativas** | VisualVM | count |
 | **GC Pause** | VisualVM | ms |
-
----
-
-## 📖 Materiais de Referência no Repositório
-
-### Documentação Incluída
-
-| Arquivo | Descrição |
-|---------|-----------|
-| **`jmh-*.pdf`** | Guias sobre Java Microbenchmark Harness (JMH) |
-| **`coletarMetricasLinux.pdf`** | Ferramentas: mpstat, vmstat, iostat |
-| **`MetricasJMH.pdf`** | Métricas e análise de benchmarks JMH |
-| **`quadro.pdf`** | Comparativo de trabalhos relacionados |
-| **`especificacoes_vm_azure_detalhado.pdf`** | Detalhes da VM Azure (4 vCPUs, 31 GB RAM) |
 
 ---
 
@@ -939,7 +796,8 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 ---
 
 ## Ferramentas de Teste e Monitoramento
-- [⚡ JMeter User Manual](https://jmeter.apache.org/usermanual/index.html) - Documentação completa do JMeter
+- [Vegeta] https://github.com/tsenart/vegeta  
+- [Vegeta Manual](https://github.com/tsenart/vegeta#usage)
 - [📊 VisualVM Documentation](https://visualvm.github.io/documentation.html) - Guia de monitoramento e profiling
 - [🌱 Spring Boot Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/) - Documentação do Spring Boot
 - [🔧 Maven Documentation](https://maven.apache.org/guides/) - Guias de build e gerenciamento de dependências
@@ -971,57 +829,49 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 
 ---
 
-## Azure e Cloud
-- [☁️ Azure Documentation](https://docs.microsoft.com/azure/) - Documentação completa do Azure
-- [🖥️ Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/) - Guia de VMs no Azure
-- [🔐 Azure Security](https://docs.microsoft.com/azure/security/) - Boas práticas de segurança
-
----
-
-**📌 Última atualização:** Novembro de 2025
----
-
 ## 📋 Checklist de Progresso
 
 ### Documentação
 - [x] README configurado
 - [x] Estrutura organizada
 - [x] Materiais de referência
-- [ ] Metodologia definida
+- [x] Metodologia definida
 - [ ] Seção de resultados preparada
 
 ### Ambiente
-- [x] VM Azure configurada
-- [x] Servidor implementado
-- [ ] JMeter configurado
-- [ ] VisualVM configurado
-- [ ] Scripts de coleta testados
+- [x] Servidor HTTP implementado
+- [x] Vegeta instalado e configurado (Linux + macOS)
+- [ ] VisualVM configurado (monitoramento local/remoto)
+- [ ] Scripts de coleta testados (CPU, RAM, Rede, Portas Efêmeras, TCP)
 
 ### Implementação
 - [x] Controller básico
-- [ ] Endpoints de benchmark
-- [ ] Diferentes cenários de carga
-- [ ] Logging estruturado
-- [ ] Coleta automática de métricas
+- [x] Endpoints de benchmark (virtual, tradicional, contador e GC)
+- [x] Coleta de métricas com scripts independentes
+- [ ] Diferentes cenários de carga Vegeta implementados
+- [ ] Logging estruturado (JSON + logs do servidor)
+- [ ] Coleta automática contínua de métricas
 
 ### Testes
-- [ ] Planos de teste JMeter criados
-- [ ] Testes de baseline
-- [ ] Testes de carga baixa (100 threads)
-- [ ] Testes de carga média (500 threads)
-- [ ] Testes de carga alta (1000 threads)
-- [ ] Testes de carga extrema (5000 threads)
+- [x] Baseline (sem carga)
+- [ ] Warmups automatizados (3×60s, 300 RPS)
+- [ ] Corrida de aquecimento (2 min, cadência real)
+- [ ] Espera e estabilização (60s)
+- [ ] Teste principal (10 minutos)
+- [ ] Testes de rede (latência, jitter, perda)
+- [ ] Testes comparativos: Wi-Fi vs Cabo, Linux vs macOS
 
 ### Análise
-- [ ] Dados coletados
-- [ ] Processamento de dados
-- [ ] Gráficos gerados
+- [ ] Dados coletados consolidados
+- [ ] Processamento de métricas (Python + JSON)
+- [ ] Gráficos gerados (latência, throughput, CPU, RAM, portas efêmeras)
+- [ ] Comparação virtual × tradicional
 - [ ] Análise estatística
 - [ ] Conclusões preliminares
 
 ### Escrita
-- [ ] Introdução
-- [ ] Revisão bibliográfica
+- [x] Introdução
+- [x] Revisão bibliográfica
 - [ ] Metodologia
 - [ ] Resultados
 - [ ] Discussão
@@ -1029,27 +879,50 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 
 ---
 
-## 🎯 Próximos Passos
+## 🎯 Próximos Passos (2 Semanas)
 
-1. **Semana 1-2:**
-   - [ ] Finalizar configuração do JMeter
-   - [ ] Criar planos de teste para todos os cenários
-   - [ ] Testar conexão VisualVM com a VM
+## 📆 Semana 1 — Preparação + Execução dos Testes
+### 🔧 Preparação do Ambiente
+- [ ] Configurar Vegeta (Linux + macOS)
+- [ ] Criar scripts de automação:
+  - Warmups (3× 300 RPS · 60s)
+  - Corrida de aquecimento (2 minutos)
+  - Coleta de lixo (GC)
+  - Estabilização (60s)
+  - Coleta contínua de métricas
+  - Teste principal (10 minutos)
+- [ ] Validar coleta de métricas (CPU, RAM, rede, TCP, portas efêmeras)
+- [ ] Confirmar comunicação entre as máquinas
+- [ ] Verificar se o servidor está recebendo e respondendo corretamente
 
-2. **Semana 3-4:**
-   - [ ] Executar testes de baseline
-   - [ ] Executar testes com cargas incrementais
-   - [ ] Coletar todas as métricas
+### 🚀 Execução Completa dos Testes
+- [ ] Executar baseline (sem carga)
+- [ ] Executar warmups (3 ciclos)
+- [ ] Executar corrida de aquecimento (2 min)
+- [ ] Executar GC + estabilização (60s)
+- [ ] Iniciar coleta contínua de métricas
+- [ ] Executar teste principal (10 min)
+- [ ] Consolidar todos os logs e saídas JSON
 
-3. **Semana 5-6:**
-   - [ ] Processar e analisar dados
-   - [ ] Gerar gráficos e tabelas
-   - [ ] Escrever seção de resultados
+---
 
-4. **Semana 7-8:**
-   - [ ] Revisar todo o documento
-   - [ ] Preparar apresentação
-   - [ ] Ajustes finais
+## 📆 Semana 2 — Processamento + Análise + Documentação Final
+### 📊 Processamento dos Dados
+- [ ] Organizar métricas de CPU, RAM, rede, latência e RPS
+- [ ] Limpar e padronizar arquivos JSON
+- [ ] Gerar gráficos e tabelas comparativas
+- [ ] Identificar gargalos e padrões
+
+### 🧠 Análise e Escrita
+- [ ] Escrever análise dos resultados
+- [ ] Criar seção de metodologia final
+- [ ] Documentar ambiente, ferramentas, scripts e parâmetros usados
+- [ ] Revisar todo o texto e corrigir inconsistências
+
+### 🎤 Finalização
+- [ ] Preparar a apresentação final
+- [ ] Criar gráficos visuais da arquitetura e fluxo dos testes
+- [ ] Ajustes finais no documento
 
 ---
 
@@ -1069,4 +942,4 @@ Este trabalho é de natureza acadêmica e está disponível para fins educaciona
 
 ---
 
-**📌 Última atualização:** Novembro de 2025
+**📌 Última atualização:** Dezembro de 2025
