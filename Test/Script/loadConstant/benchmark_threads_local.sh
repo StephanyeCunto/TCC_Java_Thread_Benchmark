@@ -59,7 +59,7 @@ run_warmup(){
     ENDPOINT="$1"
     J="$2"
     echo "=== Run Warm-up ==="
-    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=360s -rate=28000 \
+    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=180s -rate=2800 \
     | tee "results/threads/${ENDPOINT}/$J/warmup.bin" \
     | vegeta report --type=json > "results/threads/${ENDPOINT}/$J/runWarmup.json"
 
@@ -76,7 +76,7 @@ loop(){
     echo "=== Loop ==="
     echo "GET $BASE_URL/$ENDPOINT"| vegeta attack \
         -duration="10s" \
-        -rate="28000" \
+        -rate="2800" \
         -timeout=0s \
         -max-workers=100000 \
         | tee "results/threads/${ENDPOINT}/${j}/run.bin" \
