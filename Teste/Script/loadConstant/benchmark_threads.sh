@@ -6,9 +6,8 @@ BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
 JAVA_JAR_PATH="documents/tcc_teste/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
-LOG_PATH="Results/logs"
+LOG_PATH="documents/tcc_teste/Test/Script/LoadConstant/Results/logs"
 RESULTS_PATH="Results/results"
-
 
 close_port() {
     result=$($SSH "lsof -t -i :8080")
@@ -114,15 +113,20 @@ loadMonitor(){
 
     PID=$($SSH "cat $LOG_PATH/server.pid")
 
-    OUTPUT_JSON="${ENDPOINT}${j}.json"
-    $SSH "bash documents/tcc_teste/Test/Script/monitor.sh $PID $ENDPOINT$j.json"
-    $SSH "mkdir -p '$RESULTS_PATH/$ENDPOINT/$j/monitor'"
-    $SSH "jcmd $PID JFR.start name=${ENDPOINT}${j} settings=profile maxsize=0 maxage=720000 filename=${RESULTS_PATH}/${ENDPOINT}/${j}/${ENDPOINT}${j}.jfr"
+    $SSH "mkdir -p documents/tcc_teste/Test/Script/$RESULTS_PATH/$ENDPOINT/$j/monitor"
+
+    $SSH "nohup bash documents/tcc_teste/Test/Script/monitor.sh $PID documents/tcc_teste/Test/Script/$RESULTS_PATH/$ENDPOINT/$j/monitor.json > /dev/null 2>&1 &"
+
+    $SSH "nohup jcmd $PID JFR.start name=${ENDPOINT}${j} settings=profile maxsize=0 maxage=720000 filename=documents/tcc_teste/Test/Script/$RESULTS_PATH/$ENDPOINT/$j/monitor/results.jfr > /dev/null 2>&1 &"
 
     echo "Monitor e JFR iniciados (PID: $PID)"
 }
 
-for j in {1..10}; do
+
+for j in {8..10}; do
+    echo "Aguardando 10 minutos antes do próximo teste..."
+    sleep 600
+    
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
@@ -142,6 +146,5 @@ for j in {1..10}; do
 
     stop_jfr
 
-    echo "Aguardando 10 minutos antes do próximo teste..."
-    sleep 600
+
 done
