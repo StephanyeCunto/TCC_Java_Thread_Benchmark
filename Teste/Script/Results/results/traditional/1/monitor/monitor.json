@@ -1,0 +1,4369 @@
+[
+{
+    "timestamp": "2025-12-12T15:39:41Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 4.6,
+    "rss_kb": 385248,
+    "vsz_kb": 439194592,
+    "heap_kb": 1258,
+    "private_kb": 0,
+    "threads": 35
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:42Z",
+    "pid": 43044,
+    "cpu_percent": 5.11,
+    "memory_percent": 5.3,
+    "rss_kb": 444672,
+    "vsz_kb": 472983824,
+    "heap_kb": 1258,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:44Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 4.9,
+    "rss_kb": 407312,
+    "vsz_kb": 439444080,
+    "heap_kb": 1322,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:45Z",
+    "pid": 43044,
+    "cpu_percent": 5.61,
+    "memory_percent": 5.8,
+    "rss_kb": 487840,
+    "vsz_kb": 472982096,
+    "heap_kb": 1322,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:48Z",
+    "pid": 43044,
+    "cpu_percent": 8.50,
+    "memory_percent": 5.5,
+    "rss_kb": 462976,
+    "vsz_kb": 439433952,
+    "heap_kb": 1675,
+    "private_kb": 0,
+    "threads": 153
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:49Z",
+    "pid": 43044,
+    "cpu_percent": 5.52,
+    "memory_percent": 6.1,
+    "rss_kb": 513264,
+    "vsz_kb": 472977936,
+    "heap_kb": 1675,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:51Z",
+    "pid": 43044,
+    "cpu_percent": 8.48,
+    "memory_percent": 6.0,
+    "rss_kb": 499456,
+    "vsz_kb": 439419312,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:52Z",
+    "pid": 43044,
+    "cpu_percent": 5.33,
+    "memory_percent": 6.9,
+    "rss_kb": 582288,
+    "vsz_kb": 439427696,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:55Z",
+    "pid": 43044,
+    "cpu_percent": 8.16,
+    "memory_percent": 6.9,
+    "rss_kb": 582400,
+    "vsz_kb": 439429792,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:56Z",
+    "pid": 43044,
+    "cpu_percent": 5.34,
+    "memory_percent": 7.0,
+    "rss_kb": 597808,
+    "vsz_kb": 439427696,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:58Z",
+    "pid": 43044,
+    "cpu_percent": 7.81,
+    "memory_percent": 7.0,
+    "rss_kb": 585456,
+    "vsz_kb": 439427696,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:39:59Z",
+    "pid": 43044,
+    "cpu_percent": 5.23,
+    "memory_percent": 7.8,
+    "rss_kb": 655776,
+    "vsz_kb": 472982128,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:02Z",
+    "pid": 43044,
+    "cpu_percent": 8.15,
+    "memory_percent": 7.4,
+    "rss_kb": 622096,
+    "vsz_kb": 439429776,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:03Z",
+    "pid": 43044,
+    "cpu_percent": 5.42,
+    "memory_percent": 7.4,
+    "rss_kb": 622832,
+    "vsz_kb": 439423536,
+    "heap_kb": 1708,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:05Z",
+    "pid": 43044,
+    "cpu_percent": 8.04,
+    "memory_percent": 7.4,
+    "rss_kb": 622832,
+    "vsz_kb": 439429824,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:06Z",
+    "pid": 43044,
+    "cpu_percent": 5.71,
+    "memory_percent": 7.9,
+    "rss_kb": 661072,
+    "vsz_kb": 472984256,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 152
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:09Z",
+    "pid": 43044,
+    "cpu_percent": 7.82,
+    "memory_percent": 8.0,
+    "rss_kb": 663408,
+    "vsz_kb": 472982160,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:10Z",
+    "pid": 43044,
+    "cpu_percent": 5.89,
+    "memory_percent": 8.3,
+    "rss_kb": 697968,
+    "vsz_kb": 472986352,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:12Z",
+    "pid": 43044,
+    "cpu_percent": 7.95,
+    "memory_percent": 7.8,
+    "rss_kb": 653984,
+    "vsz_kb": 439431920,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:13Z",
+    "pid": 43044,
+    "cpu_percent": 5.23,
+    "memory_percent": 7.9,
+    "rss_kb": 664080,
+    "vsz_kb": 439425632,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:16Z",
+    "pid": 43044,
+    "cpu_percent": 8.45,
+    "memory_percent": 7.9,
+    "rss_kb": 663968,
+    "vsz_kb": 439427728,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:17Z",
+    "pid": 43044,
+    "cpu_percent": 5.33,
+    "memory_percent": 7.9,
+    "rss_kb": 665072,
+    "vsz_kb": 439438208,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 151
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:19Z",
+    "pid": 43044,
+    "cpu_percent": 7.21,
+    "memory_percent": 8.3,
+    "rss_kb": 699680,
+    "vsz_kb": 472980064,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:20Z",
+    "pid": 43044,
+    "cpu_percent": 5.27,
+    "memory_percent": 8.3,
+    "rss_kb": 700048,
+    "vsz_kb": 472980064,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:23Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 7.9,
+    "rss_kb": 665296,
+    "vsz_kb": 439423536,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:24Z",
+    "pid": 43044,
+    "cpu_percent": 5.28,
+    "memory_percent": 8.4,
+    "rss_kb": 700304,
+    "vsz_kb": 472986352,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:26Z",
+    "pid": 43044,
+    "cpu_percent": 8.04,
+    "memory_percent": 7.9,
+    "rss_kb": 665552,
+    "vsz_kb": 439427728,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 152
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:27Z",
+    "pid": 43044,
+    "cpu_percent": 5.22,
+    "memory_percent": 8.0,
+    "rss_kb": 668224,
+    "vsz_kb": 439425632,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:30Z",
+    "pid": 43044,
+    "cpu_percent": 8.26,
+    "memory_percent": 8.2,
+    "rss_kb": 688096,
+    "vsz_kb": 472969584,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 137
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:31Z",
+    "pid": 43044,
+    "cpu_percent": 5.11,
+    "memory_percent": 8.0,
+    "rss_kb": 668128,
+    "vsz_kb": 439421440,
+    "heap_kb": 1740,
+    "private_kb": 0,
+    "threads": 136
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:33Z",
+    "pid": 43044,
+    "cpu_percent": 8.37,
+    "memory_percent": 8.0,
+    "rss_kb": 669696,
+    "vsz_kb": 439429824,
+    "heap_kb": 1741,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:34Z",
+    "pid": 43044,
+    "cpu_percent": 5.34,
+    "memory_percent": 8.3,
+    "rss_kb": 698368,
+    "vsz_kb": 439423536,
+    "heap_kb": 1741,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:37Z",
+    "pid": 43044,
+    "cpu_percent": 7.81,
+    "memory_percent": 8.3,
+    "rss_kb": 698352,
+    "vsz_kb": 439427728,
+    "heap_kb": 1741,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:38Z",
+    "pid": 43044,
+    "cpu_percent": 5.37,
+    "memory_percent": 8.6,
+    "rss_kb": 719296,
+    "vsz_kb": 439429824,
+    "heap_kb": 1741,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:40Z",
+    "pid": 43044,
+    "cpu_percent": 7.80,
+    "memory_percent": 8.8,
+    "rss_kb": 735808,
+    "vsz_kb": 472998928,
+    "heap_kb": 1741,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:41Z",
+    "pid": 43044,
+    "cpu_percent": 5.47,
+    "memory_percent": 8.7,
+    "rss_kb": 731088,
+    "vsz_kb": 472980224,
+    "heap_kb": 1741,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:44Z",
+    "pid": 43044,
+    "cpu_percent": 7.55,
+    "memory_percent": 8.9,
+    "rss_kb": 742448,
+    "vsz_kb": 472982320,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:45Z",
+    "pid": 43044,
+    "cpu_percent": 5.35,
+    "memory_percent": 8.9,
+    "rss_kb": 743360,
+    "vsz_kb": 472988608,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:47Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 8.9,
+    "rss_kb": 743456,
+    "vsz_kb": 472984416,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:48Z",
+    "pid": 43044,
+    "cpu_percent": 5.45,
+    "memory_percent": 9.0,
+    "rss_kb": 755552,
+    "vsz_kb": 472978128,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:51Z",
+    "pid": 43044,
+    "cpu_percent": 8.05,
+    "memory_percent": 9.0,
+    "rss_kb": 755584,
+    "vsz_kb": 472994896,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 160
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:52Z",
+    "pid": 43044,
+    "cpu_percent": 5.17,
+    "memory_percent": 9.2,
+    "rss_kb": 774640,
+    "vsz_kb": 472984416,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:54Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 9.2,
+    "rss_kb": 774704,
+    "vsz_kb": 472980224,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:55Z",
+    "pid": 43044,
+    "cpu_percent": 5.64,
+    "memory_percent": 9.2,
+    "rss_kb": 775792,
+    "vsz_kb": 472986512,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:58Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 9.2,
+    "rss_kb": 775872,
+    "vsz_kb": 472980224,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:40:59Z",
+    "pid": 43044,
+    "cpu_percent": 5.19,
+    "memory_percent": 9.4,
+    "rss_kb": 785088,
+    "vsz_kb": 472971840,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:01Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 9.1,
+    "rss_kb": 763056,
+    "vsz_kb": 439425792,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:02Z",
+    "pid": 43044,
+    "cpu_percent": 5.29,
+    "memory_percent": 9.1,
+    "rss_kb": 763056,
+    "vsz_kb": 439423696,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:05Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 9.1,
+    "rss_kb": 763088,
+    "vsz_kb": 439427888,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:06Z",
+    "pid": 43044,
+    "cpu_percent": 5.68,
+    "memory_percent": 9.1,
+    "rss_kb": 762784,
+    "vsz_kb": 439402736,
+    "heap_kb": 1901,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:08Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 9.1,
+    "rss_kb": 763296,
+    "vsz_kb": 439425792,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:09Z",
+    "pid": 43044,
+    "cpu_percent": 5.33,
+    "memory_percent": 9.3,
+    "rss_kb": 781792,
+    "vsz_kb": 472986512,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:12Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 9.1,
+    "rss_kb": 767264,
+    "vsz_kb": 439404832,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 127
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:13Z",
+    "pid": 43044,
+    "cpu_percent": 5.31,
+    "memory_percent": 9.2,
+    "rss_kb": 767552,
+    "vsz_kb": 439423696,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:15Z",
+    "pid": 43044,
+    "cpu_percent": 7.57,
+    "memory_percent": 9.1,
+    "rss_kb": 767584,
+    "vsz_kb": 439425792,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 149
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:16Z",
+    "pid": 43044,
+    "cpu_percent": 5.68,
+    "memory_percent": 9.2,
+    "rss_kb": 768176,
+    "vsz_kb": 439427888,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:19Z",
+    "pid": 43044,
+    "cpu_percent": 7.58,
+    "memory_percent": 9.2,
+    "rss_kb": 767984,
+    "vsz_kb": 439427888,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:20Z",
+    "pid": 43044,
+    "cpu_percent": 5.28,
+    "memory_percent": 9.4,
+    "rss_kb": 785808,
+    "vsz_kb": 439425792,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:22Z",
+    "pid": 43044,
+    "cpu_percent": 7.63,
+    "memory_percent": 9.4,
+    "rss_kb": 785824,
+    "vsz_kb": 439427888,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:23Z",
+    "pid": 43044,
+    "cpu_percent": 5.09,
+    "memory_percent": 9.4,
+    "rss_kb": 789024,
+    "vsz_kb": 439400640,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 132
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:26Z",
+    "pid": 43044,
+    "cpu_percent": 7.93,
+    "memory_percent": 9.4,
+    "rss_kb": 789456,
+    "vsz_kb": 439429984,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:27Z",
+    "pid": 43044,
+    "cpu_percent": 5.41,
+    "memory_percent": 9.4,
+    "rss_kb": 790480,
+    "vsz_kb": 439429984,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:29Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 9.4,
+    "rss_kb": 790368,
+    "vsz_kb": 439423696,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:30Z",
+    "pid": 43044,
+    "cpu_percent": 5.22,
+    "memory_percent": 9.8,
+    "rss_kb": 822288,
+    "vsz_kb": 439429984,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:33Z",
+    "pid": 43044,
+    "cpu_percent": 8.29,
+    "memory_percent": 9.8,
+    "rss_kb": 822320,
+    "vsz_kb": 439413216,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 142
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:34Z",
+    "pid": 43044,
+    "cpu_percent": 5.13,
+    "memory_percent": 9.9,
+    "rss_kb": 834352,
+    "vsz_kb": 472984416,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:36Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 9.8,
+    "rss_kb": 822624,
+    "vsz_kb": 439436272,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 139
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:37Z",
+    "pid": 43044,
+    "cpu_percent": 5.36,
+    "memory_percent": 9.8,
+    "rss_kb": 823264,
+    "vsz_kb": 439432080,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:40Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 9.8,
+    "rss_kb": 822944,
+    "vsz_kb": 439400640,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 142
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:41Z",
+    "pid": 43044,
+    "cpu_percent": 5.45,
+    "memory_percent": 9.8,
+    "rss_kb": 824128,
+    "vsz_kb": 439440464,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:43Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 9.8,
+    "rss_kb": 823744,
+    "vsz_kb": 439419504,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:44Z",
+    "pid": 43044,
+    "cpu_percent": 5.10,
+    "memory_percent": 10.0,
+    "rss_kb": 840976,
+    "vsz_kb": 439429984,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:47Z",
+    "pid": 43044,
+    "cpu_percent": 8.17,
+    "memory_percent": 10.1,
+    "rss_kb": 849552,
+    "vsz_kb": 439440464,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:48Z",
+    "pid": 43044,
+    "cpu_percent": 5.23,
+    "memory_percent": 10.1,
+    "rss_kb": 849520,
+    "vsz_kb": 439427888,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:50Z",
+    "pid": 43044,
+    "cpu_percent": 6.32,
+    "memory_percent": 10.1,
+    "rss_kb": 849552,
+    "vsz_kb": 439429984,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:51Z",
+    "pid": 43044,
+    "cpu_percent": 5.15,
+    "memory_percent": 10.1,
+    "rss_kb": 849536,
+    "vsz_kb": 439425792,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:54Z",
+    "pid": 43044,
+    "cpu_percent": 9.40,
+    "memory_percent": 10.1,
+    "rss_kb": 849568,
+    "vsz_kb": 439429984,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:55Z",
+    "pid": 43044,
+    "cpu_percent": 1.98,
+    "memory_percent": 10.1,
+    "rss_kb": 846752,
+    "vsz_kb": 439243440,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 58
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:57Z",
+    "pid": 43044,
+    "cpu_percent": 1.61,
+    "memory_percent": 10.1,
+    "rss_kb": 846304,
+    "vsz_kb": 439214096,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:41:58Z",
+    "pid": 43044,
+    "cpu_percent": 1.28,
+    "memory_percent": 10.1,
+    "rss_kb": 846464,
+    "vsz_kb": 439224576,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 49
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:01Z",
+    "pid": 43044,
+    "cpu_percent": 7.13,
+    "memory_percent": 10.2,
+    "rss_kb": 851888,
+    "vsz_kb": 439582992,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 220
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:02Z",
+    "pid": 43044,
+    "cpu_percent": 6.80,
+    "memory_percent": 10.4,
+    "rss_kb": 867664,
+    "vsz_kb": 473001552,
+    "heap_kb": 1902,
+    "private_kb": 0,
+    "threads": 186
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:04Z",
+    "pid": 43044,
+    "cpu_percent": 12.72,
+    "memory_percent": 10.2,
+    "rss_kb": 854144,
+    "vsz_kb": 439593840,
+    "heap_kb": 2255,
+    "private_kb": 0,
+    "threads": 216
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:06Z",
+    "pid": 43044,
+    "cpu_percent": 6.61,
+    "memory_percent": 10.5,
+    "rss_kb": 875856,
+    "vsz_kb": 473221696,
+    "heap_kb": 2255,
+    "private_kb": 0,
+    "threads": 260
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:08Z",
+    "pid": 43044,
+    "cpu_percent": 10.85,
+    "memory_percent": 10.6,
+    "rss_kb": 890192,
+    "vsz_kb": 473123184,
+    "heap_kb": 2320,
+    "private_kb": 0,
+    "threads": 189
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:09Z",
+    "pid": 43044,
+    "cpu_percent": 6.53,
+    "memory_percent": 10.8,
+    "rss_kb": 905040,
+    "vsz_kb": 472989072,
+    "heap_kb": 2320,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:12Z",
+    "pid": 43044,
+    "cpu_percent": 8.93,
+    "memory_percent": 10.6,
+    "rss_kb": 885376,
+    "vsz_kb": 473058240,
+    "heap_kb": 2352,
+    "private_kb": 0,
+    "threads": 154
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:13Z",
+    "pid": 43044,
+    "cpu_percent": 6.24,
+    "memory_percent": 10.5,
+    "rss_kb": 878992,
+    "vsz_kb": 439472368,
+    "heap_kb": 2352,
+    "private_kb": 0,
+    "threads": 160
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:15Z",
+    "pid": 43044,
+    "cpu_percent": 8.73,
+    "memory_percent": 10.6,
+    "rss_kb": 890224,
+    "vsz_kb": 473047760,
+    "heap_kb": 2352,
+    "private_kb": 0,
+    "threads": 161
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:16Z",
+    "pid": 43044,
+    "cpu_percent": 4.86,
+    "memory_percent": 11.0,
+    "rss_kb": 919168,
+    "vsz_kb": 472840256,
+    "heap_kb": 2352,
+    "private_kb": 0,
+    "threads": 77
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:19Z",
+    "pid": 43044,
+    "cpu_percent": 8.14,
+    "memory_percent": 10.7,
+    "rss_kb": 901504,
+    "vsz_kb": 473087584,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 203
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:20Z",
+    "pid": 43044,
+    "cpu_percent": 7.04,
+    "memory_percent": 11.5,
+    "rss_kb": 964928,
+    "vsz_kb": 439417872,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:22Z",
+    "pid": 43044,
+    "cpu_percent": 7.64,
+    "memory_percent": 11.5,
+    "rss_kb": 964832,
+    "vsz_kb": 439411584,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:23Z",
+    "pid": 43044,
+    "cpu_percent": 5.74,
+    "memory_percent": 12.1,
+    "rss_kb": 1015952,
+    "vsz_kb": 439394816,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:26Z",
+    "pid": 43044,
+    "cpu_percent": 7.68,
+    "memory_percent": 12.2,
+    "rss_kb": 1022272,
+    "vsz_kb": 472972304,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:27Z",
+    "pid": 43044,
+    "cpu_percent": 5.57,
+    "memory_percent": 13.4,
+    "rss_kb": 1128160,
+    "vsz_kb": 439426256,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:29Z",
+    "pid": 43044,
+    "cpu_percent": 7.81,
+    "memory_percent": 13.4,
+    "rss_kb": 1128032,
+    "vsz_kb": 439428352,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 149
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:30Z",
+    "pid": 43044,
+    "cpu_percent": 5.23,
+    "memory_percent": 13.8,
+    "rss_kb": 1154048,
+    "vsz_kb": 439428352,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:33Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 13.8,
+    "rss_kb": 1154064,
+    "vsz_kb": 439428352,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:34Z",
+    "pid": 43044,
+    "cpu_percent": 5.21,
+    "memory_percent": 14.0,
+    "rss_kb": 1170592,
+    "vsz_kb": 439428352,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:36Z",
+    "pid": 43044,
+    "cpu_percent": 8.48,
+    "memory_percent": 14.1,
+    "rss_kb": 1182992,
+    "vsz_kb": 472978592,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:38Z",
+    "pid": 43044,
+    "cpu_percent": 5.72,
+    "memory_percent": 14.0,
+    "rss_kb": 1178448,
+    "vsz_kb": 439445120,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:40Z",
+    "pid": 43044,
+    "cpu_percent": 7.94,
+    "memory_percent": 14.3,
+    "rss_kb": 1195392,
+    "vsz_kb": 439428352,
+    "heap_kb": 2354,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:41Z",
+    "pid": 43044,
+    "cpu_percent": 5.32,
+    "memory_percent": 14.8,
+    "rss_kb": 1243536,
+    "vsz_kb": 439428352,
+    "heap_kb": 2354,
+    "private_kb": 0,
+    "threads": 139
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:44Z",
+    "pid": 43044,
+    "cpu_percent": 7.92,
+    "memory_percent": 15.2,
+    "rss_kb": 1273584,
+    "vsz_kb": 439434640,
+    "heap_kb": 2354,
+    "private_kb": 0,
+    "threads": 140
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:45Z",
+    "pid": 43044,
+    "cpu_percent": 5.37,
+    "memory_percent": 15.8,
+    "rss_kb": 1324672,
+    "vsz_kb": 439428352,
+    "heap_kb": 2354,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:47Z",
+    "pid": 43044,
+    "cpu_percent": 7.94,
+    "memory_percent": 15.8,
+    "rss_kb": 1325040,
+    "vsz_kb": 439426256,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:48Z",
+    "pid": 43044,
+    "cpu_percent": 5.23,
+    "memory_percent": 16.0,
+    "rss_kb": 1341296,
+    "vsz_kb": 439426256,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:51Z",
+    "pid": 43044,
+    "cpu_percent": 7.81,
+    "memory_percent": 16.0,
+    "rss_kb": 1341328,
+    "vsz_kb": 439428352,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:52Z",
+    "pid": 43044,
+    "cpu_percent": 5.35,
+    "memory_percent": 16.2,
+    "rss_kb": 1356688,
+    "vsz_kb": 439453504,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 161
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:54Z",
+    "pid": 43044,
+    "cpu_percent": 7.81,
+    "memory_percent": 16.2,
+    "rss_kb": 1356240,
+    "vsz_kb": 439422064,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:55Z",
+    "pid": 43044,
+    "cpu_percent": 4.95,
+    "memory_percent": 16.1,
+    "rss_kb": 1349728,
+    "vsz_kb": 439428352,
+    "heap_kb": 2353,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:58Z",
+    "pid": 43044,
+    "cpu_percent": 7.83,
+    "memory_percent": 16.1,
+    "rss_kb": 1350656,
+    "vsz_kb": 439428352,
+    "heap_kb": 2351,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:42:59Z",
+    "pid": 43044,
+    "cpu_percent": 5.08,
+    "memory_percent": 16.0,
+    "rss_kb": 1343984,
+    "vsz_kb": 439459792,
+    "heap_kb": 2351,
+    "private_kb": 0,
+    "threads": 151
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:01Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 16.0,
+    "rss_kb": 1343888,
+    "vsz_kb": 439438832,
+    "heap_kb": 2347,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:02Z",
+    "pid": 43044,
+    "cpu_percent": 5.22,
+    "memory_percent": 15.9,
+    "rss_kb": 1337616,
+    "vsz_kb": 439426256,
+    "heap_kb": 2347,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:05Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 15.9,
+    "rss_kb": 1338064,
+    "vsz_kb": 439428352,
+    "heap_kb": 2347,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:06Z",
+    "pid": 43044,
+    "cpu_percent": 5.84,
+    "memory_percent": 16.3,
+    "rss_kb": 1365760,
+    "vsz_kb": 439426256,
+    "heap_kb": 2347,
+    "private_kb": 0,
+    "threads": 138
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:08Z",
+    "pid": 43044,
+    "cpu_percent": 8.14,
+    "memory_percent": 16.8,
+    "rss_kb": 1411792,
+    "vsz_kb": 472982784,
+    "heap_kb": 2347,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:10Z",
+    "pid": 43044,
+    "cpu_percent": 5.25,
+    "memory_percent": 17.0,
+    "rss_kb": 1426816,
+    "vsz_kb": 439428352,
+    "heap_kb": 2347,
+    "private_kb": 0,
+    "threads": 151
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:12Z",
+    "pid": 43044,
+    "cpu_percent": 7.94,
+    "memory_percent": 17.0,
+    "rss_kb": 1427072,
+    "vsz_kb": 439445120,
+    "heap_kb": 2316,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:13Z",
+    "pid": 43044,
+    "cpu_percent": 5.11,
+    "memory_percent": 17.4,
+    "rss_kb": 1459760,
+    "vsz_kb": 439430448,
+    "heap_kb": 2316,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:16Z",
+    "pid": 43044,
+    "cpu_percent": 7.48,
+    "memory_percent": 17.4,
+    "rss_kb": 1460096,
+    "vsz_kb": 439436736,
+    "heap_kb": 2317,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:17Z",
+    "pid": 43044,
+    "cpu_percent": 4.91,
+    "memory_percent": 17.3,
+    "rss_kb": 1453328,
+    "vsz_kb": 439428352,
+    "heap_kb": 2317,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:19Z",
+    "pid": 43044,
+    "cpu_percent": 7.93,
+    "memory_percent": 17.3,
+    "rss_kb": 1453872,
+    "vsz_kb": 439438832,
+    "heap_kb": 2301,
+    "private_kb": 0,
+    "threads": 153
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:20Z",
+    "pid": 43044,
+    "cpu_percent": 5.04,
+    "memory_percent": 17.3,
+    "rss_kb": 1454592,
+    "vsz_kb": 439426256,
+    "heap_kb": 2301,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:23Z",
+    "pid": 43044,
+    "cpu_percent": 7.82,
+    "memory_percent": 17.3,
+    "rss_kb": 1455008,
+    "vsz_kb": 439428352,
+    "heap_kb": 2302,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:24Z",
+    "pid": 43044,
+    "cpu_percent": 5.19,
+    "memory_percent": 17.4,
+    "rss_kb": 1460864,
+    "vsz_kb": 439396912,
+    "heap_kb": 2302,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:26Z",
+    "pid": 43044,
+    "cpu_percent": 7.80,
+    "memory_percent": 17.5,
+    "rss_kb": 1464608,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 141
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:27Z",
+    "pid": 43044,
+    "cpu_percent": 4.92,
+    "memory_percent": 17.8,
+    "rss_kb": 1494656,
+    "vsz_kb": 472980688,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:30Z",
+    "pid": 43044,
+    "cpu_percent": 8.26,
+    "memory_percent": 17.6,
+    "rss_kb": 1473952,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:31Z",
+    "pid": 43044,
+    "cpu_percent": 4.95,
+    "memory_percent": 17.7,
+    "rss_kb": 1484256,
+    "vsz_kb": 472982784,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 154
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:33Z",
+    "pid": 43044,
+    "cpu_percent": 7.68,
+    "memory_percent": 17.6,
+    "rss_kb": 1474032,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:35Z",
+    "pid": 43044,
+    "cpu_percent": 4.93,
+    "memory_percent": 17.6,
+    "rss_kb": 1473984,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:37Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.6,
+    "rss_kb": 1474048,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:38Z",
+    "pid": 43044,
+    "cpu_percent": 5.52,
+    "memory_percent": 17.9,
+    "rss_kb": 1499200,
+    "vsz_kb": 472976496,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:41Z",
+    "pid": 43044,
+    "cpu_percent": 7.34,
+    "memory_percent": 17.6,
+    "rss_kb": 1475680,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:42Z",
+    "pid": 43044,
+    "cpu_percent": 4.82,
+    "memory_percent": 17.7,
+    "rss_kb": 1481728,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:44Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.7,
+    "rss_kb": 1482128,
+    "vsz_kb": 439399008,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 135
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:45Z",
+    "pid": 43044,
+    "cpu_percent": 5.07,
+    "memory_percent": 17.7,
+    "rss_kb": 1483008,
+    "vsz_kb": 439457696,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 172
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:48Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.7,
+    "rss_kb": 1482368,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:49Z",
+    "pid": 43044,
+    "cpu_percent": 5.08,
+    "memory_percent": 17.8,
+    "rss_kb": 1491248,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:51Z",
+    "pid": 43044,
+    "cpu_percent": 7.79,
+    "memory_percent": 17.8,
+    "rss_kb": 1491680,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:52Z",
+    "pid": 43044,
+    "cpu_percent": 5.36,
+    "memory_percent": 17.8,
+    "rss_kb": 1491648,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 154
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:55Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1491776,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:56Z",
+    "pid": 43044,
+    "cpu_percent": 4.89,
+    "memory_percent": 17.8,
+    "rss_kb": 1491728,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:58Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1491696,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:43:59Z",
+    "pid": 43044,
+    "cpu_percent": 5.32,
+    "memory_percent": 17.8,
+    "rss_kb": 1491744,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:02Z",
+    "pid": 43044,
+    "cpu_percent": 7.93,
+    "memory_percent": 17.8,
+    "rss_kb": 1492016,
+    "vsz_kb": 439440928,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:03Z",
+    "pid": 43044,
+    "cpu_percent": 5.10,
+    "memory_percent": 17.8,
+    "rss_kb": 1491040,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 149
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:05Z",
+    "pid": 43044,
+    "cpu_percent": 8.26,
+    "memory_percent": 17.8,
+    "rss_kb": 1491520,
+    "vsz_kb": 439445120,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:07Z",
+    "pid": 43044,
+    "cpu_percent": 4.94,
+    "memory_percent": 17.8,
+    "rss_kb": 1491056,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:09Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1491488,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:10Z",
+    "pid": 43044,
+    "cpu_percent": 5.06,
+    "memory_percent": 17.8,
+    "rss_kb": 1491568,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:13Z",
+    "pid": 43044,
+    "cpu_percent": 7.46,
+    "memory_percent": 17.8,
+    "rss_kb": 1491312,
+    "vsz_kb": 439399008,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:14Z",
+    "pid": 43044,
+    "cpu_percent": 5.57,
+    "memory_percent": 17.8,
+    "rss_kb": 1492000,
+    "vsz_kb": 439434640,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:16Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 17.8,
+    "rss_kb": 1491936,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:17Z",
+    "pid": 43044,
+    "cpu_percent": 4.97,
+    "memory_percent": 17.8,
+    "rss_kb": 1491952,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:20Z",
+    "pid": 43044,
+    "cpu_percent": 8.27,
+    "memory_percent": 17.8,
+    "rss_kb": 1491952,
+    "vsz_kb": 439434640,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:21Z",
+    "pid": 43044,
+    "cpu_percent": 4.83,
+    "memory_percent": 17.9,
+    "rss_kb": 1501392,
+    "vsz_kb": 472976496,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:23Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1491776,
+    "vsz_kb": 439422064,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:24Z",
+    "pid": 43044,
+    "cpu_percent": 5.01,
+    "memory_percent": 17.9,
+    "rss_kb": 1502144,
+    "vsz_kb": 472980688,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:27Z",
+    "pid": 43044,
+    "cpu_percent": 7.92,
+    "memory_percent": 17.8,
+    "rss_kb": 1492064,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:28Z",
+    "pid": 43044,
+    "cpu_percent": 5.18,
+    "memory_percent": 17.8,
+    "rss_kb": 1492192,
+    "vsz_kb": 439434640,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:30Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1492160,
+    "vsz_kb": 439419968,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:31Z",
+    "pid": 43044,
+    "cpu_percent": 4.95,
+    "memory_percent": 17.8,
+    "rss_kb": 1492608,
+    "vsz_kb": 439453504,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 149
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:34Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.8,
+    "rss_kb": 1492192,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:35Z",
+    "pid": 43044,
+    "cpu_percent": 5.12,
+    "memory_percent": 17.8,
+    "rss_kb": 1492128,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:37Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.8,
+    "rss_kb": 1491968,
+    "vsz_kb": 439407392,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 139
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:39Z",
+    "pid": 43044,
+    "cpu_percent": 4.82,
+    "memory_percent": 17.8,
+    "rss_kb": 1492224,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:41Z",
+    "pid": 43044,
+    "cpu_percent": 7.80,
+    "memory_percent": 17.8,
+    "rss_kb": 1492240,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:42Z",
+    "pid": 43044,
+    "cpu_percent": 5.07,
+    "memory_percent": 17.8,
+    "rss_kb": 1492176,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:45Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1492288,
+    "vsz_kb": 439409488,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:46Z",
+    "pid": 43044,
+    "cpu_percent": 4.85,
+    "memory_percent": 17.8,
+    "rss_kb": 1492320,
+    "vsz_kb": 439434640,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:48Z",
+    "pid": 43044,
+    "cpu_percent": 8.49,
+    "memory_percent": 17.8,
+    "rss_kb": 1492112,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:49Z",
+    "pid": 43044,
+    "cpu_percent": 4.86,
+    "memory_percent": 17.8,
+    "rss_kb": 1492528,
+    "vsz_kb": 439440928,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 165
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:52Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.8,
+    "rss_kb": 1492304,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:53Z",
+    "pid": 43044,
+    "cpu_percent": 5.57,
+    "memory_percent": 17.8,
+    "rss_kb": 1492464,
+    "vsz_kb": 439422064,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:55Z",
+    "pid": 43044,
+    "cpu_percent": 7.82,
+    "memory_percent": 17.9,
+    "rss_kb": 1503584,
+    "vsz_kb": 472980688,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:56Z",
+    "pid": 43044,
+    "cpu_percent": 5.05,
+    "memory_percent": 17.8,
+    "rss_kb": 1492640,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:44:59Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.8,
+    "rss_kb": 1492928,
+    "vsz_kb": 439438832,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:00Z",
+    "pid": 43044,
+    "cpu_percent": 4.80,
+    "memory_percent": 17.8,
+    "rss_kb": 1492576,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:02Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.8,
+    "rss_kb": 1492608,
+    "vsz_kb": 439426256,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:03Z",
+    "pid": 43044,
+    "cpu_percent": 5.16,
+    "memory_percent": 17.8,
+    "rss_kb": 1492560,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:06Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.8,
+    "rss_kb": 1492672,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:07Z",
+    "pid": 43044,
+    "cpu_percent": 4.86,
+    "memory_percent": 17.8,
+    "rss_kb": 1492656,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:09Z",
+    "pid": 43044,
+    "cpu_percent": 8.60,
+    "memory_percent": 17.8,
+    "rss_kb": 1492656,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:11Z",
+    "pid": 43044,
+    "cpu_percent": 4.90,
+    "memory_percent": 17.8,
+    "rss_kb": 1492656,
+    "vsz_kb": 439430448,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:13Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.8,
+    "rss_kb": 1492448,
+    "vsz_kb": 439417872,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:14Z",
+    "pid": 43044,
+    "cpu_percent": 5.10,
+    "memory_percent": 17.8,
+    "rss_kb": 1495392,
+    "vsz_kb": 439428352,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:17Z",
+    "pid": 43044,
+    "cpu_percent": 7.82,
+    "memory_percent": 17.8,
+    "rss_kb": 1495424,
+    "vsz_kb": 439424160,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:18Z",
+    "pid": 43044,
+    "cpu_percent": 5.06,
+    "memory_percent": 17.8,
+    "rss_kb": 1495792,
+    "vsz_kb": 439436736,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 156
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:20Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.8,
+    "rss_kb": 1495344,
+    "vsz_kb": 439413680,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 132
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:21Z",
+    "pid": 43044,
+    "cpu_percent": 5.33,
+    "memory_percent": 18.3,
+    "rss_kb": 1531744,
+    "vsz_kb": 472976496,
+    "heap_kb": 2306,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:24Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 18.1,
+    "rss_kb": 1517152,
+    "vsz_kb": 472982784,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 142
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:25Z",
+    "pid": 43044,
+    "cpu_percent": 4.91,
+    "memory_percent": 17.8,
+    "rss_kb": 1496000,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:27Z",
+    "pid": 43044,
+    "cpu_percent": 7.67,
+    "memory_percent": 18.3,
+    "rss_kb": 1532064,
+    "vsz_kb": 473003744,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:28Z",
+    "pid": 43044,
+    "cpu_percent": 5.59,
+    "memory_percent": 17.8,
+    "rss_kb": 1496272,
+    "vsz_kb": 439438832,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:31Z",
+    "pid": 43044,
+    "cpu_percent": 7.81,
+    "memory_percent": 17.8,
+    "rss_kb": 1496192,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:32Z",
+    "pid": 43044,
+    "cpu_percent": 5.17,
+    "memory_percent": 17.8,
+    "rss_kb": 1496128,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:34Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.8,
+    "rss_kb": 1496176,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:35Z",
+    "pid": 43044,
+    "cpu_percent": 5.19,
+    "memory_percent": 17.8,
+    "rss_kb": 1496560,
+    "vsz_kb": 439436736,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:38Z",
+    "pid": 43044,
+    "cpu_percent": 8.38,
+    "memory_percent": 17.8,
+    "rss_kb": 1496176,
+    "vsz_kb": 439417872,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:39Z",
+    "pid": 43044,
+    "cpu_percent": 5.18,
+    "memory_percent": 17.8,
+    "rss_kb": 1496176,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:41Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.8,
+    "rss_kb": 1496432,
+    "vsz_kb": 439455600,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 154
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:43Z",
+    "pid": 43044,
+    "cpu_percent": 4.97,
+    "memory_percent": 17.8,
+    "rss_kb": 1495952,
+    "vsz_kb": 439411584,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 128
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:45Z",
+    "pid": 43044,
+    "cpu_percent": 7.47,
+    "memory_percent": 17.8,
+    "rss_kb": 1496176,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:46Z",
+    "pid": 43044,
+    "cpu_percent": 5.12,
+    "memory_percent": 18.0,
+    "rss_kb": 1510976,
+    "vsz_kb": 472978592,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:49Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.9,
+    "rss_kb": 1498448,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:50Z",
+    "pid": 43044,
+    "cpu_percent": 4.98,
+    "memory_percent": 17.9,
+    "rss_kb": 1498560,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:52Z",
+    "pid": 43044,
+    "cpu_percent": 8.27,
+    "memory_percent": 17.9,
+    "rss_kb": 1498464,
+    "vsz_kb": 439445120,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 139
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:53Z",
+    "pid": 43044,
+    "cpu_percent": 4.83,
+    "memory_percent": 17.9,
+    "rss_kb": 1498464,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:56Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 17.9,
+    "rss_kb": 1498544,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 153
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:57Z",
+    "pid": 43044,
+    "cpu_percent": 5.11,
+    "memory_percent": 17.9,
+    "rss_kb": 1498160,
+    "vsz_kb": 439394816,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 135
+}
+,
+{
+    "timestamp": "2025-12-12T15:45:59Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.9,
+    "rss_kb": 1498496,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:00Z",
+    "pid": 43044,
+    "cpu_percent": 5.55,
+    "memory_percent": 17.9,
+    "rss_kb": 1498528,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:03Z",
+    "pid": 43044,
+    "cpu_percent": 7.21,
+    "memory_percent": 17.9,
+    "rss_kb": 1498592,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:04Z",
+    "pid": 43044,
+    "cpu_percent": 5.05,
+    "memory_percent": 17.9,
+    "rss_kb": 1498624,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:06Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 17.9,
+    "rss_kb": 1498624,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:07Z",
+    "pid": 43044,
+    "cpu_percent": 5.06,
+    "memory_percent": 17.9,
+    "rss_kb": 1498624,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:10Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1498624,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:11Z",
+    "pid": 43044,
+    "cpu_percent": 5.17,
+    "memory_percent": 17.9,
+    "rss_kb": 1498640,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:13Z",
+    "pid": 43044,
+    "cpu_percent": 7.72,
+    "memory_percent": 17.9,
+    "rss_kb": 1498288,
+    "vsz_kb": 439396912,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 124
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:15Z",
+    "pid": 43044,
+    "cpu_percent": 4.91,
+    "memory_percent": 17.9,
+    "rss_kb": 1498448,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:17Z",
+    "pid": 43044,
+    "cpu_percent": 8.15,
+    "memory_percent": 17.9,
+    "rss_kb": 1498576,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:18Z",
+    "pid": 43044,
+    "cpu_percent": 4.95,
+    "memory_percent": 17.9,
+    "rss_kb": 1498608,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:21Z",
+    "pid": 43044,
+    "cpu_percent": 7.82,
+    "memory_percent": 17.9,
+    "rss_kb": 1498992,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:22Z",
+    "pid": 43044,
+    "cpu_percent": 5.10,
+    "memory_percent": 17.9,
+    "rss_kb": 1499008,
+    "vsz_kb": 439455600,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:24Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 17.9,
+    "rss_kb": 1498912,
+    "vsz_kb": 439432544,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:25Z",
+    "pid": 43044,
+    "cpu_percent": 5.05,
+    "memory_percent": 17.9,
+    "rss_kb": 1498864,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:28Z",
+    "pid": 43044,
+    "cpu_percent": 7.46,
+    "memory_percent": 17.9,
+    "rss_kb": 1498720,
+    "vsz_kb": 439415776,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:29Z",
+    "pid": 43044,
+    "cpu_percent": 5.22,
+    "memory_percent": 17.9,
+    "rss_kb": 1498864,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:31Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1498864,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:32Z",
+    "pid": 43044,
+    "cpu_percent": 4.97,
+    "memory_percent": 17.9,
+    "rss_kb": 1498960,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:35Z",
+    "pid": 43044,
+    "cpu_percent": 7.48,
+    "memory_percent": 17.9,
+    "rss_kb": 1498960,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 127
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:36Z",
+    "pid": 43044,
+    "cpu_percent": 5.06,
+    "memory_percent": 17.9,
+    "rss_kb": 1498864,
+    "vsz_kb": 439438832,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 149
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:38Z",
+    "pid": 43044,
+    "cpu_percent": 7.58,
+    "memory_percent": 17.9,
+    "rss_kb": 1499104,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:39Z",
+    "pid": 43044,
+    "cpu_percent": 4.91,
+    "memory_percent": 17.9,
+    "rss_kb": 1498992,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 151
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:42Z",
+    "pid": 43044,
+    "cpu_percent": 7.57,
+    "memory_percent": 17.9,
+    "rss_kb": 1498896,
+    "vsz_kb": 439436736,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 153
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:43Z",
+    "pid": 43044,
+    "cpu_percent": 5.24,
+    "memory_percent": 17.9,
+    "rss_kb": 1498960,
+    "vsz_kb": 439422064,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:46Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.9,
+    "rss_kb": 1499008,
+    "vsz_kb": 439447216,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 162
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:47Z",
+    "pid": 43044,
+    "cpu_percent": 4.85,
+    "memory_percent": 17.9,
+    "rss_kb": 1498912,
+    "vsz_kb": 439440928,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:49Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1499008,
+    "vsz_kb": 439432544,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 154
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:50Z",
+    "pid": 43044,
+    "cpu_percent": 5.12,
+    "memory_percent": 17.9,
+    "rss_kb": 1498944,
+    "vsz_kb": 439407392,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:53Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.9,
+    "rss_kb": 1498848,
+    "vsz_kb": 439413680,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:54Z",
+    "pid": 43044,
+    "cpu_percent": 4.91,
+    "memory_percent": 17.9,
+    "rss_kb": 1498912,
+    "vsz_kb": 439428336,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:56Z",
+    "pid": 43044,
+    "cpu_percent": 6.66,
+    "memory_percent": 17.9,
+    "rss_kb": 1498976,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:46:57Z",
+    "pid": 43044,
+    "cpu_percent": 5.58,
+    "memory_percent": 17.9,
+    "rss_kb": 1498928,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:00Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.9,
+    "rss_kb": 1499440,
+    "vsz_kb": 439457696,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:01Z",
+    "pid": 43044,
+    "cpu_percent": 4.85,
+    "memory_percent": 17.9,
+    "rss_kb": 1499008,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:03Z",
+    "pid": 43044,
+    "cpu_percent": 7.83,
+    "memory_percent": 17.9,
+    "rss_kb": 1499104,
+    "vsz_kb": 439436736,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:04Z",
+    "pid": 43044,
+    "cpu_percent": 5.14,
+    "memory_percent": 17.9,
+    "rss_kb": 1499088,
+    "vsz_kb": 439453504,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:07Z",
+    "pid": 43044,
+    "cpu_percent": 7.60,
+    "memory_percent": 17.9,
+    "rss_kb": 1499872,
+    "vsz_kb": 439463984,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:08Z",
+    "pid": 43044,
+    "cpu_percent": 4.87,
+    "memory_percent": 17.9,
+    "rss_kb": 1499088,
+    "vsz_kb": 439443024,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 138
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:10Z",
+    "pid": 43044,
+    "cpu_percent": 7.58,
+    "memory_percent": 17.9,
+    "rss_kb": 1498992,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:12Z",
+    "pid": 43044,
+    "cpu_percent": 4.60,
+    "memory_percent": 17.9,
+    "rss_kb": 1499056,
+    "vsz_kb": 439438832,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 154
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:14Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.9,
+    "rss_kb": 1499072,
+    "vsz_kb": 439432544,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:15Z",
+    "pid": 43044,
+    "cpu_percent": 4.86,
+    "memory_percent": 17.9,
+    "rss_kb": 1499040,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:18Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1499088,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:19Z",
+    "pid": 43044,
+    "cpu_percent": 5.13,
+    "memory_percent": 17.9,
+    "rss_kb": 1499120,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:21Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1498896,
+    "vsz_kb": 439440928,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 159
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:22Z",
+    "pid": 43044,
+    "cpu_percent": 4.94,
+    "memory_percent": 17.9,
+    "rss_kb": 1499088,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 140
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:25Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.9,
+    "rss_kb": 1499056,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 150
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:26Z",
+    "pid": 43044,
+    "cpu_percent": 5.21,
+    "memory_percent": 17.9,
+    "rss_kb": 1499536,
+    "vsz_kb": 439472368,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:28Z",
+    "pid": 43044,
+    "cpu_percent": 7.58,
+    "memory_percent": 18.0,
+    "rss_kb": 1508384,
+    "vsz_kb": 472980688,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:29Z",
+    "pid": 43044,
+    "cpu_percent": 4.75,
+    "memory_percent": 17.9,
+    "rss_kb": 1498992,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:32Z",
+    "pid": 43044,
+    "cpu_percent": 9.36,
+    "memory_percent": 17.9,
+    "rss_kb": 1498896,
+    "vsz_kb": 439419968,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 129
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:33Z",
+    "pid": 43044,
+    "cpu_percent": 5.12,
+    "memory_percent": 17.9,
+    "rss_kb": 1499024,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:35Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.9,
+    "rss_kb": 1499040,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 156
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:37Z",
+    "pid": 43044,
+    "cpu_percent": 4.90,
+    "memory_percent": 17.9,
+    "rss_kb": 1499040,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:39Z",
+    "pid": 43044,
+    "cpu_percent": 7.58,
+    "memory_percent": 17.9,
+    "rss_kb": 1499040,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:40Z",
+    "pid": 43044,
+    "cpu_percent": 5.17,
+    "memory_percent": 17.9,
+    "rss_kb": 1498976,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:43Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1499040,
+    "vsz_kb": 439417872,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:44Z",
+    "pid": 43044,
+    "cpu_percent": 4.91,
+    "memory_percent": 17.9,
+    "rss_kb": 1499232,
+    "vsz_kb": 439434640,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 151
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:46Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.9,
+    "rss_kb": 1499008,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:47Z",
+    "pid": 43044,
+    "cpu_percent": 5.15,
+    "memory_percent": 17.9,
+    "rss_kb": 1499008,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:50Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.9,
+    "rss_kb": 1499056,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:51Z",
+    "pid": 43044,
+    "cpu_percent": 4.94,
+    "memory_percent": 17.9,
+    "rss_kb": 1498944,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:53Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.9,
+    "rss_kb": 1498944,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:54Z",
+    "pid": 43044,
+    "cpu_percent": 5.49,
+    "memory_percent": 18.0,
+    "rss_kb": 1509696,
+    "vsz_kb": 472991168,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:57Z",
+    "pid": 43044,
+    "cpu_percent": 7.83,
+    "memory_percent": 18.0,
+    "rss_kb": 1509600,
+    "vsz_kb": 472984880,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:47:58Z",
+    "pid": 43044,
+    "cpu_percent": 5.15,
+    "memory_percent": 18.0,
+    "rss_kb": 1509520,
+    "vsz_kb": 472976496,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:00Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 18.0,
+    "rss_kb": 1509568,
+    "vsz_kb": 472982784,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:01Z",
+    "pid": 43044,
+    "cpu_percent": 4.89,
+    "memory_percent": 17.9,
+    "rss_kb": 1499264,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:04Z",
+    "pid": 43044,
+    "cpu_percent": 7.72,
+    "memory_percent": 18.3,
+    "rss_kb": 1533952,
+    "vsz_kb": 472955536,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 133
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:05Z",
+    "pid": 43044,
+    "cpu_percent": 5.07,
+    "memory_percent": 18.3,
+    "rss_kb": 1536096,
+    "vsz_kb": 472980688,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:08Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.9,
+    "rss_kb": 1499248,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:09Z",
+    "pid": 43044,
+    "cpu_percent": 4.79,
+    "memory_percent": 17.9,
+    "rss_kb": 1499312,
+    "vsz_kb": 439426256,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:11Z",
+    "pid": 43044,
+    "cpu_percent": 7.70,
+    "memory_percent": 17.9,
+    "rss_kb": 1499312,
+    "vsz_kb": 439422064,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 149
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:12Z",
+    "pid": 43044,
+    "cpu_percent": 5.10,
+    "memory_percent": 17.9,
+    "rss_kb": 1499568,
+    "vsz_kb": 439451408,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 142
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:15Z",
+    "pid": 43044,
+    "cpu_percent": 7.57,
+    "memory_percent": 17.9,
+    "rss_kb": 1499248,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:16Z",
+    "pid": 43044,
+    "cpu_percent": 4.86,
+    "memory_percent": 17.9,
+    "rss_kb": 1499312,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:18Z",
+    "pid": 43044,
+    "cpu_percent": 7.71,
+    "memory_percent": 17.9,
+    "rss_kb": 1499248,
+    "vsz_kb": 439434640,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 153
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:19Z",
+    "pid": 43044,
+    "cpu_percent": 5.05,
+    "memory_percent": 17.9,
+    "rss_kb": 1498944,
+    "vsz_kb": 439401104,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 152
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:22Z",
+    "pid": 43044,
+    "cpu_percent": 7.79,
+    "memory_percent": 18.1,
+    "rss_kb": 1517712,
+    "vsz_kb": 472980688,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:23Z",
+    "pid": 43044,
+    "cpu_percent": 4.75,
+    "memory_percent": 17.9,
+    "rss_kb": 1499312,
+    "vsz_kb": 439432544,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 148
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:25Z",
+    "pid": 43044,
+    "cpu_percent": 8.28,
+    "memory_percent": 17.9,
+    "rss_kb": 1499072,
+    "vsz_kb": 439428352,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:26Z",
+    "pid": 43044,
+    "cpu_percent": 4.96,
+    "memory_percent": 17.9,
+    "rss_kb": 1499104,
+    "vsz_kb": 439413680,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 145
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:29Z",
+    "pid": 43044,
+    "cpu_percent": 7.59,
+    "memory_percent": 17.9,
+    "rss_kb": 1499264,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:30Z",
+    "pid": 43044,
+    "cpu_percent": 5.08,
+    "memory_percent": 17.9,
+    "rss_kb": 1499168,
+    "vsz_kb": 439443024,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 142
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:32Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 18.0,
+    "rss_kb": 1510320,
+    "vsz_kb": 472982784,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:34Z",
+    "pid": 43044,
+    "cpu_percent": 4.99,
+    "memory_percent": 17.9,
+    "rss_kb": 1499376,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:36Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 17.9,
+    "rss_kb": 1499312,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:37Z",
+    "pid": 43044,
+    "cpu_percent": 5.34,
+    "memory_percent": 18.3,
+    "rss_kb": 1528720,
+    "vsz_kb": 472978592,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 141
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:40Z",
+    "pid": 43044,
+    "cpu_percent": 7.14,
+    "memory_percent": 17.9,
+    "rss_kb": 1499520,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 159
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:41Z",
+    "pid": 43044,
+    "cpu_percent": 4.96,
+    "memory_percent": 17.9,
+    "rss_kb": 1499808,
+    "vsz_kb": 439424160,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 146
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:43Z",
+    "pid": 43044,
+    "cpu_percent": 8.27,
+    "memory_percent": 18.0,
+    "rss_kb": 1509328,
+    "vsz_kb": 472976496,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 147
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:44Z",
+    "pid": 43044,
+    "cpu_percent": 4.96,
+    "memory_percent": 17.9,
+    "rss_kb": 1499616,
+    "vsz_kb": 439430448,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 131
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:47Z",
+    "pid": 43044,
+    "cpu_percent": 7.58,
+    "memory_percent": 17.9,
+    "rss_kb": 1499552,
+    "vsz_kb": 439422064,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 144
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:48Z",
+    "pid": 43044,
+    "cpu_percent": 2.34,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:50Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:51Z",
+    "pid": 43044,
+    "cpu_percent": 0.16,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:54Z",
+    "pid": 43044,
+    "cpu_percent": 0.58,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:55Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:57Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:48:58Z",
+    "pid": 43044,
+    "cpu_percent": 0.10,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:01Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496352,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:02Z",
+    "pid": 43044,
+    "cpu_percent": 0.10,
+    "memory_percent": 17.8,
+    "rss_kb": 1496368,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:04Z",
+    "pid": 43044,
+    "cpu_percent": 0.35,
+    "memory_percent": 17.8,
+    "rss_kb": 1496368,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:05Z",
+    "pid": 43044,
+    "cpu_percent": 2.52,
+    "memory_percent": 17.8,
+    "rss_kb": 1496368,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:07Z",
+    "pid": 43044,
+    "cpu_percent": 0.23,
+    "memory_percent": 17.8,
+    "rss_kb": 1496368,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:09Z",
+    "pid": 43044,
+    "cpu_percent": 0.05,
+    "memory_percent": 17.8,
+    "rss_kb": 1496368,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:11Z",
+    "pid": 43044,
+    "cpu_percent": 0.11,
+    "memory_percent": 17.8,
+    "rss_kb": 1496368,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:12Z",
+    "pid": 43044,
+    "cpu_percent": 0.26,
+    "memory_percent": 17.8,
+    "rss_kb": 1496400,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:14Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496400,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:15Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496400,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:18Z",
+    "pid": 43044,
+    "cpu_percent": 0.00,
+    "memory_percent": 17.8,
+    "rss_kb": 1496400,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:19Z",
+    "pid": 43044,
+    "cpu_percent": 0.05,
+    "memory_percent": 17.8,
+    "rss_kb": 1496400,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:21Z",
+    "pid": 43044,
+    "cpu_percent": 0.12,
+    "memory_percent": 17.8,
+    "rss_kb": 1496400,
+    "vsz_kb": 439214560,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:22Z",
+    "pid": 43044,
+    "cpu_percent": 2.87,
+    "memory_percent": 17.9,
+    "rss_kb": 1500720,
+    "vsz_kb": 439495424,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 179
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:25Z",
+    "pid": 43044,
+    "cpu_percent": 5.06,
+    "memory_percent": 17.8,
+    "rss_kb": 1496560,
+    "vsz_kb": 439222944,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 48
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:26Z",
+    "pid": 43044,
+    "cpu_percent": 1.52,
+    "memory_percent": 17.9,
+    "rss_kb": 1500560,
+    "vsz_kb": 439491232,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 176
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:28Z",
+    "pid": 43044,
+    "cpu_percent": 2.30,
+    "memory_percent": 17.9,
+    "rss_kb": 1499456,
+    "vsz_kb": 439472368,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 184
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:29Z",
+    "pid": 43044,
+    "cpu_percent": 7.08,
+    "memory_percent": 18.4,
+    "rss_kb": 1547168,
+    "vsz_kb": 472830320,
+    "heap_kb": 2307,
+    "private_kb": 0,
+    "threads": 73
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:32Z",
+    "pid": 43044,
+    "cpu_percent": 6.67,
+    "memory_percent": 18.1,
+    "rss_kb": 1521536,
+    "vsz_kb": 439229776,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 51
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:33Z",
+    "pid": 43044,
+    "cpu_percent": 5.96,
+    "memory_percent": 18.2,
+    "rss_kb": 1527248,
+    "vsz_kb": 439653168,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 262
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:36Z",
+    "pid": 43044,
+    "cpu_percent": 7.68,
+    "memory_percent": 18.2,
+    "rss_kb": 1527520,
+    "vsz_kb": 439640592,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 265
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:37Z",
+    "pid": 43044,
+    "cpu_percent": 3.53,
+    "memory_percent": 18.1,
+    "rss_kb": 1522144,
+    "vsz_kb": 439215104,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:39Z",
+    "pid": 43044,
+    "cpu_percent": 3.00,
+    "memory_percent": 18.2,
+    "rss_kb": 1522592,
+    "vsz_kb": 439236064,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 52
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:40Z",
+    "pid": 43044,
+    "cpu_percent": 3.38,
+    "memory_percent": 18.2,
+    "rss_kb": 1524128,
+    "vsz_kb": 439326192,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 97
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:43Z",
+    "pid": 43044,
+    "cpu_percent": 3.10,
+    "memory_percent": 18.2,
+    "rss_kb": 1525120,
+    "vsz_kb": 439395360,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 143
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:44Z",
+    "pid": 43044,
+    "cpu_percent": 4.11,
+    "memory_percent": 18.2,
+    "rss_kb": 1526912,
+    "vsz_kb": 439215104,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:46Z",
+    "pid": 43044,
+    "cpu_percent": 0.81,
+    "memory_percent": 18.2,
+    "rss_kb": 1527072,
+    "vsz_kb": 439225584,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 47
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:47Z",
+    "pid": 43044,
+    "cpu_percent": 0.42,
+    "memory_percent": 18.3,
+    "rss_kb": 1530896,
+    "vsz_kb": 439475008,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 173
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:50Z",
+    "pid": 43044,
+    "cpu_percent": 7.69,
+    "memory_percent": 18.2,
+    "rss_kb": 1528688,
+    "vsz_kb": 439313616,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 83
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:51Z",
+    "pid": 43044,
+    "cpu_percent": 1.04,
+    "memory_percent": 18.2,
+    "rss_kb": 1527008,
+    "vsz_kb": 439215104,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:53Z",
+    "pid": 43044,
+    "cpu_percent": 0.92,
+    "memory_percent": 18.2,
+    "rss_kb": 1527008,
+    "vsz_kb": 439215104,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:54Z",
+    "pid": 43044,
+    "cpu_percent": 0.63,
+    "memory_percent": 18.2,
+    "rss_kb": 1527008,
+    "vsz_kb": 439215104,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:57Z",
+    "pid": 43044,
+    "cpu_percent": 3.91,
+    "memory_percent": 18.3,
+    "rss_kb": 1531616,
+    "vsz_kb": 439215104,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:49:58Z",
+    "pid": 43044,
+    "cpu_percent": 9.29,
+    "memory_percent": 19.8,
+    "rss_kb": 1663232,
+    "vsz_kb": 439322000,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 95
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:00Z",
+    "pid": 43044,
+    "cpu_percent": 9.75,
+    "memory_percent": 19.9,
+    "rss_kb": 1667424,
+    "vsz_kb": 439623824,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 209
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:01Z",
+    "pid": 43044,
+    "cpu_percent": 10.41,
+    "memory_percent": 21.3,
+    "rss_kb": 1785488,
+    "vsz_kb": 439496064,
+    "heap_kb": 2345,
+    "private_kb": 0,
+    "threads": 206
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:04Z",
+    "pid": 43044,
+    "cpu_percent": 12.22,
+    "memory_percent": 22.0,
+    "rss_kb": 1841536,
+    "vsz_kb": 439537984,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 197
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:05Z",
+    "pid": 43044,
+    "cpu_percent": 2.53,
+    "memory_percent": 21.9,
+    "rss_kb": 1836704,
+    "vsz_kb": 439223584,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 48
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:07Z",
+    "pid": 43044,
+    "cpu_percent": 0.69,
+    "memory_percent": 21.9,
+    "rss_kb": 1836576,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:08Z",
+    "pid": 43044,
+    "cpu_percent": 0.88,
+    "memory_percent": 21.9,
+    "rss_kb": 1836720,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:11Z",
+    "pid": 43044,
+    "cpu_percent": 0.92,
+    "memory_percent": 21.9,
+    "rss_kb": 1836800,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:12Z",
+    "pid": 43044,
+    "cpu_percent": 0.36,
+    "memory_percent": 22.0,
+    "rss_kb": 1846288,
+    "vsz_kb": 472769632,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:14Z",
+    "pid": 43044,
+    "cpu_percent": 0.23,
+    "memory_percent": 21.9,
+    "rss_kb": 1836800,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:15Z",
+    "pid": 43044,
+    "cpu_percent": 0.31,
+    "memory_percent": 21.9,
+    "rss_kb": 1836800,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:18Z",
+    "pid": 43044,
+    "cpu_percent": 0.46,
+    "memory_percent": 21.9,
+    "rss_kb": 1836800,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:19Z",
+    "pid": 43044,
+    "cpu_percent": 0.26,
+    "memory_percent": 21.9,
+    "rss_kb": 1836800,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:21Z",
+    "pid": 43044,
+    "cpu_percent": 0.12,
+    "memory_percent": 21.9,
+    "rss_kb": 1836800,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+,
+{
+    "timestamp": "2025-12-12T15:50:22Z",
+    "pid": 43044,
+    "cpu_percent": 0.83,
+    "memory_percent": 21.9,
+    "rss_kb": 1836832,
+    "vsz_kb": 439215200,
+    "heap_kb": 2443,
+    "private_kb": 0,
+    "threads": 44
+}
+]
