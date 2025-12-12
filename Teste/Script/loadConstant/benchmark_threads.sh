@@ -115,10 +115,9 @@ loadMonitor(){
     PID=$($SSH "cat $LOG_PATH/server.pid")
 
     OUTPUT_JSON="${ENDPOINT}${j}.json"
-
-    $SSH "bash documents/tcc_teste/Teste/Script/monitor.sh $PID $ENDPOINT$j.json"
-
-    $SSH "jcmd $PID JFR.start name=${ENDPOINT}${j} settings=profile filename=${RESULTS_PATH}/${ENDPOINT}/${j}/${ENDPOINT}${j}.jfr"
+    $SSH "bash documents/tcc_teste/Test/Script/monitor.sh $PID $ENDPOINT$j.json"
+    $SSH "mkdir -p '$RESULTS_PATH/$ENDPOINT/$j/monitor'"
+    $SSH "jcmd $PID JFR.start name=${ENDPOINT}${j} settings=profile maxsize=0 maxage=720000 filename=${RESULTS_PATH}/${ENDPOINT}/${j}/${ENDPOINT}${j}.jfr"
 
     echo "Monitor e JFR iniciados (PID: $PID)"
 }
