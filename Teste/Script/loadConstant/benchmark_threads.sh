@@ -51,7 +51,7 @@ warmup(){
             | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup$i.bin" \
             | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"
 
-        cg        
+        gc        
     done
 }
 
@@ -65,7 +65,7 @@ run_warmup(){
         | tee "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/bin/runWarmup.bin" \
         | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/json/runWarmup.json"
 
-    cg
+    gc
 }
 
 loop(){
@@ -136,8 +136,6 @@ for j in {1..10}; do
 
     warmup "${ENDPOINT}" "${j}"
     run_warmup "${ENDPOINT}" "${j}"
-
-    gc
 
     loadMonitor "${ENDPOINT}" "${j}"
 
