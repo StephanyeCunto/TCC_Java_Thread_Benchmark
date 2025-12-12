@@ -119,6 +119,10 @@ loadMonitor(){
     OUTPUT_JSON="${ENDPOINT}${j}.json"
 
     $SSH "bash documents/tcc_teste/Teste/Script/monitor.sh $PID $ENDPOINT$j.json"
+
+    $SSH "jcmd $PID JFR.start name=${ENDPOINT}${j} settings=profile filename=${RESULTS_PATH}/${ENDPOINT}/${j}/${ENDPOINT}${j}.jfr"
+
+    echo "Monitor e JFR iniciados (PID: $PID)"
 }
 
 for j in {1..10}; do
