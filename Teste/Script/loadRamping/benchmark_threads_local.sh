@@ -1,8 +1,8 @@
 # JFR_PATH="/run/media/ste/LinuxDisk/tcc/Test/Script/loadRamping/results/threads"
 # JAVA_JAR_PATH="/run/media/ste/LinuxDisk/tcc/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
 
-JFR_PATH="/Volumes/LinuxDisk/tcc/Test/Script/loadConstant/results/threads/"
-JAVA_JAR_PATH="/Volumes/LinuxDisk/tcc/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
+JFR_PATH="//Users/stephanye/Documents/tcc/Test/Script/loadConstant/results/threads/"
+JAVA_JAR_PATH="/Users/stephanye/Documents/tcc/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
 
 BASE_URL="http://localhost:8080/threads"
 
@@ -75,7 +75,7 @@ loop(){
     ENDPOINT="$1"
     j="$2"
 
-    for i in {1..10}; do
+    for i in {5..10}; do
         RATE=$(((1000 * i)))
         echo "=== Teste $RATE req/s ==="
         echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \

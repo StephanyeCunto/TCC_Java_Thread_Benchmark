@@ -11,7 +11,7 @@ if [ -z "$PID" ]; then
 fi
 
 if [ -z "$OUTPUT" ]; then
-    OUTPUT="monitor_preciso_threads.json"
+    OUTPUT="$2.json"
 fi
 
 CPUS=$(sysctl -n hw.ncpu 2>/dev/null || echo 1)
