@@ -5,9 +5,9 @@
 BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
-JAVA_JAR_PATH="documents/tcc_teste/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
-LOG_PATH="Results/logs"
-RESULTS_PATH="Results/results"
+JAVA_JAR_PATH="documents/tcc_teste/Teste/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
+LOG_PATH="/Results/logs"
+RESULTS_PATH="/Results/results"
 
 
 close_port() {
@@ -108,6 +108,19 @@ create_folders(){
     mkdir -p "$RESULTS_PATH/$ENDPOINT/$j/run/json"
 }
 
+loadMonitor(){
+    ENDPOINT="$1"
+    j="$2"
+
+    echo "=== Load Monitor ==="
+
+    PID=$($SSH "cat $LOG_PATH/server.pid")
+
+    OUTPUT_JSON="${ENDPOINT}${j}.json"
+
+    $SSH "bash documents/tcc_teste/Teste/Script/monitor.sh $PID $ENDPOINT$j.json"
+}
+
 for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
@@ -123,6 +136,8 @@ for j in {1..10}; do
     run_warmup "${ENDPOINT}" "${j}"
 
     gc
+
+    loadMonitor "${ENDPOINT}" "${j}"
 
     loop "${ENDPOINT}" "${j}"
 
