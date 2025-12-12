@@ -5,7 +5,7 @@
 BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
-JAVA_JAR_PATH="documents/tcc_teste/Teste/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
+JAVA_JAR_PATH="documents/tcc_teste/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
 LOG_PATH="Results/logs"
 RESULTS_PATH="Results/results"
 
@@ -51,8 +51,7 @@ warmup(){
             | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup$i.bin" \
             | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"
 
-        curl -s "$BASE_URL/gc"
-        sleep 20
+        cg        
     done
 }
 
@@ -66,8 +65,7 @@ run_warmup(){
         | tee "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/bin/runWarmup.bin" \
         | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/json/runWarmup.json"
 
-    curl -s "$BASE_URL/gc"
-    sleep 60
+    cg
 }
 
 loop(){
