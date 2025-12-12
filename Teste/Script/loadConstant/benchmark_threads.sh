@@ -6,8 +6,8 @@ BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
 JAVA_JAR_PATH="documents/tcc_teste/Teste/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
-LOG_PATH="/Results/logs"
-RESULTS_PATH="/Results/results"
+LOG_PATH="Results/logs"
+RESULTS_PATH="Results/results"
 
 
 close_port() {
@@ -62,7 +62,7 @@ run_warmup(){
 
     echo "=== Run Warm-up ==="
 
-    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=360s -rate=1000 \
+    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=120s -rate=1000 \
         | tee "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/bin/runWarmup.bin" \
         | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/json/runWarmup.json"
 
