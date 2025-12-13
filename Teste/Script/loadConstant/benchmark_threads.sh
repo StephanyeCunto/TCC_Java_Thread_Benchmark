@@ -22,21 +22,24 @@ close_port() {
     sleep 10
 }
 
-start_jfr() {
+start_jvm() {
+    ENDPOINT="$1"
+    j="$2"
+
     close_port
 
     $SSH "
-        mkdir -p $LOG_PATH
-        nohup java -jar $JAVA_JAR_PATH > $LOG_PATH/java.log 2>&1 &
+        mkdir -p $LOG_PATH/$ENDPOINT
+        nohup java -jar $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
         echo \$! > $LOG_PATH/server.pid
     "
  
-    echo 'JFR iniciado'
+    echo 'jvm iniciado'
     sleep 10
 }
 
-stop_jfr() {
-    $SSH "kill \$(cat $LOG_PATH/server.pid); echo 'JFR parado'"
+stop_jvm() {
+    $SSH "kill \$(cat $LOG_PATH/server.pid); echo 'jvm parado'"
 }
 
 warmup(){
@@ -48,9 +51,7 @@ warmup(){
 
         echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
             | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup$i.bin" \
-            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"
-
-        gc        
+            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"        
     done
 }
 
@@ -70,7 +71,6 @@ run_warmup(){
 loop(){
     ENDPOINT="$1"
     j="$2"
-
     echo "=== Loop === "
 
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
@@ -83,8 +83,9 @@ loop(){
 
 gc(){
     echo "=== GC ==="
-    curl -s "$BASE_URL/gc"
     sleep 60
+    curl -s "$BASE_URL/gc"
+    sleep 20
 }
 
 create_folders(){    
@@ -113,20 +114,15 @@ loadMonitor(){
 
     PID=$($SSH "cat $LOG_PATH/server.pid")
 
-    $SSH "mkdir -p documents/tcc_teste/Test/Script/$RESULTS_PATH/$ENDPOINT/$j/monitor"
+    $SSH "mkdir -p documents/tcc_teste/Test/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor"
 
-    $SSH "nohup bash documents/tcc_teste/Test/Script/monitor.sh $PID documents/tcc_teste/Test/Script/$RESULTS_PATH/$ENDPOINT/$j/monitor.json > /dev/null 2>&1 &"
+    $SSH "nohup bash documents/tcc_teste/Test/Script/monitor.sh $PID documents/tcc_teste/Test/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor/monitor.json > /dev/null 2>&1 &"
 
-    $SSH "nohup jcmd $PID JFR.start name=${ENDPOINT}${j} settings=profile maxsize=0 maxage=720000 filename=documents/tcc_teste/Test/Script/$RESULTS_PATH/$ENDPOINT/$j/monitor/results.jfr > /dev/null 2>&1 &"
-
-    echo "Monitor e JFR iniciados (PID: $PID)"
+    echo "Monitor"
 }
 
 
-for j in {8..10}; do
-    echo "Aguardando 10 minutos antes do próximo teste..."
-    sleep 600
-    
+for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
@@ -135,7 +131,7 @@ for j in {8..10}; do
 
     create_folders "${ENDPOINT}" "${j}"
 
-    start_jfr
+    start_jvm ${ENDPOINT} ${j}
 
     warmup "${ENDPOINT}" "${j}"
     run_warmup "${ENDPOINT}" "${j}"
@@ -144,7 +140,8 @@ for j in {8..10}; do
 
     loop "${ENDPOINT}" "${j}"
 
-    stop_jfr
+    stop_jvm
 
-
+    echo "Aguardando 10 minutos antes do próximo teste..."
+    sleep 600
 done
