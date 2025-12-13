@@ -107,6 +107,211 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
 [![Last Commit](https://img.shields.io/github/last-commit/StephanyeCunto/tcc.svg?logo=github)](https://github.com/StephanyeCunto/tcc)
 
+## 📦 Gerenciamento de Arquivos Grandes com Git LFS
+
+Este projeto utiliza **Git Large File Storage (LFS)** para gerenciar arquivos binários grandes, como resultados de benchmarks (`.bin`), dados de teste e arquivos de métricas que excedem os limites práticos do Git convencional.
+
+### 🎯 Por que usar Git LFS?
+
+O Git convencional não é otimizado para arquivos binários grandes porque:
+- Cada versão do arquivo é armazenada completamente no histórico
+- O repositório cresce rapidamente e clones ficam lentos
+- Operações como `git diff` não funcionam bem com binários
+
+O Git LFS resolve isso armazenando apenas **ponteiros** no repositório Git, enquanto os arquivos reais ficam em um servidor LFS separado.
+
+### 📋 Arquivos Rastreados pelo LFS
+
+Os seguintes tipos de arquivo são gerenciados pelo LFS neste projeto:
+
+```
+# Resultados de benchmarks
+*.bin
+
+# Dados de teste e métricas
+*.dat
+*.dump
+
+# Arquivos compactados de resultados
+results/**/*.tar.gz
+results/**/*.zip
+
+# Logs binários grandes
+*.hprof
+*.jfr
+```
+
+### 🔧 Instalação do Git LFS
+
+**Linux (Ubuntu/Debian):**
+```bash
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+git lfs install
+```
+
+**macOS:**
+```bash
+brew install git-lfs
+git lfs install
+```
+
+**Windows:**
+```bash
+# Chocolatey
+choco install git-lfs
+
+# Ou baixe de https://git-lfs.github.com/
+git lfs install
+```
+
+### 🚀 Usando Git LFS no Projeto
+
+#### 1. Clone Inicial do Repositório
+
+```bash
+# Clone normal - LFS faz download automático dos arquivos grandes
+git clone https://github.com/StephanyeCunto/tcc
+cd tcc
+```
+
+#### 2. Verificar Status do LFS
+
+```bash
+# Ver quais arquivos são rastreados pelo LFS
+git lfs ls-files
+
+# Ver arquivos LFS no último commit
+git lfs ls-files -n
+
+# Ver detalhes de rastreamento
+git lfs track
+```
+
+#### 3. Adicionar Novos Tipos de Arquivo ao LFS
+
+```bash
+# Adicionar padrão de arquivo (atualiza .gitattributes)
+git lfs track "*.bin"
+git lfs track "results/**/*.tar.gz"
+
+# Verificar o que foi adicionado
+cat .gitattributes
+
+# Commitar as mudanças
+git add .gitattributes
+git commit -m "feat: adicionar arquivos .bin ao Git LFS"
+```
+
+#### 4. Workflow Normal com Arquivos LFS
+
+```bash
+# Adicionar arquivo grande
+cp resultado_benchmark.bin Teste/Script/loadConstant/results/
+git add Teste/Script/loadConstant/results/resultado_benchmark.bin
+
+# Git LFS processa automaticamente
+git commit -m "test: adicionar resultados do benchmark tradicional"
+git push origin main
+```
+
+#### 5. Comandos Úteis
+
+```bash
+# Ver tamanho dos objetos LFS
+git lfs ls-files -s
+
+# Buscar apenas ponteiros (clone rápido)
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/StephanyeCunto/tcc
+
+# Baixar arquivos LFS posteriormente
+git lfs pull
+
+# Buscar arquivos LFS de um branch específico
+git lfs fetch origin main
+git lfs checkout
+
+# Limpar cache local do LFS
+git lfs prune
+```
+
+### 📊 Estrutura do .gitattributes
+
+O arquivo `.gitattributes` na raiz do projeto define quais arquivos são rastreados pelo LFS:
+
+```gitattributes
+# Resultados de benchmarks
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
+*.dump filter=lfs diff=lfs merge=lfs -text
+
+# Arquivos compactados grandes
+results/**/*.tar.gz filter=lfs diff=lfs merge=lfs -text
+results/**/*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Profiling e dumps
+*.hprof filter=lfs diff=lfs merge=lfs -text
+*.jfr filter=lfs diff=lfs merge=lfs -text
+
+# PDFs de trabalhos relacionados (opcional)
+Trabalhos_Relacionados/**/*.pdf filter=lfs diff=lfs merge=lfs -text
+```
+
+### 🔍 Verificando se Arquivos Estão no LFS
+
+```bash
+# Ver ponteiros LFS em vez do conteúdo real
+git lfs pointer --file=resultado.bin
+
+# Comparar tamanho: arquivo local vs ponteiro no Git
+ls -lh resultado.bin
+git cat-file -p HEAD:resultado.bin | head -n 5
+```
+
+**Saída esperada de um ponteiro LFS:**
+```
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d7a214614ab2935c943f9e0ff69d22ebbe7fc6ac0000000000000000000
+size 524288000
+```
+
+### ⚠️ Limites e Boas Práticas
+
+| Aspecto | Limite/Recomendação |
+|---------|---------------------|
+| **Tamanho por arquivo** | Até 2 GB por arquivo (GitHub) |
+| **Quota mensal** | 1 GB bandwidth + 1 GB storage (gratuito) |
+| **Tamanho total do repo** | Manter < 5 GB de arquivos LFS |
+| **Arquivos pequenos** | < 100 MB não precisam de LFS |
+
+**Boas práticas:**
+- Não rastreie arquivos que mudam frequentemente (ex: logs de desenvolvimento)
+- Use `.gitignore` para arquivos temporários antes de `.gitattributes`
+- Comprima arquivos grandes quando possível (`.tar.gz` em vez de pasta)
+
+### 🐛 Problemas Comuns
+
+| Problema | Solução |
+|----------|---------|
+| **Arquivo não está no LFS após commit** | Execute `git lfs migrate import --include="*.bin"` |
+| **Clone muito lento** | Use `GIT_LFS_SKIP_SMUDGE=1 git clone` e depois `git lfs pull` |
+| **Erro de quota excedida** | Remova arquivos antigos do histórico ou use Git LFS Server próprio |
+| **Arquivo grande commitado antes do LFS** | Use `git lfs migrate` para mover para LFS retroativamente |
+
+**Migrar arquivo já commitado:**
+```bash
+# Migrar arquivo específico para LFS
+git lfs migrate import --include="*.bin" --everything
+
+# Verificar histórico
+git lfs ls-files
+
+# Force push (cuidado em repos compartilhados!)
+git push origin main --force
+```
+
+---
+
 ## ☁️ Sincronização Automática com Google Drive
 
 Este repositório sincroniza automaticamente com o Google Drive após cada commit usando **Rclone** e **Git Hooks**, mantendo um backup sempre atualizado do projeto.
@@ -809,6 +1014,14 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 - [☁️ Google Drive with Rclone](https://rclone.org/drive/) - Guia específico para Google Drive
 - [🎯 Rclone Filtering](https://rclone.org/filtering/) - Como filtrar arquivos na sincronização
 - [🔄 Rclone Commands](https://rclone.org/commands/) - Referência completa de comandos
+
+---
+
+## Arquivos Grandes
+- [📘 Git LFS Documentation](https://git-lfs.github.com/) - Documentação oficial
+- [🐙 GitHub LFS Guide](https://docs.github.com/en/repositories/working-with-files/managing-large-files) - Guia do GitHub
+- [🔧 Git LFS Tutorial](https://www.atlassian.com/git/tutorials/git-lfs) - Tutorial da Atlassian
+- [💡 Git LFS Best Practices](https://github.com/git-lfs/git-lfs/wiki/Tutorial) - Wiki oficial
 
 ---
 
