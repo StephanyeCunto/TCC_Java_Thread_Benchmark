@@ -48,9 +48,7 @@ warmup(){
 
         echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
             | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup$i.bin" \
-            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"
-
-        gc        
+            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"        
     done
 }
 
@@ -70,7 +68,6 @@ run_warmup(){
 loop(){
     ENDPOINT="$1"
     j="$2"
-
     echo "=== Loop === "
 
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
@@ -83,8 +80,9 @@ loop(){
 
 gc(){
     echo "=== GC ==="
-    curl -s "$BASE_URL/gc"
     sleep 60
+    curl -s "$BASE_URL/gc"
+    sleep 20
 }
 
 create_folders(){    
@@ -121,10 +119,7 @@ loadMonitor(){
 }
 
 
-for j in {8..10}; do
-    echo "Aguardando 10 minutos antes do próximo teste..."
-    sleep 600
-    
+for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
@@ -144,5 +139,6 @@ for j in {8..10}; do
 
     stop_jfr
 
-
+    echo "Aguardando 10 minutos antes do próximo teste..."
+    sleep 600
 done
