@@ -23,11 +23,14 @@ close_port() {
 }
 
 start_jvm() {
+    ENDPOINT="$1"
+    j="$2"
+
     close_port
 
     $SSH "
-        mkdir -p $LOG_PATH
-        nohup java -jar $JAVA_JAR_PATH > $LOG_PATH/java.log 2>&1 &
+        mkdir -p $LOG_PATH/$ENDPOINT
+        nohup java -jar $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
         echo \$! > $LOG_PATH/server.pid
     "
  
@@ -128,7 +131,7 @@ for j in {1..10}; do
 
     create_folders "${ENDPOINT}" "${j}"
 
-    start_jvm
+    start_jvm ${ENDPOINT} ${j}
 
     warmup "${ENDPOINT}" "${j}"
     run_warmup "${ENDPOINT}" "${j}"
