@@ -22,7 +22,7 @@ close_port() {
     sleep 10
 }
 
-start_jfr() {
+start_jvm() {
     close_port
 
     $SSH "
@@ -31,12 +31,12 @@ start_jfr() {
         echo \$! > $LOG_PATH/server.pid
     "
  
-    echo 'JFR iniciado'
+    echo 'jvm iniciado'
     sleep 10
 }
 
-stop_jfr() {
-    $SSH "kill \$(cat $LOG_PATH/server.pid); echo 'JFR parado'"
+stop_jvm() {
+    $SSH "kill \$(cat $LOG_PATH/server.pid); echo 'jvm parado'"
 }
 
 warmup(){
@@ -106,7 +106,7 @@ for j in {1..10}; do
     
     create_folders "${ENDPOINT}" "${j}"
     
-    start_jfr 
+    start_jvm 
 
     warmup ${ENDPOINT} ${j}
 
@@ -114,7 +114,7 @@ for j in {1..10}; do
 
     loop ${ENDPOINT} ${j}
 
-    stop_jfr   
+    stop_jvm   
 
     echo "Aguardando 10 minutos antes do próximo teste..."
     sleep 600
