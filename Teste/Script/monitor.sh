@@ -1,37 +1,45 @@
 #!/bin/bash
 
-# ./monitor_preciso_threads.sh <PID> <arquivo_saida.json>
-
 PID=$1
 OUTPUT=$2
 
-if [ -z "$PID" ]; then
-    echo "Uso: ./monitor_preciso_threads.sh <PID> <arquivo_saida.json>"
-    exit 1
-fi
-
-if [ -z "$OUTPUT" ]; then
-    OUTPUT="$2.json"
-fi
-
+OUTPUT=${OUTPUT:-monitor_output.json}
 CPUS=$(sysctl -n hw.ncpu 2>/dev/null || echo 1)
 
 convert_time_to_seconds() {
     t="$1"
+    if [ -z "$t" ]; then echo 0; return; fi
+
     echo "$t" | awk -F: '{
         if (NF==3) { print ($1*3600 + $2*60 + $3) }
         else if (NF==2) { print ($1*60 + $2) }
-        else { print $0 }
+        else if (NF==1) { print $1 }
+        else { print 0 }
     }'
 }
 
 echo "[" > "$OUTPUT"
-FIRST=true
+FIRST_SAMPLE=true 
 
-read UT0 ST0 < <(ps -p "$PID" -o utime= -o stime= 2>/dev/null)
-CPU0=$(awk "BEGIN{print $(convert_time_to_seconds "$UT0") + $(convert_time_to_seconds "$ST0")}")
-TS0=$(date +%s.%N 2>/dev/null)
-COUNT=0
+CPU0=0
+TS0=$(date +%s.%N)
+
+finish() {
+    if [ -s "$OUTPUT" ]; then
+        if [ "$(tail -c 2 "$OUTPUT" | head -c 1)" == "," ]; then
+            truncate -s -1 "$OUTPUT"
+        fi
+        echo "]" >> "$OUTPUT"
+    else
+        echo "]" >> "$OUTPUT"
+    fi
+
+    echo "Pronto: Dados de monitoramento salvos em: $OUTPUT"
+    trap - INT TERM EXIT
+    exit 0
+}
+
+trap finish INT TERM
 
 while true; do
     START_TS=$(date +%s.%N)
@@ -40,37 +48,63 @@ while true; do
         break
     fi
 
-    read UT ST < <(ps -p "$PID" -o utime= -o stime= 2>/dev/null)
-    CPU_NOW=$(awk "BEGIN{print $(convert_time_to_seconds "$UT") + $(convert_time_to_seconds "$ST")}")
-    TS_NOW=$(date +%s.%N 2>/dev/null)
-
-    DELTA_CPU=$(awk "BEGIN{print $CPU_NOW - $CPU0}")
-    DELTA_T=$(awk "BEGIN{print $TS_NOW - $TS0}")
-
-    if awk "BEGIN{print ($DELTA_T <= 0)}" | grep -q 1; then
-        CPU_PERCENT=0
-    else
-        CPU_PERCENT=$(awk "BEGIN{printf \"%.2f\", ($DELTA_CPU / $DELTA_T) * 100 / ($CPUS)}")
-    fi
-
-    CPU0=$CPU_NOW
-    TS0=$TS_NOW
-
-    read RSS VSZ MEM_PERCENT THREADS < <(ps -p "$PID" -o rss= -o vsz= -o %mem= -o thcount= 2>/dev/null | awk '{print $1,$2,$3,$4}')
+    READINGS=$(ps -p "$PID" -o utime= -o stime= -o rss= -o vsz= -o %mem= -o thcount= 2>/dev/null)
     
-    HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null | awk '/MALLOC/ {sum += $3} END {print sum+0}')
-    HEAP=${HEAP_RAW:-0}
-
-    TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-
+    if [ -z "$READINGS" ]; then
+        sleep 0.1
+        continue
+    fi
+    
+    read UT ST RSS VSZ MEM_PERCENT THREADS < <(echo "$READINGS")
+    
+    UT=${UT:-0}
+    ST=${ST:-0}
     RSS=${RSS:-0}
     VSZ=${VSZ:-0}
-    MEM_PERCENT=${MEM_PERCENT:-0}
-    HEAP=${HEAP:-0}
+    MEM_PERCENT=${MEM_PERCENT:-0.00}
     THREADS=${THREADS:-0}
-    CPU_PERCENT=${CPU_PERCENT:-0.00}
+    
+    CPU_NOW=$(convert_time_to_seconds "$UT")
+    CPU_NOW=$(bc -l <<< "$CPU_NOW + $(convert_time_to_seconds "$ST")")
+    TS_NOW=$(date +%s.%N)
 
-    ENTRY=$(cat <<EOF
+    if [ "$FIRST_SAMPLE" = true ]; then        
+        CPU0=$CPU_NOW
+        TS0=$TS_NOW
+        FIRST_SAMPLE=false 
+        
+        
+    else
+        DELTA_CPU=$(bc -l <<< "$CPU_NOW - $CPU0")
+        DELTA_T=$(bc -l <<< "$TS_NOW - $TS0")
+
+        CPU_PERCENT=$(awk "BEGIN {
+            DELTA_CPU = $DELTA_CPU;
+            DELTA_T = $DELTA_T;
+            CPUS = $CPUS;
+            
+            if (DELTA_T > 0) { 
+                TOTAL_USE = (DELTA_CPU / DELTA_T) * 100;
+                NORMALIZED = TOTAL_USE / CPUS;
+                
+                if (NORMALIZED > 100) { 
+                    printf \"%.2f\", 100.00 
+                } else { 
+                    printf \"%.2f\", NORMALIZED 
+                }
+            } else { 
+                printf \"%.2f\", 0.00 
+            }
+        }")
+        
+        HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null | awk '/MALLOC/ {sum+=$3} END {print sum+0}')
+        HEAP=$(bc -l <<< "scale=0; $HEAP_RAW / 1024")
+        HEAP=${HEAP%.*} 
+        HEAP=${HEAP:-0}
+
+        TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+        ENTRY=$(cat <<EOF
 {
     "timestamp": "$TIMESTAMP",
     "pid": $PID,
@@ -83,28 +117,22 @@ while true; do
 }
 EOF
 )
+        if [ "$(wc -l < "$OUTPUT")" -gt 1 ]; then
+            echo "," >> "$OUTPUT"
+        fi
+        echo "$ENTRY" >> "$OUTPUT"
 
-    if [ "$FIRST" = true ]; then
-        FIRST=false
-    else
-        echo "," >> "$OUTPUT"
+        CPU0=$CPU_NOW
+        TS0=$TS_NOW
     fi
-    echo "$ENTRY" >> "$OUTPUT"
-
-    COUNT=$((COUNT + 1))
 
     END_TS=$(date +%s.%N)
-    ELAPSED=$(awk "BEGIN {print $END_TS - $START_TS}")
-    SLEEP_TIME=$(awk "BEGIN {print 1 - $ELAPSED}")
+    ELAPSED=$(bc -l <<< "$END_TS - $START_TS")
+    SLEEP_TIME=$(bc -l <<< "1 - $ELAPSED")
+    
     if (( $(echo "$SLEEP_TIME > 0" | bc -l) )); then
-        sleep $SLEEP_TIME
+        sleep "$SLEEP_TIME"
     fi
 done
 
-finish() {
-    echo "]" >> "$OUTPUT"
-    echo "Pronto: $OUTPUT"
-    exit 0
-}
-
-trap finish INT TERM EXIT
+finish
