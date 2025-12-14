@@ -1034,3 +1034,69 @@
                 </table>
                 `;
          }
+
+        function makeBarChart(elementId, data, field, label, unit) {
+            const t = data.filter(d => d.type === 'traditional' || d.endpoint === 'traditional');
+            const v = data.filter(d => d.type === 'virtual' || d.endpoint === 'virtual');
+            const ctx = document.getElementById(elementId);
+            charts[elementId] = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(d => `Exec ${d.exec}`),
+                datasets: [
+                {
+                    label: `${label} Traditional`,
+                    data: t.map(d => d[field]),
+                    backgroundColor: colors.traditional
+                },
+                {
+                    label: `${label} Virtual`,
+                    data: v.map(d => d[field]),
+                    backgroundColor: colors.virtual
+                }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: `${label} (${unit})` }
+                }
+                }
+            }
+            });
+        }
+
+        function makeScatterChart(elementId, data, xField, yField, xLabel, yLabel) {
+            const ctx = document.getElementById(elementId);
+            charts[elementId] = new Chart(ctx, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                {
+                    label: 'Traditional',
+                    data: data.filter(d => d.type === 'traditional').map(d => ({x: d[xField], y: d[yField]})),
+                    backgroundColor: colors.traditional
+                },
+                {
+                    label: 'Virtual',
+                    data: data.filter(d => d.type === 'virtual').map(d => ({x: d[xField], y: d[yField]})),
+                    backgroundColor: colors.virtual
+                }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                x: { title: { display: true, text: xLabel } },
+                y: { title: { display: true, text: yLabel } }
+                }
+            }
+            });
+        }
+
+        loadAllData();
+        </script>
+    </body>
+</html>
