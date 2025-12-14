@@ -100,6 +100,21 @@ create_folders(){
     mkdir -p "$RESULTS_PATH/$ENDPOINT/$j/run/json"
 }
 
+loadMonitor(){
+    ENDPOINT="$1"
+    j="$2"
+
+    echo "=== Load Monitor ==="
+
+    PID=$($SSH "cat $LOG_PATH/server.pid")
+
+    $SSH "mkdir -p documents/tcc_teste/Test/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor"
+
+    $SSH "nohup bash documents/tcc_teste/Test/Script/monitor.sh $PID documents/tcc_teste/Test/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor/monitor.json > /dev/null 2>&1 &"
+
+    echo "Monitor"
+}
+
 for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
@@ -114,6 +129,8 @@ for j in {1..10}; do
     warmup ${ENDPOINT} ${j}
 
     gc
+
+    loadMonitor "${ENDPOINT}" "${j}"
 
     loop ${ENDPOINT} ${j}
 
