@@ -9,6 +9,49 @@ JAVA_JAR_PATH="documents/tcc_teste/Test/Serve_Test/benchmark-server/target/bench
 LOG_PATH="documents/tcc_teste/Test/Script/LoadConstant/Results/logs"
 RESULTS_PATH="Results/results"
 
+prepare_environment() {
+    echo "=== Preparando ambiente no servidor (macOS Apple Silicon) ==="
+
+    SENHA_SUDO="120504"
+
+    $SSH "
+        echo '>> ulimit (max files)'
+        ulimit -n unlimited
+        ulimit -s unlimited
+
+
+        echo '>> sysctl macOS (files & network)'
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfiles=1048576
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfilesperproc=1048576
+        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=1024
+        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.maxsockbuf=8388608
+
+        echo '>> sysctl macOS (processes)'
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxproc=2000
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxprocperuid=10000
+
+        echo '>> sysctl macOS (TCP buffers)'
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.sendspace=2097152
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.recvspace=2097152
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.msl=250
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.delayed_ack=0
+
+        echo '>> sysctl macOS (EPHEMERAL PORT RANGE)'
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.ip.portrange.first=1024
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.ip.portrange.last=65535
+
+        echo '>> Conferência portas efêmeras'
+        sysctl net.inet.ip.portrange.first
+        sysctl net.inet.ip.portrange.last
+
+        echo '>> Informações do sistema'
+        uname -a
+        sysctl -n hw.ncpu
+        sysctl -n hw.memsize | awk '{print \$1/1024/1024/1024 \" GB\"}'
+        ulimit -n
+    "
+}
+
 close_port() {
     result=$($SSH "lsof -t -i :8080")
 
@@ -30,7 +73,7 @@ start_jvm() {
 
     $SSH "
         mkdir -p $LOG_PATH/$ENDPOINT
-        nohup java -jar $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
+        nohup java -jar --enable-native-access=ALL-UNNAMED $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
         echo \$! > $LOG_PATH/server.pid
     "
  
@@ -121,6 +164,7 @@ loadMonitor(){
     echo "Monitor"
 }
 
+prepare_environment
 
 for j in {1..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
