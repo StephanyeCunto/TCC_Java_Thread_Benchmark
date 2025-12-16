@@ -17,17 +17,16 @@ prepare_environment() {
     $SSH "
         echo '>> ulimit (max files)'
         ulimit -n unlimited
-        ulimit -s unlimited
-
+        ulimit -s 65532
 
         echo '>> sysctl macOS (files & network)'
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfiles=1048576
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfilesperproc=1048576
-        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=1024
+        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=4096
         echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.maxsockbuf=8388608
 
         echo '>> sysctl macOS (processes)'
-        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxproc=2000
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxproc=10000
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxprocperuid=10000
 
         echo '>> sysctl macOS (TCP buffers)'
@@ -92,7 +91,7 @@ warmup(){
     for i in {1..3}; do
         echo "=== Warm-up === $i"
 
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 -timeout=70s \
             | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup$i.bin" \
             | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"        
     done
@@ -104,7 +103,7 @@ run_warmup(){
 
     echo "=== Run Warm-up ==="
 
-    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=120s -rate=1000 \
+    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=120s -rate=1000 -timeout=70s \
         | tee "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/bin/runWarmup.bin" \
         | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/json/runWarmup.json"
 
@@ -119,7 +118,7 @@ loop(){
     echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
         -duration="600s" \
         -rate="1000" \
-        -timeout=0s \
+        -timeout=70s \
         | tee "$RESULTS_PATH/$ENDPOINT/$j/run/bin/run${j}.bin" \
         | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/run/json/run${j}.json"
 }
@@ -166,7 +165,7 @@ loadMonitor(){
 
 prepare_environment
 
-for j in {1..10}; do
+for j in {16..20}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else

@@ -1,6 +1,6 @@
 let perfData = [], monData = [], combData = [];
 const colors = { traditional: '#e74c3c', virtual: '#27ae60', neutral: '#3498db' };
-const EXEC = { traditional: [1,3,5,7,9], virtual: [2,4,6,8,10] };
+const EXEC = { traditional: [1,3,5,7,9,11,13,15,17,19], virtual: [2,4,6,8,10,12,14,16,18,20] };
 let charts = {};
 
 function switchTab(tab) {
