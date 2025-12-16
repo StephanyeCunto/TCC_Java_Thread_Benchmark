@@ -50,34 +50,16 @@ loadMonitor() {
 
     echo "=== Load Monitor ==="
 
-    # --- TRY: obter PID ---
-    PID=$($SSH "cat $LOG_PATH/server.pid" 2>/dev/null) || {
-        echo "[ERRO] Não foi possível obter o PID do servidor"
-        return 1
-    }
+    PID=$($SSH "cat $LOG_PATH/server.pid" 2>/dev/null)
 
-    if [ -z "$PID" ]; then
-        echo "[ERRO] PID vazio"
-        return 1
-    fi
+    $SSH "mkdir -p Documents/tcc/Teste/Script/$ADRESS/$RESULTS_PATH/$ENDPOINT/$j/monitor"
 
-    # --- TRY: criar diretório ---
-    $SSH "mkdir -p Documents/tcc/Teste/Script/$ADRESS/$RESULTS_PATH/$ENDPOINT/$j/monitor/monitor.json"|| {
-        echo "[ERRO] Falha ao criar diretório de monitoramento"
-        return 1
-    }
-
-    # --- TRY: iniciar monitor ---
     $SSH "
-        nohup bash Documents/tcc/TesteScript/monitor.sh \
+        nohup bash Documents/tcc/Teste/Script/monitor.sh \
         $PID \
         Documents/tcc/Teste/Script/$ADRESS/$RESULTS_PATH/$ENDPOINT/$j/monitor/monitor.json \
         > /dev/null 2>&1 &
-    " || {
-        echo "[ERRO] Falha ao iniciar o monitor"
-        return 1
-    }
-
-    echo "[OK] Monitor iniciado (PID monitorando: $PID)"
+    "
 }
+
 
