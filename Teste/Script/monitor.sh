@@ -3,7 +3,6 @@
 PID=$1
 OUTPUT=$2
 
-OUTPUT=${OUTPUT:-monitor_output.json}
 CPUS=$(sysctl -n hw.ncpu 2>/dev/null || echo 1)
 
 if [ -z "$PID" ]; then
@@ -40,15 +39,19 @@ while ps -p "$PID" > /dev/null 2>&1; do
         continue
     fi
 
-    read CPU_PERCENT MEM_PERCENT RSS VSZ THREADS <<< "$READINGS"
+    read CPU_RAW MEM_PERCENT RSS VSZ THREADS <<< "$READINGS"
 
-    CPU_PERCENT=${CPU_PERCENT:-0.00}
+    CPU_RAW=${CPU_RAW:-0.00}
     MEM_PERCENT=${MEM_PERCENT:-0.00}
     RSS=${RSS:-0}
     VSZ=${VSZ:-0}
     THREADS=${THREADS:-0}
 
-    HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null | awk '/MALLOC/ {sum+=$3} END {print sum+0}')
+    # 🔹 CPU NORMALIZADA (0–100%)
+    CPU_NORMALIZED=$(awk "BEGIN {printf \"%.2f\", $CPU_RAW / $CPUS}")
+
+    HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null \
+        | awk '/MALLOC/ {sum+=$3} END {printf "%.0f", sum}')
     HEAP=$((HEAP_RAW / 1024))
     HEAP=${HEAP:-0}
 
@@ -63,7 +66,7 @@ while ps -p "$PID" > /dev/null 2>&1; do
 {
     "timestamp": "$TIMESTAMP",
     "pid": $PID,
-    "cpu_percent": $(printf "%.2f" "$CPU_PERCENT"),
+    "cpu_percent": $CPU_NORMALIZED,
     "memory_percent": $(printf "%.2f" "$MEM_PERCENT"),
     "rss_kb": $RSS,
     "vsz_kb": $VSZ,
