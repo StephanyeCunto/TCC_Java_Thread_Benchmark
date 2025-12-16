@@ -16,16 +16,23 @@ prepare_environment() {
 
     $SSH "
         echo '>> ulimit (max files)'
-        ulimit -n 1048576 || true
+        ulimit -n unlimited
+        ulimit -s 65532
 
         echo '>> sysctl macOS (files & network)'
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfiles=1048576
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfilesperproc=1048576
+        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=4096
+        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.maxsockbuf=8388608
+
+        echo '>> sysctl macOS (processes)'
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxproc=10000
+        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxprocperuid=10000
 
         echo '>> sysctl macOS (TCP buffers)'
         echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.sendspace=2097152
         echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.recvspace=2097152
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.msl=1000
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.msl=250
         echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.delayed_ack=0
 
         echo '>> sysctl macOS (EPHEMERAL PORT RANGE)'
@@ -82,12 +89,25 @@ warmup(){
     ENDPOINT="$1"
     j="$2"
 
-    for i in {1..3}; do
-        echo "=== Warm-up === $i"
+    echo "=== Warm-up === "
 
-        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 \
-            | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup$i.bin" \
-            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup$i.json"
+    echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=300 -timeout=70s \
+        | tee "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin/warmup.bin" \
+        | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/warmup/json/warmup.json"
+}
+
+runWarmup(){
+    ENDPOINT="$1"
+    j="$2"
+
+    for i in {1..3}; do
+    sleep 20
+    
+        echo "=== RunWarm-up === $i"
+
+        echo "GET $BASE_URL/$ENDPOINT" | vegeta attack -duration=60s -rate=1000 -timeout=70s \
+            | tee "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/bin/runWarmup$i.bin" \
+            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/runWarmup/json/runWarmup$i.json"
     done
 }
 
@@ -102,7 +122,7 @@ loop(){
         echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
             -duration="10s" \
             -rate="$RATE" \
-            -timeout=0s \
+            -timeout=70s \
             | tee "$RESULTS_PATH/$ENDPOINT/$j/run/bin/run${RATE}.bin" \
             | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/run/json/run${RATE}.json"
 
@@ -151,7 +171,7 @@ loadMonitor(){
     echo "Monitor"
 }
 
-for j in {1..10}; do
+for j in {11..20}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
@@ -163,6 +183,8 @@ for j in {1..10}; do
     start_jvm "${ENDPOINT}" "${j}"
 
     warmup "${ENDPOINT}" "${j}"
+
+    runWarmup "${ENDPOINT}" "${j}"
 
     gc
 
