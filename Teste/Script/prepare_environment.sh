@@ -1,4 +1,6 @@
 
+LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
+
 prepare_environment(){
     echo "=== Preparando ambiente no servidor (macOS Apple Silicon) ==="
 
@@ -41,17 +43,41 @@ prepare_environment(){
     "
 }
 
-loadMonitor(){
+loadMonitor() {
     ENDPOINT="$1"
     j="$2"
+    ADRESS="$3"
 
     echo "=== Load Monitor ==="
 
-    PID=$($SSH "cat $LOG_PATH/server.pid")
+    # --- TRY: obter PID ---
+    PID=$($SSH "cat $LOG_PATH/server.pid" 2>/dev/null) || {
+        echo "[ERRO] Não foi possível obter o PID do servidor"
+        return 1
+    }
 
-    $SSH "mkdir -p Documents/tcc/Teste/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor"
+    if [ -z "$PID" ]; then
+        echo "[ERRO] PID vazio"
+        return 1
+    fi
 
-    $SSH "nohup bash Documents/tcc/TesteScript/monitor.sh $PID Documents/tcc/Teste/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor/monitor.json > /dev/null 2>&1 &"
+    # --- TRY: criar diretório ---
+    $SSH "mkdir -p Documents/tcc/Teste/Script/$ADRESS/$RESULTS_PATH/$ENDPOINT/$j/monitor/monitor.json"|| {
+        echo "[ERRO] Falha ao criar diretório de monitoramento"
+        return 1
+    }
 
-    echo "Monitor"
+    # --- TRY: iniciar monitor ---
+    $SSH "
+        nohup bash Documents/tcc/TesteScript/monitor.sh \
+        $PID \
+        Documents/tcc/Teste/Script/$ADRESS/$RESULTS_PATH/$ENDPOINT/$j/monitor/monitor.json \
+        > /dev/null 2>&1 &
+    " || {
+        echo "[ERRO] Falha ao iniciar o monitor"
+        return 1
+    }
+
+    echo "[OK] Monitor iniciado (PID monitorando: $PID)"
 }
+
