@@ -1,6 +1,3 @@
-BASE_URL="http://$1:8080/threads"
-SSH="ssh stephanye@$1"
-
 close_port() {
     result=$($SSH "lsof -t -i :8080")
 
