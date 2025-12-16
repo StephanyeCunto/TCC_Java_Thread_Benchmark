@@ -107,7 +107,7 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
 [![Last Commit](https://img.shields.io/github/last-commit/StephanyeCunto/tcc.svg?logo=github)](https://github.com/StephanyeCunto/tcc)
-
+<!-- 
 ## 📦 Gerenciamento de Arquivos Grandes com Git LFS
 
 Este projeto utiliza **Git Large File Storage (LFS)** para gerenciar arquivos binários grandes, como resultados de benchmarks (`.bin`), dados de teste e arquivos de métricas que excedem os limites práticos do Git convencional.
@@ -309,7 +309,7 @@ git lfs ls-files
 
 # Force push (cuidado em repos compartilhados!)
 git push origin main --force
-```
+``` -->
 
 ---
 

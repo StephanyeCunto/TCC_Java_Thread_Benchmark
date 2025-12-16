@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Benchmark</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Dashboard Benchmark</h1>
+
+    <div id="latencia" style="width:100%;height:500px;"></div>
+    <div id="throughput" style="width:100%;height:500px;"></div>
+    <div id="cpu_mem" style="width:100%;height:500px;"></div>
+    <div id="threads" style="width:100%;height:500px;"></div>
+
+    <script>
+        // CSV copiado como string
+        const csvData = `modelo,carga,run,lat_mean_s,lat_p50_s,lat_p90_s,lat_p95_s,lat_p99_s,lat_max_s,requests,rate,throughput,success,bytes_in_total,cpu_mean,cpu_max,mem_mean,mem_max,rss_mean_kb,rss_max_kb,threads_mean,threads_max
+results,traditional,11,0.320973627,0.112335991,0.848603754,1.028229405,1.204868522,1.34060762,600000,1000.0010170027009,999.511211396135,1,22200000,0.027213647441104497,2.87,8.972258326563434,9.7,749231.0251827782,816992,35.446791226645004,64
+results,traditional,13,0.328023316,0.112961434,0.866127791,1.042714353,1.222318653,1.474307467,600000,1000.0015705791334,999.7187851090601,1,22200000,6.469442815249269,9.34,12.81700879765394,13.9,1075689.384164223,1164128,144.87976539589442,297
+results,traditional,15,0.424468174,0.133083503,0.967156017,1.154951465,3.073654913,30.649318429,599999,1000.0002360521158,999.7185882083329,0.9998966664944442,22197669,6.511588235294121,11.7,17.02999999999999,20.5,1428789.9764705882,1723088,146.2058823529412,266
+results,traditional,17,0.368893219,0.133811441,0.940893668,1.118324441,1.461518878,6.966492633,600000,1000.0013658351988,998.2060980259284,1,22200000,6.4269387755102,13.4,12.745481049562608,14.7,1069264.6530612244,1229440,142.68804664723032,296
+results,traditional,19,0.338842362,0.127471901,0.864877472,1.050984307,1.238443213,6.709974309,600000,1000.000292391752,999.8201786332064,1,22200000,6.464210526315786,14.25,11.37836257309939,13.5,954363.3216374269,1128992,145.26900584795322,293
+results,virtual,10,0.289230287,0.113066987,0.711456852,0.895095966,1.113995084,1.443250246,600000,1000.0010480744317,999.1879141094862,1,19800000,0.16126155519304022,6.1,4.232572050027209,8.1,354875.4235997825,683312,39.47688961392061,46
+results,virtual,12,0.349900053,0.111260726,0.788257894,1.001198075,2.712619007,30.662734485,600000,1000.0007506855635,998.9426218736289,0.9999966666666666,19799934,3.271346704871057,8.87,14.126934097421108,17.4,1184815.4040114614,1460464,45.00286532951289,46
+results,virtual,14,0.293083805,0.113009276,0.723922224,0.910521483,1.136063847,3.450519365,600000,1000.0008432940444,999.8279980914127,1,19800000,3.214358974358974,6.89,11.192877492877447,12.1,940167.4301994302,1014928,44.99145299145299,46
+results,virtual,16,0.296351585,0.116498261,0.745646022,0.925425121,1.121759817,1.349505934,600000,1000.0006377270735,999.8151265461804,1,19800000,3.1305698005698073,6.26,10.603703703703696,13,889283.0541310541,1089120,45.01424501424501,46
+results,virtual,18,0.306164806,0.126340651,0.764279828,0.941389932,1.12972465,3.040150512,600000,1000.0016812778267,999.793708408335,1,19800000,3.0911048158640253,5.65,9.233144475920707,11.2,774551.8413597734,939424,45,45
+results,virtual,20,0.28823747,0.118963843,0.683791817,0.877254786,1.111850145,2.548197703,600000,1000.0019195220179,999.819652546071,1,19800000,3.3348571428571456,5.94,9.635142857142888,11.2,810493.2571428572,935648,45.002857142857145,46`;
+
+        // Parse CSV
+        const rows = csvData.split("\n").slice(1).map(r => r.split(","));
+        const headers = csvData.split("\n")[0].split(",");
+
+        // Função para extrair coluna
+        function getCol(colName) {
+            const idx = headers.indexOf(colName);
+            return rows.map(r => isNaN(r[idx]) ? r[idx] : +r[idx]);
+        }
+
+        const run = getCol("run");
+        const modelo = getCol("modelo");
+
+        function filterByModel(model) {
+            return run.filter((_,i) => modelo[i] === model);
+        }
+
+        function getMetric(model, metric) {
+            return rows.filter((r,i)=>modelo[i]===model).map(r=>{
+                const idx = headers.indexOf(metric);
+                return +r[idx];
+            });
+        }
+
+        // --- Gráfico de Latência ---
+        const latTraditional = getMetric("traditional","lat_mean_s");
+        const latVirtual = getMetric("virtual","lat_mean_s");
+        const runTraditional = filterByModel("traditional");
+        const runVirtual = filterByModel("virtual");
+
+        Plotly.newPlot('latencia', [
+            { x: runTraditional, y: latTraditional, type:'scatter', mode:'lines+markers', name:'Traditional'},
+            { x: runVirtual, y: latVirtual, type:'scatter', mode:'lines+markers', name:'Virtual'}
+        ], {title: 'Latência Média (s)', xaxis:{title:'Run'}, yaxis:{title:'Latência (s)'}});
+
+        // --- Gráfico de Throughput ---
+        const throughputTraditional = getMetric("traditional","throughput");
+        const throughputVirtual = getMetric("virtual","throughput");
+
+        Plotly.newPlot('throughput', [
+            { x: runTraditional, y: throughputTraditional, type:'scatter', mode:'lines+markers', name:'Traditional'},
+            { x: runVirtual, y: throughputVirtual, type:'scatter', mode:'lines+markers', name:'Virtual'}
+        ], {title: 'Throughput', xaxis:{title:'Run'}, yaxis:{title:'Throughput'}});
+
+        // --- Gráfico de CPU e Memória ---
+        const cpuTraditional = getMetric("traditional","cpu_mean");
+        const cpuVirtual = getMetric("virtual","cpu_mean");
+        const memTraditional = getMetric("traditional","mem_mean");
+        const memVirtual = getMetric("virtual","mem_mean");
+
+        Plotly.newPlot('cpu_mem', [
+            { x: runTraditional, y: cpuTraditional, type:'scatter', mode:'lines+markers', name:'CPU Traditional'},
+            { x: runVirtual, y: cpuVirtual, type:'scatter', mode:'lines+markers', name:'CPU Virtual'},
+            { x: runTraditional, y: memTraditional, type:'scatter', mode:'lines+markers', name:'Mem Traditional'},
+            { x: runVirtual, y: memVirtual, type:'scatter', mode:'lines+markers', name:'Mem Virtual'}
+        ], {title:'CPU e Memória Média', xaxis:{title:'Run'}, yaxis:{title:'% / MB'}});
+
+        // --- Gráfico de Threads ---
+        const threadsTraditional = getMetric("traditional","threads_mean");
+        const threadsVirtual = getMetric("virtual","threads_mean");
+
+        Plotly.newPlot('threads', [
+            { x: runTraditional, y: threadsTraditional, type:'scatter', mode:'lines+markers', name:'Threads Traditional'},
+            { x: runVirtual, y: threadsVirtual, type:'scatter', mode:'lines+markers', name:'Threads Virtual'}
+        ], {title:'Threads Média', xaxis:{title:'Run'}, yaxis:{title:'Threads'}});
+    </script>
+</body>
+</html>
