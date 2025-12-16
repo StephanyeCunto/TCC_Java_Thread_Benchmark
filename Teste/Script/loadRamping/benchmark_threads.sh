@@ -5,51 +5,9 @@
 BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
-JAVA_JAR_PATH="documents/tcc_teste/Test/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
-LOG_PATH="documents/tcc_teste/Test/Script/LoadRamping/Results/logs"
+JAVA_JAR_PATH="Documents/tcc/Teste/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
+LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
 RESULTS_PATH="Results/results"
-
-prepare_environment() {
-    echo "=== Preparando ambiente no servidor (macOS Apple Silicon) ==="
-
-    SENHA_SUDO="120504"
-
-    $SSH "
-        echo '>> ulimit (max files)'
-        ulimit -n unlimited
-        ulimit -s 65532
-
-        echo '>> sysctl macOS (files & network)'
-        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfiles=1048576
-        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfilesperproc=1048576
-        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=4096
-        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.maxsockbuf=8388608
-
-        echo '>> sysctl macOS (processes)'
-        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxproc=10000
-        echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxprocperuid=10000
-
-        echo '>> sysctl macOS (TCP buffers)'
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.sendspace=2097152
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.recvspace=2097152
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.msl=250
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.delayed_ack=0
-
-        echo '>> sysctl macOS (EPHEMERAL PORT RANGE)'
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.ip.portrange.first=1024
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.ip.portrange.last=65535
-
-        echo '>> Conferência portas efêmeras'
-        sysctl net.inet.ip.portrange.first
-        sysctl net.inet.ip.portrange.last
-
-        echo '>> Informações do sistema'
-        uname -a
-        sysctl -n hw.ncpu
-        sysctl -n hw.memsize | awk '{print \$1/1024/1024/1024 \" GB\"}'
-        ulimit -n
-    "
-}
 
 close_port() {
     result=$($SSH "lsof -t -i :8080")
@@ -164,14 +122,16 @@ loadMonitor(){
 
     PID=$($SSH "cat $LOG_PATH/server.pid")
 
-    $SSH "mkdir -p documents/tcc_teste/Test/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor"
+    $SSH "mkdir -p Documents/tcc/Teste/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor"
 
-    $SSH "nohup bash documents/tcc_teste/Test/Script/monitor.sh $PID documents/tcc_teste/Test/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor/monitor.json > /dev/null 2>&1 &"
+    $SSH "nohup bash Documents/tcc/TesteScript/monitor.sh $PID Documents/tcc/Teste/Script/$RESULTS_PATH/loadConstant/$ENDPOINT/$j/monitor/monitor.json > /dev/null 2>&1 &"
 
     echo "Monitor"
 }
 
-for j in {11..20}; do
+prepare_environment
+
+for j in {1..20}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
