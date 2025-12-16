@@ -83,7 +83,7 @@ for j in {1..20}; do
     warmup "$ENDPOINT" "$j"
     run_warmup "$ENDPOINT" "$j"
 
-    loadMonitor "$ENDPOINT" "$j"
+    loadMonitor "$ENDPOINT" "$j" loadConstant
 
     loop "$ENDPOINT" "$j"
 
