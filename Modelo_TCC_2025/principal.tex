@@ -469,18 +469,19 @@
     \chapter{Metodologia}  
     \label{chapter:metodologia}
 
-    Pode-se resumir este trabalho da seguinte maneira:
+    Este trabalho pode ser resumido nas seguintes etapas:
+
 
     \begin{enumerate}
-        \item Projeto do benchmark: desenvolver um benchmark focado em I/O.
-        \item Criação do servidor: criar um servidor que permita a utilização de threads tradicionais e virtuais.
-        \item Experimento de carga constante: uma máquina cliente envia requisições ao servidor a uma taxa constante.
-        \item Experimento de aumento gradual de carga: semelhante ao experimento de carga constante, mas com uma carga que aumenta até o limite do servidor.
+        \item Projeto do \textit{benchmark}: desenvolvimento de um \textit{benchmark} com foco em operações de I/O.
+        \item Criação do servidor: implementação de um servidor que permita a utilização de \textit{threads} tradicionais e virtuais.
+        \item Experimento de carga constante: uma máquina cliente envia requisições ao servidor a uma taxa fixa.    
+        \item Experimento de aumento gradual de carga: semelhante ao experimento de carga constante, porém com incremento progressivo da carga até o limite do servidor.
     \end{enumerate}
 
     Todos os testes foram baseados nos testes realizados por \citeonline{GustafssonPersson2024}, adaptados para o contexto deste trabalho.
 
-    Nas subseções seguintes, o método será detalhado.
+    Nas seções a seguir, a metodologia adotada é descrita.
 
 
     \section{Configuração de hardware}
@@ -495,13 +496,13 @@
         \item Spring Boot: versão 3.3.2 (obs.: verificar versão)
     \end{itemize}
 
-    Foi também utilizada uma máquina cliente com as seguintes especificações:
+    Também foi utilizada uma máquina cliente, com as seguintes especificações:
 
     \begin{itemize}
-        \item Processador: Intel Core i5-2410M 
-        \item Memória RAM: 8~GB
-        \item Sistema Operacional: Ubuntu 22.04 LTS
-        \item Vegeta: versão 12.8.4
+    \item Processador: Intel Core i5-2410M
+    \item Memória RAM: 8~GB
+    \item Sistema Operacional: Ubuntu 22.04 LTS
+    \item Ferramenta de carga: Vegeta (versão 12.13.0)
     \end{itemize}
 
     \section{Métricas coletadas}
@@ -528,18 +529,23 @@
     Esses registros permitiram monitorar a estabilidade do servidor e avaliar o limite máximo de requisições processáveis.
 
     \section{Testes}
-    Dois tipos de testes foram realizados: teste de carga constante e teste de aumento gradual de carga. Ambos os testes foram conduzidos com o objetivo de comparar o desempenho entre threads tradicionais e threads virtuais, utilizando scripts automatizados para garantir tempos iguais (tempo de aquecimento, tempo para coleta de lixo, etc.). O Vegeta foi utilizado para o envio das requisições e monitoramento.
+    Foram realizados dois tipos de testes: teste de carga constante e teste de aumento gradual de carga. Ambos tiveram como objetivo comparar o desempenho entre \textit{threads} tradicionais e \textit{threads} virtuais. Para garantir condições equivalentes entre as execuções, foram utilizados scripts automatizados que padronizaram tempos de aquecimento, pausas e coleta de lixo. A ferramenta Vegeta foi empregada tanto para o envio das requisições quanto para o monitoramento.
+
+    Os testes foram executados dez vezes para cada mecanismo de \textit{threads}, totalizando vinte execuções. Esse número de repetições mostrou-se suficiente para garantir estabilidade estatística nos resultados obtidos.
+
+    Não foi possível atingir os limites da máquina servidora, uma vez que o sistema operacional impôs uma quantidade limitada de requisições simultâneas. Dessa forma, os testes atingiram o limite do sistema operacional, enquanto os limites de hardware da máquina não foram alcançados.
 
     Os scripts utilizados nos experimentos e o código do servidor, estão disponíveis no repositório do GitHub: \url{https://github.com/StephanyeCunto/TCC_Java_Thread_Benchmark}.
     
-    Os testes são descritos nas subseções seguintes.
+    Os testes foram realizados em uma rede local e são descritos nas subseções seguintes.
 
 
     \subsection {Teste de Carga Constante}
 
-    Para investigar se havia diferença entre os mecanismos durante um período prolongado, foram realizados testes com carga constante. Para isso, fixou-se uma taxa de requisições baseada nos limites da máquina. Mesmo não atingindo o limite máximo da máquina servidor, o sistema operacional permitiu apenas uma quantidade limitada de requisições simultâneas.
-    A taxa escolhida foi de 1000 requisições por segundo, com duração de 10 minutos. Esse valor foi definido após testes preliminares que indicaram que a máquina servidor começava a apresentar erros de conexão acima dessa taxa.
-    
+    Para investigar a existência de diferenças entre os mecanismos de \textit{threads} ao longo de um período prolongado, foram realizados testes com carga constante. Para isso, fixou-se uma taxa de requisições baseada nos limites impostos pelo sistema operacional da máquina servidora.
+
+    A taxa definida foi de 1000 requisições por segundo, com duração de 10 minutos. Esse valor foi definido após testes preliminares que indicaram que a máquina servidor começava a apresentar erros de conexão acima dessa taxa.
+
     O teste foram realizados da seguinte maneira:
 
     \begin{enumerate}
@@ -549,11 +555,9 @@
         \item Coleta de lixo (\textit{garbage collection}) manual na máquina servidor.
         \item Pausa de 80 segundos.
         \item Teste principal com 1000 requisições por segundo durante 600 segundos.
-        \item Pausa de 600 segundos.
+        \item Pausa de 180 segundos.
         \item Repetição dos passos 1 a 7 para o outro mecanismo de threads, em uma nova instância da JVM.
     \end{enumerate}
-
-    obs.: ver com a bianca numero de execucoes e o que fazer com execucoes com erro
 
     \subsection {Teste de Aumento Gradual de Carga}
 
@@ -580,7 +584,7 @@
             \item Aumento da taxa em 50 requisições por segundo.
             \item Repetição dos passos acima até que o servidor comece a apresentar erros de conexão.
         \end{enumerate}
-        \item Pausa de 600 segundos.
+        \item Pausa de 180 segundos.
         \item Repetição dos passos 1 e 2 para o outro mecanismo de threads, em uma nova instância da JVM.
     \end{enumerate}
 

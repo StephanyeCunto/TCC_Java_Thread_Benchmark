@@ -9,39 +9,9 @@ JAVA_JAR_PATH="Documents/tcc/Teste/Serve_Test/benchmark-server/target/benchmark-
 LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
 RESULTS_PATH="Results/results"
 
-close_port() {
-    result=$($SSH "lsof -t -i :8080")
-
-    if [[ -n "$result" ]]; then
-        $SSH "kill -9 $result"
-        echo "Port closed (killed PID $result)"
-    else
-        echo "Port not used"
-    fi
-
-    sleep 10
-}
-
-start_jvm() {
-    ENDPOINT="$1"
-    j="$2"
-
-    close_port
-    prepare_environment
-
-    $SSH "
-        mkdir -p $LOG_PATH/$ENDPOINT
-        nohup java -jar $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
-        echo \$! > $LOG_PATH/server.pid
-    "
-
-    echo 'jvm iniciado'
-    sleep 10
-}
-
-stop_jvm() {
-    $SSH "kill \$(cat $LOG_PATH/server.pid); echo 'jvm parado'"
-}
+source "$ROOT_DIR/prepare_environment.sh"
+source "$ROOT_DIR/jvm.sh"
+source "$ROOT_DIR/folder.sh"
 
 warmup(){
     ENDPOINT="$1"
@@ -87,13 +57,6 @@ loop(){
         gc
         sleep 60
     done
-}
-
-gc(){
-    echo "=== GC ==="
-    sleep 60
-    curl -s "$BASE_URL/gc"
-    sleep 20
 }
 
 create_folders(){    
