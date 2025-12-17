@@ -9,6 +9,9 @@ JAVA_JAR_PATH="Documents/tcc/Teste/Serve_Test/benchmark-server/target/benchmark-
 LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
 RESULTS_PATH="Results/results"
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$SCRIPT_DIR/.."
+
 source "$ROOT_DIR/prepare_environment.sh"
 source "$ROOT_DIR/jvm.sh"
 source "$ROOT_DIR/folder.sh"
@@ -39,23 +42,40 @@ runWarmup(){
     done
 }
 
-loop(){
+loop() {
     ENDPOINT="$1"
     j="$2"
+    erro=0
 
-    for i in {1..20}; do
+    for i in {1..200}; do
         RATE=$((50 * i))
         echo "=== Teste $RATE req/s ==="
 
+        JSON_FILE="$RESULTS_PATH/$ENDPOINT/$j/run/json/run${RATE}.json"
+
         echo "GET $BASE_URL/$ENDPOINT" | vegeta attack \
-            -duration="10s" \
+            -duration=10s \
             -rate="$RATE" \
             -timeout=70s \
             | tee "$RESULTS_PATH/$ENDPOINT/$j/run/bin/run${RATE}.bin" \
-            | vegeta report --type=json > "$RESULTS_PATH/$ENDPOINT/$j/run/json/run${RATE}.json"
+            | vegeta report --type=json > "$JSON_FILE"
+
+        SUCCESS=$(jq '.success' "$JSON_FILE")
+
+        if (( $(echo "$SUCCESS < 1.0" | bc -l) )); then
+            echo "❌ Falhas detectadas (success=$SUCCESS). Encerrando loop."
+            erro=erro+1
+            echo "Total de erros até agora: $erro"
+        else
+            erro=0
+        fi
+
+        if [ "$erro" -ge 3 ]; then
+            echo "❌ Três falhas consecutivas. Encerrando os testes para $ENDPOINT $j."
+            break
+        fi
 
         gc
-        sleep 60
     done
 }
 
