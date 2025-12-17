@@ -154,6 +154,6 @@ for j in {1..20}; do
 
     stop_jvm 
 
-    echo "Aguardando 10 minutos antes do próximo teste..."
-    sleep 600
+    echo "Aguardando 3 minutos antes do próximo teste..."
+    sleep 180
 done

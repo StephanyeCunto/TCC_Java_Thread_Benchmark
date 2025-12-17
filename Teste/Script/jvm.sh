@@ -4,7 +4,7 @@ close_port() {
     if [[ -n "$result" ]]; then
         $SSH "kill -9 $result"
         echo "Port closed (killed PID $result)"
-        sleep 10
+        sleep 5
     else
         echo "Port not used"
     fi
@@ -23,7 +23,7 @@ start_jvm() {
     "
  
     echo 'jvm iniciado'
-    sleep 10
+    sleep 5
 }
 
 stop_jvm() {
