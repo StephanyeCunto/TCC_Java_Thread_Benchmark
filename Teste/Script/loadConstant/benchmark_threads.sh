@@ -14,6 +14,7 @@ RESULTS_PATH="Results/results"
 source "$ROOT_DIR/prepare_environment.sh"
 source "$ROOT_DIR/jvm.sh"
 source "$ROOT_DIR/folder.sh"
+source "Documents/tcc/Teste/Script/monitor.sh"
 
 warmup() {
     ENDPOINT="$1"

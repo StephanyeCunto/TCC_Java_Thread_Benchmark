@@ -466,34 +466,147 @@
             \end{itemize}
     }
 
-    \chapter{Metodologia ou Procedimentos Metodológicos ou Materiais e Métodos}  
+    \chapter{Metodologia}  
     \label{chapter:metodologia}
-  
 
-        A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
-    \section{Metodologia}
+    Pode-se resumir este trabalho da seguinte maneira:
 
-        É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
+    \begin{enumerate}
+        \item Projeto do benchmark: desenvolver um benchmark focado em I/O.
+        \item Criação do servidor: criar um servidor que permita a utilização de threads tradicionais e virtuais.
+        \item Experimento de carga constante: uma máquina cliente envia requisições ao servidor a uma taxa constante.
+        \item Experimento de aumento gradual de carga: semelhante ao experimento de carga constante, mas com uma carga que aumenta até o limite do servidor.
+    \end{enumerate}
 
-        Descreve o tipo de pesquisa (exploratória, descritiva, experimental etc.), a abordagem (qualitativa, quantitativa ou mista) e a estratégia geral utilizada.
+    Todos os testes foram baseados nos testes realizados por \citeonline{GustafssonPersson2024}, adaptados para o contexto deste trabalho.
 
-        Envolve a justificativa das escolhas, por que esse método foi escolhido.
+    Nas subseções seguintes, o método será detalhado.
 
-    Exemplo: “Este estudo adotou uma abordagem quantitativa e experimental, utilizando simulações computacionais para avaliar o desempenho de diferentes algoritmos de roteamento.”
 
-    \section{Procedimentos Metodológicos}
+    \section{Configuração de hardware}
 
-        É um termo mais usado nas Ciências Humanas e Sociais. Tem foco no passo a passo da pesquisa: como os dados foram coletados, quais instrumentos foram usados e como a análise foi feita. É mais descritivo e menos técnico do que “Materiais e Métodos”.
+    Os experimentos foram conduzidos em uma máquina que atuou como servidor, com as seguintes especificações:
 
-    Exemplo: “Para a coleta de dados, foram aplicados questionários estruturados a 50 participantes. As respostas foram analisadas por meio de estatística descritiva e teste t de Student.”
+    \begin{itemize}
+        \item Processador: Apple M2
+        \item Memória RAM: 8~GB
+        \item Sistema Operacional: macOS Tahoe (versão 26)
+        \item Java Development Kit (JDK): versão 21 LTS
+        \item Spring Boot: versão 3.3.2 (obs.: verificar versão)
+    \end{itemize}
 
-    \section{Materiais e Métodos}
+    Foi também utilizada uma máquina cliente com as seguintes especificações:
 
-        É muito usado nas Ciências Exatas, Biológicas e Engenharias. Apresenta de forma técnica e detalhada os materiais, ferramentas, softwares, equipamentos ou reagentes utilizados; o passo a passo técnico para realizar o experimento ou implementação.
+    \begin{itemize}
+        \item Processador: Intel Core i5-2410M 
+        \item Memória RAM: 8~GB
+        \item Sistema Operacional: Ubuntu 22.04 LTS
+        \item Vegeta: versão 12.8.4
+    \end{itemize}
 
-        Permite que outro pesquisador repita o estudo. 
+    \section{Métricas coletadas}
+
+    O servidor foi configurado para registrar métricas de desempenho utilizando um script. As métricas coletadas incluem: utilização da CPU, número de threads, memória RAM e heap.
+
+    A máquina cliente coletou as seguintes métricas: latência (mínima, máxima, média e percentis 50, 90, 95 e 99), taxa de transferência, taxa de amostragem, respostas do servidor (para cálculo da taxa de sucesso), bytes de entrada e bytes de saída. Esse monitoramento foi realizado utilizando a ferramenta Vegeta.
+
+    Todos os dados são concatenados em arquivos CSV para análise.
+
+    \section{Tratamento de erros}
+
+    Durante os experimentos, foram observados erros de conexão e tempo limite. A taxa de sucesso foi calculada com base no número total de requisições enviadas e no número de respostas bem-sucedidas recebidas do servidor.
+
+    Todos os erros ocorreram devido à falta de resposta do servidor, indicando que o mesmo não conseguiu processar todas as requisições recebidas. Esses erros foram identificados através de tokens gerado pelo Vegeta. 
+
+    Como exemplo, alguns erros observados incluem:
+    \begin{itemize}
+        \item \texttt{EOF (Client.Timeout exceeded while awaiting headers)}
+        \item \texttt{http: server closed idle connection (Client.Timeout exceeded while awaiting headers)}
+        \item \texttt{context deadline exceeded (Client.Timeout exceeded while awaiting headers)}
+    \end{itemize}
+
+    Esses registros permitiram monitorar a estabilidade do servidor e avaliar o limite máximo de requisições processáveis.
+
+    \section{Testes}
+    Dois tipos de testes foram realizados: teste de carga constante e teste de aumento gradual de carga. Ambos os testes foram conduzidos com o objetivo de comparar o desempenho entre threads tradicionais e threads virtuais, utilizando scripts automatizados para garantir tempos iguais (tempo de aquecimento, tempo para coleta de lixo, etc.). O Vegeta foi utilizado para o envio das requisições e monitoramento.
+
+    Os scripts utilizados nos experimentos e o código do servidor, estão disponíveis no repositório do GitHub: \url{https://github.com/StephanyeCunto/TCC_Java_Thread_Benchmark}.
+    
+    Os testes são descritos nas subseções seguintes.
+
+
+    \subsection {Teste de Carga Constante}
+
+    Para investigar se havia diferença entre os mecanismos durante um período prolongado, foram realizados testes com carga constante. Para isso, fixou-se uma taxa de requisições baseada nos limites da máquina. Mesmo não atingindo o limite máximo da máquina servidor, o sistema operacional permitiu apenas uma quantidade limitada de requisições simultâneas.
+    A taxa escolhida foi de 1000 requisições por segundo, com duração de 10 minutos. Esse valor foi definido após testes preliminares que indicaram que a máquina servidor começava a apresentar erros de conexão acima dessa taxa.
+    
+    O teste foram realizados da seguinte maneira:
+
+    \begin{enumerate}
+        \item Três séries de aquecimento (\textit{warmup}) com 300 requisições por segundo durante 60 segundos.
+        \item Aquecimento (\textit{warmup}) com 1000 requisições por segundo durante 120 segundos.
+        \item Pausa de 60 segundos.
+        \item Coleta de lixo (\textit{garbage collection}) manual na máquina servidor.
+        \item Pausa de 80 segundos.
+        \item Teste principal com 1000 requisições por segundo durante 600 segundos.
+        \item Pausa de 600 segundos.
+        \item Repetição dos passos 1 a 7 para o outro mecanismo de threads, em uma nova instância da JVM.
+    \end{enumerate}
+
+    obs.: ver com a bianca numero de execucoes e o que fazer com execucoes com erro
+
+    \subsection {Teste de Aumento Gradual de Carga}
+
+    O objetivo desse teste foi identificar o ponto em que o servidor começa a apresentar erros de conexão, indicando que atingiu seu limite máximo de requisições processáveis. Para isso, a carga foi aumentada gradualmente até que o servidor não conseguisse mais atender às requisições.
+
+    O teste foi conduzido da seguinte maneira:
+
+    \begin{enumerate}
+        \item \textbf{Warmup:}
+        \begin{enumerate}
+            \item Aquecimento com 300 requisições por segundo durante 60 segundos.
+            \item Pausa de 60 segundos.
+            \item Coleta de lixo (\textit{garbage collection}) manual na máquina servidor.
+            \item Pausa de 20 segundos.
+            \item Repetição dos passos acima mais duas vezes.
+        \end{enumerate}
+
+        \item \textbf{Teste principal:}
+        \begin{enumerate}
+            \item Envio de requisições na taxa definida durante 10 segundos.
+            \item Pausa de 60 segundos.
+            \item Coleta de lixo (\textit{garbage collection}) manual na máquina servidor.
+            \item Pausa de 20 segundos.
+            \item Aumento da taxa em 50 requisições por segundo.
+            \item Repetição dos passos acima até que o servidor comece a apresentar erros de conexão.
+        \end{enumerate}
+    \end{enumerate}
+
+
+    %     A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.
+    % \section{Metodologia}
+
+    %     É o termo mais amplo e refere-se ao caminho adotado para realizar a pesquisa.
+
+    %     Descreve o tipo de pesquisa (exploratória, descritiva, experimental etc.), a abordagem (qualitativa, quantitativa ou mista) e a estratégia geral utilizada.
+
+    %     Envolve a justificativa das escolhas, por que esse método foi escolhido.
+
+    % Exemplo: “Este estudo adotou uma abordagem quantitativa e experimental, utilizando simulações computacionais para avaliar o desempenho de diferentes algoritmos de roteamento.”
+
+    % \section{Procedimentos Metodológicos}
+
+    %     É um termo mais usado nas Ciências Humanas e Sociais. Tem foco no passo a passo da pesquisa: como os dados foram coletados, quais instrumentos foram usados e como a análise foi feita. É mais descritivo e menos técnico do que “Materiais e Métodos”.
+
+    % Exemplo: “Para a coleta de dados, foram aplicados questionários estruturados a 50 participantes. As respostas foram analisadas por meio de estatística descritiva e teste t de Student.”
+
+    % \section{Materiais e Métodos}
+
+    %     É muito usado nas Ciências Exatas, Biológicas e Engenharias. Apresenta de forma técnica e detalhada os materiais, ferramentas, softwares, equipamentos ou reagentes utilizados; o passo a passo técnico para realizar o experimento ou implementação.
+
+    %     Permite que outro pesquisador repita o estudo. 
         
-        Exemplo: “O experimento utilizou cinco kits LEGO Mindstorms EV3, computadores com sistema operacional Linux e o software EV3 Classroom. Os testes foram conduzidos em laboratório controlado, com turmas de no máximo dez alunos por sessão.”
+    %     Exemplo: “O experimento utilizou cinco kits LEGO Mindstorms EV3, computadores com sistema operacional Linux e o software EV3 Classroom. Os testes foram conduzidos em laboratório controlado, com turmas de no máximo dez alunos por sessão.”
 
 
     \chapter{Aplicação / Implementação / Experimento}
