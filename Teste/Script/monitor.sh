@@ -47,7 +47,6 @@ while ps -p "$PID" > /dev/null 2>&1; do
     VSZ=${VSZ:-0}
     THREADS=${THREADS:-0}
 
-    # 🔹 CPU NORMALIZADA (0–100%)
     CPU_NORMALIZED=$(awk "BEGIN {printf \"%.2f\", $CPU_RAW / $CPUS}")
 
     HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null \
