@@ -510,7 +510,7 @@
 
     A máquina cliente coletou as seguintes métricas: latência (mínima, máxima, média e percentis 50, 90, 95 e 99), taxa de transferência, taxa de amostragem, respostas do servidor (para cálculo da taxa de sucesso), bytes de entrada e bytes de saída. Esse monitoramento foi realizado utilizando a ferramenta Vegeta.
 
-    Todos os dados são concatenados em arquivos CSV para análise.
+    Todos os dados foram concatenados em arquivos CSV para análise.
 
     \section{Tratamento de erros}
 
@@ -518,7 +518,7 @@
 
     Todos os erros ocorreram devido à falta de resposta do servidor, indicando que o mesmo não conseguiu processar todas as requisições recebidas. Esses erros foram identificados através de tokens gerado pelo Vegeta. 
 
-    Como exemplo, alguns erros observados incluem:
+    Como exemplo, alguns erros observados:
     \begin{itemize}
         \item \texttt{EOF (Client.Timeout exceeded while awaiting headers)}
         \item \texttt{http: server closed idle connection (Client.Timeout exceeded while awaiting headers)}
@@ -580,6 +580,8 @@
             \item Aumento da taxa em 50 requisições por segundo.
             \item Repetição dos passos acima até que o servidor comece a apresentar erros de conexão.
         \end{enumerate}
+        \item Pausa de 600 segundos.
+        \item Repetição dos passos 1 e 2 para o outro mecanismo de threads, em uma nova instância da JVM.
     \end{enumerate}
 
 
