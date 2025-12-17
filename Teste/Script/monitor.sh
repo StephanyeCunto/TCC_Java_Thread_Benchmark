@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# Uso: ./monitor_process.sh <PID> [arquivo_saida.json]
+
 PID=$1
-OUTPUT=$2
+OUTPUT=${2:-"monitor_output.json"}  # Se não passar arquivo, usa monitor_output.json
 
 CPUS=$(sysctl -n hw.ncpu 2>/dev/null || echo 1)
 
@@ -14,6 +16,7 @@ echo "[" > "$OUTPUT"
 FIRST=true
 
 finish() {
+    # Remove a vírgula da última linha do JSON
     if tail -n 1 "$OUTPUT" | grep -q '},'; then
         sed -i '' '$ s/},/}/' "$OUTPUT"
     fi
@@ -27,12 +30,8 @@ trap finish INT TERM
 while ps -p "$PID" > /dev/null 2>&1; do
     START_TS=$(date +%s.%N)
 
-    READINGS=$(ps -p "$PID" \
-        -o %cpu= \
-        -o %mem= \
-        -o rss= \
-        -o vsz= \
-        -o thcount= 2>/dev/null)
+    # Coleta de dados do processo
+    READINGS=$(ps -p "$PID" -o %cpu= -o %mem= -o rss= -o vsz= -o thcount= 2>/dev/null)
 
     if [ -z "$READINGS" ]; then
         sleep 1
@@ -49,18 +48,20 @@ while ps -p "$PID" > /dev/null 2>&1; do
 
     CPU_NORMALIZED=$(awk "BEGIN {printf \"%.2f\", $CPU_RAW / $CPUS}")
 
-    HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null \
-        | awk '/MALLOC/ {sum+=$3} END {printf "%.0f", sum}')
+    # Coleta do heap usando vmmap
+    HEAP_RAW=$(vmmap --summary "$PID" 2>/dev/null | awk '/MALLOC/ {sum+=$3} END {printf "%.0f", sum}')
     HEAP=$((HEAP_RAW / 1024))
     HEAP=${HEAP:-0}
 
     TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
+    # Adiciona vírgula entre objetos JSON
     if [ "$FIRST" = false ]; then
         echo "," >> "$OUTPUT"
     fi
     FIRST=false
 
+    # Escreve os dados no arquivo JSON
     cat <<EOF >> "$OUTPUT"
 {
     "timestamp": "$TIMESTAMP",
