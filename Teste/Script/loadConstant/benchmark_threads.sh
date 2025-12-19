@@ -9,7 +9,7 @@ SSH="ssh stephanye@$1"
 
 JAVA_JAR_PATH="Documents/tcc/Teste/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
 LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
-RESULTS_PATH="Results/results"
+RESULTS_PATH="Results/"
 
 source "$ROOT_DIR/prepare_environment.sh"
 source "$ROOT_DIR/jvm.sh"
@@ -66,7 +66,7 @@ loop() {
 
 prepare_environment
 
-for j in {1..20}; do
+for j in {1..10}; do
 
     if (( j % 2 == 0 )); then
         ENDPOINT="virtual"
@@ -83,9 +83,16 @@ for j in {1..20}; do
     warmup "$ENDPOINT" "$j"
     run_warmup "$ENDPOINT" "$j"
 
-    loadMonitor "$ENDPOINT" "$j" loadConstant
+    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"$ENDPOINT$j"'  settings=profile filename='"$RESULTS_PATH"'/Monitor/'"$ENDPOINT$j"'.jfr'
 
     loop "$ENDPOINT" "$j"
+
+   # $SSH "jcmd $(cat $LOG_PATH/server.pid) JFR.stop name='"$ENDPOINT$j"' filename=heap-manual.jfr"
+    for i in {1..30}; do
+       $SSH ' afplay /System/Library/Sounds/Ping.aiff'
+       aplay /usr/share/sounds/alsa/Front_Center.wav
+    done
+
 
     stop_jvm
 
