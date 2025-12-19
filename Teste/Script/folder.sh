@@ -4,8 +4,6 @@ create_folders(){
 
     echo "Criando pastas para $ENDPOINT $j..."
 
-    mkdir -p "$LOG_PATH"
-
     mkdir -p "$RESULTS_PATH/$ENDPOINT/$j/warmup/bin"
     mkdir -p "$RESULTS_PATH/$ENDPOINT/$j/warmup/json"
 

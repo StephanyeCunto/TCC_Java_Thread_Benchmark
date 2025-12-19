@@ -26,7 +26,7 @@ find "$BASE_DIR" -type f -path "*/run/json/*.json" | sort | while read -r json; 
     bytes_in=$(jq -r '.bytes_in.total // empty' "$json")
 
     base_run_dir="$(dirname "$(dirname "$(dirname "$json")")")"
-    monitor_json="$base_run_dir/monitor/monitor.json"
+    monitor_json="$base_run_/monitor/monitor.json"
 
     if [ -f "$monitor_json" ]; then
         cpu_mean=$(jq -r '[.[].cpu_percent] | add / length' "$monitor_json")
