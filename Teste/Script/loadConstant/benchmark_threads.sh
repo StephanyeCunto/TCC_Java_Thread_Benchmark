@@ -83,7 +83,9 @@ for j in {1..10}; do
     warmup "$ENDPOINT" "$j"
     run_warmup "$ENDPOINT" "$j"
 
-    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"$ENDPOINT$j"'  settings=profile filename='"$RESULTS_PATH"'/Monitor/'"$ENDPOINT$j"'.jfr'
+    $SSH 'mkdir '"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor/'
+
+    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"$ENDPOINT$j"'  settings=profile filename='"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor/Monitor.jfr'
 
     loop "$ENDPOINT" "$j"
 
