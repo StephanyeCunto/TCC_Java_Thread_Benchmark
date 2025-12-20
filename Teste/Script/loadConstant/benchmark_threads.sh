@@ -86,7 +86,7 @@ for j in {1..10}; do
 
     $SSH 'mkdir -p '$SERVER_DIR/"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor/'
 
-    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"Monitor"'  duration=670s   settings=profile filename='"$SERVER_DIR"'/'"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor/Monitor.jfr'
+    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"Monitor"'  duration=670s   settings=profile filename='"$SERVER_DIR"'/'"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor/'
 
     loop "$ENDPOINT" "$j"
 
