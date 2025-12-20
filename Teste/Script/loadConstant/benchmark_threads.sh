@@ -7,8 +7,9 @@ ROOT_DIR="$SCRIPT_DIR/.."
 BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
+SERVER_DIR="Documents/tcc/Teste/Script/LoadConstant"
 JAVA_JAR_PATH="Documents/tcc/Teste/Serve_Test/benchmark-server/target/benchmark-server-0.0.1-SNAPSHOT.jar"
-LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
+LOG_PATH="$SERVER_DIR/Results/logs"
 RESULTS_PATH="Results/"
 
 source "$ROOT_DIR/prepare_environment.sh"
@@ -83,19 +84,16 @@ for j in {1..10}; do
     warmup "$ENDPOINT" "$j"
     run_warmup "$ENDPOINT" "$j"
 
-    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"$ENDPOINT$j"'  settings=profile filename='"$RESULTS_PATH"'/Monitor/'"$ENDPOINT$j"'.jfr'
+    $SSH 'mkdir -p '$SERVER_DIR/"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor/Monitor.jfr'
+
+    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.start name='"Monitor"'  duration=670s   settings=profile filename='"$SERVER_DIR"'/'"$RESULTS_PATH"'/'"$ENDPOINT"'/'"$j"'/Monitor'
 
     loop "$ENDPOINT" "$j"
 
-   # $SSH "jcmd $(cat $LOG_PATH/server.pid) JFR.stop name='"$ENDPOINT$j"' filename=heap-manual.jfr"
-    for i in {1..30}; do
-       $SSH ' afplay /System/Library/Sounds/Ping.aiff'
-       aplay /usr/share/sounds/alsa/Front_Center.wav
-    done
-
+    $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.stop name='"Monitor"' '
 
     stop_jvm
 
-    echo "Aguardando 3 minutos antes do próximo teste..."
-    sleep 180
+    echo "Aguardando 1 minuto antes do próximo teste..."
+    sleep 60
 done
