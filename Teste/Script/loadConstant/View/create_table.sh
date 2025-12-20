@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="../Results/results"
+BASE_DIR="../Results/"
 OUTPUT="table.csv"
 
 echo "carga,run,lat_mean_s,lat_p50_s,lat_p90_s,lat_p95_s,lat_p99_s,lat_max_s,requests,rate,throughput,success,bytes_in_total,cpu_mean,cpu_max,mem_mean,mem_max,rss_mean_kb,rss_max_kb,threads_mean,threads_max" > "$OUTPUT"
