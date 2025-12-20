@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Base directory onde estão os arquivos .jfr
 for j in {1..2}; do
 	if [ $(($j % 2)) -eq 0 ]; then
 		BASE_DIR="./virtual"
