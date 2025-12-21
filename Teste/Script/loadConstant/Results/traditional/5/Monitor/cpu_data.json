@@ -1,0 +1,4685 @@
+{
+  "recording": {
+    "events": [{
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:47.026242625-03:00", 
+        "jvmUser": 0.06188119, 
+        "jvmSystem": 0.030940594, 
+        "machineTotal": 0.15403727
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:48.035508416-03:00", 
+        "jvmUser": 0.051980197, 
+        "jvmSystem": 0.033415843, 
+        "machineTotal": 0.11485643
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:49.057098541-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.123609394
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:50.081038916-03:00", 
+        "jvmUser": 0.057038836, 
+        "jvmSystem": 0.035194173, 
+        "machineTotal": 0.12453761
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:51.104569500-03:00", 
+        "jvmUser": 0.0502451, 
+        "jvmSystem": 0.029411765, 
+        "machineTotal": 0.10960591
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:52.129071833-03:00", 
+        "jvmUser": 0.04901961, 
+        "jvmSystem": 0.030637255, 
+        "machineTotal": 0.115337424
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:53.153017833-03:00", 
+        "jvmUser": 0.047330096, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.13546798
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:54.176847250-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11467324
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:55.201269333-03:00", 
+        "jvmUser": 0.046116505, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.12177122
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:56.226218708-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.035539217, 
+        "machineTotal": 0.10429448
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:57.245720041-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.108641975
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:58.268011833-03:00", 
+        "jvmUser": 0.033088237, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.085995086
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:53:59.295264666-03:00", 
+        "jvmUser": 0.014563107, 
+        "jvmSystem": 0.014563107, 
+        "machineTotal": 0.04761905
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:00.309129833-03:00", 
+        "jvmUser": 0.02970297, 
+        "jvmSystem": 0.018564356, 
+        "machineTotal": 0.104347825
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:01.322304041-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.12747525
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:02.340784125-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.031862747, 
+        "machineTotal": 0.09765142
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:03.364964208-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.028186275, 
+        "machineTotal": 0.1094711
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:04.382288666-03:00", 
+        "jvmUser": 0.06740196, 
+        "jvmSystem": 0.06127451, 
+        "machineTotal": 0.18193069
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:05.422401041-03:00", 
+        "jvmUser": 0.052884616, 
+        "jvmSystem": 0.040865384, 
+        "machineTotal": 0.11729141
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:06.430894500-03:00", 
+        "jvmUser": 0.047029704, 
+        "jvmSystem": 0.037128713, 
+        "machineTotal": 0.114570364
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:07.456880375-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12438424
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:08.478736500-03:00", 
+        "jvmUser": 0.04901961, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.11358025
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:09.499505208-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.037990198, 
+        "machineTotal": 0.13933416
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:10.526480291-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.1127451
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:11.559772083-03:00", 
+        "jvmUser": 0.049757283, 
+        "jvmSystem": 0.03276699, 
+        "machineTotal": 0.112469435
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:12.591462333-03:00", 
+        "jvmUser": 0.042067308, 
+        "jvmSystem": 0.042067308, 
+        "machineTotal": 0.12302071
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:13.616268833-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.037990198, 
+        "machineTotal": 0.096059114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:14.638635833-03:00", 
+        "jvmUser": 0.033088237, 
+        "jvmSystem": 0.030637255, 
+        "machineTotal": 0.10455105
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:15.653166208-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.12437811
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:16.678014666-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.13619632
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:17.701356416-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.1182266
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:18.726343875-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11439114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:19.750643166-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.120987654
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:20.775712416-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.1317734
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:21.799650791-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11945813
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:22.823634791-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11467324
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:23.848183875-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11165644
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:24.873415958-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11590629
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:25.897471375-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12931034
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:26.921944125-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12054121
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:27.944572791-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.037990198, 
+        "machineTotal": 0.12839507
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:28.961859208-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11509901
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:29.987868625-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12054121
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:31.011884250-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12577066
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:32.037378750-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12300123
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:33.062476250-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.116851166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:34.087949291-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12192118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:35.114201666-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12177122
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:36.137454625-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.116995074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:37.161791125-03:00", 
+        "jvmUser": 0.048543688, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.1182266
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:38.181451041-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.12391574
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:39.212313750-03:00", 
+        "jvmUser": 0.030339805, 
+        "jvmSystem": 0.035194173, 
+        "machineTotal": 0.16160388
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:40.237864583-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.25276074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:41.266256166-03:00", 
+        "jvmUser": 0.03276699, 
+        "jvmSystem": 0.024271844, 
+        "machineTotal": 0.11721612
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:42.286179625-03:00", 
+        "jvmUser": 0.020833334, 
+        "jvmSystem": 0.015931373, 
+        "machineTotal": 0.061576355
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:43.306885458-03:00", 
+        "jvmUser": 0.0036764706, 
+        "jvmSystem": 0.004901961, 
+        "machineTotal": 0.03558282
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:44.310966916-03:00", 
+        "jvmUser": 0.04950495, 
+        "jvmSystem": 0.030940594, 
+        "machineTotal": 0.13048933
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:45.331346208-03:00", 
+        "jvmUser": 0.018382354, 
+        "jvmSystem": 0.012254902, 
+        "machineTotal": 0.06380368
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:46.343703958-03:00", 
+        "jvmUser": 0.018564356, 
+        "jvmSystem": 0.021039603, 
+        "machineTotal": 0.09405941
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:47.353281250-03:00", 
+        "jvmUser": 0.054455444, 
+        "jvmSystem": 0.04579208, 
+        "machineTotal": 0.1679198
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:48.384375208-03:00", 
+        "jvmUser": 0.074029125, 
+        "jvmSystem": 0.05582524, 
+        "machineTotal": 0.21367522
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:49.410654791-03:00", 
+        "jvmUser": 0.08616505, 
+        "jvmSystem": 0.06553398, 
+        "machineTotal": 0.21454994
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:50.449215875-03:00", 
+        "jvmUser": 0.030339805, 
+        "jvmSystem": 0.026699029, 
+        "machineTotal": 0.08716707
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:51.493455333-03:00", 
+        "jvmUser": 0.05357143, 
+        "jvmSystem": 0.05595238, 
+        "machineTotal": 0.14957781
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:52.498636500-03:00", 
+        "jvmUser": 0.0425, 
+        "jvmSystem": 0.0425, 
+        "machineTotal": 0.12797992
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:53.524334250-03:00", 
+        "jvmUser": 0.048543688, 
+        "jvmSystem": 0.047330096, 
+        "machineTotal": 0.15705521
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:54.547653583-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12207152
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:55.573026291-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12776412
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:56.598132208-03:00", 
+        "jvmUser": 0.017156864, 
+        "jvmSystem": 0.013480392, 
+        "machineTotal": 0.05487805
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:57.611467791-03:00", 
+        "jvmUser": 0.009803922, 
+        "jvmSystem": 0.011029412, 
+        "machineTotal": 0.06583851
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:58.623246916-03:00", 
+        "jvmUser": 0.01608911, 
+        "jvmSystem": 0.013613861, 
+        "machineTotal": 0.07673267
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:54:59.632367833-03:00", 
+        "jvmUser": 0.027227722, 
+        "jvmSystem": 0.027227722, 
+        "machineTotal": 0.101863354
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:00.646797-03:00", 
+        "jvmUser": 0.048267327, 
+        "jvmSystem": 0.02970297, 
+        "machineTotal": 0.12252475
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:01.676686375-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.113553114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:02.702499333-03:00", 
+        "jvmUser": 0.08495145, 
+        "jvmSystem": 0.07524272, 
+        "machineTotal": 0.22236025
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:03.733862625-03:00", 
+        "jvmUser": 0.046116505, 
+        "jvmSystem": 0.050970875, 
+        "machineTotal": 0.13536586
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:04.765336500-03:00", 
+        "jvmUser": 0.050970875, 
+        "jvmSystem": 0.048543688, 
+        "machineTotal": 0.14460784
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:05.792692583-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.044902913, 
+        "machineTotal": 0.12760736
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:06.814412583-03:00", 
+        "jvmUser": 0.025735294, 
+        "jvmSystem": 0.022058824, 
+        "machineTotal": 0.06985294
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:07.833273250-03:00", 
+        "jvmUser": 0.025735294, 
+        "jvmSystem": 0.019607844, 
+        "machineTotal": 0.072660096
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:08.859527041-03:00", 
+        "jvmUser": 0.063725494, 
+        "jvmSystem": 0.05147059, 
+        "machineTotal": 0.21013597
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:09.888453625-03:00", 
+        "jvmUser": 0.018203884, 
+        "jvmSystem": 0.02184466, 
+        "machineTotal": 0.06569343
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:10.909036041-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.0502451, 
+        "machineTotal": 0.12978986
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:11.942507541-03:00", 
+        "jvmUser": 0.03966346, 
+        "jvmSystem": 0.043269232, 
+        "machineTotal": 0.12210012
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:12.967726208-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.11713933
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:13.995761333-03:00", 
+        "jvmUser": 0.044902913, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.13953489
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:15.020458750-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.119753085
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:16.046038833-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12990196
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:17.070434750-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12083847
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:18.094075583-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12300123
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:19.120015916-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11793612
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:20.147192041-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12054121
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:21.171358-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12083847
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:22.195185791-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.12068965
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:23.219355166-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11316113
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:24.243406-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11866502
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:25.268444375-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11808118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:26.292337041-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.106617644
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:27.310975208-03:00", 
+        "jvmUser": 0.04656863, 
+        "jvmSystem": 0.035539217, 
+        "machineTotal": 0.116336636
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:28.336388041-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11234568
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:29.360734041-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12716049
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:30.384712-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12054121
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:31.407141250-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11467324
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:32.433557958-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.123774506
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:33.459494416-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.119753085
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:34.483992833-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116851166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:35.508316208-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.12915128
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:36.533072500-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.116995074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:37.557685083-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.116564415
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:38.583321750-03:00", 
+        "jvmUser": 0.018203884, 
+        "jvmSystem": 0.019417476, 
+        "machineTotal": 0.08241083
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:39.603252791-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.04779412, 
+        "machineTotal": 0.14549938
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:40.637815458-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.11951219
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:41.662524333-03:00", 
+        "jvmUser": 0.035194173, 
+        "jvmSystem": 0.035194173, 
+        "machineTotal": 0.09815951
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:42.686686458-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11931119
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:43.711394708-03:00", 
+        "jvmUser": 0.03276699, 
+        "jvmSystem": 0.02791262, 
+        "machineTotal": 0.078720786
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:44.722827750-03:00", 
+        "jvmUser": 0.04331683, 
+        "jvmSystem": 0.04579208, 
+        "machineTotal": 0.13266583
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:45.752486375-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.118581906
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:46.777173791-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12054121
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:47.802459708-03:00", 
+        "jvmUser": 0.052184466, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.12345679
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:48.830397-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.08946078
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:49.856987916-03:00", 
+        "jvmUser": 0.044902913, 
+        "jvmSystem": 0.044902913, 
+        "machineTotal": 0.1393643
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:50.885118416-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.121472396
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:51.911108541-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.119018406
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:52.936078416-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.1134402
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:53.956751791-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.10272277
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:54.979014875-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.113970585
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:56.004218541-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.1004902
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:57.041575375-03:00", 
+        "jvmUser": 0.014423077, 
+        "jvmSystem": 0.016826924, 
+        "machineTotal": 0.054282267
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:58.043009625-03:00", 
+        "jvmUser": 0.0325, 
+        "jvmSystem": 0.03, 
+        "machineTotal": 0.111809045
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:55:59.065988458-03:00", 
+        "jvmUser": 0.05882353, 
+        "jvmSystem": 0.05269608, 
+        "machineTotal": 0.14833127
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:00.103221375-03:00", 
+        "jvmUser": 0.034855768, 
+        "jvmSystem": 0.037259616, 
+        "machineTotal": 0.10157195
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:01.128232291-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.114250615
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:02.149136250-03:00", 
+        "jvmUser": 0.018382354, 
+        "jvmSystem": 0.019607844, 
+        "machineTotal": 0.05055487
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:03.166701541-03:00", 
+        "jvmUser": 0.04656863, 
+        "jvmSystem": 0.033088237, 
+        "machineTotal": 0.10960591
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:04.192000791-03:00", 
+        "jvmUser": 0.046116505, 
+        "jvmSystem": 0.049757283, 
+        "machineTotal": 0.13950618
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:05.221937208-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.118872546
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:06.246212500-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12083847
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:07.270732958-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.115337424
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:08.296457-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12546125
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:09.330161875-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.124390244
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:10.357173750-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12224939
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:11.392478500-03:00", 
+        "jvmUser": 0.043269232, 
+        "jvmSystem": 0.042067308, 
+        "machineTotal": 0.120731704
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:12.425053916-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11707317
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:13.453709083-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11302211
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:14.478859916-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.117791414
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:15.506042541-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.10429448
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:16.529002250-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.1202454
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:17.554220583-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.10974106
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:18.577424625-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.111793615
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:19.600764583-03:00", 
+        "jvmUser": 0.023284314, 
+        "jvmSystem": 0.025735294, 
+        "machineTotal": 0.07985258
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:20.616803250-03:00", 
+        "jvmUser": 0.05392157, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.14764269
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:21.646834916-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.044902913, 
+        "machineTotal": 0.11872705
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:22.672356500-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.10987654
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:23.697906-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.117359415
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:24.724301791-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12469136
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:25.748454416-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.121323526
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:26.773403416-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.11248455
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:27.799335750-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11750306
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:28.823912375-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11248455
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:29.850060416-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12224939
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:30.875186-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11234568
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:31.900696958-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.11627907
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:32.925738583-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.113300495
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:33.952395458-03:00", 
+        "jvmUser": 0.052184466, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.13586292
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:34.975839500-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.1134402
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:35.999479333-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.0995086
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:37.024865541-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.10294118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:38.047055583-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11866502
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:39.078822208-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.10840438
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:40.099045916-03:00", 
+        "jvmUser": 0.034313727, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.10727497
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:41.125973541-03:00", 
+        "jvmUser": 0.02791262, 
+        "jvmSystem": 0.02791262, 
+        "machineTotal": 0.0945946
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:42.139751750-03:00", 
+        "jvmUser": 0.05940594, 
+        "jvmSystem": 0.05321782, 
+        "machineTotal": 0.14993805
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:43.170322666-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.09547123
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:44.193641958-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11793612
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:45.217102416-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.111524165
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:46.241185-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12285012
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:47.266429125-03:00", 
+        "jvmUser": 0.04901961, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.11411043
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:48.280823208-03:00", 
+        "jvmUser": 0.04331683, 
+        "jvmSystem": 0.040841583, 
+        "machineTotal": 0.1119403
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:49.308863666-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.10744811
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:50.334246416-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.10552147
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:51.359943-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.037990198, 
+        "machineTotal": 0.094710946
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:52.383260291-03:00", 
+        "jvmUser": 0.03276699, 
+        "jvmSystem": 0.030339805, 
+        "machineTotal": 0.095823094
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:53.398811375-03:00", 
+        "jvmUser": 0.04579208, 
+        "jvmSystem": 0.044554457, 
+        "machineTotal": 0.12855376
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:54.427777750-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.109068625
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:55.449169666-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11713933
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:56.472582541-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12083847
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:57.496763500-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11728395
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:58.524397375-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.03640777, 
+        "machineTotal": 0.11316113
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:56:59.548281166-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.116995074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:00.572558833-03:00", 
+        "jvmUser": 0.053398058, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.13316892
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:01.610194291-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11622276
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:02.612867250-03:00", 
+        "jvmUser": 0.038366336, 
+        "jvmSystem": 0.03960396, 
+        "machineTotal": 0.114178166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:03.638322708-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.1182266
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:04.663525458-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11808118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:05.687644541-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.116851166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:06.711264333-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.38253382
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:07.736378-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.2748466
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:08.761379125-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.2362301
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:09.790250916-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.25
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:10.824964041-03:00", 
+        "jvmUser": 0.043269232, 
+        "jvmSystem": 0.045673076, 
+        "machineTotal": 0.23479319
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:11.857597666-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.2496955
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:12.888403-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.044902913, 
+        "machineTotal": 0.29217604
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:13.915004375-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.23284313
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:14.938936-03:00", 
+        "jvmUser": 0.05637255, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.25552824
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:15.964170250-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.23493235
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:16.990309833-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.117791414
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:18.015250416-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12915128
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:19.039928166-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.13390663
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:20.064228916-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:21.088845833-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.112068966
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:22.114973-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11411043
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:23.139025333-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.2002457
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:24.164427-03:00", 
+        "jvmUser": 0.023058252, 
+        "jvmSystem": 0.025485437, 
+        "machineTotal": 0.083333336
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:25.184342625-03:00", 
+        "jvmUser": 0.018382354, 
+        "jvmSystem": 0.020833334, 
+        "machineTotal": 0.088779286
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:26.199730125-03:00", 
+        "jvmUser": 0.01980198, 
+        "jvmSystem": 0.01980198, 
+        "machineTotal": 0.10696518
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:27.214799416-03:00", 
+        "jvmUser": 0.071078435, 
+        "jvmSystem": 0.06495098, 
+        "machineTotal": 0.21410891
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:28.251231500-03:00", 
+        "jvmUser": 0.066747576, 
+        "jvmSystem": 0.049757283, 
+        "machineTotal": 0.16401468
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:29.287387833-03:00", 
+        "jvmUser": 0.022836538, 
+        "jvmSystem": 0.025240384, 
+        "machineTotal": 0.06884058
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:30.308348375-03:00", 
+        "jvmUser": 0.031862747, 
+        "jvmSystem": 0.026960785, 
+        "machineTotal": 0.08220859
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:31.337011708-03:00", 
+        "jvmUser": 0.030339805, 
+        "jvmSystem": 0.030339805, 
+        "machineTotal": 0.08058608
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:32.365048666-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.123774506
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:33.381160125-03:00", 
+        "jvmUser": 0.028465347, 
+        "jvmSystem": 0.030940594, 
+        "machineTotal": 0.07930607
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:34.404826958-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.106617644
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:35.435093750-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.10109623
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:36.452826-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.037990198, 
+        "machineTotal": 0.11248455
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:37.477677208-03:00", 
+        "jvmUser": 0.029411765, 
+        "jvmSystem": 0.029411765, 
+        "machineTotal": 0.09068628
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:38.492252250-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.14179105
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:39.526398666-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12942614
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:40.550993041-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11193112
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:41.574210416-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.10455105
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:42.598647250-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11627907
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:43.620332833-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.033088237, 
+        "machineTotal": 0.10493827
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:44.644814666-03:00", 
+        "jvmUser": 0.025485437, 
+        "jvmSystem": 0.029126214, 
+        "machineTotal": 0.08424909
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:45.665558583-03:00", 
+        "jvmUser": 0.014705882, 
+        "jvmSystem": 0.015931373, 
+        "machineTotal": 0.06642067
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:46.676023041-03:00", 
+        "jvmUser": 0.042079207, 
+        "jvmSystem": 0.03960396, 
+        "machineTotal": 0.12219451
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:47.692945333-03:00", 
+        "jvmUser": 0.05882353, 
+        "jvmSystem": 0.05759804, 
+        "machineTotal": 0.16024844
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:48.731609416-03:00", 
+        "jvmUser": 0.040865384, 
+        "jvmSystem": 0.044471152, 
+        "machineTotal": 0.11936662
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:49.756601583-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11945813
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:50.780071875-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12177122
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:51.803943458-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11851852
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:52.827904625-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.14250614
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:53.852225291-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11619283
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:54.875368625-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12207152
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:55.900673125-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.125
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:56.923720750-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11728395
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:57.948980666-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12039312
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:58.973681708-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11713933
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:57:59.998114416-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.119164616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:01.022393-03:00", 
+        "jvmUser": 0.052184466, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.12716049
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:02.047008250-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11851852
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:03.070342500-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12177122
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:04.097967833-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11764706
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:05.123930791-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.10674847
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:06.147152416-03:00", 
+        "jvmUser": 0.033088237, 
+        "jvmSystem": 0.033088237, 
+        "machineTotal": 0.092478424
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:07.187554791-03:00", 
+        "jvmUser": 0.021634616, 
+        "jvmSystem": 0.022836538, 
+        "machineTotal": 0.10817308
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:08.189252875-03:00", 
+        "jvmUser": 0.00625, 
+        "jvmSystem": 0.00625, 
+        "machineTotal": 0.06265664
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:09.196399125-03:00", 
+        "jvmUser": 0.04579208, 
+        "jvmSystem": 0.040841583, 
+        "machineTotal": 0.14962594
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:10.215634041-03:00", 
+        "jvmUser": 0.05514706, 
+        "jvmSystem": 0.04779412, 
+        "machineTotal": 0.15241636
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:11.243905125-03:00", 
+        "jvmUser": 0.044902913, 
+        "jvmSystem": 0.035194173, 
+        "machineTotal": 0.12285012
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:12.264125750-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.12561576
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:13.292436750-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.116564415
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:14.317319458-03:00", 
+        "jvmUser": 0.029411765, 
+        "jvmSystem": 0.031862747, 
+        "machineTotal": 0.09079754
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:15.340868166-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.019607844, 
+        "machineTotal": 0.078431375
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:16.346134208-03:00", 
+        "jvmUser": 0.025990099, 
+        "jvmSystem": 0.024752475, 
+        "machineTotal": 0.07875
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:17.373736250-03:00", 
+        "jvmUser": 0.023058252, 
+        "jvmSystem": 0.026699029, 
+        "machineTotal": 0.09914321
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:18.391332500-03:00", 
+        "jvmUser": 0.054455444, 
+        "jvmSystem": 0.04950495, 
+        "machineTotal": 0.15375154
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:19.421608166-03:00", 
+        "jvmUser": 0.06490385, 
+        "jvmSystem": 0.056490384, 
+        "machineTotal": 0.1607362
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:20.457441791-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.046116505, 
+        "machineTotal": 0.113553114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:21.483171416-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11002445
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:22.507042625-03:00", 
+        "jvmUser": 0.033088237, 
+        "jvmSystem": 0.033088237, 
+        "machineTotal": 0.08588957
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:23.531353416-03:00", 
+        "jvmUser": 0.034313727, 
+        "jvmSystem": 0.030637255, 
+        "machineTotal": 0.101591185
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:24.557502541-03:00", 
+        "jvmUser": 0.033980582, 
+        "jvmSystem": 0.0315534, 
+        "machineTotal": 0.09547123
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:25.578443125-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.0502451, 
+        "machineTotal": 0.14197531
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:26.607395208-03:00", 
+        "jvmUser": 0.035194173, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.09902201
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:27.635725791-03:00", 
+        "jvmUser": 0.019417476, 
+        "jvmSystem": 0.019417476, 
+        "machineTotal": 0.07551766
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:28.652160208-03:00", 
+        "jvmUser": 0.017156864, 
+        "jvmSystem": 0.017156864, 
+        "machineTotal": 0.06403941
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:29.673058625-03:00", 
+        "jvmUser": 0.031862747, 
+        "jvmSystem": 0.031862747, 
+        "machineTotal": 0.10344828
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:30.693559875-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.04901961, 
+        "machineTotal": 0.13720642
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:31.730157541-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.09915357
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:32.760271041-03:00", 
+        "jvmUser": 0.046116505, 
+        "jvmSystem": 0.03276699, 
+        "machineTotal": 0.10268949
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:33.789125625-03:00", 
+        "jvmUser": 0.03276699, 
+        "jvmSystem": 0.03640777, 
+        "machineTotal": 0.08913309
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:34.812471833-03:00", 
+        "jvmUser": 0.023058252, 
+        "jvmSystem": 0.025485437, 
+        "machineTotal": 0.06740196
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:35.827969750-03:00", 
+        "jvmUser": 0.04331683, 
+        "jvmSystem": 0.042079207, 
+        "machineTotal": 0.12469136
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:36.859791625-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.113553114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:37.881645666-03:00", 
+        "jvmUser": 0.033088237, 
+        "jvmSystem": 0.035539217, 
+        "machineTotal": 0.1
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:38.910538916-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.102564104
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:39.936577750-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.109068625
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:40.961299791-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.10281518
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:41.984826083-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.115763545
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:43.006980875-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.09840099
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:44.030715250-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.121323526
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:45.057921875-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.033980582, 
+        "machineTotal": 0.092796095
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:46.082099083-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11193112
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:47.107044333-03:00", 
+        "jvmUser": 0.034313727, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.09547123
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:48.130069166-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.094710946
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:49.155413083-03:00", 
+        "jvmUser": 0.03276699, 
+        "jvmSystem": 0.02791262, 
+        "machineTotal": 0.085784316
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:50.178896500-03:00", 
+        "jvmUser": 0.025735294, 
+        "jvmSystem": 0.026960785, 
+        "machineTotal": 0.089790896
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:51.202568541-03:00", 
+        "jvmUser": 0.0012135922, 
+        "jvmSystem": 0.0024271845, 
+        "machineTotal": 0.021951219
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:52.205639041-03:00", 
+        "jvmUser": 0.00625, 
+        "jvmSystem": 0.00625, 
+        "machineTotal": 0.07259074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:53.214024500-03:00", 
+        "jvmUser": 0.034653466, 
+        "jvmSystem": 0.03589109, 
+        "machineTotal": 0.13591023
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:54.237657583-03:00", 
+        "jvmUser": 0.026960785, 
+        "jvmSystem": 0.026960785, 
+        "machineTotal": 0.10539216
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:55.257199750-03:00", 
+        "jvmUser": 0.07230392, 
+        "jvmSystem": 0.066176474, 
+        "machineTotal": 0.22636816
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:56.298598625-03:00", 
+        "jvmUser": 0.048076924, 
+        "jvmSystem": 0.048076924, 
+        "machineTotal": 0.1598063
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:57.331663416-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.12652068
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:58.358103541-03:00", 
+        "jvmUser": 0.067961164, 
+        "jvmSystem": 0.058252428, 
+        "machineTotal": 0.17199017
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:58:59.393165333-03:00", 
+        "jvmUser": 0.046875, 
+        "jvmSystem": 0.050480768, 
+        "machineTotal": 0.14841849
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:00.420688708-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.04779412, 
+        "machineTotal": 0.17076167
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:01.436298041-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12779157
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:02.459731666-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.033088237, 
+        "machineTotal": 0.11439114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:03.484611708-03:00", 
+        "jvmUser": 0.018203884, 
+        "jvmSystem": 0.019417476, 
+        "machineTotal": 0.084352076
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:04.503418458-03:00", 
+        "jvmUser": 0.018382354, 
+        "jvmSystem": 0.019607844, 
+        "machineTotal": 0.08990148
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:05.520815083-03:00", 
+        "jvmUser": 0.070544556, 
+        "jvmSystem": 0.055693068, 
+        "machineTotal": 0.1840796
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:06.535916083-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11757426
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:07.562997166-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.046116505, 
+        "machineTotal": 0.12669127
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:08.588981166-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12117503
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:09.620573083-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.1127451
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:10.650079041-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.046116505, 
+        "machineTotal": 0.13447432
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:11.699325666-03:00", 
+        "jvmUser": 0.048809525, 
+        "jvmSystem": 0.03809524, 
+        "machineTotal": 0.12183353
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:12.702153500-03:00", 
+        "jvmUser": 0.034653466, 
+        "jvmSystem": 0.034653466, 
+        "machineTotal": 0.13157895
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:13.724051125-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.11248455
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:14.750755125-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.117791414
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:15.775012125-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11111111
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:16.799924375-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11547912
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:17.823979291-03:00", 
+        "jvmUser": 0.035194173, 
+        "jvmSystem": 0.029126214, 
+        "machineTotal": 0.18115056
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:18.847066375-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11837238
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:19.871794750-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12315271
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:20.895336166-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11547912
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:21.918375750-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11945813
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:22.944816958-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11042945
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:23.969089708-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.11083744
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:24.991640375-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.11742892
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:26.016388583-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.115337424
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:27.041006208-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11837238
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:28.063550750-03:00", 
+        "jvmUser": 0.033980582, 
+        "jvmSystem": 0.033980582, 
+        "machineTotal": 0.123774506
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:29.085618500-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11234568
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:30.110311833-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12192118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:31.136014333-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11562116
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:32.160459125-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.10960591
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:33.188374958-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.10391198
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:34.213126416-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11808118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:35.238777333-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12269939
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:36.264531875-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.114532016
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:37.290918166-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.10674847
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:38.315596541-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.03762136, 
+        "machineTotal": 0.12423124
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:39.346533708-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11750306
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:40.372559875-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12068965
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:41.395024750-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11316113
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:42.420294333-03:00", 
+        "jvmUser": 0.028186275, 
+        "jvmSystem": 0.030637255, 
+        "machineTotal": 0.08251231
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:43.436418791-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.13043478
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:44.466836625-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.115712546
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:45.490908916-03:00", 
+        "jvmUser": 0.05392157, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.13793103
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:46.516483458-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11808118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:47.542484791-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.10797546
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:48.567928916-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.12530713
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:49.591178083-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11728395
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:50.614969708-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11728395
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:51.639946250-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11627907
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:52.664970500-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11742892
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:53.688623500-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.114250615
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:54.713096375-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11945813
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:55.738486541-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11793612
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:56.762275-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12300123
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:57.785378541-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.119753085
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:58.811272166-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T07:59:59.836357083-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11960542
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:00.860607083-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.119018406
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:01.886000583-03:00", 
+        "jvmUser": 0.0315534, 
+        "jvmSystem": 0.033980582, 
+        "machineTotal": 0.096059114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:02.907745250-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.04901961, 
+        "machineTotal": 0.14108911
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:03.936617583-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116136916
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:04.960229083-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.033088237, 
+        "machineTotal": 0.096932516
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:05.982450541-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03640777, 
+        "machineTotal": 0.09382716
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:07.007217208-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.114914425
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:08.032075208-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12207152
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:09.062855250-03:00", 
+        "jvmUser": 0.045673076, 
+        "jvmSystem": 0.034855768, 
+        "machineTotal": 0.107186355
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:10.091343750-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:11.119023291-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:12.143853250-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116995074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:13.167633-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12577066
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:14.191650416-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.11233211
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:15.214490583-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11524164
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:16.239886041-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.116564415
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:17.289176291-03:00", 
+        "jvmUser": 0.039285716, 
+        "jvmSystem": 0.042857144, 
+        "machineTotal": 0.112048194
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:18.290058041-03:00", 
+        "jvmUser": 0.03875, 
+        "jvmSystem": 0.04, 
+        "machineTotal": 0.114178166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:19.314149666-03:00", 
+        "jvmUser": 0.04368932, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.124078624
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:20.339833-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11495674
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:21.365706583-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:22.390961375-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.13653137
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:23.414718291-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.116421565
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:24.435320625-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.112623766
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:25.461622458-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.124078624
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:26.484974708-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11083744
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:27.510328833-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.115763545
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:28.533242791-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11713933
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:29.557698791-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11808118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:30.583140958-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.12285012
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:31.607520708-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.113300495
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:32.632678083-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11439114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:33.662500875-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11627907
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:34.687645875-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11316113
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:35.713095750-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11439114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:36.737953083-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.119164616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:37.763571875-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.1430333
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:38.788202500-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.12224939
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:39.813663375-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12453761
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:40.838866666-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.123774506
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:41.864040458-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11083744
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:42.888084875-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.12054121
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:43.911876791-03:00", 
+        "jvmUser": 0.025735294, 
+        "jvmSystem": 0.026960785, 
+        "machineTotal": 0.07720588
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:44.931411291-03:00", 
+        "jvmUser": 0.05882353, 
+        "jvmSystem": 0.05147059, 
+        "machineTotal": 0.1650124
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:45.962844750-03:00", 
+        "jvmUser": 0.03846154, 
+        "jvmSystem": 0.043269232, 
+        "machineTotal": 0.11505508
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:46.988064125-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.111519605
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:48.010695375-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12978986
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:49.035491250-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03640777, 
+        "machineTotal": 0.117359415
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:50.061216208-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.13899139
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:51.086908583-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12315271
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:52.112508375-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11519608
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:53.137838625-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11234568
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:54.163112208-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11439114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:55.192125875-03:00", 
+        "jvmUser": 0.0502451, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.12851897
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:56.217747250-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.115763545
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:57.243340250-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:58.267594500-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11481482
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:00:59.293244791-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12177122
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:00.314012875-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.1182266
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:01.335521250-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.12004951
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:02.361908416-03:00", 
+        "jvmUser": 0.022058824, 
+        "jvmSystem": 0.024509804, 
+        "machineTotal": 0.0794621
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:03.380433291-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.13118812
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:04.406622125-03:00", 
+        "jvmUser": 0.048543688, 
+        "jvmSystem": 0.046116505, 
+        "machineTotal": 0.13006134
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:05.434631916-03:00", 
+        "jvmUser": 0.03276699, 
+        "jvmSystem": 0.035194173, 
+        "machineTotal": 0.09313726
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:06.457128541-03:00", 
+        "jvmUser": 0.008578432, 
+        "jvmSystem": 0.009803922, 
+        "machineTotal": 0.034398034
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:07.467520833-03:00", 
+        "jvmUser": 0.02970297, 
+        "jvmSystem": 0.02970297, 
+        "machineTotal": 0.11346634
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:08.487003416-03:00", 
+        "jvmUser": 0.0502451, 
+        "jvmSystem": 0.04901961, 
+        "machineTotal": 0.17262639
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:09.525938708-03:00", 
+        "jvmUser": 0.067307696, 
+        "jvmSystem": 0.052884616, 
+        "machineTotal": 0.15859564
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:10.575555625-03:00", 
+        "jvmUser": 0.04047619, 
+        "jvmSystem": 0.045238096, 
+        "machineTotal": 0.116586536
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:11.602905916-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.118872546
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:12.629132-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.100861005
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:13.649593166-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.13916256
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:14.675097791-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.047330096, 
+        "machineTotal": 0.14478527
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:15.700733458-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.20833333
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:16.726722875-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.18942189
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:17.747023416-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.1223733
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:18.767552500-03:00", 
+        "jvmUser": 0.024509804, 
+        "jvmSystem": 0.023284314, 
+        "machineTotal": 0.14004914
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:19.782681916-03:00", 
+        "jvmUser": 0.05392157, 
+        "jvmSystem": 0.05269608, 
+        "machineTotal": 0.17581047
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:20.815936166-03:00", 
+        "jvmUser": 0.035194173, 
+        "jvmSystem": 0.03640777, 
+        "machineTotal": 0.11678832
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:21.838540583-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.12469136
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:22.886438833-03:00", 
+        "jvmUser": 0.026190476, 
+        "jvmSystem": 0.030952381, 
+        "machineTotal": 0.08373206
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:23.888892500-03:00", 
+        "jvmUser": 0.0425, 
+        "jvmSystem": 0.04, 
+        "machineTotal": 0.119647354
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:24.905961083-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.12222222
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:25.935207041-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.16911764
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:26.960491791-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.17139333
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:27.983312291-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.029126214, 
+        "machineTotal": 0.20884521
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:28.998523250-03:00", 
+        "jvmUser": 0.03217822, 
+        "jvmSystem": 0.033415843, 
+        "machineTotal": 0.24565756
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:30.016820083-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.16212872
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:31.048963333-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.13325183
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:32.069917250-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.13546798
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:33.103445416-03:00", 
+        "jvmUser": 0.03966346, 
+        "jvmSystem": 0.044471152, 
+        "machineTotal": 0.12682927
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:34.134174375-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.12652068
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:35.160511-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.1182266
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:36.187614125-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.108935125
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:37.210141250-03:00", 
+        "jvmUser": 0.026960785, 
+        "jvmSystem": 0.028186275, 
+        "machineTotal": 0.0799508
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:38.230804333-03:00", 
+        "jvmUser": 0.014705882, 
+        "jvmSystem": 0.017156864, 
+        "machineTotal": 0.08108108
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:39.246499708-03:00", 
+        "jvmUser": 0.04901961, 
+        "jvmSystem": 0.04779412, 
+        "machineTotal": 0.18835191
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:40.280101166-03:00", 
+        "jvmUser": 0.030339805, 
+        "jvmSystem": 0.029126214, 
+        "machineTotal": 0.09245742
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:41.297158541-03:00", 
+        "jvmUser": 0.0502451, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.13167702
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:42.325228250-03:00", 
+        "jvmUser": 0.064320385, 
+        "jvmSystem": 0.05946602, 
+        "machineTotal": 0.16748768
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:43.366073250-03:00", 
+        "jvmUser": 0.044471152, 
+        "jvmSystem": 0.049278848, 
+        "machineTotal": 0.13357401
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:44.394084-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.11931119
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:45.420402416-03:00", 
+        "jvmUser": 0.028186275, 
+        "jvmSystem": 0.031862747, 
+        "machineTotal": 0.09168704
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:46.444996583-03:00", 
+        "jvmUser": 0.024271844, 
+        "jvmSystem": 0.025485437, 
+        "machineTotal": 0.07116564
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:47.466811041-03:00", 
+        "jvmUser": 0.05514706, 
+        "jvmSystem": 0.05514706, 
+        "machineTotal": 0.16913581
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:48.500073208-03:00", 
+        "jvmUser": 0.052184466, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12317073
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:49.525950958-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.116851166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:50.550891333-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11042945
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:51.575211291-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.113300495
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:52.599380750-03:00", 
+        "jvmUser": 0.035539217, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.11056511
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:53.622013916-03:00", 
+        "jvmUser": 0.008578432, 
+        "jvmSystem": 0.009803922, 
+        "machineTotal": 0.080882356
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:54.630435708-03:00", 
+        "jvmUser": 0.06930693, 
+        "jvmSystem": 0.05940594, 
+        "machineTotal": 0.18045112
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:55.666592833-03:00", 
+        "jvmUser": 0.03846154, 
+        "jvmSystem": 0.043269232, 
+        "machineTotal": 0.11407767
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:56.692600291-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11070111
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:57.715598375-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11302211
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:58.740880500-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.115763545
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:01:59.766825166-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.13267814
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:00.786802541-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.120987654
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:01.812312958-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11193112
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:02.840622458-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11369193
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:03.865420291-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.113300495
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:04.891714291-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.121323526
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:05.918470791-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.114250615
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:06.941026166-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11590629
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:07.966268250-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12577066
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:08.997075458-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.115712546
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:10.030473750-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116136916
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:11.058269125-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.11764706
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:12.085703416-03:00", 
+        "jvmUser": 0.044902913, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:13.114796583-03:00", 
+        "jvmUser": 0.018203884, 
+        "jvmSystem": 0.02184466, 
+        "machineTotal": 0.07804878
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:14.132586875-03:00", 
+        "jvmUser": 0.017326733, 
+        "jvmSystem": 0.018564356, 
+        "machineTotal": 0.06905056
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:15.149846500-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.16024844
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:16.174429791-03:00", 
+        "jvmUser": 0.050970875, 
+        "jvmSystem": 0.050970875, 
+        "machineTotal": 0.15847667
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:17.197658041-03:00", 
+        "jvmUser": 0.080882356, 
+        "jvmSystem": 0.06127451, 
+        "machineTotal": 0.18450184
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:18.219587750-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.12207152
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:19.246122250-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.03883495, 
+        "machineTotal": 0.106617644
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:20.265700625-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11414392
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:21.292132958-03:00", 
+        "jvmUser": 0.042892158, 
+        "jvmSystem": 0.04411765, 
+        "machineTotal": 0.13128835
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:22.315751708-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.0315534, 
+        "machineTotal": 0.23067485
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:23.348389125-03:00", 
+        "jvmUser": 0.044902913, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12698413
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:24.382809666-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11327649
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:25.414894250-03:00", 
+        "jvmUser": 0.03846154, 
+        "jvmSystem": 0.043269232, 
+        "machineTotal": 0.11750306
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:26.445318625-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.035194173, 
+        "machineTotal": 0.1126071
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:27.495071833-03:00", 
+        "jvmUser": 0.04404762, 
+        "jvmSystem": 0.046428572, 
+        "machineTotal": 0.140625
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:28.497661375-03:00", 
+        "jvmUser": 0.03875, 
+        "jvmSystem": 0.04, 
+        "machineTotal": 0.11320755
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:29.521058083-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.035539217, 
+        "machineTotal": 0.10306749
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:30.545707916-03:00", 
+        "jvmUser": 0.018203884, 
+        "jvmSystem": 0.019417476, 
+        "machineTotal": 0.05759804
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:31.563876125-03:00", 
+        "jvmUser": 0.026960785, 
+        "jvmSystem": 0.025735294, 
+        "machineTotal": 0.108641975
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:32.581956500-03:00", 
+        "jvmUser": 0.037128713, 
+        "jvmSystem": 0.03589109, 
+        "machineTotal": 0.1109741
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:33.600220875-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.13135068
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:34.622731166-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.05147059, 
+        "machineTotal": 0.13490099
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:35.657434-03:00", 
+        "jvmUser": 0.040865384, 
+        "jvmSystem": 0.043269232, 
+        "machineTotal": 0.11151515
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:36.682507291-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.10701107
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:37.706087250-03:00", 
+        "jvmUser": 0.030339805, 
+        "jvmSystem": 0.0315534, 
+        "machineTotal": 0.08374384
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:38.725274166-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.14814815
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:39.734786416-03:00", 
+        "jvmUser": 0.03217822, 
+        "jvmSystem": 0.03217822, 
+        "machineTotal": 0.17245658
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:40.753988875-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.12871288
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:41.780112166-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.116851166
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:42.804868833-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11439114
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:43.828249416-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.105781056
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:44.851323083-03:00", 
+        "jvmUser": 0.04656863, 
+        "jvmSystem": 0.031862747, 
+        "machineTotal": 0.11837238
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:45.875281291-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.114532016
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:46.900284916-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11713933
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:47.924998291-03:00", 
+        "jvmUser": 0.03640777, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.10797546
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:48.952130041-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.037990198, 
+        "machineTotal": 0.10306749
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:49.978721458-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.116707616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:51.003869375-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11604938
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:52.029071208-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.11547912
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:53.053878041-03:00", 
+        "jvmUser": 0.0315534, 
+        "jvmSystem": 0.029126214, 
+        "machineTotal": 0.08935128
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:54.076433916-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.04901961, 
+        "machineTotal": 0.14549938
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:55.105693666-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11383109
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:56.130421958-03:00", 
+        "jvmUser": 0.029411765, 
+        "jvmSystem": 0.030637255, 
+        "machineTotal": 0.0870098
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:57.155240083-03:00", 
+        "jvmUser": 0.050970875, 
+        "jvmSystem": 0.048543688, 
+        "machineTotal": 0.14478527
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:58.185708666-03:00", 
+        "jvmUser": 0.033980582, 
+        "jvmSystem": 0.033980582, 
+        "machineTotal": 0.09779951
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:02:59.204781500-03:00", 
+        "jvmUser": 0.05147059, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.13291925
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:00.233269708-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12087912
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:01.258900458-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11742892
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:02.283545916-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.12515338
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:03.309609458-03:00", 
+        "jvmUser": 0.023284314, 
+        "jvmSystem": 0.025735294, 
+        "machineTotal": 0.06871165
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:04.334025791-03:00", 
+        "jvmUser": 0.023058252, 
+        "jvmSystem": 0.024271844, 
+        "machineTotal": 0.09068628
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:05.349550250-03:00", 
+        "jvmUser": 0.033415843, 
+        "jvmSystem": 0.034653466, 
+        "machineTotal": 0.12113721
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:06.369430041-03:00", 
+        "jvmUser": 0.075980395, 
+        "jvmSystem": 0.05637255, 
+        "machineTotal": 0.17267081
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:07.416973625-03:00", 
+        "jvmUser": 0.039285716, 
+        "jvmSystem": 0.04404762, 
+        "machineTotal": 0.11913358
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:08.448982708-03:00", 
+        "jvmUser": 0.03762136, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11599512
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:09.480012958-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.11219512
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:10.514616958-03:00", 
+        "jvmUser": 0.03846154, 
+        "jvmSystem": 0.03966346, 
+        "machineTotal": 0.10571081
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:11.539476958-03:00", 
+        "jvmUser": 0.041666668, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.13899139
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:12.565353125-03:00", 
+        "jvmUser": 0.044902913, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.1182266
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:13.590634041-03:00", 
+        "jvmUser": 0.031862747, 
+        "jvmSystem": 0.034313727, 
+        "machineTotal": 0.09803922
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:14.612825250-03:00", 
+        "jvmUser": 0.013480392, 
+        "jvmSystem": 0.015931373, 
+        "machineTotal": 0.05172414
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:15.626160958-03:00", 
+        "jvmUser": 0.0625, 
+        "jvmSystem": 0.05392157, 
+        "machineTotal": 0.1920694
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:16.646277458-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.04779412, 
+        "machineTotal": 0.12747525
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:17.675521916-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.11931119
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:18.700530041-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.10622711
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:19.725809666-03:00", 
+        "jvmUser": 0.03883495, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.1094711
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:20.748823250-03:00", 
+        "jvmUser": 0.036764707, 
+        "jvmSystem": 0.039215688, 
+        "machineTotal": 0.111793615
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:21.765024708-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.13200498
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:22.791766541-03:00", 
+        "jvmUser": 0.040441178, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12867647
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:23.817556291-03:00", 
+        "jvmUser": 0.033980582, 
+        "jvmSystem": 0.03640777, 
+        "machineTotal": 0.101715684
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:24.843811875-03:00", 
+        "jvmUser": 0.041262135, 
+        "jvmSystem": 0.04368932, 
+        "machineTotal": 0.11547912
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:25.870325791-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11931119
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:26.895409958-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.12315271
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:27.920614-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.119164616
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:28.946681416-03:00", 
+        "jvmUser": 0.018203884, 
+        "jvmSystem": 0.019417476, 
+        "machineTotal": 0.06364749
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:29.964923541-03:00", 
+        "jvmUser": 0.04779412, 
+        "jvmSystem": 0.04534314, 
+        "machineTotal": 0.14727722
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:30.985967583-03:00", 
+        "jvmUser": 0.0502451, 
+        "jvmSystem": 0.04779412, 
+        "machineTotal": 0.14197531
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:32.010350-03:00", 
+        "jvmUser": 0.039215688, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.1094711
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:33.064216-03:00", 
+        "jvmUser": 0.04009434, 
+        "jvmSystem": 0.043632075, 
+        "machineTotal": 0.11151079
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:34.066746750-03:00", 
+        "jvmUser": 0.04, 
+        "jvmSystem": 0.03625, 
+        "machineTotal": 0.10401002
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:35.094600500-03:00", 
+        "jvmUser": 0.02791262, 
+        "jvmSystem": 0.0315534, 
+        "machineTotal": 0.09657702
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:36.118508708-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.13096695
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:37.137859750-03:00", 
+        "jvmUser": 0.05269608, 
+        "jvmSystem": 0.040441178, 
+        "machineTotal": 0.120198265
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:38.163671583-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12729499
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:39.192299958-03:00", 
+        "jvmUser": 0.037990198, 
+        "jvmSystem": 0.041666668, 
+        "machineTotal": 0.11519608
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:40.216529250-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.041262135, 
+        "machineTotal": 0.116995074
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:41.241180416-03:00", 
+        "jvmUser": 0.04411765, 
+        "jvmSystem": 0.042892158, 
+        "machineTotal": 0.12207152
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:42.265422750-03:00", 
+        "jvmUser": 0.040048543, 
+        "jvmSystem": 0.042475726, 
+        "machineTotal": 0.12192118
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:43.290098208-03:00", 
+        "jvmUser": 0.033088237, 
+        "jvmSystem": 0.036764707, 
+        "machineTotal": 0.0992647
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:44.312362666-03:00", 
+        "jvmUser": 0.04534314, 
+        "jvmSystem": 0.04656863, 
+        "machineTotal": 0.1308642
+      }
+    }, {
+      "type": "jdk.CPULoad", 
+      "values": {
+        "startTime": "2025-12-21T08:03:45.339101791-03:00", 
+        "jvmUser": 0.042475726, 
+        "jvmSystem": 0.040048543, 
+        "machineTotal": 0.11590629
+      }
+    }]
+  }
+}
