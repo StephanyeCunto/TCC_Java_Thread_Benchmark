@@ -18,7 +18,7 @@ start_jvm() {
 
     $SSH "
         mkdir -p $LOG_PATH/$ENDPOINT
-        nohup java -jar --enable-native-access=ALL-UNNAMED $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
+        nohup java --enable-native-access=ALL-UNNAMED -XX:NativeMemoryTracking=summary -jar $JAVA_JAR_PATH > $LOG_PATH/$ENDPOINT/java${j}.log 2>&1 &
         echo \$! > $LOG_PATH/server.pid
     "
  
