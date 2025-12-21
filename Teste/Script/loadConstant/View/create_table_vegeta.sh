@@ -7,7 +7,6 @@ echo "carga,run,lat_mean_s,lat_p50_s,lat_p90_s,lat_p95_s,lat_p99_s,lat_max_s,req
 
 find "$BASE_DIR" -type f -path "*/run/json/*.json" | sort | while read -r json; do
 
-   # modelo=$(echo "$json" | awk -F'/' '{print $(NF-5)}')
     carga=$(echo "$json"  | awk -F'/' '{print $(NF-4)}')
     run=$(basename "$json" .json )
     run=${run#run}

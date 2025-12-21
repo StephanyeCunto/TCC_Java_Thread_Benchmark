@@ -11,7 +11,7 @@ SERVER_DIR="Documents/tcc/Teste/Script/LoadConstant"
 JAVA_JAR_ADRESS="Documents/tcc/Teste/Serve_Test/benchmark-server/target"
 JAVA_JAR_PATH="$JAVA_JAR_ADRESS/benchmark-server-0.0.1-SNAPSHOT.jar"
 LOG_PATH="$SERVER_DIR/Results/logs"
-RESULTS_PATH="Results/"
+RESULTS_PATH="Results2/"
 
 source "$ROOT_DIR/prepare_environment.sh"
 source "$ROOT_DIR/jvm.sh"
