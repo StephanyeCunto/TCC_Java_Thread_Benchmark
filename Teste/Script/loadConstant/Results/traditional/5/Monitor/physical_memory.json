@@ -1,0 +1,4674 @@
+{
+  "recording": {
+    "events": [{
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:19.112132416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7929774080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:20.116318375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938244608
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:21.121208583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7941357568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:22.124546625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7939424256
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:23.129388916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909933056
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:24.134548916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7922728960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:25.139468083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934885888
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:26.142629583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933771776
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:27.147714583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934017536
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:28.152722750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908818944
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:29.157623500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908245504
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:30.160338083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7907753984
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:31.162859375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7907557376
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:32.165253375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908147200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:33.167615791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908802560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:34.169930291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909572608
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:35.172374791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910129664
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:36.174942375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910424576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:37.177423375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909965824
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:38.179794500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909638144
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:39.182117250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909441536
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:40.184517250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908769792
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:41.187049708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7907934208
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:42.189495666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7907688448
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:43.191823666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909392384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:44.194168833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909097472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:45.196669875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908392960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:46.199187583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7907983360
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:47.201659041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908507648
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:48.204147-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910277120
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:49.206590750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909867520
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:50.209112875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909359616
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:51.211618625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910080512
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:52.214109541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909343232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:53.216475583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908999168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:54.218834791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908671488
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:55.221280291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910277120
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:56.223850666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909392384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:57.226318291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908966400
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:58.228759666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7908622336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:38:59.231204416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7907950592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:00.232606583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917797376
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:01.235203708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917273088
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:02.237741666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910490112
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:03.240148541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911063552
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:04.241332625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910735872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:05.243805958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911227392
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:06.246325750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911669760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:07.248774583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910801408
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:08.251136500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910342656
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:09.253521500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911145472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:10.255997416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903346688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:11.258517208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902822400
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:12.260906291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903477760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:13.263231833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903084544
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:14.265608208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902855168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:15.268108500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902134272
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:16.270663458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902429184
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:17.273218208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903346688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:18.275704666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903789056
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:19.278171208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903592448
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:20.280705625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902953472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:21.281703708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902511104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:22.284153166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903739904
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:23.286619166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903363072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:24.289019250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902724096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:25.291469916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902248960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:26.293930416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902756864
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:27.296306541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903182848
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:28.298620791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902838784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:29.301059583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7906738176
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:30.303734083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902085120
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:31.306258708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902838784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:32.308707333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902445568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:33.311124166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902117888
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:34.313492791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902838784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:35.315971458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904526336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:36.318435375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903920128
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:37.320231041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903281152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:38.322503166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902904320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:39.324905666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902543872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:40.327391291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903150080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:41.329816041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903543296
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:42.332210666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903821824
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:43.334607291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903461376
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:44.336982625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903133696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:45.339461083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902674944
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:46.341917083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903313920
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:47.344251583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902806016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:48.346527541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902330880
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:49.348919333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7912980480
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:50.353722916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919190016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:51.362988208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7921221632
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:52.372434875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932444672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:53.376138541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905329152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:54.380950666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933460480
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:55.388180083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903641600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:56.394197083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909310464
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:57.402580583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910178816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:58.409910375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904952320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:39:59.416922375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903854592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:00.420175166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911538688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:01.422732125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7912128512
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:02.425172833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911686144
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:03.427536166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911325696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:04.429893166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911800832
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:05.432343-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911489536
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:06.434886791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7912783872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:07.437302208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7912357888
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:08.439665291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911997440
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:09.442043375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911702528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:10.444490541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904083968
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:11.447003458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905771520
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:12.449491083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905198080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:13.451870458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905001472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:14.454230166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904624640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:15.456672625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904231424
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:16.459119208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903641600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:17.461525958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904116736
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:18.463899708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903576064
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:19.466309041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904083968
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:20.468839208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905607680
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:21.471431458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905165312
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:22.473889750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905755136
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:23.476316-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905558528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:24.478919166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904968704
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:25.481372750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904067584
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:26.483874458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903526912
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:27.486448666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903150080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:28.488796875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903674368
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:29.491189125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902625792
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:30.493901541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902953472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:31.496423916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902674944
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:32.498906958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904378880
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:33.501287416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904018432
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:34.503668791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903756288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:35.506056083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903330304
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:36.508467083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902232576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:37.511044291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7964196864
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:38.513574166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7961608192
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:39.516121666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7961329664
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:40.518549250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7961034752
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:41.521014875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7960477696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:42.523527875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7960231936
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:43.526058750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7959265280
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:44.528546333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7958740992
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:45.530943500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7959478272
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:46.533339750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7958773760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:47.535826041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7958069248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:48.538148166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7957151744
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:49.540559791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7957807104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:50.543014541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7957610496
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:51.545430750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7957708800
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:52.547879583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7958331392
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:53.550288916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7957774336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:54.552775708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8022884352
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:55.555266083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8022622208
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:56.557761166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8021753856
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:57.560260541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8020983808
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:58.562700625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8020492288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:40:59.565169083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8022130688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:00.567831791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028585984
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:01.570409250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8027947008
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:02.572921416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028667904
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:03.575299166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028209152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:04.577701291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8030339072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:05.580229458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8026406912
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:06.582731708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8026587136
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:07.585210500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028061696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:08.587610666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028782592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:09.590061-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028176384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:10.592562041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8020541440
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:11.595105791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8020000768
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:12.597621750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019509248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:13.600001625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019083264
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:14.602453750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019509248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:15.605002833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019886080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:16.607427416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019329024
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:17.609927875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8018968576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:18.612311083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8018264064
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:19.614764208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8029470720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:20.623421375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8030076928
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:21.632674083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8030257152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:22.641892791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8047853568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:23.645536625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8048115712
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:24.654216625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8022835200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:25.663018333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8028700672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:26.667718-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8029995008
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:27.676353375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8037695488
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:28.681001375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8038825984
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:29.690349083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8038170624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:30.694058458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8038645760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:31.696592750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8038187008
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:32.699101375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8037859328
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:33.701502833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019279872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:34.703950958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8018837504
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:35.706349458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8020328448
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:36.708792875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8019378176
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:37.711357166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7966343168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:38.713860541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7965933568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:39.716368166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7966556160
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:40.718802375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7966261248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:41.721214291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7966687232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:42.723713041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7966769152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:43.726146250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7966359552
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:44.728673625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7965736960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:45.731134791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7965343744
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:46.733535500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7964508160
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:47.736018583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7964147712
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:48.738401041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7963639808
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:49.740778375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7963607040
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:50.743285250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7965310976
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:51.745733583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7964688384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:52.748230666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7964278784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:53.750633375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7963983872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:54.753064291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904051200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:55.755545791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905689600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:56.758037416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904444416
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:57.760473208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904051200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:58.762864166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905787904
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:41:59.765279750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903641600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:00.768087750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911047168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:01.770590583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910211584
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:02.772429541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911030784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:03.774513291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911571456
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:04.776917166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7912226816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:05.779328125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7911620608
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:06.781730708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910785024
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:07.784213250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910473728
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:08.786564625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7910162432
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:09.788969708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7909867520
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:10.791467208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902330880
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:11.793875625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904854016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:12.796355750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904493568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:13.798663416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904215040
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:14.801030708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903543296
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:15.803459041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903150080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:16.805870791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902756864
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:17.808347375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903412224
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:18.810697875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904083968
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:19.813080416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903690752
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:20.815557666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903461376
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:21.817984291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902871552
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:22.820479666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903625216
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:23.822863750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903379456
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:24.825203375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902871552
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:25.827597666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902543872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:26.830009458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7902167040
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:27.832570-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7905099776
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:28.835109958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904706560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:29.837608791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904296960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:30.840205333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904772096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:31.842794458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904280576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:32.845330500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903772672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:33.847749875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904198656
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:34.850174916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903854592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:35.852727375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904428032
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:36.853515666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904821248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:37.856003375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7904100352
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:38.858337916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7903707136
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:39.860672958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7906328576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:40.862355458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928135680
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:41.864691625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933329408
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:42.867039583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933624320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:43.868311500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935033344
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:44.870865375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933345792
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:45.873337500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932035072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:46.875755416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7930314752
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:47.878169791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7930281984
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:48.880604750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7931248640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:49.883043375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933181952
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:50.895060166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7939719168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:51.907712833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7930986496
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:52.918871041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938080768
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:53.929019875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7929200640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:54.939539791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7957413888
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:55.950037250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927545856
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:56.960492708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928348672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:57.970738958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928315904
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:58.981143500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927775232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:42:59.991829125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7942471680
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:00.996437250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935410176
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:01.998952666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935754240
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:03.001397583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935246336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:04.003780166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935868928
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:05.004535291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936458752
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:06.006839416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935590400
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:07.009278666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935934464
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:08.011718666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935508480
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:09.014027625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935197184
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:10.016353041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934246912
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:11.018789875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927595008
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:12.021285541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927693312
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:13.023763375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926218752
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:14.026114750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925891072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:15.028569666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925563392
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:16.030998250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924908032
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:17.033375958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924514816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:18.035823250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924072448
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:19.038184541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7923613696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:20.040653833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924678656
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:21.043068208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926300672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:22.045453625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925727232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:23.047908375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925530624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:24.050201083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925186560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:25.052505208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924727808
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:26.054888500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924334592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:27.057296875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7923826688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:28.059772291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924531200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:29.062112166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924236288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:30.064498458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7923990528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:31.067280333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924531200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:32.068626833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925923840
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:33.071030250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926530048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:34.073392666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927201792
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:35.075738291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926693888
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:36.078041458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926267904
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:37.080438916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925252096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:38.082910291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924596736
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:39.085254916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924334592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:40.087621541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7923875840
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:41.090008291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925776384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:42.091016750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925039104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:43.093293333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924514816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:44.095272916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925334016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:45.097629833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924973568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:46.099996875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917207552
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:47.102439375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917371392
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:48.104908291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919026176
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:49.107400083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918403584
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:50.109878291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919075328
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:51.112344500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918338048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:52.114822458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918567424
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:53.117226250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918043136
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:54.119615833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918141440
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:55.121933791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918862336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:56.124297541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917977600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:57.126754416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917568000
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:58.127787666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917780992
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:43:59.130298291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918190592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:00.132841250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925039104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:01.135431500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924613120
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:02.137890625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7923826688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:03.140367875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924678656
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:04.142769833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925137408
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:05.145128583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925743616
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:06.147590083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926284288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:07.150002791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925645312
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:08.152453958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925334016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:09.154806833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924842496
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:10.157162458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916896256
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:11.159636833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916552192
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:12.162035541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918092288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:13.164515291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917617152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:14.166881833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917273088
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:15.169274541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916879872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:16.171614125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917502464
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:17.174015458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916961792
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:18.176455541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917600768
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:19.178828083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916601344
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:20.181214916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7947354112
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:21.185678125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7948156928
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:22.201945125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934099456
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:23.218366291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918960640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:24.234615-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928201216
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:25.249457541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918288896
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:26.266557541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7929282560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:27.280304875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920418816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:28.298173375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919665152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:29.314663666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920369664
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:30.331694625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918977024
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:31.337416291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919632384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:32.339859208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920336896
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:33.342317625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920140288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:34.344687291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919681536
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:35.347160083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920058368
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:36.349642583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919108096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:37.352109750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920386048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:38.354508500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920140288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:39.356863208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919747072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:40.359213416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919452160
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:41.361574458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918338048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:42.364040291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918649344
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:43.366479500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918387200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:44.368819708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918993408
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:45.371195958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919501312
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:46.373534500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919124480
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:47.375967708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919632384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:48.378348791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919173632
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:49.380768500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918878720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:50.383174333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918370816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:51.385564958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7922958336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:52.387978625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919894528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:53.390390791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919583232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:54.392739291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919157248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:55.395104833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919845376
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:56.397499916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918714880
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:57.399901208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918092288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:58.402324916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918747648
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:44:59.404706375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7919468544
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:00.407133708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926202368
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:01.409799875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926743040
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:02.412192291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926038528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:03.414597041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925497856
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:04.416955750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924662272
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:05.419337916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7923646464
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:06.421690333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924826112
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:07.424163875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924416512
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:08.426586333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924056064
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:09.428988-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925825536
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:10.431418625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918125056
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:11.433829125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917748224
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:12.436281750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917338624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:13.438676916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917912064
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:14.441036333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918452736
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:15.443377916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918157824
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:16.445713500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917518848
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:17.448109458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917043712
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:18.450529791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916650496
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:19.452905875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916290048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:20.455308750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917060096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:21.457622875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916716032
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:22.460035458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918223360
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:23.462433833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917993984
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:24.464764958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917486080
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:25.467142583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917125632
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:26.469455791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916765184
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:27.471827-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916208128
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:28.474250708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917027328
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:29.476583708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917715456
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:30.479026625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920386048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:31.481602291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916290048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:32.484103708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916814336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:33.486498791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916519424
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:34.488826041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918370816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:35.491211875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917731840
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:36.493544333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917240320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:37.495983541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916437504
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:38.498437375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916060672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:39.500849291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917043712
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:40.503326333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918567424
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:41.505759458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7918026752
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:42.508165625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7917223936
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:43.510589500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916863488
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:44.512995500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916306432
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:45.515396-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7915520000
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:46.517748958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7915962368
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:47.520190833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916634112
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:48.522582375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916158976
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:49.524941291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916912640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:50.527427458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7916978176
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:51.535539500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7920025600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:52.552346458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7980859392
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:53.569729500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7976484864
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:54.586850958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7974518784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:55.603467458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7973814272
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:56.621525625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7975829504
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:57.635463041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7974731776
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:58.648643375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7974567936
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:45:59.661759625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7975731200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:00.674527291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7986888704
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:01.684918750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7981678592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:02.687402875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7981973504
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:03.689841708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7981301760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:04.692189291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7981039616
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:05.694514125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7980269568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:06.696855625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7980679168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:07.699238208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7979696128
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:08.701713875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7980351488
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:09.704123791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8043806720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:10.705475416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036122624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:11.707809125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036794368
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:12.710200875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036352000
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:13.712648625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036728832
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:14.715127-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8035368960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:15.717582-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036057088
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:16.719946750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036630528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:17.721582250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8036237312
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:18.723995458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8035696640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:19.726365541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8034369536
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:20.728797291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8033976320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:21.731149666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8033353728
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:22.732498250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8034156544
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:23.734900333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8033730560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:24.737268500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8033320960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:25.739713166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8044199936
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:26.742108958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8043773952
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:27.744560166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8042151936
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:28.746933333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041955328
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:29.749291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041611264
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:30.751722-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040480768
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:31.754427625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039727104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:32.756839416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039333888
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:33.759266500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041201664
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:34.761732333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040726528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:35.764153958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039940096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:36.766514500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039415808
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:37.768916583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040038400
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:38.770435333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039776256
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:39.772832750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039268352
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:40.775195708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039940096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:41.777536583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039628800
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:42.779971125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039710720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:43.782431833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041103360
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:44.784884166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041725952
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:45.787321541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041185280
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:46.789629625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040759296
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:47.791984166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040251392
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:48.794377416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8039530496
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:49.796752708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040988672
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:50.799175875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8041709568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:51.801527583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 8040890368
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:52.803971458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7988051968
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:53.806376333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7987527680
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:54.808732041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7988019200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:55.811188541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7988674560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:56.813579416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7987888128
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:57.816066375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7986757632
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:58.818534500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7986249728
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:46:59.820999708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7986741248
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:00.823480583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7995359232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:01.825990416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7994671104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:02.828571791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7994392576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:03.831009541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7993999360
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:04.833376666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7994884096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:05.835799541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7996424192
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:06.838213583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7995342848
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:07.840664958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7994949632
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:08.843120875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7994638336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:09.845513041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934345216
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:10.847956708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926611968
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:11.850366291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926169600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:12.852762333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926579200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:13.855142166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926382592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:14.857493833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926267904
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:15.859937541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925891072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:16.861179083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926104064
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:17.862364666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925628928
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:18.864832500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926366208
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:19.867225416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926038528
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:20.869734583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925547008
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:21.870631375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928217600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:22.890469375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928053760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:23.909689958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927906304
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:24.927923791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928774656
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:25.947529125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927545856
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:26.966028833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927119872
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:27.984955291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926382592
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:29.004759541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927250944
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:30.023762500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927103488
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:31.042424500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925989376
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:32.061136375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925530624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:33.063584833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925284864
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:34.066036583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924989952
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:35.068368291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925628928
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:36.070760-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925088256
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:37.073142708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7927578624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:38.075606333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932264448
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:39.078041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926530048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:40.080444583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926120448
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:41.082795333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925891072
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:42.085127750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926398976
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:43.087539875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926611968
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:44.090018375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926366208
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:45.092418958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925841920
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:46.094774166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925252096
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:47.097201166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925645312
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:48.099756875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926906880
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:49.102211-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926366208
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:50.104675875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926005760
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:51.107031541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925612544
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:52.109489583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925956608
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:53.111924791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925465088
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:54.114406791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925022720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:55.116796041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926759424
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:56.119184208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926644736
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:57.121634583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926349824
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:58.124020416-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926546432
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:47:59.126483041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7926169600
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:00.128912375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934001152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:01.131345541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934001152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:02.133944250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933001728
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:03.136472875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932575744
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:04.138595375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932051456
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:05.140938666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932739584
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:06.143289375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7931625472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:07.145716875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933083648
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:08.146776791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7932690432
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:09.149158666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7933394944
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:10.151533208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925694464
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:11.153902500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925432320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:12.156207791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924989952
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:13.158577250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7925121024
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:14.160999833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7924727808
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:15.163388708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7928070144
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:16.165886708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937163264
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:17.168298541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937818624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:18.170695833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937310720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:19.173168916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938097152
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:20.175590083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937556480
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:21.176229833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936376832
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:22.178661166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936819200
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:23.181150833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936376832
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:24.183610750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937179648
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:25.186012-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936753664
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:26.188321125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937294336
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:27.190647500-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936786432
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:28.193040041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935983616
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:29.194225083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935459328
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:30.196585750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935000576
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:31.199005291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935574016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:32.199756875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937212416
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:33.201992125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936802816
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:34.204323125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937605632
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:35.206590750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937146880
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:36.208917291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936294912
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:37.211189458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935836160
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:38.213488083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935279104
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:39.215848-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934984192
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:40.216545708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935737856
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:41.218839666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935344640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:42.221127875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935016960
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:43.223487583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935377408
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:44.225829125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7934951424
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:45.228151958-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935737856
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:46.230465208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937310720
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:47.232774333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936770048
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:48.235132125-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936376832
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:49.237498541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936032768
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:50.239875916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935770624
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:51.242228875-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7936655360
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:52.244684541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7935721472
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:53.247123458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7941734400
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:54.262043625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7939702784
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:55.284780333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938998272
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:56.305376083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7939670016
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:57.324483291-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938572288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:58.343826791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7940210688
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:48:59.362515083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7940096000
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:00.384239791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7949680640
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:01.402864208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7948599296
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:02.423430083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7948189696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:03.443116583-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7946829824
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:04.446617750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7946387456
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:05.449016083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7946059776
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:06.451356541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7946223616
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:07.453691375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7947960320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:08.456094625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7947157504
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:09.458585041-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7946551296
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:10.461018333-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7939014656
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:11.463380250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938572288
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:12.465737375-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938211840
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:13.468114625-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937261568
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:14.470587791-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937949696
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:15.472965458-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938523136
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:16.475287833-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938015232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:17.477635083-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938736128
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:18.479974541-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938342912
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:19.482447166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938015232
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:20.484873708-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937720320
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:21.487244166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937474560
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:22.489589166-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938064384
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:23.491973666-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937671168
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:24.494437916-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937687552
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:25.496906250-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7938244608
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:26.499384208-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7937835008
+      }
+    }, {
+      "type": "jdk.PhysicalMemory", 
+      "values": {
+        "startTime": "2025-12-21T22:49:27.501784750-03:00", 
+        "totalSize": 8589934592, 
+        "usedSize": 7939489792
+      }
+    }]
+  }
+}
