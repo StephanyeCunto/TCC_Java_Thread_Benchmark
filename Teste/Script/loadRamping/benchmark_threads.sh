@@ -10,8 +10,9 @@ SSH="ssh stephanye@$1"
 
 SERVER_DIR="Documents/tcc/Teste/Script/LoadConstant"
 JAVA_JAR_ADRESS="Documents/tcc/Teste/Serve_Test/benchmark-server/target"
-JAVA_JAR_PATH="$JAVA_JAR_ADRESS/benchmark-server-0.0.1-SNAPSHOT.jar"LOG_PATH="$SERVER_DIR/Results/logs"
-RESULTS_PATH="Results/"
+JAVA_JAR_PATH="$JAVA_JAR_ADRESS/benchmark-server-0.0.1-SNAPSHOT.jar"
+LOG_PATH="$SERVER_DIR/Results2/logs"
+RESULTS_PATH="Results2/"
 
 source "$ROOT_DIR/prepare_environment.sh"
 source "$ROOT_DIR/jvm.sh"
@@ -103,7 +104,7 @@ for j in {1..10}; do
 
     $SSH "
     jcmd \$(cat $LOG_PATH/server.pid) JFR.start \
-    name=Monitor duration=670s   settings=$JAVA_JAR_ADRESS/teste.jfc jdk.CPULoad#period=1s jdk.PhysicalMemory#period=1s \
+    name=Monitor duration=60000s settings=$JAVA_JAR_ADRESS/teste.jfc jdk.CPULoad#period=1s jdk.PhysicalMemory#period=1s \
     filename=$SERVER_DIR/$RESULTS_PATH/$ENDPOINT/$j/Monitor/Monitor.jfr
     "
     loop "${ENDPOINT}" "${j}"
