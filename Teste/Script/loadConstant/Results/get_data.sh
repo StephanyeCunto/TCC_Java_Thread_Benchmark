@@ -14,4 +14,6 @@ for j in {1..10}; do
 
     jfr print --json --events "jdk.NativeMemoryUsage" $ROOT_DIR/$j/Monitor/Monitor.jfr > $ROOT_DIR/$j/Monitor/ram_data.json
 
+    jfr print --json --events "jdk.PhysicalMemory" $ROOT_DIR/$j/Monitor/Monitor.jfr > $ROOT_DIR/$j/Monitor/physical_memory.json
+
 done
