@@ -45,21 +45,14 @@ memory_avg_total(){
 }
 
 heap_used_avg(){
-    bytes=$(jq '
-      [.recording.events[]?
+    bytes=$(jq '[.recording.events[]?
         | select(.type == "jdk.GCHeapSummary")
-        | {second: (.values.startTime[0:19]), value: .values.heapUsed}  # pegar até os segundos
-        | select(.value != null)
-      ]
-      | group_by(.second)
-      | map([.[] | .value] | add)       # somar todos os heapUsed no mesmo segundo
-      | if length > 0 then add / length else 0 end
-    ' "$BASE/Monitor/heap_data.json")
+        | .values.heapUsed
+        | select(. != null)
+    ] | if length > 0 then add/length else 0 end' "$BASE/Monitor/heap_data.json")
 
-    # Converter para GB
-    echo "$(echo "$bytes / (1024*1024*1024)" | bc -l)"
+    echo "$(echo "$bytes / (1024*1024)" | bc -l)"
 }
-
 
 requests(){
     JSON_DIR="$BASE/run/json"
