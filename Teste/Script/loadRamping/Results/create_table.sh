@@ -63,7 +63,6 @@ heap_used_avg(){
 
 requests(){
     JSON_DIR="$BASE/run/json"
-
     find "$JSON_DIR" -type f -name "run*.json" \
     | while read -r f; do
         req=$(jq -r '.requests // 0' "$f")
