@@ -11,13 +11,20 @@ avg(){
     ] | if length > 0 then add/length else 0 end' "$1"
 }
 
-memory_avg(){
-    jq '[.recording.events[]?
-        | select(.type == "jdk.NativeMemoryUsage")
-        | select(.values.type == "'"$2"'")
-        | .values.'"$3"'
-        | select(. != null)
-    ] | if length > 0 then add/length else 0 end' "$1"
+native_memory_avg(){
+    local FIELD=$1   
+
+    jq --arg field "$FIELD" '
+      [.recording.events[]
+       | select(.type == "jdk.NativeMemoryUsage")
+       | select(.values[$field] != null)
+       | {sec: (.values.startTime[0:19]), val: .values[$field]}
+      ]
+      | group_by(.sec)
+      | map([.[] | .val] | add)
+      | if length > 0 then add/length else 0 end
+      | . / (1024*1024*1024)
+    ' "$BASE/Monitor/ram_data.json"
 }
 
 cpu_avg(){
@@ -82,7 +89,7 @@ for run in {1..10}; do
     BASE="$SCRIPT_DIR/$endpoint/$run"
 
     cpu=$(cpu_avg)
-    native_mem=$(memory_avg_total)
+    native_mem=$(native_memory_avg "committed")
     heap=$(heap_used_avg)
     requests=$(requests)
 
