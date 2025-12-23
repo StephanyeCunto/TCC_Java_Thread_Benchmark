@@ -8,7 +8,7 @@ ROOT_DIR="$SCRIPT_DIR/.."
 BASE_URL="http://$1:8080/threads"
 SSH="ssh stephanye@$1"
 
-SERVER_DIR="Documents/tcc/Teste/Script/LoadConstant"
+SERVER_DIR="Documents/tcc/Teste/Script/LoadRamping"
 JAVA_JAR_ADRESS="Documents/tcc/Teste/Serve_Test/benchmark-server/target"
 JAVA_JAR_PATH="$JAVA_JAR_ADRESS/benchmark-server-0.0.1-SNAPSHOT.jar"
 LOG_PATH="$SERVER_DIR/Results/logs"
@@ -107,6 +107,7 @@ for j in {1..10}; do
     name=Monitor duration=60000s settings=$JAVA_JAR_ADRESS/teste.jfc jdk.CPULoad#period=1s jdk.PhysicalMemory#period=1s \
     filename=$SERVER_DIR/$RESULTS_PATH/$ENDPOINT/$j/Monitor/Monitor.jfr
     "
+    
     loop "${ENDPOINT}" "${j}"
 
     $SSH 'jcmd $(cat '"$LOG_PATH"'/server.pid) JFR.stop name='"Monitor"' '
