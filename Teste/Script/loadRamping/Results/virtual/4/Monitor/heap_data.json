@@ -1,0 +1,3755 @@
+{
+  "recording": {
+    "events": [{
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:51:00.275976708-03:00", 
+        "gcId": 136, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 275802760
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:51:00.305218250-03:00", 
+        "gcId": 136, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 253969808
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:52:30.707960250-03:00", 
+        "gcId": 137, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 274941328
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:52:30.736437083-03:00", 
+        "gcId": 137, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 253979848
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:54:01.417562375-03:00", 
+        "gcId": 138, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 284388552
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:54:01.448036791-03:00", 
+        "gcId": 138, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254023696
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:55:32.031267791-03:00", 
+        "gcId": 139, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 293869584
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:55:32.068568625-03:00", 
+        "gcId": 139, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254014224
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:57:03.092292083-03:00", 
+        "gcId": 140, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 300151568
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:57:03.128895-03:00", 
+        "gcId": 140, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254041424
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:58:33.803644375-03:00", 
+        "gcId": 141, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 308567376
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T15:58:33.840624958-03:00", 
+        "gcId": 141, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254079400
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:00:04.448823416-03:00", 
+        "gcId": 142, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 316993960
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:00:04.477865500-03:00", 
+        "gcId": 142, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254073624
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:01:34.675435708-03:00", 
+        "gcId": 143, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 324328216
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:01:34.703371708-03:00", 
+        "gcId": 143, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254060864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:03:05.079118166-03:00", 
+        "gcId": 144, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 333752640
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:03:05.108059916-03:00", 
+        "gcId": 144, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 252548920
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:04:35.398272916-03:00", 
+        "gcId": 145, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 341677880
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:04:35.425844416-03:00", 
+        "gcId": 145, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 252563528
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:06:05.866782458-03:00", 
+        "gcId": 146, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 349032520
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:06:05.895287083-03:00", 
+        "gcId": 146, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 252573336
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:07:36.242648875-03:00", 
+        "gcId": 147, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 358479512
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:07:36.278410333-03:00", 
+        "gcId": 147, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 252606760
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:09:06.651872791-03:00", 
+        "gcId": 148, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 381581608
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:09:06.682611-03:00", 
+        "gcId": 148, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 251413120
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:10:37.098405041-03:00", 
+        "gcId": 149, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 373047936
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:10:37.126531583-03:00", 
+        "gcId": 149, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 251508984
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:12:07.429546708-03:00", 
+        "gcId": 150, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 387823864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:12:07.458961500-03:00", 
+        "gcId": 150, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254630304
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:13:37.809989041-03:00", 
+        "gcId": 151, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 394090912
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:13:37.838076500-03:00", 
+        "gcId": 151, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254669320
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:15:08.126416375-03:00", 
+        "gcId": 152, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 23015194624, 
+          "committedSize": 827326464, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 419295752
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:15:08.171329083-03:00", 
+        "gcId": 152, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 230239112
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:16:38.546159625-03:00", 
+        "gcId": 153, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 388574088
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:16:38.573660500-03:00", 
+        "gcId": 153, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 230713080
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:18:08.972416208-03:00", 
+        "gcId": 154, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 396388088
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:18:09.001854833-03:00", 
+        "gcId": 154, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 231080168
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:19:39.342087708-03:00", 
+        "gcId": 155, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 416678120
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:19:39.370619833-03:00", 
+        "gcId": 155, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 235808296
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:21:09.705767458-03:00", 
+        "gcId": 156, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 445523496
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:21:09.744097833-03:00", 
+        "gcId": 156, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 240693976
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:22:40.028858750-03:00", 
+        "gcId": 157, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 480817880
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:22:40.067815791-03:00", 
+        "gcId": 157, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 243214736
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:24:10.341562958-03:00", 
+        "gcId": 158, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 511650192
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:24:10.370752250-03:00", 
+        "gcId": 158, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 244456592
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:25:40.658279208-03:00", 
+        "gcId": 159, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 521280656
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:25:40.693589833-03:00", 
+        "gcId": 159, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 244549152
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:26:09.407835916-03:00", 
+        "gcId": 160, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 530810400
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:26:09.418352625-03:00", 
+        "gcId": 160, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 269190688
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:26:09.418389166-03:00", 
+        "gcId": 161, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 269190688
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:26:09.463911250-03:00", 
+        "gcId": 161, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 271287840
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:27:11.583068166-03:00", 
+        "gcId": 162, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 298550816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:27:11.611748250-03:00", 
+        "gcId": 162, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 251820816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:27:41.252417958-03:00", 
+        "gcId": 163, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 565345040
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:27:41.263222791-03:00", 
+        "gcId": 163, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 278559504
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:27:41.263269083-03:00", 
+        "gcId": 164, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 278559504
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:27:41.309948375-03:00", 
+        "gcId": 164, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 281705232
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:28:42.735553-03:00", 
+        "gcId": 165, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 300579600
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:28:42.763696291-03:00", 
+        "gcId": 165, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 249364432
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:29:11.996306250-03:00", 
+        "gcId": 166, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 578617296
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:29:12.008046416-03:00", 
+        "gcId": 166, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 284491728
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:29:12.008063666-03:00", 
+        "gcId": 167, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 284491728
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:29:12.042849125-03:00", 
+        "gcId": 167, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 282721536
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:30:13.053263583-03:00", 
+        "gcId": 168, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 300547328
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:30:13.090108458-03:00", 
+        "gcId": 168, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 254134424
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:30:42.331116166-03:00", 
+        "gcId": 169, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 589678744
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:30:42.348092166-03:00", 
+        "gcId": 169, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 335103048
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:30:42.348110-03:00", 
+        "gcId": 170, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 335103048
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:30:42.378181333-03:00", 
+        "gcId": 170, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 328355464
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:31:43.573989458-03:00", 
+        "gcId": 171, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22971154432, 
+          "committedSize": 783286272, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 351424136
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:31:43.609563-03:00", 
+        "gcId": 171, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 155842752
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:32:08.181912625-03:00", 
+        "gcId": 172, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 386529472
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:32:08.193823375-03:00", 
+        "gcId": 172, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 185727168
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:32:08.193862416-03:00", 
+        "gcId": 173, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 185727168
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:32:08.230787166-03:00", 
+        "gcId": 173, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 198310080
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:33:13.996248291-03:00", 
+        "gcId": 174, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 358742208
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:33:14.030937750-03:00", 
+        "gcId": 174, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 156242328
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:33:38.188898500-03:00", 
+        "gcId": 175, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 390074776
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:33:38.201563166-03:00", 
+        "gcId": 175, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 190652216
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:33:38.201599458-03:00", 
+        "gcId": 176, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 190652216
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:33:38.236307125-03:00", 
+        "gcId": 176, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 194542864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:34:44.626428916-03:00", 
+        "gcId": 177, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 374897936
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:34:44.658801833-03:00", 
+        "gcId": 177, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 160700232
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:35:08.610054833-03:00", 
+        "gcId": 178, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 394532680
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:35:08.624637291-03:00", 
+        "gcId": 178, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 214422968
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:35:08.624654-03:00", 
+        "gcId": 179, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 214422968
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:35:08.657731250-03:00", 
+        "gcId": 179, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 222703816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:35:14.311615583-03:00", 
+        "gcId": 180, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 405156040
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:35:14.323618625-03:00", 
+        "gcId": 180, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 224489008
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:14.936806041-03:00", 
+        "gcId": 181, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 237071920
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:14.964442375-03:00", 
+        "gcId": 181, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 185754304
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:41.485801583-03:00", 
+        "gcId": 182, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 400712384
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:41.503936791-03:00", 
+        "gcId": 182, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 283796160
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:41.503949708-03:00", 
+        "gcId": 183, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 283796160
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:41.527439166-03:00", 
+        "gcId": 183, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 277540760
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:45.001014583-03:00", 
+        "gcId": 184, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 403369880
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:36:45.017647958-03:00", 
+        "gcId": 184, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 303755160
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:11.463417958-03:00", 
+        "gcId": 185, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 392884120
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:11.506288666-03:00", 
+        "gcId": 185, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 172203216
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:35.976564541-03:00", 
+        "gcId": 186, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 367238352
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:35.988286125-03:00", 
+        "gcId": 186, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 201563344
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:35.988325250-03:00", 
+        "gcId": 187, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 201563344
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:36.026333833-03:00", 
+        "gcId": 187, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 215194832
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:38.566779166-03:00", 
+        "gcId": 188, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 387161296
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:38:38.574243333-03:00", 
+        "gcId": 188, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 211524816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:39:42.183531708-03:00", 
+        "gcId": 189, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 340499664
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:39:42.215791541-03:00", 
+        "gcId": 189, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 189694864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:40:07.134864708-03:00", 
+        "gcId": 190, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 387875728
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:40:07.147562916-03:00", 
+        "gcId": 190, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 228911296
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:40:07.147579500-03:00", 
+        "gcId": 191, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 228911296
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:40:07.184036625-03:00", 
+        "gcId": 191, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 249677864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:40:08.801596458-03:00", 
+        "gcId": 192, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 401721384
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:40:08.817221500-03:00", 
+        "gcId": 192, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 262365944
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:13.115740375-03:00", 
+        "gcId": 193, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 387146488
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:13.143148875-03:00", 
+        "gcId": 193, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 188036280
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:36.367626416-03:00", 
+        "gcId": 194, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 383071416
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:36.379512291-03:00", 
+        "gcId": 194, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 225785016
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:36.379541041-03:00", 
+        "gcId": 195, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 225785016
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:36.419096958-03:00", 
+        "gcId": 195, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 227752360
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:38.370791750-03:00", 
+        "gcId": 196, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 401815976
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:38.382579250-03:00", 
+        "gcId": 196, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 236140968
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:43.072453-03:00", 
+        "gcId": 197, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 410204584
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:41:43.088238708-03:00", 
+        "gcId": 197, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 259220776
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:42:48.467303708-03:00", 
+        "gcId": 198, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22719496192, 
+          "committedSize": 531628032, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 367224104
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:42:48.495024666-03:00", 
+        "gcId": 198, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 117574480
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:12.137883916-03:00", 
+        "gcId": 199, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 282200912
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:12.149991208-03:00", 
+        "gcId": 199, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 157409616
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:12.150009291-03:00", 
+        "gcId": 200, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 157409616
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:12.182592250-03:00", 
+        "gcId": 200, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 158458192
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:14.968196791-03:00", 
+        "gcId": 201, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 295821648
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:14.981186375-03:00", 
+        "gcId": 201, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 176209712
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:18.380588-03:00", 
+        "gcId": 202, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 306233136
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:43:18.391483666-03:00", 
+        "gcId": 202, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 192218816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:18.888604375-03:00", 
+        "gcId": 203, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 204801728
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:18.922085083-03:00", 
+        "gcId": 203, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 137604688
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:42.173198666-03:00", 
+        "gcId": 204, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 293842512
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:42.182024708-03:00", 
+        "gcId": 204, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 166342632
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:42.182059666-03:00", 
+        "gcId": 205, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 166342632
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:42.222325083-03:00", 
+        "gcId": 205, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 169488360
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:44.078134041-03:00", 
+        "gcId": 206, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 306851816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:44.090543916-03:00", 
+        "gcId": 206, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 190285840
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:47.200497666-03:00", 
+        "gcId": 207, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 312969232
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:44:47.210566458-03:00", 
+        "gcId": 207, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 193148592
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:45:49.598362041-03:00", 
+        "gcId": 208, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 251868848
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:45:49.625816458-03:00", 
+        "gcId": 208, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 156123104
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:46:14.104239583-03:00", 
+        "gcId": 209, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 306069472
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:46:14.114365583-03:00", 
+        "gcId": 209, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 174997472
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:46:14.114428916-03:00", 
+        "gcId": 210, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 174997472
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:46:14.152499708-03:00", 
+        "gcId": 210, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 177094624
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:46:18.441441916-03:00", 
+        "gcId": 211, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 320749536
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:46:18.456352083-03:00", 
+        "gcId": 211, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 199307808
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:23.612392083-03:00", 
+        "gcId": 212, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 302068256
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:23.642845958-03:00", 
+        "gcId": 212, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 118769840
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:48.326992083-03:00", 
+        "gcId": 213, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 295979184
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:48.337886666-03:00", 
+        "gcId": 213, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 141314224
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:48.337933541-03:00", 
+        "gcId": 214, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 141314224
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:48.372933416-03:00", 
+        "gcId": 214, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 143393984
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:52.996980166-03:00", 
+        "gcId": 215, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 310117568
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:47:53.008348208-03:00", 
+        "gcId": 215, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 147347712
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:48:53.928288833-03:00", 
+        "gcId": 216, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 172513536
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:48:53.953225958-03:00", 
+        "gcId": 216, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 130652608
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:19.308403625-03:00", 
+        "gcId": 217, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 313104832
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:19.326057750-03:00", 
+        "gcId": 217, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 178467280
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:19.326074541-03:00", 
+        "gcId": 218, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 178467280
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:19.343550875-03:00", 
+        "gcId": 218, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 180564432
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:22.101532833-03:00", 
+        "gcId": 219, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 321073616
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:22.117442833-03:00", 
+        "gcId": 219, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 230791616
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:25.516919708-03:00", 
+        "gcId": 220, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 323066304
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:25.534748666-03:00", 
+        "gcId": 220, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 248072320
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:28.151018166-03:00", 
+        "gcId": 221, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 330909824
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:28.163780166-03:00", 
+        "gcId": 221, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 270092416
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:28.163800750-03:00", 
+        "gcId": 222, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22596812800, 
+          "committedSize": 408944640, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 270092416
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:49:28.202078125-03:00", 
+        "gcId": 222, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 270146120
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:50:37.256259875-03:00", 
+        "gcId": 223, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 293214792
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:50:37.288619291-03:00", 
+        "gcId": 223, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 165496808
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:00.571607750-03:00", 
+        "gcId": 224, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 296568808
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:00.581333625-03:00", 
+        "gcId": 224, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 182798312
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:00.581378-03:00", 
+        "gcId": 225, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 182798312
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:00.625356916-03:00", 
+        "gcId": 225, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 184895464
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:09.858232625-03:00", 
+        "gcId": 226, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 313870312
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:09.872032833-03:00", 
+        "gcId": 226, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 209537000
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:12.418880-03:00", 
+        "gcId": 227, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 328026088
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:12.438597708-03:00", 
+        "gcId": 227, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 267033552
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:14.880725208-03:00", 
+        "gcId": 228, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 344628176
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:14.898139875-03:00", 
+        "gcId": 228, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 294820816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:14.898152708-03:00", 
+        "gcId": 229, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22623027200, 
+          "committedSize": 435159040, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 294820816
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:51:14.924571416-03:00", 
+        "gcId": 229, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 295505464
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:25.286595958-03:00", 
+        "gcId": 230, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 340594232
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:25.319009083-03:00", 
+        "gcId": 230, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 154818392
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:48.483342458-03:00", 
+        "gcId": 231, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 329930584
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:48.497924166-03:00", 
+        "gcId": 231, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 202004312
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:48.497956416-03:00", 
+        "gcId": 232, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 202004312
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:48.531016833-03:00", 
+        "gcId": 232, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 203052888
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:52.064946291-03:00", 
+        "gcId": 233, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 351950680
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:52:52.077526291-03:00", 
+        "gcId": 233, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 216684376
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:53:55.603656208-03:00", 
+        "gcId": 234, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 366630744
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:53:55.639841375-03:00", 
+        "gcId": 234, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 188998552
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:19.183227666-03:00", 
+        "gcId": 235, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 360965016
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:19.197173375-03:00", 
+        "gcId": 235, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 227795864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:19.197212625-03:00", 
+        "gcId": 236, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 227795864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:19.234041083-03:00", 
+        "gcId": 236, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 229893016
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:21.778303708-03:00", 
+        "gcId": 237, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 376693656
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:21.794346250-03:00", 
+        "gcId": 237, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 260301720
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:24.406189458-03:00", 
+        "gcId": 238, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 385082264
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:54:24.421420958-03:00", 
+        "gcId": 238, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 285745640
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:26.537932083-03:00", 
+        "gcId": 239, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 393748968
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:26.572210375-03:00", 
+        "gcId": 239, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 172243208
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:51.774460375-03:00", 
+        "gcId": 240, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 349452552
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:51.791143708-03:00", 
+        "gcId": 240, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 243022088
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:51.791159208-03:00", 
+        "gcId": 241, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 243022088
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:51.814405083-03:00", 
+        "gcId": 241, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 249313544
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:55.574683291-03:00", 
+        "gcId": 242, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 364656904
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:55.592635875-03:00", 
+        "gcId": 242, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 301742344
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:56.812981500-03:00", 
+        "gcId": 243, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 382482696
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:56.828832333-03:00", 
+        "gcId": 243, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 335440584
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:56.948713-03:00", 
+        "gcId": 244, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 401500872
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:56.962306541-03:00", 
+        "gcId": 244, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 391015112
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:56.962322250-03:00", 
+        "gcId": 245, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22684893184, 
+          "committedSize": 497025024, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 391015112
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:55:57.006479833-03:00", 
+        "gcId": 245, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22843228160, 
+          "committedSize": 655360000, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 389978880
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:56:00.300763083-03:00", 
+        "gcId": 246, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22843228160, 
+          "committedSize": 655360000, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 428776192
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:56:00.313040-03:00", 
+        "gcId": 246, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22843228160, 
+          "committedSize": 655360000, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 399940352
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:56:09.223275541-03:00", 
+        "gcId": 247, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22843228160, 
+          "committedSize": 655360000, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 511089408
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:56:09.240532666-03:00", 
+        "gcId": 247, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22843228160, 
+          "committedSize": 655360000, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 366301848
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:57:36.676968875-03:00", 
+        "gcId": 248, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22843228160, 
+          "committedSize": 655360000, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 401953432
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:57:36.712098791-03:00", 
+        "gcId": 248, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 182724080
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:58:12.033512583-03:00", 
+        "gcId": 249, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 393487856
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:58:12.051775500-03:00", 
+        "gcId": 249, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 239297760
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:58:12.051793416-03:00", 
+        "gcId": 250, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 239297760
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:58:12.073651-03:00", 
+        "gcId": 250, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 243492064
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:58:17.161683166-03:00", 
+        "gcId": 251, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 430138592
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:58:17.181172750-03:00", 
+        "gcId": 251, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 301737456
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:59:40.795841750-03:00", 
+        "gcId": 252, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22817013760, 
+          "committedSize": 629145600, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 426518000
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T16:59:40.835071875-03:00", 
+        "gcId": 252, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 161367960
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:04.508390-03:00", 
+        "gcId": 253, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 353257368
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:04.522883916-03:00", 
+        "gcId": 253, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 205932440
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:04.522919583-03:00", 
+        "gcId": 254, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 205932440
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:04.555796625-03:00", 
+        "gcId": 254, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 206981016
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:06.235556458-03:00", 
+        "gcId": 255, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 382093208
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:06.252728666-03:00", 
+        "gcId": 255, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 276711320
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:07.786123666-03:00", 
+        "gcId": 256, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 401491864
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:07.801848666-03:00", 
+        "gcId": 256, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 322434616
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:10.275125500-03:00", 
+        "gcId": 257, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 416806456
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:10.287324125-03:00", 
+        "gcId": 257, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 351270456
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:10.287353916-03:00", 
+        "gcId": 258, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22740467712, 
+          "committedSize": 552599552, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 351270456
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:10.323168666-03:00", 
+        "gcId": 258, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22768779264, 
+          "committedSize": 580911104, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 352324456
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:11.455428541-03:00", 
+        "gcId": 259, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22768779264, 
+          "committedSize": 580911104, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 432016232
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:11.471034083-03:00", 
+        "gcId": 259, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22768779264, 
+          "committedSize": 580911104, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 394267496
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:16.743956250-03:00", 
+        "gcId": 260, 
+        "when": "Before GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22768779264, 
+          "committedSize": 580911104, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 470813544
+      }
+    }, {
+      "type": "jdk.GCHeapSummary", 
+      "values": {
+        "startTime": "2025-12-23T17:00:16.753536125-03:00", 
+        "gcId": 260, 
+        "when": "After GC", 
+        "heapSpace": {
+          "start": 22187868160, 
+          "committedEnd": 22768779264, 
+          "committedSize": 580911104, 
+          "reservedEnd": 24335351808, 
+          "reservedSize": 2147483648
+        }, 
+        "heapUsed": 365182600
+      }
+    }]
+  }
+}
