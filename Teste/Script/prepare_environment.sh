@@ -9,14 +9,14 @@ prepare_environment(){
     $SSH "
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfiles=1048576
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxfilesperproc=1048576
-        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=1024
+        echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.somaxconn=4096
         echo '$SENHA_SUDO' | sudo sysctl -w kern.ipc.maxsockbuf=8388608
 
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxproc=2000
         echo '$SENHA_SUDO' | sudo -S sysctl -w kern.maxprocperuid=2000
 
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.sendspace=524288
-        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.recvspace=524288
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.sendspace=2097152
+        echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.recvspace=2097152
         echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.msl=250
         echo '$SENHA_SUDO' | sudo -S sysctl -w net.inet.tcp.delayed_ack=0
 
@@ -27,7 +27,7 @@ prepare_environment(){
     echo "=== Preparando ambiente no cliente (linux) ==="
 
     sudo -S sysctl -w fs.file-max=1048576
-    sudo -S sysctl -w net.core.somaxconn=1024
+    sudo -S sysctl -w net.core.somaxconn=4096
     sudo -S sysctl -w net.core.rmem_max=8388608
     sudo -S sysctl -w net.core.wmem_max=8388608
     sudo -S sysctl -w kernel.pid_max=200000

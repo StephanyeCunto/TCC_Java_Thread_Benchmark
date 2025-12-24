@@ -83,12 +83,14 @@ loop() {
 
 prepare_environment
 
-for j in {1..10}; do
+for j in {2..10}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
         ENDPOINT="traditional"
     fi
+
+    echo "=== Teste $j | Endpoint: $ENDPOINT ==="
 
     create_folders "${ENDPOINT}" "${j}"
 
