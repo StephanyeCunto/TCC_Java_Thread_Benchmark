@@ -1,6 +1,3 @@
-
-LOG_PATH="Documents/tcc/Teste/Script/LoadConstant/Results/logs"
-
 prepare_environment(){
     echo "=== Preparando ambiente no servidor (macOS Apple Silicon) ==="
 
