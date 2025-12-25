@@ -1,13 +1,8 @@
-#!/bin/bash
-
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-OUTPUT="$SCRIPT_DIR/table.csv"
 
-# =========================
-# Funções auxiliares
-# =========================
+OUTPUT_TRAD="$SCRIPT_DIR/table_traditional.csv"
+OUTPUT_VIRT="$SCRIPT_DIR/table_virtual.csv"
 
-# Média genérica de um campo de evento JFR
 avg(){
     local FILE=$1
     local TYPE=$2
@@ -20,11 +15,6 @@ avg(){
     ] | if length > 0 then add/length else 0 end' "$FILE"
 }
 
-# =========================
-# CPU
-# =========================
-
-# Média de CPU JVM (user + system) em %
 cpu_avg(){
     local user sys
     user=$(avg "$BASE/Monitor/cpu_data.json" "jdk.CPULoad" "jvmUser")
@@ -32,13 +22,8 @@ cpu_avg(){
     echo "$(echo "($user + $sys) * 100" | bc -l)"
 }
 
-# =========================
-# Memória Nativa JVM
-# =========================
-
-# Média de memória nativa total por segundo (GB)
 native_memory_avg(){
-    local FIELD=$1   # reserved | committed
+    local FIELD=$1   
 
     jq --arg field "$FIELD" '
       [.recording.events[]
@@ -53,11 +38,6 @@ native_memory_avg(){
     ' "$BASE/Monitor/ram_data.json"
 }
 
-# =========================
-# Heap JVM
-# =========================
-
-# Média de heap usado (MB)
 heap_used_avg(){
     local bytes
 
@@ -71,11 +51,6 @@ heap_used_avg(){
     echo "$(echo "$bytes / (1024*1024)" | bc -l)"
 }
 
-# =========================
-# Memória Física (RAM)
-# =========================
-
-# Média de RAM usada do sistema (GB)
 physical_memory_used_avg(){
     jq '
       [.recording.events[]
@@ -88,32 +63,26 @@ physical_memory_used_avg(){
     ' "$BASE/Monitor/physical_memory.json"
 }
 
-# =========================
-# Cabeçalho CSV
-# =========================
+write_header() {
+    echo "endpoint,run,lat_mean_s,lat_p50_s,lat_p90_s,lat_p95_s,lat_p99_s,lat_max_s,requests,rate,throughput,success,bytes_in_total,JVM_CPU_pct,Native_Memory_Reserved_GB,Native_Memory_Committed_GB,Physical_Memory_Used_GB,Heap_Used_MB"
+}
 
-echo "endpoint,run,JVM_CPU_pct,Native_Memory_Reserved_GB,Native_Memory_Committed_GB,Physical_Memory_Used_GB,Heap_Used_MB,lat_mean_s,lat_p50_s,lat_p90_s,lat_p95_s,lat_p99_s,lat_max_s,requests,rate,throughput,success,bytes_in_total" \
-> "$OUTPUT"
+write_header > "$OUTPUT_TRAD"
+write_header > "$OUTPUT_VIRT"
 
-# =========================
-# Loop principal
-# =========================
-
-for run in {1..10}; do
-
+for run in {1..100}; do
     if (( run % 2 == 0 )); then
         endpoint="virtual"
+        OUTPUT="$OUTPUT_VIRT"
     else
         endpoint="traditional"
+        OUTPUT="$OUTPUT_TRAD"
     fi
 
     BASE="$SCRIPT_DIR/$endpoint/$run"
     JSON="$BASE/run/json/run${run}.json"
 
-    if [[ ! -f "$JSON" ]]; then
-        echo "⚠️ JSON não encontrado: $JSON"
-        continue
-    fi
+    [[ ! -f "$JSON" ]] && continue
 
     cpu=$(cpu_avg)
     native_reserved=$(native_memory_avg "reserved")
@@ -121,20 +90,42 @@ for run in {1..10}; do
     physical_mem=$(physical_memory_used_avg)
     heap=$(heap_used_avg)
 
-    lat_mean=$(jq -r '(.latencies.mean // empty) / 1e9' "$JSON")
-    lat_p50=$(jq -r '(.latencies["50th"] // empty) / 1e9' "$JSON")
-    lat_p90=$(jq -r '(.latencies["90th"] // empty) / 1e9' "$JSON")
-    lat_p95=$(jq -r '(.latencies["95th"] // empty) / 1e9' "$JSON")
-    lat_p99=$(jq -r '(.latencies["99th"] // empty) / 1e9' "$JSON")
-    lat_max=$(jq -r '(.latencies.max // empty) / 1e9' "$JSON")
+    lat_mean=$(jq -r '(.latencies.mean // 0) / 1e9' "$JSON")
+    lat_p50=$(jq -r '(.latencies["50th"] // 0) / 1e9' "$JSON")
+    lat_p90=$(jq -r '(.latencies["90th"] // 0) / 1e9' "$JSON")
+    lat_p95=$(jq -r '(.latencies["95th"] // 0) / 1e9' "$JSON")
+    lat_p99=$(jq -r '(.latencies["99th"] // 0) / 1e9' "$JSON")
+    lat_max=$(jq -r '(.latencies.max // 0) / 1e9' "$JSON")
 
-    requests=$(jq -r '.requests // empty' "$JSON")
-    rate=$(jq -r '.rate // empty' "$JSON")
-    throughput=$(jq -r '.throughput // empty' "$JSON")
-    success=$(jq -r '.success // empty' "$JSON")
-    bytes_in=$(jq -r '.bytes_in.total // empty' "$JSON")
+    requests=$(jq -r '.requests // 0' "$JSON")
+    rate=$(jq -r '.rate // 0' "$JSON")
+    throughput=$(jq -r '.throughput // 0' "$JSON")
+    success=$(jq -r '.success // 0' "$JSON")
+    bytes_in=$(jq -r '.bytes_in.total // 0' "$JSON")
 
-    echo "$endpoint,$run,$cpu,$native_reserved,$native_committed,$physical_mem,$heap,$lat_mean,$lat_p50,$lat_p90,$lat_p95,$lat_p99,$lat_max,$requests,$rate,$throughput,$success,$bytes_in" \
-    >> "$OUTPUT"
+echo "$endpoint,$run,$lat_mean,$lat_p50,$lat_p90,$lat_p95,$lat_p99,$lat_max,$requests,$rate,$throughput,$success,$bytes_in,$cpu,$native_reserved,$native_committed,$physical_mem,$heap" >> "$OUTPUT"
 
 done
+
+add_average_row() {
+    local FILE=$1
+
+    awk -F',' '
+    NR==1 { header=$0; next }
+    {
+        for (i=3; i<=NF; i++) {
+            sum[i] += $i
+        }
+        count++
+    }
+    END {
+        printf "AVG,AVG"
+        for (i=3; i<=NF; i++) {
+            printf ",%f", sum[i]/count
+        }
+        printf "\n"
+    }' "$FILE" >> "$FILE"
+}
+
+add_average_row "$OUTPUT_VIRT"
+add_average_row "$OUTPUT_TRAD"
