@@ -1,6 +1,6 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-for j in {1..10}; do
+for j in {10..19}; do
 
     if (( j % 2 == 0)); then
         ROOT_DIR="$SCRIPT_DIR/virtual"
