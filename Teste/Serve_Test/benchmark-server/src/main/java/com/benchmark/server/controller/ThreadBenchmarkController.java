@@ -34,7 +34,7 @@ public class ThreadBenchmarkController {
         
         threadCounter.incrementAndGet();
 
-        return ResponseEntity.status(201).body(successMessage);
+        return ResponseEntity.status(200).body(successMessage);
     }
 
     private boolean simulateWork(){
@@ -55,12 +55,6 @@ public class ThreadBenchmarkController {
             return false;
         }
         return true;
-    }
-
-    @GetMapping("/get")
-    public ResponseEntity<Integer> getThreadCounter(){
-        Integer old = threadCounter.getAndSet(0);
-        return ResponseEntity.status(201).body(old);
     }
 
     @GetMapping("/gc")

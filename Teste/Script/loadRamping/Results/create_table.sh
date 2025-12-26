@@ -1,11 +1,8 @@
 #!/bin/bash
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-OUTPUT="$SCRIPT_DIR/table.csv"
-
-# =========================
-# Funções auxiliares
-# =========================
+OUTPUT_TRAD="$SCRIPT_DIR/table_traditional.csv"
+OUTPUT_VIRT="$SCRIPT_DIR/table_virtual.csv"
 
 avg(){
     jq '[.recording.events[]?
@@ -43,31 +40,6 @@ cpu_avg(){
     echo "$(echo "($user + $sys) * 100" | bc -l)"
 }
 
-memory_avg_total(){
-    TYPES=(
-        "Java Heap" "Class" "Thread" "Thread Stack" "Code" "GC"
-        "GCCardSet" "Compiler" "JVMCI" "Internal" "Other" "Symbol"
-        "Native Memory Tracking" "Shared class space" "Arena Chunk"
-        "Tracing" "Logging" "Arguments" "Module" "Safepoint"
-        "Synchronization" "Metaspace" "Object Monitors"
-    )
-
-    total=0
-    found=0
-
-    for t in "${TYPES[@]}"; do
-        v=$(memory_avg "$BASE/Monitor/ram_data.json" "$t" committed)
-        if [[ -n "$v" && "$v" != "0" ]]; then
-            total=$(echo "$total + $v" | bc -l)
-            found=1
-        fi
-    done
-
-    if [[ "$found" -eq 1 ]]; then
-        echo "$(echo "$total / (1024*1024*1024)" | bc -l)"
-    fi
-}
-
 heap_used_avg(){
     bytes=$(jq '[.recording.events[]?
         | select(.type == "jdk.GCHeapSummary")
@@ -80,35 +52,27 @@ heap_used_avg(){
     fi
 }
 
-requests(){
+rate() { 
     JSON_DIR="$BASE/run/json"
 
-    find "$JSON_DIR" -type f -name "run*.json" \
-    | while read -r f; do
-        req=$(jq -r '.requests // 0' "$f")
-        [[ "$req" != "0" ]] && echo "$req $(basename "$f" .json | sed 's/^run//')"
-      done \
-    | sort -nr \
-    | head -1 \
-    | awk '{ print $2 - 150 }'
+    find "$JSON_DIR" -type f -name "run*.json" | while read -r f; do 
+        req=$(jq -r '.rate // 0' "$f") 
+        [[ "$req" != "0" ]] && echo "$req $(basename "$f" .json | sed 's/^run//')" 
+    done | sort -nr | sed -n "3p" | awk '{ print $1  }'
 }
 
-# =========================
-# Cabeçalho CSV
-# =========================
 
-echo "endpoint,run,Requests,JVM_CPU_pct,Native_Memory_GB,Heap_Used_MB" > "$OUTPUT"
+echo "endpoint,run,Rate,JVM_CPU_pct,Native_Memory_GB,Heap_Used_MB" > "$OUTPUT_TRAD"
+echo "endpoint,run,Rate,JVM_CPU_pct,Native_Memory_GB,Heap_Used_MB" > "$OUTPUT_VIRT"
 
-# =========================
-# Loop principal
-# =========================
-
-for run in {1..10}; do
+for run in {1..20}; do
 
     if (( run % 2 == 0 )); then
         endpoint="virtual"
+        OUTPUT="$OUTPUT_VIRT"
     else
         endpoint="traditional"
+        OUTPUT="$OUTPUT_TRAD"
     fi
 
     BASE="$SCRIPT_DIR/$endpoint/$run"
@@ -116,11 +80,12 @@ for run in {1..10}; do
     cpu=$(cpu_avg)
     native_mem=$(native_memory_avg "committed")
     heap=$(heap_used_avg)
-    req=$(requests)
+    req=$(rate)
 
-    # Só grava se nenhum campo for vazio ou zero
-    if [[ -n "$cpu" && -n "$native_mem" && -n "$heap" && -n "$req" ]]; then
-        echo "$endpoint,$run,$req,$cpu,$native_mem,$heap" >> "$OUTPUT"
-    fi
+    echo "$endpoint,$run,$req,$cpu,$native_mem,$heap" >> "$OUTPUT"
 
 done
+
+echo "✅ Tabelas geradas:"
+echo " - Traditional: $OUTPUT_TRAD"
+echo " - Virtual: $OUTPUT_VIRT"

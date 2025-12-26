@@ -68,7 +68,7 @@ loop() {
 
 prepare_environment
 
-for j in {1..100}; do
+for j in {1..90}; do
 
     if (( j % 2 == 0 )); then
         ENDPOINT="virtual"
