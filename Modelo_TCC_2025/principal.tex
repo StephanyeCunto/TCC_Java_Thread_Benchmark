@@ -248,11 +248,11 @@
     
         Uma thread é a menor unidade de processamento existente dentro de um processo. Cada processo é capaz de conter múltiplas threads, permitindo a execução simultânea de diferentes partes de um programa ou de diferentes tarefas \cite{silberschatz2018operating}.
 
-        A utilização de threads oferece diversos benefícios em problemas que envolvem tarefas de alto processamento (\textit{CPU-bound}) e operações de entrada e saída (\textit{I/O-bound}). Além disso, em sistemas reativos e servidores,threads permitem que aplicações atendam múltiplos usuários simultaneamente,mantendo respostas rápidas e contínuas mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Assim, o uso de threads é aplicado como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
+        A utilização de threads oferece diversos benefícios em problemas que envolvem tarefas de alto processamento (\textit{CPU-bound}) e operações de entrada e saída (\textit{I/O-bound}). Além disso, em sistemas reativos e servidores, threads permitem que aplicações atendam múltiplos usuários simultaneamente, mantendo respostas rápidas e contínuas mesmo sob alta carga, garantindo desempenho eficiente e melhor experiência ao usuário. Assim, o uso de threads é aplicado como estratégia para otimizar recursos computacionais e melhorar a eficiência de sistemas em diferentes contextos.
         
         O relatório \textit{State of the Octoverse 2024} \cite{github2024octoverse} demonstra que a linguagem de programação Java está entre as cinco linguagens mais utilizadas na plataforma, o que reforça sua importância como uma das principais tecnologias do desenvolvimento de software.
 
-        No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que, diferente das threads tradicionais, são gerenciadas pela \textit{Java Virtual Machine} (JVM). Enquanto o escalonamento das threads tradicionais é realizado pelo sistema operacional (SO), determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM, podendo apresentar comportamentos distintos \cite{oracle_virtual_threads}. 
+        No lançamento da versão 19 do Java, foram introduzidas as threads virtuais, que, diferente das threads tradicionais, são gerenciadas pela \textit{Java Virtual Machine} (JVM). Enquanto o escalonamento das threads tradicionais é realizado pelo sistema operacional (SO), determinando quando cada thread é executada, o escalonamento das threads virtuais é feito pela própria JVM, podendo apresentar comportamentos distintos \cite{oracleVirtualThreads}. 
 
         O uso de threads tradicionais pode gerar \textit{overhead} e limitar a escalabilidade. Dessa forma, as threads virtuais surgem como alternativa para contornar essas limitações. Este trabalho investiga como a utilização de threads virtuais impacta o desempenho e a escalabilidade de aplicações concorrentes.
 
@@ -469,20 +469,24 @@
     \chapter{Metodologia}  
     \label{chapter:metodologia}
 
-    Essa seção descreve a metodologia adotada para comparar o desempenho entre threads tradicionais e threads virtuais em Java. Foram realizados testes controlados para medir métricas de desempenho, como latência, utilização de CPU e memória, sob diferentes cargas de trabalho.
+    Essa seção descreve a metodologia adotada para comparar o desempenho entre \textit{threads} tradicionais e \textit{threads} virtuais em Java. Os experimentos foram baseados no trabalho de \citeonline{GustafssonPersson2024}, como adaptações para o contexto e ambiente deste estudo.
 
-    Todos os testes foram baseados nos testes realizados por \citeonline{GustafssonPersson2024}, adaptados para o contexto deste trabalho.
+    A abordagem envolveu a implementação de um servidor HTTP simples utilizando arquitetura cliente-servidor, onde o servidor foi configurado para utilizar \textit{threads} tradicionais e \textit{threads} virtuais. Dois tipos de testes foram conduzidos: testes de carga constante para avaliar estabilidade ao longo do tempo, e testes de aumento gradual para identificar limites de escalabilidade. As seções seguintes detalham a metodologia adotada.
 
-    Nas seções a seguir, a metodologia adotada é descrita.
+    Os experimentos foram projetados para comparar o comportamento de \textit{threads} tradicionais e \textit{threads} sob condições controladas, focando em desempenho (latência e throughput), consumo de recursos (CPU e memória) e escalabilidade (capacidade de processamento simultâneo).
 
+    Para garantir condições equivalentes entre os dois mecanismos de \textit{threads} os experimentos foram conduzidos nas seguintes condições: mesma infraestrutura de hardware, mesmas configurações de sistema operacional, mesma implementação de servidor e mesma metodologia de geração de carga. A ordem de execução foi alternada entre threads tradicionais e virtuais para minimizar vieses relacionados ao aquecimento da JVM ou estado do sistema.
 
-    \section{Configuração de hardware}
+    Todos os experimentos seguiram um protocolo automatizado que incluia fases de aquecimento (\textit{warmup}), coleta manual de lixo (\textit{garbage collection}) e pausas entre testes.Esse protocolo, detalhado nas seções subsequentes, teve como objetivo isolar o impacto do mecanismo de threads de outros fatores que poderiam influenciar os resultados.
 
-    Os experimentos foram conduzidos utilizando duas máquinas distintas: uma atuando como servidor e outra como cliente de carga.  
+    \section{Ambiente de Teste}
+    Nesta seção, são descritas as características do ambiente utilizado para a realização dos experimentos, incluindo a configuração de hardware, software e rede.
 
-    \subsection{Servidor}
+    Os testes utilizaram uma arquitetura cliente-servidor, como duas máquinas conectadas por uma rede Wi-fi local. A máquina servidor hospedava a aplicação Java, enquanto a máquina cliente era responsável por gerar carga e coletar métricas de desempenho. 
 
-    O servidor possuía as seguintes características:
+    Ambas as máquinas foram dedicadas exclusivamente à execução dos experimentos, sem aplicações ou serviços concorrentes em execução, reduzindo interferências no uso de CPU, memória e rede.
+
+    A máquina servidora possuía as seguintes características:
 
     \begin{itemize}
         \item Processador: Apple M2 (8 núcleos)
@@ -493,9 +497,7 @@
         \item Conexão de rede: Wi-fi 50~Mbps
     \end{itemize}
 
-    \subsection{Cliente}
-
-    A máquina cliente utilizada para gerar carga possuía as seguintes especificações:
+    A máquina cliente possuía as seguintes especificações:
 
     \begin{itemize}
     \item Processador: Intel Core i5-2410M (2 núcleos, 4 threads)
@@ -505,11 +507,9 @@
     \item Conexão de rede: Wi-fi 50~Mbps
     \end{itemize}
 
-    \subsection{Configurações de Sistema e Rede}
-    
-    As configurações de memória e de threads da JVM foram mantidas em seus valores padrão. No entanto, foram aplicadas configurações adicionais no sistema operacional, em ambas as máquinas, com o objetivo de evitar gargalos externos que pudessem interferir nos resultados dos testes.
+    Todos os experimentos foram realizados com a comunicação entre servidor e cliente por rede Wi-fi o que pode introduzir variações adicionais de latência. Entretanto, como ambos os mecanismos de threads foram avaliados sob as mesmas condições, esse impacto é considerado equivalente para fins comparativos.
 
-    Essas configurações visaram garantir que limitações observadas estivessem associadas ao mecanismo de gerenciamento de threads, e não a restrições impostas pelo sistema operacional ou pela pilha de rede.
+    Para evitar que o sistema operacional se tornasse um gargalo durante os experimentos, foram aplicadas configurações específicas em ambas as máquinas. Essas configurações visaram garantir que limitações observadas estivessem associadas ao mecanismo de gerenciamento de threads, e não a restrições impostas pelo sistema operacional ou pela pilha de rede.
 
     \begin{itemize}
         \item  Número máximo global de arquivos abertos no sistema (1048576), cada conexão TCP consome um descritor de arquivo o que poderia limitar o número de conexões simultâneas.
@@ -523,24 +523,16 @@
         \item  Faixa de portas TCP (1024 a 65.535), evita esgotamento de portas efêmeras.
     \end{itemize}
 
-    Todos os experimentos foram realizados com a comunicação entre servidor e cliente por rede wi-fi local o que pode introduzir variações adicionais de latência, entretanto, como ambos os mecanismos de threads foram avaliados sob as mesmas condições, tal impacto é considerado equivalente para fins comparativos.
+    As configurações da JVM foram mantidas em seus valores padrão para refletir cenários reais de uso.
 
-    \section{Configuração do servidor}
+    \section{Implementação do Servidor}
 
-    Para a realização dos testes, foi desenvolvido um servidor HTTP simples utilizando o framework Spring Boot. A escolha do Spring Boot se deve à sua popularidade e facilidade de uso para a criação rápida de aplicações web em Java.
+    Foi desenvolvido um servidor HTTP simples utilizando o framework Spring Boot. A escolha do Spring Boot se deve à facilidade de uso para a criação rápida de aplicações web em Java e sua popularidade, sendo listado entre os frameworks web mais populares em pesquisas, como a \citeonline{stackoverflowSurvey2025}.
 
-    O servidor foi implementado de forma a suportar tanto threads tradicionais quanto threads virtuais, permitindo a comparação direta entre os dois mecanismos e expõe um endpoint REST que responde a requisições do tipo GET com o status 200 (OK) e um corpo de resposta contendo uma mensagem simples.
+    O servidor foi implementado de forma a suportar threads tradicionais e threads virtuais, permitindo a comparação direta entre os dois mecanismos.
 
-    Foram criados os seguintes endpoints no servidor:
-    \begin{itemize}
-        \item \texttt{/threads/traditional}: Inicia uma thread tradicional e espera 100 ms antes de responder à requisição.
-        \item \texttt{/threads/virtual}: Inicia uma thread virtual e espera 100 ms antes de responder à requisição.
-        \item \texttt{/threads/gc}: Executa manualmente o processo de garbage collection.
-    \end{itemize}
 
-    O tempo de espera de 100 ms foi escolhido para simular uma operação I/O-bound, permitindo avaliar o desempenho dos mecanismos de threads em um cenário típico de aplicações web.
-
-    Para evitar que o servidor se tornasse um gargalo durante os experimentos, foram aplicadas configurações específicas no Spring Boot com o objetivo de suportar um elevado número de conexões simultâneas:
+    Para evitar que o servidor se tornasse um gargalo durante os experimentos, foram aplicadas configurações no Spring Boot que permitem alto nível de concorrência:
     \begin{itemize}
         \item \texttt{server.tomcat.max-threads=50000}: Define o número máximo de threads que o servidor pode criar para processar requisições.
         \item \texttt{server.tomcat.accept-count=20000}: Define o tamanho da fila de conexões pendentes.
@@ -548,51 +540,19 @@
         \item \texttt{spring.threads.virtual.enabled=true}: Habilita o uso de threads virtuais no Spring Boot.
     \end{itemize}
 
-    \section{Métricas coletadas}
+    O servidor expõe três endpoints REST:
 
-    O servidor foi configurado para registrar as seguintes métricas de desempenho utilização média da CPU, memória RAM e heap da JVM utilizando o Java Flight Recorder (JFR). Os dados foram salvos no arquivo Monitor.jfr e processados utilizando o Java Mission Control (JMC) para geração de tabelas.
-
-    A máquina cliente foi monitorada pelo Vegeta que coletou as seguintes métricas: latência (mínima, máxima, média e percentis 50, 90, 95 e 99), taxa de transferência, taxa de amostragem, respostas do servidor (para cálculo da taxa de sucesso), bytes de entrada e bytes de saída.
-
-    \section{Tratamento de erros}
-
-    Durante os experimentos, foram observados erros de conexão e tempo limite. A taxa de sucesso foi calculada com base no número total de requisições enviadas e no número de respostas bem-sucedidas recebidas do servidor.
-
-    Todos os erros ocorreram devido à falta de resposta do servidor, indicando que o mesmo não conseguiu processar todas as requisições recebidas. Esses erros foram identificados através de tokens gerado pelo Vegeta. 
-
-    Como exemplo, alguns erros observados:
     \begin{itemize}
-        \item \texttt{EOF (Client.Timeout exceeded while awaiting headers)}
-        \item \texttt{http: server closed idle connection (Client.Timeout exceeded while awaiting headers)}
-        \item \texttt{context deadline exceeded (Client.Timeout exceeded while awaiting headers)}
+        \item \texttt{/threads/traditional}: Processa requisições utilizando threads tradicionais do sistema operacional. Cada requisição inicia uma thread que aguarda 100 ms antes de responder com status HTTP 200.
+        \item \texttt{/threads/virtual}: Processa requisições utilizando threads virtuais do Project Loom. A lógica de processamento é idêntica ao endpoint tradicional, diferindo apenas no mecanismo de threading subjacente.
+        \item \texttt{/threads/gc}: Endpoint auxiliar para executar manualmente o processo de garbage collection.
     \end{itemize}
 
-    Execuções que apresentaram erros foram mantidas, e a taxa de sucesso foi registrada como uma métrica para análise. Esses registros permitiram monitorar a estabilidade do servidor e avaliar o limite máximo de requisições processáveis.
+    A espera de 100 ms foi escolhida para simular operações I/O-bound típicas de aplicações web reais, como consultas a bancos de dados ou chamadas a serviços externos. Esse tempo de bloqueio permite avaliar como cada mecanismo de threads lida com alta concorrência em cenários onde threads frequentemente aguardam operações de entrada/saída.
 
-    \section{Testes}
-    Foram realizados dois tipos de testes: teste de carga constante e teste de aumento gradual de carga (\textit{ramp up}). Ambos tiveram como objetivo comparar o desempenho entre \textit{threads} tradicionais e \textit{threads} virtuais.
+    \section {Teste de Carga Constante}
 
-    Para garantir condições equivalentes entre as execuções, foram utilizados scripts automatizados que padronizaram tempos de aquecimento, pausas e coleta de lixo.Além disso, foi definida uma ordem de execução que alternava entre o uso de \textit{threads} tradicionais e virtuais, com o objetivo de minimizar possíveis vieses relacionados à ordem dos testes. A ferramenta Vegeta foi empregada tanto para o envio das requisições quanto para o monitoramento.
-
-    Os testes foram executados quarenta e cinco vezes para cada mecanismo de \textit{threads}, totalizando noventa execuções. Esse número de repetições mostrou-se suficiente para garantir estabilidade estatística nos resultados obtidos.
-    
-    Para cada execução do teste, foi gerado um arquivo JSON contendo as métricas coletadas pela ferramenta Vegeta e um arquivo JFR com métricas coletadas no servidor, como utilização de CPU e memória.
-
-    Conforme realizado no trabalho de \citeonline{GustafssonPersson2024}, o \textit{garbage collection} (GC) manual foi executado antes de cada teste, com o objetivo de minimizar o impacto das coletas automáticas durante a execução. Após a realização de alguma requisição, aguardou-se 60 segundos antes de executar o GC. Em seguida, foram aguardados mais 20 segundos após a coleta de lixo para iniciar o teste, o que se mostrou suficiente para estabilizar o sistema. 
-    
-    Além disso, foram realizadas pausas de 60 segundos entre os testes para garantir que o sistema retornasse a um estado estável antes do início de uma nova execução.
-
-    Não foi possível atingir os limites da máquina servidora, uma vez que o sistema operacional impôs uma quantidade limitada de requisições simultâneas. Dessa forma, os testes atingiram o limite do sistema operacional, enquanto os limites de hardware da máquina não foram alcançados.
-
-    Os scripts utilizados nos experimentos e o código-fonte do servidor, estão disponíveis no repositório do GitHub: \url{https://github.com/StephanyeCunto/TCC_Java_Thread_Benchmark}.
-    
-    Os testes são descritos nas subseções seguintes.
-
-    \subsection {Teste de Carga Constante}
-
-    Para investigar a existência de diferenças entre os mecanismos de \textit{threads} ao longo de um período prolongado, foram realizados testes com carga constante. Para isso, fixou-se uma taxa de requisições baseada nos limites impostos pelo sistema operacional da máquina servidora.
-
-    A taxa definida foi de 1000 requisições por segundo, com duração de 10 minutos. Esse valor foi definido após testes preliminares que indicaram que a máquina servidor começava a apresentar erros de conexão acima dessa taxa.
+    Esse teste possui o objetivo de avaliar a estabilidade e o desempenho dos mecanismos de \textit{threads} sob uma carga constante ao longo do tempo. A carga foi mantida em um nível fixo, permitindo observar como cada mecanismo lida com a concorrência e o consumo de recursos em um cenário estável.
 
     O teste foi realizados da seguinte maneira:
 
@@ -607,11 +567,13 @@
         \item Repetição dos passos 1 a 7 para o outro mecanismo de threads, em uma nova instância da JVM.
     \end{enumerate}
 
-     Cada execução teve duração aproximada de 17,5 minutos, considerando os tempos de aquecimento, pausas e coleta de lixo. Dessa forma, a execução completa dos testes com ambos os mecanismos de \textit{threads} totalizou aproximadamente 35 minutos. O tempo total de execução dos testes foi de cerca de 27 horas.
+    A taxa de 1.000 requisições/segundo foi definida após testes preliminares que identificaram esse valor foi definido após testes preliminares que indicaram que a máquina servidor começava a apresentar erros de conexão acima dessa taxa. A duração de 10 minutos permite observar tendências de longo prazo, como degradação gradual de desempenho ou acúmulo de recursos.
 
-    \subsection {Teste de carga com aumento gradual (\textit{ramp up})}
+    O teste foi repetido 45 vezes para cada mecanismo de threads, totalizando 90 execuções. Cada execução completa (ambos os mecanismos) durou aproximadamente 35 minutos, resultando em aproximadamente 27 horas de experimentação total.
 
-    O objetivo desse teste foi identificar o ponto em que o servidor começa a apresentar erros de conexão, indicando que atingiu seu limite máximo de requisições processáveis. Para isso, a carga foi aumentada gradualmente até que o servidor não conseguisse mais atender às requisições, o teste foi finalizado quando houve 3 execuções consecutivas com erros de conexão.
+    \section {Teste de carga com aumento gradual (\textit{ramp up})}
+
+    O objetivo desse teste foi identificar o ponto em que o servidor começa a apresentar erros de conexão, indicando que atingiu seu limite máximo de requisições processáveis. 
 
     O teste foi conduzido da seguinte maneira:
 
@@ -638,11 +600,124 @@
         \item Repetição dos passos 1 e 2 para o outro mecanismo de threads, em uma nova instância da JVM.
     \end{enumerate}
 
-    As execuções desse teste apresentaram duração variável, dependendo do ponto em que o servidor passou a registrar erros de conexão, caracterizando a saturação do sistema. Em média, cada execução utilizando threads virtuais teve duração aproximada de 1 hora e 48 minutos, enquanto as execuções com threads tradicionais duraram cerca de 1 hora e 39 minutos, considerando os períodos de aquecimento, pausas entre testes e operações de coleta de lixo.
+    O teste foi finalizado quando o servidor apresentou falhas em três execuções consecutivas, indicando saturação consistente do sistema.
 
-    Dessa forma, a execução completa dos testes contemplando ambos os mecanismos de \textit{threads} totalizou aproximadamente 3 horas e 27 minutos por repetição. No total, o conjunto de experimentos demandou cerca de 155 horas e 15 minutos de execução contínua.
+    Este teste também foi repetido 45 vezes para cada mecanismo. A duração variou conforme o ponto de saturação: em média, 1 hora e 48 minutos para threads virtuais e 1 hora e 39 minutos para threads tradicionais. O tempo total de experimentação foi de aproximadamente 155 horas.
 
-    As metodologias descritas nesta seção fornecem a base experimental necessária para a análise comparativa entre threads tradicionais e threads virtuais. Na seção seguinte, os resultados obtidos a partir dos testes realizados são apresentados e discutidos de forma detalhada.
+    \section{Controles Experimentais}
+    Para garantir a validade dos resultados, foram implementados os controles:
+
+        \begin{enumerate}
+            \item Garbage Collection Manual: Executado antes de cada teste para minimizar o impacto de coletas automáticas durante as medições. O protocolo incluiu aguardar 60 segundos após qualquer requisição antes da coleta, seguido de 20 segundos de estabilização.
+
+            \item Alternância de Ordem: A sequência de execução alternava entre threads tradicionais e virtuais para evitar que efeitos de aquecimento da JVM ou mudanças graduais no sistema favorecessem um mecanismo.
+
+            \item Automação: Scripts automatizados padronizaram tempos de warmup, pausas e coleta de lixo.
+
+            \item Isolamento de Recursos: Ambas as máquinas foram dedicadas exclusivamente aos experimentos, sem outras aplicações ou serviços em execução.
+
+            \item Replicabilidade: Todos os scripts e código-fonte estão disponíveis no repositório GitHub: https://github.com/StephanyeCunto/TCC_Java_Thread_Benchmark
+        \end{enumerate}
+
+    \section{Métricas Coletadas}
+
+    As métricas foram coletadas em dois pontos: na máquina servidora e na máquina cliente.
+
+    No servidor as métricas foram coletadas através do Java Flight Recorder (JFR), processadas com Java Mission Control (JMC):
+
+    \begin{enumerate}
+        \item Utilização média de CPU (\%)
+        \item Consumo de memória RAM (MB)
+        \item Utilização de heap da JVM (MB)
+    \end{enumerate}
+
+    Os dados foram salvos em arquivos `Monitor.jfr` para cada execução, permitindo análise do comportamento interno da aplicação.
+
+    As métricas foram coletadas no cliente pela ferramenta Vegeta durante o envio de requisições:
+    \begin{enumerate}
+        \item Latência: mínima, máxima, média e percentis (P50, P90, P95, P99)
+        \item Taxa de transferência (throughput)
+        \item Taxa de amostragem
+        \item Taxa de sucesso (\%)
+        \item Volume de dados (bytes de entrada e saída)
+    \end{enumerate}
+
+    Esses dados foram exportados para arquivos JSON para análise e comparação entre os mecanismos de threads.
+
+    \section{Tratamento de erros}
+
+    Durante os experimentos, foram observados erros de conexão e tempo limite, todos os erros ocorreram devido à falta de resposta do servidor, indicando que o mesmo não conseguiu processar todas as requisições recebidas. Esses erros foram identificados através de tokens gerado pelo Vegeta. 
+
+    Como exemplo, alguns erros observados:
+    \begin{itemize}
+        \item \texttt{EOF (Client.Timeout exceeded while awaiting headers)}
+        \item \texttt{http: server closed idle connection (Client.Timeout exceeded while awaiting headers)}
+        \item \texttt{context deadline exceeded (Client.Timeout exceeded while awaiting headers)}
+    \end{itemize}
+
+    Execuções que apresentaram erros foram mantidas, pois a presença de falhas indica o ponto de saturação do sistema, uma métrica relevante para avaliar escalabilidade.
+
+    \section{Análise Estatística}
+
+    Para avaliar a necessidade de repetições dos testes foi conduzida uma análise estatística baseada na execução de  múltiplas repetições dos experimentos e no calculo do intervalo de confiança (IC) das métricas principais, como latência média, utilização de CPU e consumo de memória. 
+    Antes de calcular o intervalo de confiança foram removidos valores discrepantes (\textit{outliers}) utilizando o método do intervalo interquartil (IQR). Isso ajudou a reduzir a influência de variações extremas e obter estimativas mais representativas do comportamento do sistema.
+    
+    Os intervalos de confiança foram calculados utilizando a distribuição t de Student, conforme a Equação~\ref{eq:ic}:
+
+    \begin{equation}
+        \label{eq:ic}
+        IC = \bar{x} \pm t_{\alpha/2,\,gl} \cdot \frac{s}{\sqrt{n}}
+        = \bar{x} \pm \text{Margem de Erro}
+    \end{equation}
+
+    Onde:
+    \begin{itemize}
+        \item $\bar{x}$ é a média amostral da métrica analisada;
+        \item $t_{\alpha/2,\,gl}$ é o valor crítico da distribuição t de Student para um determinado nível de confiança e graus de liberdade;
+        \item $s$ é o desvio padrão amostral;
+        \item $n$ é o tamanho da amostra (número de execuções);
+        \item $gl = n - 1$ representa os graus de liberdade.
+    \end{itemize}
+
+    Os valores críticos de t foram obtidos a partir de tabelas estatísticas para os níveis de confiança desejados (95\% e 99\%) e os graus de liberdade correspondentes. Com isso, foi possível calcular a margem de erro e o intervalo de confiança para cada métrica.
+
+  \begin{table}[H]
+    \centering
+    \caption{Intervalos de confiança das métricas principais para o teste de carga constante}
+    \label{tab:ic_metricas_principais}
+    \begin{tabular}{lccccc}
+    \hline
+    \textbf{Mecanismo} & \textbf{IC} & \textbf{Lat. média (s)} & \textbf{CPU} & \textbf{Mem. (MB)} & \textbf{Heap (MB)} \\
+    \hline
+    Threads virtuais & 95\% & $[0{,}12,\ 0{,}14]$ & $[0{,}04,\ 0{,}04]$ & $[415{,}16,\ 519{,}46]$ & $[109{,}85,\ 173{,}56]$ \\
+    Threads virtuais & 99\% & $[0{,}12,\ 0{,}15]$ & $[0{,}04,\ 0{,}04]$ & $[397{,}14,\ 537{,}48]$ & $[98{,}85,\ 184{,}56]$ \\
+    \hline
+    Threads trad. & 95\% & $[0{,}15,\ 0{,}23]$ & $[0{,}08,\ 0{,}08]$ & $[421{,}85,\ 525{,}78]$ & $[156{,}63,\ 219{,}25]$ \\
+    Threads trad. & 99\% & $[0{,}14,\ 0{,}24]$ & $[0{,}08,\ 0{,}08]$ & $[403{,}79,\ 543{,}85]$ & $[145{,}74,\ 230{,}14]$ \\
+    \hline
+    \end{tabular}
+    \begin{flushleft}
+    \footnotesize
+    Fonte: Elaboração própria.
+    \end{flushleft}
+    \end{table}
+    A Tabela~\ref{tab:ic_metricas_principais} apresenta os intervalos de confiança calculados para as principais métricas do teste de carga constante. Observa-se que os intervalos são estreitos para latência média e para uso de cpu, indicando baixa variabilidade entre as execuções. 
+    
+    No entanto, os intervalos para consumo de memória e heap são mais amplos, sugerindo maior variação nesses aspectos o que era esperado devido à natureza dinâmica do gerenciamento de memória na JVM.
+
+    Esses resultados indicam que o número de execuções adotado foi suficiente para capturar o comportamento médio do sistema de forma estatisticamente confiável, permitindo comparações consistentes entre threads tradicionais e threads virtuais.
+
+
+    \section{Limitações dos Testes}
+
+    Como já mencionado, os testes possue algumas limitacoes que devem ser consideradas na interpretação dos resultados:
+    \begin{itemize}
+        \item \textbf{Limitação de Hardware:} Não foi possível atingir os limites absolutos da máquina servidora, uma vez que o sistema operacional impôs restrições no número de requisições simultâneas. Os testes, portanto, caracterizam o limite do sistema operacional, não o limite de hardware.
+        \item \textbf{Rede Wi-Fi:} A utilização de uma conexão Wi-Fi pode ter introduzido variabilidade adicionais de latência e perda de pacotes.Embora essa limitação afete ambos os mecanismos igualmente, testes em ambiente cabeado poderiam revelar diferenças mais sutis.
+        \item \textbf{Ambiente Controlado:} Os testes foram realizados em um ambiente controlado com carga sintética e podem não refletir completamente o comportamento em ambientes de produção com cargas e padrões de uso variados.
+
+        \item \textbf{Simplificação da Aplicação:} o servidor implementado utiliza apenas operações de espera (sleep), não incluindo operações I/O reais como acesso a banco de dados ou chamadas a serviços externos, o que pode limitar a generalização dos resultados
+    \end{itemize}
 
 
     %     A diferença entre Metodologia, Procedimentos Metodológicos e Materiais e Métodos está mais no enfoque e na tradição da área do que em uma mudança drástica de significado. O aluno deve apresentar claramente como o trabalho foi realizado, para que outra pessoa possa entender e, se necessário, reproduzir a pesquisa.

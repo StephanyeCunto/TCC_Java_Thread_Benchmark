@@ -83,7 +83,7 @@ loop() {
 
 prepare_environment
 
-for j in {20..90}; do
+for j in {1..90}; do
     if [ $(($j % 2)) -eq 0 ]; then
         ENDPOINT="virtual"
     else
