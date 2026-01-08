@@ -12,7 +12,6 @@
 [![macOS](https://img.shields.io/badge/macOS-Host-000000.svg?logo=apple&logoColor=white)]()
 [![Vegeta](https://img.shields.io/badge/Vegeta-12.8-00A98F.svg?logo=gnu&logoColor=white)](https://github.com/tsenart/vegeta)
 [![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-008080.svg?logo=latex&logoColor=white)](https://www.abntex.net.br/)
-[![Project Size](https://img.shields.io/badge/Project%20Size-4.2%20GB-8A2BE2.svg)]()
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
 [![License](https://img.shields.io/badge/license-Academic-blue.svg)](LICENSE)
@@ -52,17 +51,6 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 - Analisar o consumo de recursos (CPU, memória, I/O)
 - Avaliar a escalabilidade sob diferentes cargas de trabalho
 - Medir latência e throughput em aplicações web
-
-### 📊 Status Atual
-
-- ✅ Revisão bibliográfica em andamento
-- ✅ Ambiente de desenvolvimento configurado (VM Azure)
-- ✅ Servidor de benchmark implementado (Spring Boot)
-- ✅ Definição da metodologia em andamento
-- ✅ Configuração de ferramentas de teste (JMeter, VisualVM)
-- 🔄 Implementação dos benchmarks (em andamento)
-- 🔄 Coleta de dados (pendente)
-- ⏳ Análise de resultados (pendente)
 
 ## ⚙️ Requisitos Mínimos
 
@@ -104,7 +92,7 @@ Este repositório contém o desenvolvimento do Trabalho de Conclusão de Curso (
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Backup-4285F4.svg?logo=googledrive&logoColor=white)](https://drive.google.com/)
 
 **Status:**  
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+[![Status](https://img.shields.io/badge/status-Finalizado-green.svg)]()
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
 [![Last Commit](https://img.shields.io/github/last-commit/StephanyeCunto/tcc.svg?logo=github)](https://github.com/StephanyeCunto/tcc)
 <!-- 
@@ -517,86 +505,53 @@ sequenceDiagram
 ---
 
 ## 📁 Estrutura do Repositório
-
-```
 tcc/
-├── Modelo_TCC_2025/                     # 📄 Documento principal (LaTeX)
-│   ├── principal.tex                    # Arquivo principal do TCC
+├── Modelo_TCC_2025/                     # 📄 Documento do TCC (LaTeX)
+│   ├── principal.tex                    # Arquivo principal
+│   ├── imagens/                         # Figuras do trabalho
+│   │   ├── multiplas.png
+│   │   ├── onetoone.png
+│   │   └── thread.png
+│   ├── abntex2*.{cls,sty,bst,bib}       # Estilo ABNT
 │   ├── principal.pdf                    # PDF compilado
-│   ├── teste.tex                        # Documento auxiliar
-│   ├── imagens/                         # Figuras e diagramas
-│   │   └── Figura 1.png
-│   ├── abntex2*.{cls,sty,bst,bib}       # Classes, estilos e templates ABNT
+│   └── arquivos auxiliares LaTeX        # *.aux, *.log, *.toc, etc.
 │
-├── Proposta/                            # 📝 Versão da proposta
-│   ├── Proposta_TCC/                    # Proposta oficial
-│   │   ├── main.tex
-│   │   ├── main.pdf
-│   │   └── Resumo_Bianca_Primeira_Reunião.pdf
-│   └── Proposta_Teste/                  # Proposta do teste a ser realizado
-│       ├── TrabalhosRelacionadosTeste.tex
-│       ├── Descrição_Teste.tex
-│       ├── Tabela_comparativa.tex
-│       └── *.pdf
-│
-├── Teste/                               # 🧪 Scripts de teste de carga
-│   ├── Script/
-│   │   ├── loadConstant/                # Carga constante
+├── Teste/                               # 🧪 Experimentos
+│   ├── Script/                          # Scripts de benchmark
+│   │   ├── prepare_environment.sh
+│   │   ├── jvm.sh
+│   │   ├── folder.sh
+│   │   ├── loadConstant/
 │   │   │   ├── benchmark_threads.sh
-│   │   │   ├── benchmark_threads_local.sh
-│   │   │   └── results/
-│   │   │       └── threads/
-│   │   │           ├── traditional/{1,3,5,7,9}
-│   │   │           └── virtual/{2,4,6,8,10}
-│   │   └── loadRamping/                 # Carga crescente
+│   │   │   └── Results/
+│   │   │       ├── Dados_Load_Constant.xlsx
+│   │   │       ├── create_table.sh
+│   │   │       └── get_data.sh
+│   │   └── loadRamping/
 │   │       ├── benchmark_threads.sh
-│   │       ├── benchmark_threads_local.sh
-│   │       └── results/
-│   │           ├── threads/
-│   │           │   ├── traditional/{1,3,5,7,9}
-│   │           │   └── virtual/{2,4,6,8,10}
-│   │           └── view/                # Interface HTML dos resultados
-│   │               ├── all.json
-│   │               └── index.html
+│   │       └── Results/
+│   │           ├── Dados_Load_Ramping.xlsx
+│   │           ├── create_table.sh
+│   │           └── get_data.sh
 │   │
-│   └── Serve_Test/                      # 🚀 Servidor Spring Boot para benchmarks
-│       ├── benchmark-server/            # Projeto Maven
+│   └── Serve_Test/                      # 🚀 Servidor de benchmark
+│       ├── README.md
+│       ├── benchmark-server/
 │       │   ├── pom.xml
+│       │   ├── mvnw
+│       │   ├── mvnw.cmd
 │       │   └── src/
-│       │       ├── main/java/com/benchmark/server/
-│       │       │   ├── BenchmarkServerApplication.java
-│       │       │   └── controller/ThreadBenchmarkController.java
-│       │       └── resources/
-│       │           ├── application.properties
-│       │           ├── static/
-│       │           └── templates/
-│       └── benchmark-server.zip         # Arquivo compactado
-│
-├── Testando_maquina/                    # 🖥️ Scripts de monitoramento
-│   ├── monitor.sh                       # CPU/RAM/IO
-│   ├── tcp_monitor.sh                   # Portas efêmeras e TCP
-│   └── teste.sh                         # Scripts gerais de teste
+│       └── benchmark-server (1).zip
 │
 ├── Trabalhos_Relacionados/              # 📚 Base teórica
-│   ├── Quadro_Trabalhos_Relacionados/   # Tabela comparativa
-│   │   ├── quadro.tex
-│   │   └── quadro.pdf
-│   ├── Resumo_Trabalhos_Relacionados/   # Resumos individuais
-│   │   ├── Resumo_Trabalho_Do_HIARLY.tex
-│   │   └── Resumo_Trabalho_Do_Vishesh.tex
-│   └── Trabalhos_Relacionados/          # PDFs originais
-│       ├── Avaliação_mecanismos_concorrência_Java8.pdf
-│       ├── Benchmarking_Virtual_Threads.pdf
-│       ├── Comparison_Concurrency_Java.pdf
-│       ├── Tradução_Comparison_Concurrency_Java.pdf
-│       └── Analise_Comparativa_Threads_GreenThreads.pdf
+│   ├── Avaliação dos mecanismos de concorrência na API do Java 8.pdf
+│   ├── Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads.pdf
+│   ├── Comparison of Concurrency Technologies in Java.pdf
+│   ├── Tradução - Comparison of Concurrency Technologies in java.pdf
+│   └── UMA ANÁLISE COMPARATIVA ENTRE THREADS E GREEN THREADS NO JAVA.pdf
 │
-├── README.md                            # 📘 Documento raiz
-└── filters.txt                           # 🚫 Regras de exclusão (Rclone)
+└── README.md
 
-```
-
----
 
 ## 🚀 Como Começar
 
