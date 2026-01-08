@@ -552,51 +552,71 @@ sequenceDiagram
 ## 📁 Estrutura do Repositório
 
 tcc/
-├── Modelo_TCC_2025/                     # 📄 Documento do TCC (LaTeX)
-│   ├── principal.tex                    # Arquivo principal
-│   ├── imagens/                         # Figuras do trabalho
+├── Modelo_TCC_2025/                      # 📄 Documento do TCC (LaTeX)
+│   ├── principal.tex                     # Arquivo principal do trabalho
+│   ├── principal.pdf                     # PDF compilado
+│   ├── imagens/                          # Figuras utilizadas no TCC
 │   │   ├── multiplas.png
 │   │   ├── onetoone.png
 │   │   └── thread.png
-│   ├── abntex2*.{cls,sty,bst,bib}       # Estilo ABNT
-│   ├── principal.pdf                    # PDF compilado
-│   └── arquivos auxiliares LaTeX        # *.aux, *.log, *.toc, etc.
+│   ├── abntex2*.{cls,sty,bst,bib}        # Classes, estilos e bibliografia ABNT
+│   ├── abntex2-modelo-references.bib     # Referências bibliográficas
+│   └── arquivos_auxiliares/              # Arquivos gerados pelo LaTeX
+│       ├── *.aux
+│       ├── *.log
+│       ├── *.toc
+│       ├── *.bbl
+│       ├── *.blg
+│       ├── *.lof
+│       ├── *.lot
+│       └── *.idx
 │
-├── Teste/                               # 🧪 Experimentos
-│   ├── Script/                          # Scripts de benchmark
-│   │   ├── prepare_environment.sh
-│   │   ├── jvm.sh
-│   │   ├── folder.sh
-│   │   ├── loadConstant/
+├── Teste/                                # 🧪 Experimentos e benchmarks
+│   ├── Script/                           # Scripts de automação e execução
+│   │   ├── prepare_environment.sh        # Preparação do ambiente
+│   │   ├── jvm.sh                        # Configurações da JVM
+│   │   ├── folder.sh                     # Organização de diretórios
+│   │   ├── loadConstant/                 # Experimentos com carga constante
 │   │   │   ├── benchmark_threads.sh
 │   │   │   └── Results/
 │   │   │       ├── Dados_Load_Constant.xlsx
 │   │   │       ├── create_table.sh
 │   │   │       └── get_data.sh
-│   │   └── loadRamping/
+│   │   └── loadRamping/                  # Experimentos com carga progressiva
 │   │       ├── benchmark_threads.sh
 │   │       └── Results/
 │   │           ├── Dados_Load_Ramping.xlsx
 │   │           ├── create_table.sh
 │   │           └── get_data.sh
 │   │
-│   └── Serve_Test/                      # 🚀 Servidor de benchmark
+│   └── Serve_Test/                       # 🚀 Servidor de benchmark
 │       ├── README.md
-│       ├── benchmark-server/
+│       ├── benchmark-server/             # Aplicação Spring Boot
 │       │   ├── pom.xml
 │       │   ├── mvnw
 │       │   ├── mvnw.cmd
 │       │   └── src/
-│       └── benchmark-server (1).zip
+│       │       ├── main/
+│       │       │   ├── java/com/benchmark/server/
+│       │       │   │   ├── BenchmarkServerApplication.java
+│       │       │   │   └── controller/
+│       │       │   │       └── ThreadBenchmarkController.java
+│       │       │   └── resources/
+│       │       │       └── application.properties
+│       │       └── test/
+│       │           └── java/com/benchmark/server/
+│       │               └── BenchmarkServerApplicationTests.java
+│       └── benchmark-server.zip           # Backup compactado do servidor
 │
-├── Trabalhos_Relacionados/              # 📚 Base teórica
+├── Trabalhos_Relacionados/               # 📚 Fundamentação teórica
 │   ├── Avaliação dos mecanismos de concorrência na API do Java 8.pdf
 │   ├── Benchmarking the Performance of Java Virtual Threads in High-Throughput Workloads.pdf
 │   ├── Comparison of Concurrency Technologies in Java.pdf
-│   ├── Tradução - Comparison of Concurrency Technologies in java.pdf
-│   └── UMA ANÁLISE COMPARATIVA ENTRE THREADS E GREEN THREADS NO JAVA.pdf
+│   ├── Tradução - Comparison of Concurrency Technologies in Java.pdf
+│   └── Uma análise comparativa entre threads e green threads no Java.pdf
 │
-└── README.md
+└── README.md                             # 📘 Descrição geral do repositório
+
 
 
 ## 🚀 Como Começar
@@ -973,10 +993,8 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 | Problema | Solução |
 |----------|---------|
 | **Servidor não inicia** | Verifique se a porta 8080 está livre: `lsof -i :8080` |
-| **JMeter não conecta** | Confirme IP da VM e firewall (porta 8080 aberta) |
 | **VisualVM não conecta** | Verifique configuração JMX e porta 9090 |
 | **Métricas não coletadas** | Execute scripts com `sudo` e instale `sysstat` |
-| **OutOfMemoryError** | Aumente heap: `-Xmx4g -Xms2g` |
 
 ---
 
