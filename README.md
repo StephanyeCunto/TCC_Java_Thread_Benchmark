@@ -143,29 +143,64 @@ Consulte o repositório de código: [TCC_Java_Thread_Benchmark](https://github.c
 
 ```mermaid
 graph TB
-    subgraph Cliente["🖥️ Máquina Cliente (Ubuntu)"]
-        VEG[Vegeta Load Generator]
+    subgraph Cliente["🖥️ CLIENTE (Ubuntu 22.04 - Intel i5)"]
+        VEG["🔥 Vegeta Load Generator<br/>────────────────<br/>📊 Métricas Coletadas:<br/>• Latência (P50/P90/P95/P99)<br/>• Throughput (req/s)<br/>• Taxa de Sucesso (%)"]
     end
     
-    subgraph Servidor["🖥️ Máquina Servidora (macOS)"]
-        SPRING[Spring Boot Server]
-        JFR[Java Flight Recorder]
-        subgraph Endpoints
-            TRAD[/threads/traditional]
-            VIRT[/threads/virtual]
-            GC[/threads/gc]
-        end
+    subgraph Rede["🌐 Wi-Fi 50 Mbps"]
+        CARGA1["🔵 Carga Constante<br/>1000 req/s × 600s"]
+        CARGA2["🟢 Carga Gradual<br/>+50 req/s increments"]
     end
     
-    VEG -->|HTTP Requests| TRAD
-    VEG -->|HTTP Requests| VIRT
-    VEG -->|Trigger GC| GC
+    subgraph Servidor["🖥️ SERVIDOR (macOS - Apple M2 8-cores)"]
+        SPRING["☕ Spring Boot 3.3.2 (Java 21 LTS)"]
+        
+        TRAD["📍 /threads/traditional<br/>Thread.ofPlatform()<br/>───────────<br/>Thread.sleep(100ms)"]
+        VIRT["📍 /threads/virtual<br/>Thread.ofVirtual()<br/>───────────<br/>Thread.sleep(100ms)"]
+        GC["📍 /threads/gc<br/>System.gc()"]
+        
+        MONITOR["🔍 Java Flight Recorder + JMC<br/>────────────────<br/>📊 Métricas Coletadas:<br/>• CPU (%)<br/>• Memória RAM (MB)<br/>• Heap JVM (MB)"]
+        
+        SPRING --> TRAD
+        SPRING --> VIRT
+        SPRING --> GC
+        SPRING -.-> MONITOR
+    end
     
-    JFR -.->|Monitor| SPRING
-    SPRING -->|Response| VEG
+    VEG -->|HTTP Requests| CARGA1
+    VEG -->|HTTP Requests| CARGA2
+    CARGA1 --> TRAD
+    CARGA1 --> VIRT
+    CARGA2 --> TRAD
+    CARGA2 --> VIRT
+    CARGA1 --> GC
+    CARGA2 --> GC
     
-    style Cliente fill:#e3f2fd
-    style Servidor fill:#fff3e0
+    TRAD -->|HTTP 200 + JSON| VEG
+    VIRT -->|HTTP 200 + JSON| VEG
+    GC -->|GC OK| VEG
+    
+    subgraph Analise["📊 ANÁLISE ESTATÍSTICA"]
+        DADOS["📁 Dados Brutos<br/>• JSON (Vegeta)<br/>• .jfr (JFR)"]
+        STATS["📈 Tratamento<br/>• Outliers (IQR)<br/>• Média ± DP<br/>• IC 95%"]
+        RESULT["✅ Resultados<br/>• Latência: -18% (Virtual)<br/>• CPU: -55% (Virtual)<br/>• Memory: -11% (Virtual)"]
+        
+        DADOS --> STATS --> RESULT
+    end
+    
+    VEG -.->|Exporta| DADOS
+    MONITOR -.->|Exporta| DADOS
+    
+    style Cliente fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style Servidor fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style Rede fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style Analise fill:#e8f5e9,stroke:#388e3c,stroke-width:3px
+    style VEG fill:#ff5722,color:#fff
+    style TRAD fill:#ff9800
+    style VIRT fill:#4caf50
+    style GC fill:#9c27b0,color:#fff
+    style MONITOR fill:#2196f3,color:#fff
+    style RESULT fill:#4caf50,color:#fff
 ```
 
 ### Cenários Avaliados
