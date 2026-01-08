@@ -12,7 +12,7 @@
 [![macOS](https://img.shields.io/badge/macOS-Host-000000.svg?logo=apple&logoColor=white)]()
 [![Vegeta](https://img.shields.io/badge/Vegeta-12.8-00A98F.svg?logo=gnu&logoColor=white)](https://github.com/tsenart/vegeta)
 [![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-008080.svg?logo=latex&logoColor=white)](https://www.abntex.net.br/)
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)]()
+[![Status](https://img.shields.io/badge/status-Finalizado-green.svg)]()
 [![wakatime](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0.svg)](https://wakatime.com/badge/user/5a343522-23db-45ae-b20b-54655c392390/project/221c0cf4-099d-4775-8ef9-bb8e514e04b0)
 [![License](https://img.shields.io/badge/license-Academic-blue.svg)](LICENSE)
 
@@ -35,8 +35,6 @@
 - [🧪 Metodologia](#-metodologia-de-testes)
 - [🐛 Solução de Problemas](#-problemas-comuns)
 - [📚 Recursos e Links Úteis](#-recursos-úteis)
-- [📋 Checklist de Progresso](#-checklist-de-progresso)
-- [🎯 Próximos Passos](#-próximos-passos-2-semanas)
 - [📧 Contato](#-contato)
 - [📄 Licença](#-licença)
 ---
@@ -500,11 +498,59 @@ sequenceDiagram
 ```
 
 
+## Carga gradual
 
+```mermaid
+
+sequenceDiagram
+    participant L as Linux Vegeta
+    participant M as macOS Servidor
+    participant S as Scripts start_all / server / metrics
+    participant MET as Coletor de Métricas
+
+    %% ======= INICIALIZAÇÃO =======
+    L->>M: Executa start_all.sh remotamente
+    M->>S: Inicializa scripts
+    S->>M: Inicia servidor HTTP (nova JVM)
+
+    %% ======= WARMUP (3 CICLOS) =======
+    loop 3 ciclos de aquecimento
+        Note over L: Warmup<br/>300 RPS · 60s
+        L->>M: Envio de requisições (warmup)
+        M->>L: Respostas
+
+        Note over L,M: Pausa 60s
+        Note over M: GC manual no servidor
+        Note over L,M: Pausa 20s
+
+        Note over L: Ajuste da taxa para<br/>limiar seguro de RPS
+    end
+
+    %% ======= TESTE PRINCIPAL (CARGA GRADUAL) =======
+    loop Até ocorrerem erros de conexão
+        Note over L: Teste principal<br/>Duração: 10s
+        L->>M: Envio de requisições na taxa atual
+        M->>L: Respostas do servidor
+
+        Note over L,M: Pausa 60s
+        Note over M: GC manual no servidor
+        Note over L,M: Pausa 20s
+
+        Note over L: Incremento de carga<br/>+50 RPS
+    end
+
+    %% ======= FINALIZAÇÃO =======
+    Note over L,M: Pausa final 60s
+
+    %% ======= REPETIÇÃO =======
+    Note over M: Reinício do servidor<br/>Nova instância da JVM
+    Note over L,M: Repetição completa do teste<br/>com outro mecanismo de threads
+```
 
 ---
 
 ## 📁 Estrutura do Repositório
+
 tcc/
 ├── Modelo_TCC_2025/                     # 📄 Documento do TCC (LaTeX)
 │   ├── principal.tex                    # Arquivo principal
@@ -907,9 +953,6 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 | **Throughput** |Vegeta | req/s |
 | **Latência** | Vegeta | ms |
 | **CPU** | VisualVM | % |
-| **Memória Heap** | VisualVM | MB |
-| **Threads Ativas** | VisualVM | count |
-| **GC Pause** | VisualVM | ms |
 
 ---
 
@@ -995,103 +1038,6 @@ Diversos autores concordam \cite{autor2024,sobrenome2025,site2025}.
 - [🤖 Reddit - r/LaTeX](https://www.reddit.com/r/LaTeX/) - Discussões sobre LaTeX
 - [☕ Reddit - r/java](https://www.reddit.com/r/java/) - Comunidade Java no Reddit
 - [🌐 Dev.to - Java](https://dev.to/t/java) - Artigos e tutoriais sobre Java
-
----
-
-## 📋 Checklist de Progresso
-
-### Documentação
-- [x] README configurado
-- [x] Estrutura organizada
-- [x] Materiais de referência
-- [x] Metodologia definida
-- [ ] Seção de resultados preparada
-
-### Ambiente
-- [x] Servidor HTTP implementado
-- [x] Vegeta instalado e configurado (Linux + macOS)
-- [ ] VisualVM configurado (monitoramento local/remoto)
-- [ ] Scripts de coleta testados (CPU, RAM, Rede, Portas Efêmeras, TCP)
-
-### Implementação
-- [x] Controller básico
-- [x] Endpoints de benchmark (virtual, tradicional, contador e GC)
-- [x] Coleta de métricas com scripts independentes
-- [ ] Diferentes cenários de carga Vegeta implementados
-- [ ] Logging estruturado (JSON + logs do servidor)
-- [ ] Coleta automática contínua de métricas
-
-### Testes
-- [x] Baseline (sem carga)
-- [ ] Warmups automatizados (3×60s, 300 RPS)
-- [ ] Corrida de aquecimento (2 min, cadência real)
-- [ ] Espera e estabilização (60s)
-- [ ] Teste principal (10 minutos)
-- [ ] Testes de rede (latência, jitter, perda)
-- [ ] Testes comparativos: Wi-Fi vs Cabo, Linux vs macOS
-
-### Análise
-- [ ] Dados coletados consolidados
-- [ ] Processamento de métricas (Python + JSON)
-- [ ] Gráficos gerados (latência, throughput, CPU, RAM, portas efêmeras)
-- [ ] Comparação virtual × tradicional
-- [ ] Análise estatística
-- [ ] Conclusões preliminares
-
-### Escrita
-- [x] Introdução
-- [x] Revisão bibliográfica
-- [ ] Metodologia
-- [ ] Resultados
-- [ ] Discussão
-- [ ] Conclusão
-
----
-
-## 🎯 Próximos Passos (2 Semanas)
-
-## 📆 Semana 1 — Preparação + Execução dos Testes
-### 🔧 Preparação do Ambiente
-- [ ] Configurar Vegeta (Linux + macOS)
-- [ ] Criar scripts de automação:
-  - Warmups (3× 300 RPS · 60s)
-  - Corrida de aquecimento (2 minutos)
-  - Coleta de lixo (GC)
-  - Estabilização (60s)
-  - Coleta contínua de métricas
-  - Teste principal (10 minutos)
-- [ ] Validar coleta de métricas (CPU, RAM, rede, TCP, portas efêmeras)
-- [ ] Confirmar comunicação entre as máquinas
-- [ ] Verificar se o servidor está recebendo e respondendo corretamente
-
-### 🚀 Execução Completa dos Testes
-- [ ] Executar baseline (sem carga)
-- [ ] Executar warmups (3 ciclos)
-- [ ] Executar corrida de aquecimento (2 min)
-- [ ] Executar GC + estabilização (60s)
-- [ ] Iniciar coleta contínua de métricas
-- [ ] Executar teste principal (10 min)
-- [ ] Consolidar todos os logs e saídas JSON
-
----
-
-## 📆 Semana 2 — Processamento + Análise + Documentação Final
-### 📊 Processamento dos Dados
-- [ ] Organizar métricas de CPU, RAM, rede, latência e RPS
-- [ ] Limpar e padronizar arquivos JSON
-- [ ] Gerar gráficos e tabelas comparativas
-- [ ] Identificar gargalos e padrões
-
-### 🧠 Análise e Escrita
-- [ ] Escrever análise dos resultados
-- [ ] Criar seção de metodologia final
-- [ ] Documentar ambiente, ferramentas, scripts e parâmetros usados
-- [ ] Revisar todo o texto e corrigir inconsistências
-
-### 🎤 Finalização
-- [ ] Preparar a apresentação final
-- [ ] Criar gráficos visuais da arquitetura e fluxo dos testes
-- [ ] Ajustes finais no documento
 
 ---
 
