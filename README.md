@@ -82,49 +82,30 @@ Analisar as diferenças de desempenho entre threads tradicionais e threads virtu
 [![JFR](https://img.shields.io/badge/Java_Flight_Recorder-JDK_21-FF6600.svg?logo=java&logoColor=white)](https://docs.oracle.com/en/java/java-components/jdk-mission-control/)
 [![JMC](https://img.shields.io/badge/Java_Mission_Control-9.0-FF6600.svg?logo=java&logoColor=white)](https://www.oracle.com/java/technologies/jdk-mission-control.html)
 
-**Documentação:**  
-[![LaTeX](https://img.shields.io/badge/LaTeX-abntex2-008080.svg?logo=latex&logoColor=white)](https://www.abntex.net.br/)
-
 ---
 
 ## 📁 Estrutura do Repositório
 
 ```
-tcc/
-├── Modelo_TCC_2025/              # 📄 Documento do TCC (LaTeX)
-│   ├── principal.tex             # Arquivo principal do trabalho
-│   ├── principal.pdf             # PDF compilado (versão final)
-│   ├── imagens/                  # Figuras utilizadas no TCC
-│   │   ├── multiplas.png         # Processo com múltiplas threads
-│   │   ├── onetoone.png          # Modelo 1:1 de threading
-│   │   └── thread.png            # Arquitetura de threads virtuais
-│   ├── abntex2*.{cls,sty,bst}    # Classes e estilos ABNT
-│   ├── abntex2-modelo-references.bib  # Referências bibliográficas
-│   └── *.{aux,log,toc,bbl,blg}   # Arquivos auxiliares LaTeX
+TCC_Java_Thread_Benchmark/
+├── Trabalho/                  # 📄 Versão final do TCC
+├── Apresentacao/              # 📊 Slides da apresentação
+├── Trabalhos_Relacionados/    # 📚 Artigos e referências
 │
-└── README.md                     # 📘 Este documento
+├── Teste/
+│   ├── Script/                # ⚙️ Scripts de execução dos benchmarks
+│   │   ├── loadConstant/
+│   │   └── loadRamping/
+│   │
+│   └── Serve_Test/
+│       └── benchmark-server/  # 🚀 Aplicação Spring Boot usada nos testes
+│
+└── README.md                  # 📘 Documentação do projeto
 ```
 
 ---
 
 ## 📦 Pré-requisitos
-
-### Para Compilação do Documento LaTeX
-
-**Linux (Ubuntu/Debian):**
-```bash
-sudo apt-get update
-sudo apt-get install texlive-full latexmk biber
-```
-
-**macOS:**
-```bash
-brew install --cask mactex
-```
-
-**Windows:**
-- [MiKTeX](https://miktex.org/download) ou [TeX Live](https://www.tug.org/texlive/)
-- Ou use [Overleaf](https://www.overleaf.com/) (recomendado para iniciantes)
 
 ### Para Replicação dos Experimentos
 
@@ -284,55 +265,7 @@ Legenda: 🟢 = Vantagem Clara | 🟡 = Desempenho Equivalente
 
 ---
 
-## 📝 Compilando o Documento LaTeX
-
-### Método 1: Compilação Automática (Recomendado)
-
-```bash
-cd Modelo_TCC_2025
-latexmk -lualatex -pvc principal.tex
-```
-
-**Flags úteis:**
-- `-pvc`: Recompila automaticamente ao salvar
-- `-lualatex`: Usa LuaLaTeX (melhor suporte a UTF-8 e português)
-
-### Método 2: Compilação Manual Completa
-
-```bash
-cd Modelo_TCC_2025
-
-# 1ª compilação - Gera arquivos auxiliares
-lualatex principal.tex
-
-# Processa referências bibliográficas
-bibtex principal
-
-# 2ª compilação - Inclui referências
-lualatex principal.tex
-
-# 3ª compilação - Ajusta referências cruzadas
-lualatex principal.tex
-```
-
-### Limpeza de Arquivos Temporários
-
-```bash
-# Remove arquivos auxiliares (mantém PDF)
-latexmk -c
-
-# Remove TODOS os arquivos gerados (inclusive PDF)
-latexmk -C
-```
-
----
-
 ## 📚 Recursos Úteis
-
-### LaTeX e ABNT
-- [📘 Documentação abntex2](https://www.abntex.net.br/) - Guia oficial do padrão ABNT
-- [📖 Overleaf Learn LaTeX](https://www.overleaf.com/learn) - Tutoriais interativos
-- [📚 LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX) - Referência completa
 
 ### Java e Concorrência
 - [📄 JEP 444: Virtual Threads](https://openjdk.org/jeps/444) - Especificação oficial
@@ -371,4 +304,4 @@ Ciência e Tecnologia do Sudeste de Minas Gerais, Rio Pomba, 2025.
 
 ---
 
-**📌 Última atualização:** Janeiro de 2026
+**📌 Última atualização:** Fevereiro de 2026

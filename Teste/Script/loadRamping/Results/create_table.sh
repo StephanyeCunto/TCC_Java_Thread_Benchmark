@@ -65,7 +65,7 @@ rate() {
 echo "endpoint,run,Rate,JVM_CPU_pct,Native_Memory_GB,Heap_Used_MB" > "$OUTPUT_TRAD"
 echo "endpoint,run,Rate,JVM_CPU_pct,Native_Memory_GB,Heap_Used_MB" > "$OUTPUT_VIRT"
 
-for run in {1..20}; do
+for run in {1..100}; do
 
     if (( run % 2 == 0 )); then
         endpoint="virtual"
